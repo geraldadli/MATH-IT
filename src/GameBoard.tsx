@@ -5,9 +5,10 @@ import {
 } from '@dnd-kit/core'
 import { useGame } from './GameContext'
 import { translations } from './i18n'
-import { caseLevels, createBoard, getCase, isSolved, moveToken } from './gameLogic'
+import { caseLevels, createBoard, getCase, getReviewZones, isSolved, moveToken } from './gameLogic'
 import type { BoardState, CaseId, ZoneId } from './types'
 import { Biscuit, Icon } from './Illustrations'
+import InteractionDemo from './InteractionDemo'
 
 type Selection = { token: number; zone: ZoneId }
 
@@ -40,14 +41,16 @@ function EvidenceToken({ token, zone, label, className, selected, clone, disable
   >{children}{clone && <span className="copy-mark" aria-hidden="true">+</span>}</button>
 }
 
-function DropArea({ id, children, className, label, placeLabel, selected, disabled, onPlace }: {
+function DropArea({ id, children, className, label, placeLabel, selected, disabled, reviewLabel, onPlace }: {
   id: ZoneId; children: ReactNode; className: string; label: string; placeLabel: string;
-  selected: boolean; disabled: boolean; onPlace: () => void;
+  selected: boolean; disabled: boolean; reviewLabel?: string; onPlace: () => void;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id, disabled })
   return <section ref={setNodeRef} aria-label={label} data-zone={id}
-    className={`${className}${isOver ? ' is-over' : ''}${selected ? ' can-place' : ''}`}
+    aria-describedby={reviewLabel ? `review-${id}` : undefined}
+    className={`${className}${isOver ? ' is-over' : ''}${selected ? ' can-place' : ''}${reviewLabel ? ' needs-review' : ''}`}
     onClick={onPlace}>
+    {reviewLabel && <span id={`review-${id}`} className="zone-review"><Icon name="search" size={14} />{reviewLabel}</span>}
     {children}
     {selected && <button className="zone-drop-button" type="button" data-sound="custom" aria-label={`${placeLabel}: ${label}`}
       onClick={(event) => { event.stopPropagation(); onPlace() }}>
@@ -76,6 +79,8 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
     useSensor(KeyboardSensor, { keyboardCodes: { start: ['Space'], cancel: ['Escape'], end: ['Space'] } }),
   )
   const solved = feedback === 'solved'
+  const reviewZones = feedback === 'retry' ? getReviewZones(caseId, board) : []
+  const reviewTray = feedback === 'retry' && board.tray.length > 0
   const tokenLabel = (token: number) => level.tokenLabels?.[token] ?? String(token)
   const tokenName = (token: number) => {
     const label = tokenLabel(token)
@@ -154,9 +159,10 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
       },
     }}>
       <div className="board-workspace">
-        <div className="workspace-intro"><Icon name="hand" size={18} /><p aria-live="polite">{selected ? `${tokenName(selected.token)} · ${t.selectedHelp}` : t.dragHelp}</p></div>
+        <div className="workspace-intro"><Icon name="hand" size={18} /><p aria-live="polite">{selected ? `${tokenName(selected.token)} · ${t.selectedHelp}` : t.dragHelp}</p><InteractionDemo autoShow={caseId === 1 && !player.completedCases.includes(1)} language={language} /></div>
 
         <DropArea id="tray" className="evidence-tray" label={t.tray} placeLabel={t.placeHere}
+          reviewLabel={reviewTray ? t.cluesWaiting : undefined}
           selected={!!selected && selected.zone !== 'tray'} disabled={solved} onPlace={() => place(selected, 'tray')}>
           <div className="tray-heading"><span>{t.tray}</span><span className="tray-count">{board.tray.length} {t.left}</span></div>
           <div className="tray-tokens">{board.tray.map((token) => renderToken(token, 'tray'))}{!board.tray.length && <span className="tray-empty" aria-hidden="true">✓</span>}</div>
@@ -167,6 +173,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
           {level.dropZones.map(({ id, label }) => <DropArea key={id} id={id}
             className={`evidence-zone zone-${id}${sharing ? '' : ' number-zone'}`}
             label={label[language]} placeLabel={t.placeHere} selected={!!selected && selected.zone !== id}
+            reviewLabel={reviewZones.includes(id) ? t.lookAgain : undefined}
             disabled={solved} onPlace={() => place(selected, id)}>
             <div className="zone-heading"><h3 className="zone-label">{label[language]}</h3>
               {solved && <span className="zone-success" aria-hidden="true">✓</span>}
@@ -179,7 +186,11 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
         </div>
 
         {feedback && <div className={`feedback-panel feedback-${feedback}`} role="status" aria-live="polite">
-          {feedback === 'retry' ? <><Icon name="sparkle" /><p>{sharing ? t.feedbackSharing : t.feedbackSorting}</p></> : <>
+          {feedback === 'retry' ? <><Icon name="search" /><p>
+            {reviewZones.length > 0 && <span>{t.reviewGroups} {reviewZones.map(zoneName).join(', ')}. </span>}
+            {reviewTray && <span>{t.finishTray}</span>}
+            {!reviewZones.length && !reviewTray && t.feedbackSorting}
+          </p></> : <>
             <div className="success-reward">
               <div className="celebration-burst" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <span key={index} style={{ '--i': index } as CSSProperties} />)}</div>
               <span className="reward-badge" aria-label={earnedPoints ? t.solvedDetail : undefined}>

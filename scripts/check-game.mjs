@@ -6,11 +6,16 @@ import {
   createBoard,
   isCaseUnlocked,
   isSolved,
+  getReviewZones,
   moveToken,
   normaliseCompletedCases,
 } from "../src/gameLogic.ts";
 
 let board = createBoard(1);
+assert.deepEqual(getReviewZones(1, board), [], "An untouched board should point to the tray, not blame empty groups");
+let overfilled = createBoard(1);
+for (let token = 1; token <= 5; token++) overfilled = moveToken(overfilled, token, "tray", "a", 1);
+assert.deepEqual(getReviewZones(1, overfilled), ["a"], "An overfilled group can be reviewed before the tray is empty");
 assert.equal(isSolved(1, board), false);
 assert.equal(moveToken(board, 99, "tray", "a", 1), board);
 assert.equal(moveToken(board, 1, "b", "a", 1), board);
@@ -138,6 +143,11 @@ for (const level of caseLevels) {
     for (const token of tokens) attempt = moveToken(attempt, token, "tray", zone, id);
   }
   assert.equal(isSolved(id, attempt), true, `Case ${id} must be solvable through actual moves`);
+  assert.deepEqual(getReviewZones(id, attempt), [], `Case ${id}: correct groups need no review`);
+  const misplaced = moveToken(attempt, attempt.a[0], "a", "b", id);
+  assert.deepEqual(getReviewZones(id, misplaced), id === 1 ? ["a", "b"] : ["b"], `Case ${id}: flag incorrect groups without revealing the destination`);
+  const unfinished = moveToken(attempt, attempt.a[0], "a", "tray", id);
+  assert.deepEqual(getReviewZones(id, unfinished), [], `Case ${id}: remaining clues should flag the tray`);
   assert.equal(attempt.tray.length, 0);
   assert.equal(isSolved(id, moveToken(attempt, attempt.a[0], "a", "b", id)), false, `Case ${id} rejects misplaced clues`);
   assert.equal(isSolved(id, { ...attempt, a: attempt.a.slice(1) }), false, `Case ${id} rejects missing clues`);
@@ -148,6 +158,9 @@ for (const level of caseLevels) {
 }
 
 assert.equal(getNextCase(progress), undefined);
+const sharedCopy = moveToken(createBoard(2), 12, "tray", "a", 2);
+assert.deepEqual(getReviewZones(2, sharedCopy), [], "A valid reusable copy must not be flagged");
+assert.deepEqual(getReviewZones(2, moveToken(sharedCopy, 12, "tray", "c", 2)), ["c"], "Flag only the incorrect copy's group");
 assert.equal(getNextCase([1, 3]).id, 2);
 assert.deepEqual(normaliseCompletedCases([1, 2]), [1, 2], "Preserve legacy progress");
 assert.deepEqual(normaliseCompletedCases([3, 2, 1, 2, 99]), [1, 2, 3]);

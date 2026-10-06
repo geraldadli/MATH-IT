@@ -1,5 +1,5 @@
 import { caseLevels, getCase } from "./cases.ts";
-import type { BoardState, CaseId, CaseLevel, ZoneId } from "./types.ts";
+import type { BoardState, CaseId, CaseLevel, DropZone, DropZoneId, ZoneId } from "./types.ts";
 
 export { caseLevels, getCase } from "./cases.ts";
 
@@ -47,6 +47,29 @@ export function moveToken(
   return next;
 }
 
+function matchesGroup({ condition }: DropZone, tokens: number[]): boolean {
+  if (new Set(tokens).size !== tokens.length) return false;
+  if (condition.kind === "count") return tokens.length === condition.count;
+  if (condition.kind === "multiple")
+    return tokens.every((token) => token % condition.divisor === 0);
+  if (condition.kind === "values")
+    return tokens.every((token) => condition.values.includes(token));
+  return tokens.every((token) =>
+    condition.divisors.every((divisor) => token % divisor !== 0),
+  );
+}
+
+export function getReviewZones(caseId: CaseId, board: BoardState): DropZoneId[] {
+  const level = getCase(caseId);
+  return level.dropZones.filter((zone) => {
+    // While sharing, only an overfilled group needs correction; others may be unfinished.
+    if (zone.condition.kind === "count" && board.tray.length > 0 &&
+      board[zone.id].length <= zone.condition.count) return false;
+    return !matchesGroup(zone, board[zone.id]) ||
+      board[zone.id].some((token) => !level.tokens.includes(token));
+  }).map((zone) => zone.id);
+}
+
 export function isSolved(caseId: CaseId, board: BoardState): boolean {
   const level = caseLevels.find((candidate) => candidate.id === caseId);
   if (!level || board.tray.length !== 0) return false;
@@ -61,18 +84,7 @@ export function isSolved(caseId: CaseId, board: BoardState): boolean {
   )
     return false;
 
-  return level.dropZones.every(({ id, condition }) => {
-    const tokens = board[id];
-    if (new Set(tokens).size !== tokens.length) return false;
-    if (condition.kind === "count") return tokens.length === condition.count;
-    if (condition.kind === "multiple")
-      return tokens.every((token) => token % condition.divisor === 0);
-    if (condition.kind === "values")
-      return tokens.every((token) => condition.values.includes(token));
-    return tokens.every((token) =>
-      condition.divisors.every((divisor) => token % divisor !== 0),
-    );
-  });
+  return level.dropZones.every((zone) => matchesGroup(zone, board[zone.id]));
 }
 
 export function isCaseUnlocked(

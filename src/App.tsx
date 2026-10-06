@@ -168,6 +168,21 @@ function Dashboard({ openCase }: { openCase: (id: CaseId) => void }) {
   const { player } = useGame();
   const t = shellTranslations[player.language];
   const next = getNextCase(player.completedCases);
+  const upcoming = next ? caseLevels.slice(next.id, next.id + 2) : [];
+  const completedCases = caseLevels.filter((level) => player.completedCases.includes(level.id));
+  function caseCard(level: (typeof caseLevels)[number]) {
+    const locked = !isCaseUnlocked(level.id, player.completedCases);
+    return <button
+      className={"case-file pastel-" + (level.id - 1) % 4 + (locked ? " locked" : " completed")}
+      key={level.id} disabled={locked} onClick={() => openCase(level.id)}
+      aria-label={t.case + " " + level.id + ": " + level.title[player.language] + ". " + (locked ? t.locked : t.completed)}
+    >
+      <div className="file-top"><span className="file-number">{String(level.id).padStart(2, "0")}</span><Icon name={locked ? "lock" : "check"} size={16} /></div>
+      <div className="file-symbol" aria-hidden="true">{level.preview}</div>
+      <h3>{level.title[player.language]}</h3>
+      {locked && <span className="sr-only">{t.lockedAfter}</span>}
+    </button>;
+  }
   return (
     <section className="dashboard-board">
       <div className="dashboard-feature">
@@ -183,26 +198,15 @@ function Dashboard({ openCase }: { openCase: (id: CaseId) => void }) {
           <Avatar {...player.avatar} />
         </div>
       </div>
-      <div className="case-files-heading"><h2>{t.caseFiles}</h2><span>{caseLevels.length}</span></div>
-      <div className="case-file-grid">
-        {caseLevels.map((level) => {
-          const locked = !isCaseUnlocked(level.id, player.completedCases);
-          const completed = player.completedCases.includes(level.id);
-          const state = locked ? t.locked : completed ? t.completed : t.ready;
-          return (
-            <button
-              className={"case-file pastel-" + (level.id - 1) % 4 + (locked ? " locked" : completed ? " completed" : " ready")}
-              key={level.id} disabled={locked} onClick={() => openCase(level.id)}
-              aria-label={t.case + " " + level.id + ": " + level.title[player.language] + ". " + state}
-            >
-              <div className="file-top"><span className="file-number">{String(level.id).padStart(2, "0")}</span><Icon name={completed ? "check" : locked ? "lock" : "arrow"} size={16} /></div>
-              <div className="file-symbol" aria-hidden="true">{level.preview}</div>
-              <h3>{level.title[player.language]}</h3>
-              {locked && <span className="sr-only">{t.lockedAfter}</span>}
-            </button>
-          );
-        })}
-      </div>
+      {upcoming.length > 0 && <section className="upcoming-section" aria-labelledby="upcoming-heading">
+        <div className="case-files-heading"><h2 id="upcoming-heading">{t.upNext}</h2></div>
+        <p className="upcoming-note">{t.unlockMore}</p>
+        <div className="case-file-grid upcoming-cases">{upcoming.map(caseCard)}</div>
+      </section>}
+      {completedCases.length > 0 && <details className="completed-casebook" open={!next}>
+        <summary>{t.solvedCases}{" "}<span>{completedCases.length}</span></summary>
+        <div className="case-file-grid">{completedCases.map(caseCard)}</div>
+      </details>}
     </section>
   );
 }
@@ -237,7 +241,7 @@ function MathIt() {
       window.removeEventListener("keydown", settle, true);
       scroll.destroy();
     };
-  }, [selectedCase]);
+  }, [selectedCase, started]);
   function openProfile() {
     if (!started) return;
     setProfileVersion((value) => value + 1);
@@ -282,7 +286,7 @@ function MathIt() {
           {selectedCase !== null && (
             <nav className="case-navigation" ref={caseNavigation} aria-label={t.caseFiles}>
               <button className="overview-tab" onClick={() => setSelectedCase(null)} aria-label={t.overview}><Icon name="home" size={19} /></button>
-              {caseLevels.map((level) => {
+              {caseLevels.filter((level) => level.id <= (getNextCase(player.completedCases)?.id ?? caseLevels.length) + 2).map((level) => {
                 const completed = player.completedCases.includes(level.id);
                 const locked = !isCaseUnlocked(level.id, player.completedCases);
                 return (

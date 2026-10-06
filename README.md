@@ -23,7 +23,11 @@ npm run build
 
 Create a detective name, pick an animal partner and coat color, then open the first case. Drag clues with a mouse or touch, or select a clue and choose its destination. Keyboard users can press Enter to select, Tab to a destination button, and Enter to place; Space and arrow keys also support dragging. Undo, reset, and illustrated hints are always available without penalties.
 
+The first case opens a short drag/tap demonstration. Dismiss it with “Let me try”, the close button, or Escape; dismissal is remembered on this device. “How to move” reopens it from any case. The demonstration never moves real clues and respects reduced-motion preferences. The dashboard features the current case, previews the next two, and keeps solved cases in an expandable replay section.
+
 Each case has three destinations and unlocks the next case when solved. Start with sharing 12 biscuits and sorting multiples, then investigate addition, subtraction, comparisons, multiplication, division, place value, fractions, length, elapsed time, and two-step calculations. The first two cases preserve existing players’ progress.
+
+Checking an incorrect arrangement highlights only the groups needing review, using a warm border and a “Look again” label without identifying individual answers or destinations. Remaining clues highlight the tray. Moving a clue, undoing, or resetting clears this feedback. On screens up to 650px wide, groups stack vertically and clues have touch targets of at least 52px.
 
 In the multiples case, 12 has two copies so it can belong to both groups. Move either copy to change its group, or return it to the tray. Each first completion earns 100 points, up to 1,200 points; replays do not award additional points. Saved progress keeps only the uninterrupted sequence of solved cases.
 
@@ -39,6 +43,7 @@ Hints offer one short thinking prompt at a time, with optional next/back control
 - `src/GameContext.tsx`: profile, language, sound preference, score, and linear progress saved in localStorage.
 - `src/gameLogic.ts`: immutable clue movement and case validation.
 - `src/GameBoard.tsx`: @dnd-kit/core workspace, history, feedback, and native hint dialog.
+- `src/InteractionDemo.tsx`: dismissible, replayable drag/tap demonstration.
 - `src/App.tsx`: onboarding, dashboard, gameplay navigation, and profile editor.
 - `src/Illustrations.tsx`: original vector artwork and icons.
 - `src/audio.ts`: bubble sound synthesis and the original 64-step melody.
