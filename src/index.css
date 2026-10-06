@@ -17,6 +17,18 @@
   --mint: #e7f0eb;
   --focus: #8c76b1;
   --line: #dfe7f3;
+  --cursor-rest: default;
+  --cursor-action: pointer;
+  --cursor-grab: grab;
+  --cursor-grabbing: grabbing;
+}
+@media (any-hover: hover) and (any-pointer: fine) {
+  :root {
+    --cursor-rest: url('/cursors/arrow.svg') 4 3, default;
+    --cursor-action: url('/cursors/hand-active.svg') 13 2, pointer;
+    --cursor-grab: url('/cursors/hand-active.svg') 13 2, grab;
+    --cursor-grabbing: url('/cursors/hand-active.svg') 13 2, grabbing;
+  }
 }
 * {
   box-sizing: border-box;
@@ -24,18 +36,20 @@
 body {
   margin: 0;
   min-width: 280px;
+  cursor: var(--cursor-rest);
 }
 button,
 input {
   font: inherit;
 }
 button {
-  cursor: pointer;
+  cursor: var(--cursor-action);
   color: inherit;
 }
 button:disabled {
-  cursor: default;
+  cursor: var(--cursor-rest);
 }
+a, summary, [role="button"] { cursor: var(--cursor-action); }
 button,
 a,
 input {

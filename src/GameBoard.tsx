@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode } from 'react'
+import { useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import {
   DndContext, DragOverlay, KeyboardSensor, PointerSensor,
   useDraggable, useDroppable, useSensor, useSensors, type DragEndEvent,
@@ -133,7 +133,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
       }}><TokenFace sharing={sharing} label={tokenLabel(token)} /></EvidenceToken>
   }
 
-  return <article className="game-board">
+  return <article className={`game-board${solved ? ' is-solved' : ''}`}>
     <header className="case-briefing">
       <div className="case-eyebrow"><span className="case-number">{t.case} {String(caseId).padStart(2, '0')}</span>{level.skill[language]}</div>
       <h2>{level.title[language]}</h2>
@@ -169,6 +169,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
             label={label[language]} placeLabel={t.placeHere} selected={!!selected && selected.zone !== id}
             disabled={solved} onPlace={() => place(selected, id)}>
             <div className="zone-heading"><h3 className="zone-label">{label[language]}</h3>
+              {solved && <span className="zone-success" aria-hidden="true">✓</span>}
               {sharing && <span className="zone-count tokens-in-zone" role="status" aria-label={`${label[language]}: ${board[id].length} ${t.cluesInZone}`}>{board[id].length}</span>}
             </div>
             <div className="zone-tokens">{board[id].map((token) => renderToken(token, id))}
@@ -179,7 +180,14 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
 
         {feedback && <div className={`feedback-panel feedback-${feedback}`} role="status" aria-live="polite">
           {feedback === 'retry' ? <><Icon name="sparkle" /><p>{sharing ? t.feedbackSharing : t.feedbackSorting}</p></> : <>
-            <span className="success-symbol" aria-hidden="true">✓</span><div><strong>{t.solved}</strong><p>{earnedPoints ? t.solvedDetail : t.solvedAgain}</p></div>
+            <div className="success-reward">
+              <div className="celebration-burst" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <span key={index} style={{ '--i': index } as CSSProperties} />)}</div>
+              <span className="reward-badge" aria-label={earnedPoints ? t.solvedDetail : undefined}>
+                <Icon name="star" size={22} />{earnedPoints && <strong aria-hidden="true">+100</strong>}
+              </span>
+              {earnedPoints && <span className="points-float" aria-hidden="true">+100 ★</span>}
+            </div>
+            <div className="success-copy"><strong>{t.solved}</strong><p>{earnedPoints ? (caseId < caseLevels.length ? t.nextUnlocked : t.casebookComplete) : t.solvedAgain}</p></div>
             <button className="text-button" onClick={onNext}>{caseId < caseLevels.length ? t.nextCase : t.allSolved} <span aria-hidden="true">→</span></button>
           </>}
         </div>}

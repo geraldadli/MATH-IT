@@ -158,7 +158,7 @@ function ProgressSummary() {
       </div>
       <div className="progress-copy">
         <span>{t.casesSolved}</span>
-        <span className="points-total" aria-label={player.score + " " + t.detectivePoints}><Icon name="star" size={15} />{player.score}</span>
+        <span key={player.score} className="points-total" aria-label={player.score + " " + t.detectivePoints}><Icon name="star" size={15} />{player.score}</span>
       </div>
     </div>
   );
@@ -254,6 +254,9 @@ function MathIt() {
             <span className="brand-mark"><Icon name="search" size={26} /><span>✦</span></span>
             <span className="brand-title">Math<span> It!</span></span>
           </button>
+          <div className="header-doodles" aria-hidden="true">
+            <span>+</span><span>×</span><span>=</span><span>✦</span>
+          </div>
           <div className="topbar-actions">
             <button className="sound-toggle" data-sound="custom" aria-label={player.soundEnabled ? t.soundOff : t.soundOn} title={player.soundEnabled ? t.soundOff : t.soundOn} aria-pressed={player.soundEnabled} onClick={() => setSoundEnabled(!player.soundEnabled)}>
               <Icon name={player.soundEnabled ? "sound" : "muted"} size={20} /><span>{t.sound}</span>
