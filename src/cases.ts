@@ -1,0 +1,237 @@
+import type { CaseId, CaseLevel } from "./types.ts";
+
+export const caseLevels: CaseLevel[] = [
+  {
+    id: 1, kind: "sharing",
+    title: { en: "The missing biscuits", id: "Biskuit yang hilang" },
+    skill: { en: "Equal sharing", id: "Berbagi sama rata" },
+    mission: { en: "Share 12 biscuits equally among 3 evidence bags.", id: "Bagi 12 biskuit sama rata ke 3 kantong bukti." },
+    tokens: Array.from({ length: 12 }, (_, index) => index + 1),
+    dropZones: [
+      { id: "a", label: { en: "Bag A", id: "Kantong A" }, condition: { kind: "count", count: 4 } },
+      { id: "b", label: { en: "Bag B", id: "Kantong B" }, condition: { kind: "count", count: 4 } },
+      { id: "c", label: { en: "Bag C", id: "Kantong C" }, condition: { kind: "count", count: 4 } },
+    ],
+    hints: [
+      { text: { en: "What would an equal share look like?", id: "Seperti apa bagian yang sama banyak?" }, visual: "A: ?   B: ?   C: ?" },
+      { text: { en: "Try giving each bag one biscuit per round.", id: "Coba beri tiap kantong satu biskuit setiap putaran." }, visual: "● → A → B → C ↻" },
+      { text: { en: "Tray empty? Compare the bags. Does each have the same amount?", id: "Baki kosong? Bandingkan kantongnya. Apakah isinya sama banyak?" }, visual: "A = B = C ?" },
+    ],
+    preview: "12 ÷ 3",
+  },
+  {
+    id: 2, kind: "sorting",
+    title: { en: "The secret number code", id: "Kode angka rahasia" },
+    skill: { en: "Multiples", id: "Kelipatan" },
+    mission: { en: "Sort the cards. Some may fit both groups.", id: "Kelompokkan kartu. Ada yang cocok di kedua kelompok." },
+    tokens: [8, 9, 12, 15, 16, 7],
+    copies: { 12: 2 },
+    dropZones: [
+      { id: "a", label: { en: "Multiple of 3", id: "Kelipatan 3" }, condition: { kind: "multiple", divisor: 3 } },
+      { id: "b", label: { en: "Multiple of 4", id: "Kelipatan 4" }, condition: { kind: "multiple", divisor: 4 } },
+      { id: "c", label: { en: "Neither", id: "Bukan keduanya" }, condition: { kind: "neither", divisors: [3, 4] } },
+    ],
+    hints: [
+      { text: { en: "Try counting in threes. Which cards do you reach?", id: "Coba hitung lompat tiga. Kartu mana yang kamu temukan?" }, visual: "0 → 3 → ? → …" },
+      { text: { en: "Now count in fours. Could a card fit both groups?", id: "Sekarang hitung lompat empat. Adakah kartu yang cocok di kedua kelompok?" }, visual: "0 → 4 → ? → …" },
+      { text: { en: "Check both lists before choosing Neither.", id: "Periksa kedua daftar sebelum memilih Bukan keduanya." }, visual: "3 × □ ?   4 × □ ?" },
+    ],
+    preview: "3 · 4 · 12",
+  },
+  {
+    id: 3, kind: "sorting",
+    title: { en: "The parcel totals", id: "Jumlah paket" },
+    skill: { en: "Addition", id: "Penjumlahan" },
+    mission: { en: "Add each parcel’s numbers. Match it to the correct total.", id: "Jumlahkan angka setiap paket. Cocokkan dengan hasilnya." },
+    tokens: [1, 3, 5, 4, 6, 2],
+    tokenLabels: { 1: "13 + 7", 2: "18 + 12", 3: "23 + 17", 4: "11 + 9", 5: "16 + 14", 6: "28 + 12" },
+    dropZones: [
+      { id: "a", label: { en: "20", id: "20" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "30", id: "30" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "40", id: "40" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Which parts are tens? Which are ones?", id: "Mana bagian puluhan? Mana bagian satuan?" }, visual: "13 → 10 + 3" },
+      { text: { en: "Try adding the ones first. Can you make another ten?", id: "Coba jumlahkan satuannya dahulu. Bisakah kamu membentuk puluhan baru?" }, visual: "13 + 7 → 10 + (3 + 7) → ?" },
+      { text: { en: "Add your tens and leftover ones. Which total matches?", id: "Jumlahkan puluhan dan sisa satuannya. Hasil mana yang cocok?" }, visual: "□ + □ → ?" },
+    ],
+    preview: "18 + 12",
+  },
+  {
+    id: 4, kind: "sorting",
+    title: { en: "The disappearing stamps", id: "Perangko yang menghilang" },
+    skill: { en: "Subtraction", id: "Pengurangan" },
+    mission: { en: "Find how many stamps remain. Sort each subtraction clue.", id: "Cari sisa perangko. Kelompokkan setiap petunjuk pengurangan." },
+    tokens: [3, 1, 6, 2, 4, 5],
+    tokenLabels: { 1: "52 − 28", 2: "63 − 27", 3: "71 − 23", 4: "61 − 37", 5: "82 − 46", 6: "90 − 42" },
+    dropZones: [
+      { id: "a", label: { en: "24", id: "24" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "36", id: "36" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "48", id: "48" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Look at the ones. Are there enough to subtract?", id: "Lihat satuannya. Apakah cukup untuk dikurangi?" }, visual: "52 − 28 → 2 − 8 ?" },
+      { text: { en: "Need more ones? Trade one ten for ten ones.", id: "Perlu satuan lagi? Tukar satu puluhan menjadi sepuluh satuan." }, visual: "52 → 40 + 12" },
+      { text: { en: "Add back what you took away. Is the starting number restored?", id: "Tambahkan kembali yang dikurangi. Apakah kembali ke bilangan awal?" }, visual: "? + 28 → 52 ?" },
+    ],
+    preview: "52 − 28",
+  },
+  {
+    id: 5, kind: "sorting",
+    title: { en: "The number checkpoint", id: "Pos pemeriksaan angka" },
+    skill: { en: "Comparing numbers", id: "Membandingkan bilangan" },
+    mission: { en: "Solve each clue, then compare its answer with 40.", id: "Hitung setiap petunjuk, lalu bandingkan hasilnya dengan 40." },
+    tokens: [2, 4, 3, 5, 1, 6],
+    tokenLabels: { 1: "23 + 14", 2: "65 − 25", 3: "28 + 17", 4: "52 − 18", 5: "26 + 14", 6: "73 − 28" },
+    dropZones: [
+      { id: "a", label: { en: "Less than 40", id: "Kurang dari 40" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "Equal to 40", id: "Sama dengan 40" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "More than 40", id: "Lebih dari 40" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "First, work out one clue at a time.", id: "Pertama, hitung satu petunjuk dahulu." }, visual: "□ + □ → ?" },
+      { text: { en: "Imagine a number line. Is your answer before or after 40?", id: "Bayangkan garis bilangan. Hasilmu sebelum atau setelah 40?" }, visual: "← … 40 … →" },
+      { text: { en: "Check whether your answer lands exactly on 40.", id: "Periksa apakah hasilmu tepat di 40." }, visual: "? < 40   ? = 40   ? > 40" },
+    ],
+    preview: "< 40 >",
+  },
+  {
+    id: 6, kind: "sorting",
+    title: { en: "The garden groups", id: "Kelompok di kebun" },
+    skill: { en: "Multiplication", id: "Perkalian" },
+    mission: { en: "Count the equal groups. Match each multiplication clue.", id: "Hitung kelompok sama banyak. Cocokkan setiap petunjuk perkalian." },
+    tokens: [5, 1, 3, 2, 6, 4],
+    tokenLabels: { 1: "3 × 4", 2: "3 × 6", 3: "4 × 6", 4: "2 × 6", 5: "2 × 9", 6: "3 × 8" },
+    dropZones: [
+      { id: "a", label: { en: "12", id: "12" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "18", id: "18" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "24", id: "24" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "How many groups? How many things in each group?", id: "Ada berapa kelompok? Berapa benda di setiap kelompok?" }, visual: "3 × 4 → ( … ) ( … ) ( … )" },
+      { text: { en: "Try adding the same amount for each group.", id: "Coba tambahkan jumlah yang sama untuk setiap kelompok." }, visual: "3 × 4 → 4 + 4 + 4 → ?" },
+      { text: { en: "Count your groups again. Did you include every one?", id: "Hitung lagi kelompokmu. Apakah semuanya sudah dihitung?" }, visual: "( … ) + ( … ) + ( … ) → ?" },
+    ],
+    preview: "3 × 6",
+  },
+  {
+    id: 7, kind: "sorting",
+    title: { en: "The delivery teams", id: "Tim pengantar" },
+    skill: { en: "Division", id: "Pembagian" },
+    mission: { en: "Share each delivery equally. Find how many each team receives.", id: "Bagikan setiap kiriman sama rata. Cari bagian setiap tim." },
+    tokens: [3, 6, 1, 5, 4, 2],
+    tokenLabels: { 1: "8 ÷ 4", 2: "12 ÷ 4", 3: "16 ÷ 4", 4: "18 ÷ 9", 5: "21 ÷ 7", 6: "24 ÷ 6" },
+    dropZones: [
+      { id: "a", label: { en: "2 each", id: "Masing-masing 2" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "3 each", id: "Masing-masing 3" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "4 each", id: "Masing-masing 4" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Draw a circle for each team.", id: "Gambar satu lingkaran untuk setiap tim." }, visual: "8 ÷ 4 → ◯ ◯ ◯ ◯" },
+      { text: { en: "Share one at a time. Keep the teams equal.", id: "Bagikan satu per satu. Pastikan setiap tim mendapat sama banyak." }, visual: "● → ◯ → ◯ → ◯ → ◯ ↻" },
+      { text: { en: "Multiply your share by the teams. Do you get the total?", id: "Kalikan bagianmu dengan jumlah tim. Apakah hasilnya sesuai jumlah awal?" }, visual: "? × 4 → 8 ?" },
+    ],
+    preview: "24 ÷ 6",
+  },
+  {
+    id: 8, kind: "sorting",
+    title: { en: "The vault’s place values", id: "Nilai tempat brankas" },
+    skill: { en: "Place value", id: "Nilai tempat" },
+    mission: { en: "Combine the vault’s number parts. Match equal three-digit totals.", id: "Gabungkan bagian angka brankas. Cocokkan hasil bilangan tiga angkanya." },
+    tokens: [2, 6, 4, 1, 3, 5],
+    tokenLabels: { 1: "200 + 40 + 5", 2: "200 + 50 + 4", 3: "400 + 20 + 5", 4: "100 + 140 + 5", 5: "200 + 40 + 14", 6: "300 + 120 + 5" },
+    dropZones: [
+      { id: "a", label: { en: "245", id: "245" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "254", id: "254" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "425", id: "425" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Spot the hundreds, tens, and ones in each clue.", id: "Temukan ratusan, puluhan, dan satuan pada setiap petunjuk." }, visual: "200 + 40 + 5 → ?" },
+      { text: { en: "Can you regroup ten ones or ten tens?", id: "Bisakah kamu mengelompokkan ulang sepuluh satuan atau sepuluh puluhan?" }, visual: "140 → 100 + 40" },
+      { text: { en: "Combine matching places. Then compare each digit with the choices.", id: "Gabungkan nilai tempat yang sama. Lalu bandingkan setiap angka dengan pilihan." }, visual: "□ + □ + □ → ?" },
+    ],
+    preview: "200 + 40 + 5",
+  },
+  {
+    id: 9, kind: "sorting",
+    title: { en: "The torn map", id: "Peta yang robek" },
+    skill: { en: "Fractions", id: "Pecahan" },
+    mission: { en: "Match each map fraction to its shaded share.", id: "Cocokkan setiap pecahan peta dengan bagian yang diarsir." },
+    tokens: [4, 2, 6, 1, 3, 5],
+    tokenLabels: { 1: "¼", 2: "½", 3: "¾", 4: "■□□□", 5: "■■□□", 6: "■■■□" },
+    dropZones: [
+      { id: "a", label: { en: "One quarter · ¼", id: "Seperempat · ¼" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "One half · ½", id: "Setengah · ½" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "Three quarters · ¾", id: "Tiga perempat · ¾" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Count all the equal parts, including the unshaded ones.", id: "Hitung semua bagian sama besar, termasuk yang tidak diarsir." }, visual: "■□□□ → ?" },
+      { text: { en: "Count the shaded parts. Put that number on top.", id: "Hitung bagian yang diarsir. Tulis jumlahnya di atas." }, visual: "? / ?" },
+      { text: { en: "For halves, imagine folding the strip into two equal pieces.", id: "Untuk setengah, bayangkan melipat pita menjadi dua bagian sama besar." }, visual: "□□ | □□" },
+    ],
+    preview: "¼ · ½ · ¾",
+  },
+  {
+    id: 10, kind: "sorting",
+    title: { en: "The ribbon trail", id: "Jejak pita" },
+    skill: { en: "Measuring length", id: "Mengukur panjang" },
+    mission: { en: "Convert each ribbon clue to centimeters, then match its length.", id: "Ubah setiap petunjuk pita ke sentimeter, lalu cocokkan panjangnya." },
+    tokens: [3, 4, 2, 6, 1, 5],
+    tokenLabels: { 1: "50 cm", 2: "1 m", 3: "1 m + 50 cm", 4: "½ m", 5: "2 × 50 cm", 6: "3 × 50 cm" },
+    dropZones: [
+      { id: "a", label: { en: "50 cm", id: "50 cm" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "100 cm", id: "100 cm" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "150 cm", id: "150 cm" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "How many centimeters make one meter?", id: "Berapa sentimeter dalam satu meter?" }, visual: "1 m → ? cm" },
+      { text: { en: "For half a meter, split that amount into two equal parts.", id: "Untuk setengah meter, bagi jumlah itu menjadi dua bagian sama besar." }, visual: "? ÷ 2 → ? cm" },
+      { text: { en: "Use centimeters for every piece. Then add the lengths.", id: "Gunakan sentimeter untuk setiap bagian. Lalu jumlahkan panjangnya." }, visual: "? cm + ? cm → ? cm" },
+    ],
+    preview: "m → cm",
+  },
+  {
+    id: 11, kind: "sorting",
+    title: { en: "The clock tower clues", id: "Petunjuk menara jam" },
+    skill: { en: "Elapsed time", id: "Lama waktu" },
+    mission: { en: "Count minutes from the first clock time to the second.", id: "Hitung menit dari waktu pertama ke waktu kedua." },
+    tokens: [6, 1, 5, 3, 2, 4],
+    tokenLabels: { 1: "09:00 → 09:15", 2: "10:00 → 10:30", 3: "11:00 → 12:00", 4: "08:45 → 09:00", 5: "11:45 → 12:15", 6: "09:30 → 10:30" },
+    dropZones: [
+      { id: "a", label: { en: "15 minutes", id: "15 menit" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "30 minutes", id: "30 menit" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "60 minutes", id: "60 menit" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Start at the first time. Count forward, not backward.", id: "Mulai dari waktu pertama. Hitung maju, bukan mundur." }, visual: "◷ → ◷" },
+      { text: { en: "Try five-minute jumps. Keep a tally of the jumps.", id: "Coba lompatan lima menit. Catat setiap lompatan." }, visual: "+5 → +5 → …" },
+      { text: { en: "Crossing an hour? Stop there, then count the remaining minutes.", id: "Melewati pergantian jam? Berhenti di sana, lalu hitung sisa menitnya." }, visual: "11:45 → 12:00 → 12:15" },
+    ],
+    preview: "09:00 → 09:15",
+  },
+  {
+    id: 12, kind: "sorting",
+    title: { en: "The final combination", id: "Kombinasi terakhir" },
+    skill: { en: "Two-step problems", id: "Soal dua langkah" },
+    mission: { en: "Solve inside the brackets first. Find the final safe code.", id: "Hitung dalam kurung dahulu. Temukan kode brankas terakhir." },
+    tokens: [5, 3, 1, 6, 2, 4],
+    tokenLabels: { 1: "(8 + 2) × 2", 2: "(9 + 6) × 2", 3: "(7 + 3) × 4", 4: "(36 ÷ 3) + 8", 5: "(6 × 6) − 6", 6: "(50 − 30) × 2" },
+    dropZones: [
+      { id: "a", label: { en: "20", id: "20" }, condition: { kind: "values", values: [1, 4] } },
+      { id: "b", label: { en: "30", id: "30" }, condition: { kind: "values", values: [2, 5] } },
+      { id: "c", label: { en: "40", id: "40" }, condition: { kind: "values", values: [3, 6] } },
+    ],
+    hints: [
+      { text: { en: "Find the brackets. Which calculation should you try first?", id: "Temukan tanda kurung. Hitungan mana yang perlu dikerjakan dahulu?" }, visual: "(□ + □) × □" },
+      { text: { en: "Replace the bracketed part with your first result.", id: "Ganti bagian dalam kurung dengan hasil pertamamu." }, visual: "(□ + □) × □ → ? × □" },
+      { text: { en: "Look outside the brackets. Which operation is still waiting?", id: "Lihat di luar kurung. Operasi mana yang belum dikerjakan?" }, visual: "( … ) → … → ?" },
+    ],
+    preview: "(8 + 2) × 2",
+  },
+];
+
+export function getCase(caseId: CaseId): CaseLevel {
+  const level = caseLevels.find((candidate) => candidate.id === caseId);
+  if (!level) throw new Error(`Unknown case: ${caseId}`);
+  return level;
+}

@@ -1,7 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import type { ReactNode } from "react";
-import { isCaseUnlocked } from "./gameLogic";
+import { isCaseUnlocked, normaliseCompletedCases } from "./gameLogic";
 import type { AvatarConfig, CaseId, Language, UserState } from "./types";
+import { useAudio } from "./useAudio";
+import type { Sound } from "./audio";
 
 const STORAGE_KEY = "math-it-player";
 const defaultPlayer: UserState = {
@@ -10,7 +12,7 @@ const defaultPlayer: UserState = {
   language: "en",
   completedCases: [],
   score: 0,
-  soundEnabled: false,
+  soundEnabled: true,
 };
 
 function validAvatar(value: unknown): value is AvatarConfig {
@@ -29,19 +31,16 @@ function readPlayer(): UserState {
     );
     if (!saved || typeof saved !== "object") return defaultPlayer;
     const data = saved as Partial<UserState>;
-    const completedCases =
-      Array.isArray(data.completedCases) && data.completedCases.includes(1)
-        ? data.completedCases.includes(2)
-          ? [1, 2]
-          : [1]
-        : [];
+    const completedCases = normaliseCompletedCases(data.completedCases);
     return {
       name: typeof data.name === "string" ? data.name.trim().slice(0, 24) : "",
       avatar: validAvatar(data.avatar) ? data.avatar : defaultPlayer.avatar,
       language: data.language === "id" ? "id" : "en",
       completedCases,
       score: completedCases.length * 100,
-      soundEnabled: data.soundEnabled === true,
+      soundEnabled: typeof data.soundEnabled === "boolean"
+        ? data.soundEnabled
+        : defaultPlayer.soundEnabled,
     };
   } catch {
     return defaultPlayer;
@@ -55,12 +54,14 @@ interface GameContextValue {
   updateProfile: (name: string, avatar: AvatarConfig) => void;
   completeCase: (caseId: CaseId) => void;
   setSoundEnabled: (enabled: boolean) => void;
+  playSound: (sound: Sound) => void;
 }
 
 const GameContext = createContext<GameContextValue | null>(null);
 
 export function GameProvider({ children }: { children: ReactNode }) {
   const [player, setPlayer] = useState<UserState>(readPlayer);
+  const playSound = useAudio(player.soundEnabled);
 
   useEffect(() => {
     document.documentElement.lang = player.language;
@@ -101,6 +102,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
         startGame: updateProfile,
         updateProfile,
         completeCase,
+        playSound,
         setSoundEnabled: (soundEnabled) =>
           setPlayer((current) => ({ ...current, soundEnabled })),
       }}

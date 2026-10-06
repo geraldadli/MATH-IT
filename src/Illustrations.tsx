@@ -147,24 +147,24 @@ type Animal = "fox" | "cat" | "bear";
 type Color = "teal" | "yellow" | "coral";
 
 const palettes = {
-  teal: { coat: "#17645f", hat: "#33746b", band: "#154a47" },
-  yellow: { coat: "#e9b547", hat: "#f0c565", band: "#bd8934" },
-  coral: { coat: "#c9785e", hat: "#d88d72", band: "#a55c47" },
+  teal: { coat: "#769ac4", hat: "#91afd0", band: "#4d6f9d" },
+  yellow: { coat: "#e6ce88", hat: "#f3dfaa", band: "#af955c" },
+  coral: { coat: "#b8a4d3", hat: "#d1c1e4", band: "#8974aa" },
 };
 
 function Detective({ animal, color }: { animal: Animal; color: Color }) {
   const palette = palettes[color];
   const fur =
-    animal === "fox" ? "#df9a58" : animal === "cat" ? "#c6b39b" : "#a78364";
+    animal === "fox" ? "#f0bf9a" : animal === "cat" ? "#d5d5e3" : "#c8b4aa";
   return (
     <g
-      stroke="#213b40"
+      stroke="#354966"
       strokeWidth="1.6"
       strokeLinejoin="round"
       strokeLinecap="round"
     >
       <path d="M28 119c0-24 13-39 32-39s32 15 32 39" fill={palette.coat} />
-      <path d="m45 83 15 17 15-17-4-5H49Z" fill="#fffcf4" />
+      <path d="m45 83 15 17 15-17-4-5H49Z" fill="#fcfdff" />
       <path
         d="m47 84-7 8 12 7-4 9 12 10V98Zm26 0 7 8-12 7 4 9-12 10V98Z"
         fill={palette.hat}
@@ -173,15 +173,15 @@ function Detective({ animal, color }: { animal: Animal; color: Color }) {
         <>
           <circle cx="34" cy="39" r="13" fill={fur} />
           <circle cx="85" cy="39" r="13" fill={fur} />
-          <circle cx="34" cy="39" r="7" fill="#cfb193" stroke="none" />
-          <circle cx="85" cy="39" r="7" fill="#cfb193" stroke="none" />
+          <circle cx="34" cy="39" r="7" fill="#e4d5ce" stroke="none" />
+          <circle cx="85" cy="39" r="7" fill="#e4d5ce" stroke="none" />
         </>
       ) : (
         <>
           <path d="M32 49 28 18l26 20m12 0 25-20-3 33" fill={fur} />
           <path
             d="m34 39-2-14 14 13m28 0 12-12-2 15"
-            fill="#edc7ad"
+            fill="#f3d5c6"
             stroke="none"
           />
         </>
@@ -197,21 +197,21 @@ function Detective({ animal, color }: { animal: Animal; color: Color }) {
       {animal === "fox" ? (
         <path
           d="M26 58c13-3 26 6 34 13 9-8 23-16 34-13L60 87Z"
-          fill="#fff3da"
+          fill="#fff5ed"
           stroke="none"
         />
       ) : (
-        <ellipse cx="60" cy="72" rx="19" ry="14" fill="#ebd5b9" stroke="none" />
+        <ellipse cx="60" cy="72" rx="19" ry="14" fill="#f3e5dc" stroke="none" />
       )}
       <path d="M45 55v4m30-4v4" strokeWidth="3.2" />
-      <path d="m55 69 5 4 5-4Z" fill="#213b40" />
+      <path d="m55 69 5 4 5-4Z" fill="#354966" />
       <path d="M60 73v4m-5 0q5 5 10 0" fill="none" />
       <ellipse
         cx="39"
         cy="66"
         rx="4"
         ry="2.2"
-        fill="#d98269"
+        fill="#e8a9a8"
         stroke="none"
         opacity=".6"
       />
@@ -220,7 +220,7 @@ function Detective({ animal, color }: { animal: Animal; color: Color }) {
         cy="66"
         rx="4"
         ry="2.2"
-        fill="#d98269"
+        fill="#e8a9a8"
         stroke="none"
         opacity=".6"
       />
@@ -236,7 +236,7 @@ function Detective({ animal, color }: { animal: Animal; color: Color }) {
       <path d="M27 40c12-6 49-6 65 0l4 7H25Z" fill={palette.band} />
       <path d="M53 39h15l9 8H43Z" fill={palette.hat} />
       <circle cx="60" cy="15" r="3" fill={palette.band} />
-      <circle cx="65" cy="108" r="1.7" fill="#fffcf4" stroke="none" />
+      <circle cx="65" cy="108" r="1.7" fill="#fcfdff" stroke="none" />
     </g>
   );
 }
@@ -272,29 +272,29 @@ export function Biscuit({ className }: { className?: string }) {
     >
       <path
         d="M33 5c5-1 7 4 11 4 5 1 5 6 9 9 4 3 1 8 4 12 1 5-3 8-3 12-1 5-6 5-9 9-4 4-8 1-12 3-5 1-8-3-12-3-5-1-6-6-10-9-3-4-1-8-3-12-1-5 4-7 4-12 1-4 6-5 9-9 4-3 8-1 12-4Z"
-        fill="#d99c52"
+        fill="#d7b480"
       />
       <path
         d="M32 6c5-1 7 4 11 4 5 1 5 6 9 9 4 3 1 8 4 12 1 5-3 7-3 11-1 4-6 4-9 8-4 3-8 0-12 2-5 1-7-3-11-3-5-1-5-6-9-9-3-4 0-8-2-12-1-5 4-6 4-10 1-4 6-4 9-8 3-2 6-1 9-4Z"
-        fill="#efbe73"
-        stroke="#ba7c40"
+        fill="#f1d5a7"
+        stroke="#b19370"
         strokeWidth="1.2"
       />
       <circle
         cx="32"
         cy="29"
         r="20"
-        stroke="#f8d899"
+        stroke="#fff0d3"
         strokeWidth="1.2"
         strokeDasharray="2 3"
       />
       <path
         d="m23 16 5 2-2 5-5-2Zm16 8 5-2 2 5-5 3Zm-15 9 4-1 2 5-5 2Zm11 10 2-5 5 2-1 5Z"
-        fill="#825839"
+        fill="#8c7466"
       />
       <path
         d="m16 29 2 1m19-15 1 2m8 19-1 2m-13-9 1 1m-15 12 2 1"
-        stroke="#c38e4e"
+        stroke="#bd9e78"
         strokeWidth="2"
         strokeLinecap="round"
       />
@@ -317,48 +317,48 @@ export function BakeryScene({
       fill="none"
       aria-hidden="true"
     >
-      <circle cx="470" cy="67" r="25" fill="#f2ce70" />
+      <circle cx="470" cy="67" r="25" fill="#f5e3af" />
       <path
         d="M75 72c-10-15 11-29 22-19 9-21 36-10 32 4 19-4 27 15 17 20H77"
-        fill="#fffcf4"
+        fill="#fcfdff"
         opacity=".9"
       />
       <path
         d="M383 44c-6-10 7-19 15-13 6-13 22-5 20 4 11-3 17 9 10 13h-42"
-        fill="#fffcf4"
+        fill="#fcfdff"
         opacity=".7"
       />
-      <path d="M67 242c94-14 381-15 469 2l-21 21H89Z" fill="#cdd6bf" />
+      <path d="M67 242c94-14 381-15 469 2l-21 21H89Z" fill="#e1e8ed" />
       <path
         d="M85 247h431m-394 12h63m164 0h122"
-        stroke="#a7b69b"
+        stroke="#bac9d5"
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M136 241V84l25-22h215l30 22v157"
-        fill="#d3a879"
-        stroke="#655642"
+        fill="#f1d8d0"
+        stroke="#77869c"
         strokeWidth="1.8"
         strokeLinejoin="round"
       />
-      <path d="M376 63v178h30V85Z" fill="#b68c66" />
+      <path d="M376 63v178h30V85Z" fill="#ddc7c8" />
       <path
         d="M149 81h228v160H149Z"
-        fill="#f1d2a1"
-        stroke="#655642"
+        fill="#fae7db"
+        stroke="#77869c"
         strokeWidth="1.8"
       />
       <path
         d="M140 81h248l-13-23H160Z"
-        fill="#37695d"
-        stroke="#284c44"
+        fill="#8faccd"
+        stroke="#5e7c9e"
         strokeWidth="1.8"
         strokeLinejoin="round"
       />
       <path
         d="m160 66 215 1m-9-1 7 10m-27-10 5 10m-26-10 3 10m-29-10 1 10m-30-10-1 10m-28-10-3 10m-28-10-5 10m-25-10-5 10"
-        stroke="#538174"
+        stroke="#bad0e5"
         strokeWidth="1.5"
       />
       <rect
@@ -367,16 +367,16 @@ export function BakeryScene({
         width="141"
         height="34"
         rx="3"
-        fill="#fff4d9"
-        stroke="#8d7152"
+        fill="#fffaf2"
+        stroke="#9ca5b4"
         strokeWidth="1.4"
       />
-      <path d="M201 89h125v20H201Z" stroke="#d9bd89" />
+      <path d="M201 89h125v20H201Z" stroke="#ebdac5" />
       <text
         x="263"
         y="103"
         textAnchor="middle"
-        fill="#3c6051"
+        fill="#526c90"
         fontFamily="Georgia, serif"
         fontSize="14"
         fontWeight="bold"
@@ -386,81 +386,81 @@ export function BakeryScene({
       </text>
       <path
         d="M149 120h228l13 31H135Z"
-        fill="#fff5da"
-        stroke="#3e6251"
+        fill="#fcfdff"
+        stroke="#6e8baa"
         strokeWidth="1.8"
         strokeLinejoin="round"
       />
       <path
         d="m150 121-11 29h28l8-29Zm51 0-6 29h28l3-29Zm50 0-1 29h28l-2-29Zm50 0 4 29h28l-7-29Zm50 0 9 29h27l-11-29Z"
-        fill="#4a7c66"
+        fill="#a5bedc"
       />
       <path
         d="M136 150v7c0 10 16 10 17 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0 1 10 17 10 18 0v-7Z"
-        fill="#fff5da"
-        stroke="#3e6251"
+        fill="#fcfdff"
+        stroke="#6e8baa"
         strokeWidth="1.5"
       />
       <path
         d="M163 171h107v57H163Z"
-        fill="#517566"
-        stroke="#645c44"
+        fill="#98b1ca"
+        stroke="#6b819d"
         strokeWidth="2"
       />
-      <path d="M168 176h97v47h-97Z" fill="#c4d3ac" />
+      <path d="M168 176h97v47h-97Z" fill="#dce8f0" />
       <path
         d="m172 178 24 0-24 30m25-29h6l-30 37"
-        fill="#e9ecd0"
+        fill="#f8fbff"
         opacity=".6"
       />
-      <path d="M217 173v53m-52-24h103" stroke="#59705b" strokeWidth="3" />
+      <path d="M217 173v53m-52-24h103" stroke="#708caa" strokeWidth="3" />
       <path
         d="M159 227h115v6H159Z"
-        fill="#eee0b7"
-        stroke="#8d7152"
+        fill="#eeeafa"
+        stroke="#9ca5b4"
         strokeWidth="1.5"
       />
       <path
         d="M285 165h73v76h-73Z"
-        fill="#3a6657"
-        stroke="#344e3e"
+        fill="#8ea8c9"
+        stroke="#5e7697"
         strokeWidth="1.8"
       />
-      <path d="M293 173h57v44h-57Z" fill="#b8ceb3" stroke="#264d3f" />
+      <path d="M293 173h57v44h-57Z" fill="#d6e4f0" stroke="#6b83a4" />
       <path
         d="m297 176 19 0-19 25m21-25h6l-27 33"
-        fill="#d9e2c5"
+        fill="#f1f6fd"
         opacity=".6"
       />
       <path
         d="M322 174v41m-27-19h53M293 226h57v10h-57Z"
-        stroke="#567a61"
+        stroke="#b6c8de"
         strokeWidth="2"
       />
-      <circle cx="347" cy="222" r="2" fill="#e8c985" />
-      <path d="M311 193v-7m23 7v-7" stroke="#456651" strokeWidth="1" />
+      <circle cx="347" cy="222" r="2" fill="#f4e1b4" />
+      <path d="M311 193v-7m23 7v-7" stroke="#667d9b" strokeWidth="1" />
       <rect
         x="305"
         y="191"
         width="35"
         height="15"
         rx="1"
-        fill="#fff1ce"
-        stroke="#456651"
+        fill="#fffaf2"
+        stroke="#667d9b"
       />
       <text
         x="322.5"
         y="201.5"
         textAnchor="middle"
-        fill="#416451"
+        fill="#526c90"
         fontFamily="Georgia, serif"
         fontSize="8"
         letterSpacing="1"
       >
         {t.openSign}
       </text>
-      <path d="M279 241h87v5h-87Z" fill="#9b967b" />
-      <g fill="#d39a51" stroke="#aa7948" strokeWidth="1">
+      <path d="M279 241h87v5h-87Z" fill="#b7becd" />
+      <g fill="#e8c99c" stroke="#b39575" strokeWidth="1">
         <circle cx="181" cy="213" r="7" />
         <circle cx="198" cy="213" r="7" />
         <circle cx="230" cy="213" r="7" />
@@ -469,69 +469,69 @@ export function BakeryScene({
       </g>
       <path
         d="m179 212 1 1m4 2h1m12-5v1m2 5h1m28-6 1 1m3 3h1m13-3v1m-2 4h1m-66-25 1 2m16-3 2 3m37-3 1 2"
-        stroke="#855d39"
+        stroke="#927a66"
         strokeWidth="1.7"
         strokeLinecap="round"
       />
       <path
         d="M170 221h39m15 0h32m-83-24h38m15 0h30"
-        stroke="#f4e4bd"
+        stroke="#fff5e5"
         strokeWidth="2"
       />
       <path
         d="M149 239h17m2-76h14m82 74h11m90-59h10m-12 7h6m-215 31h7"
-        stroke="#d3af7d"
+        stroke="#e9cbc0"
         strokeWidth="2"
         strokeLinecap="round"
       />
       <path
         d="M107 224c1-22 0-44 6-60m-4 42c-12-6-20-5-21-19 14 0 21 8 21 19Zm1-16c-4-15 2-26 12-29 4 14-1 22-12 29Zm-1 24c13-3 23-14 21-26-15 3-22 12-21 26Z"
-        fill="#5e8261"
-        stroke="#496c50"
+        fill="#b2cfc3"
+        stroke="#789c90"
         strokeWidth="1.5"
         strokeLinejoin="round"
       />
       <path
         d="m95 218 5 26h22l5-26Z"
-        fill="#c68260"
-        stroke="#93684e"
+        fill="#d9cceb"
+        stroke="#a59ab5"
         strokeWidth="1.5"
       />
       <path
         d="M92 218h37v6H92Z"
-        fill="#dca47d"
-        stroke="#93684e"
+        fill="#ede6f5"
+        stroke="#a59ab5"
         strokeWidth="1.5"
       />
       <path
         d="M392 245c-5-10-2-16 4-20-1 9 3 12 4 18 0-10 4-17 11-18-2 9-5 15-11 21"
-        fill="#718a62"
+        fill="#a9cbbb"
       />
-      <ellipse cx="459" cy="247" rx="38" ry="7" fill="#acbca2" opacity=".65" />
+      <ellipse cx="459" cy="247" rx="38" ry="7" fill="#c4cfdc" opacity=".65" />
       <path
         d="M460 221c32-3 37-27 24-32 4 14-16 10-21 19"
-        fill="#dc9859"
-        stroke="#5d5540"
+        fill="#f0bf9a"
+        stroke="#77869c"
         strokeWidth="1.3"
       />
-      <path d="M484 189c7 4 9 12 2 20l-5-5c6-5 6-8 3-15" fill="#fff0d4" />
+      <path d="M484 189c7 4 9 12 2 20l-5-5c6-5 6-8 3-15" fill="#fff5ed" />
       <g transform="translate(414 133) scale(.76)">
         <path
           d="m44 114-1 22H29q-3-9 8-12v-12m39 2 3 22h14q3-9-8-12v-12"
-          fill="#305448"
-          stroke="#213b40"
+          fill="#637eaa"
+          stroke="#354966"
           strokeWidth="1.7"
         />
         <Detective animal="fox" color="teal" />
         <path
           d="M34 95q-16 6-12 22l7 1 8-14m48-9 15-7 4 6-15 14"
-          fill="#33746b"
-          stroke="#213b40"
+          fill="#91afd0"
+          stroke="#354966"
           strokeWidth="1.7"
         />
         <path
           d="m104 86 9-16"
-          stroke="#213b40"
+          stroke="#354966"
           strokeWidth="6"
           strokeLinecap="round"
         />
@@ -539,14 +539,14 @@ export function BakeryScene({
           cx="120"
           cy="58"
           r="17"
-          fill="#eff3db"
+          fill="#e6f0fc"
           fillOpacity=".75"
-          stroke="#213b40"
+          stroke="#354966"
           strokeWidth="3.5"
         />
         <path
           d="m112 57 8-8m-6 14 12-12"
-          stroke="#fffcf4"
+          stroke="#fcfdff"
           strokeWidth="2.5"
           strokeLinecap="round"
         />
@@ -555,26 +555,26 @@ export function BakeryScene({
           cy="91"
           rx="7"
           ry="6"
-          fill="#df9a58"
-          stroke="#213b40"
+          fill="#f0bf9a"
+          stroke="#354966"
           strokeWidth="1.5"
         />
       </g>
       <path
         d="m492 128 3-9m8 18 8-4m-26-17-2-7"
-        stroke="#dfb452"
+        stroke="#d6bd7f"
         strokeWidth="2"
         strokeLinecap="round"
       />
       <path
         d="m73 231 4-4m2 8 5-1m427-26 4 2m-7 4 2 4"
-        stroke="#8fa082"
+        stroke="#a6c3b7"
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M192 249q2-3 5 0m8 3q2-3 5 0m9-4q2-3 5 0"
-        stroke="#988a69"
+        stroke="#b3a5be"
         strokeWidth="2"
         strokeLinecap="round"
       />

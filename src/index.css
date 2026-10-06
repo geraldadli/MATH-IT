@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Fredoka:wght@400;450;500;550;600&display=swap");
 :root {
   font-family: "DM Sans", sans-serif;
-  color: #213b40;
-  background: #faf8f1;
+  color: #354966;
+  background: #f6f8fe;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 450;
-  --ink: #213b40;
-  --muted: #586b6c;
-  --paper: #fffcf4;
-  --teal: #17645f;
-  --yellow: #f5c451;
-  --line: #e5e7dd;
+  --text: #354966;
+  --muted: #65748b;
+  --surface: #fcfdff;
+  --blue: #4f72a5;
+  --lavender: #eeeafa;
+  --peach: #fae7db;
+  --mint: #e7f0eb;
+  --focus: #8c76b1;
+  --line: #dfe7f3;
 }
 * {
   box-sizing: border-box;
@@ -43,7 +46,7 @@ button {
 }
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid #dfaa29;
+  outline: 3px solid var(--focus);
   outline-offset: 4px;
 }
 button {
@@ -74,7 +77,7 @@ button:disabled {
   opacity: 0.55;
 }
 ::selection {
-  background: #f5c45188;
+  background: #d7e5fa;
 }
 fieldset {
   margin: 0;
@@ -85,10 +88,10 @@ legend {
   padding: 0;
 }
 dialog {
-  color: var(--ink);
+  color: var(--text);
 }
 dialog::backdrop {
-  background: #183d3c7a;
+  background: #35496666;
   backdrop-filter: blur(5px);
 }
 .sr-only {
