@@ -313,9 +313,32 @@ function MathIt() {
           )}
         </main>
       )}
-      {selectedCase === null && <footer className="site-footer">
-        <span><Icon name="sun" size={16} />{t.noTimer}</span>
-      </footer>}
+      <footer className="site-footer">
+        <div className="footer-inner">
+          <div className="footer-main">
+            <div className="footer-about">
+              <button className="brand" onClick={() => setSelectedCase(null)} aria-label={t.home}>
+                <span className="brand-mark"><Icon name="search" size={24} /><span>✦</span></span>
+                <span className="brand-title">Math<span> It!</span></span>
+              </button>
+              <p>{t.footerTagline}</p>
+            </div>
+            <section className="footer-connect" aria-labelledby="footer-connect-title">
+              <div className="footer-connect-heading"><h2 id="footer-connect-title">{t.stayConnected}</h2><span>{t.comingSoon}</span></div>
+              {/* Wrap these icons in links when the official destinations are ready. */}
+              <ul className="footer-socials">
+                <li><span role="img" aria-label="Instagram" title="Instagram"><Icon name="instagram" size={24} /></span></li>
+                <li><span role="img" aria-label="YouTube" title="YouTube"><Icon name="youtube" size={24} /></span></li>
+                <li><span role="img" aria-label="Email" title="Email"><Icon name="email" size={24} /></span></li>
+              </ul>
+            </section>
+          </div>
+          <div className="footer-bottom">
+            <span>© {new Date().getFullYear()} Math It!</span>
+            <span className="footer-calm"><Icon name="sun" size={16} />{t.noTimer}</span>
+          </div>
+        </div>
+      </footer>
       <dialog className="profile-dialog" ref={profileDialog} aria-label={t.editProfile}>
         <button className="dialog-close" aria-label={t.close} onClick={() => profileDialog.current?.close()}><Icon name="close" /></button>
         <DetectiveForm key={profileVersion} editing onDone={() => profileDialog.current?.close()} />

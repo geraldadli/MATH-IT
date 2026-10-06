@@ -21,9 +21,31 @@ export type IconName =
   | "reset"
   | "hand"
   | "shield"
+  | "instagram"
+  | "youtube"
+  | "email"
   | "settings";
 
 const icons: Record<IconName, ReactNode> = {
+  instagram: (
+    <>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </>
+  ),
+  youtube: (
+    <>
+      <path d="M21.5 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.5.5a2.8 2.8 0 0 0-2 2A27 27 0 0 0 2 12a27 27 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.7.5 7.5.5 7.5.5s5.8 0 7.5-.5a2.8 2.8 0 0 0 2-2A27 27 0 0 0 22 12a27 27 0 0 0-.5-4.8Z" fill="currentColor" stroke="none" />
+      <path d="m10 8.5 6 3.5-6 3.5Z" fill="white" stroke="none" />
+    </>
+  ),
+  email: (
+    <>
+      <rect x="2" y="5" width="20" height="14" rx="3" />
+      <path d="m3 7 9 6 9-6" />
+    </>
+  ),
   search: (
     <>
       <circle cx="10.5" cy="10.5" r="6.5" />

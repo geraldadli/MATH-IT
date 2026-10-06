@@ -136,7 +136,10 @@ const shellEn = {
   saveProfile: "Save",
   startInvestigation: "Start",
   savedOnDevice: "Your detective card is saved on this device.",
-  bureau: "LEKSIKA CASE BUREAU",
+  bureau: "MATH DETECTIVE BUREAU",
+  footerTagline: "Crack the Clue, Math It Through!",
+  stayConnected: "Stay connected",
+  comingSoon: "Coming soon",
   heroLineOne: "Big mysteries.",
   heroLineTwo: "Little detectives.",
   heroDescription:
@@ -189,7 +192,10 @@ const shellId: typeof shellEn = {
   saveProfile: "Simpan",
   startInvestigation: "Mulai",
   savedOnDevice: "Kartu detektifmu tersimpan di perangkat ini.",
-  bureau: "BIRO KASUS LEKSIKA",
+  bureau: "BIRO DETEKTIF MATEMATIKA",
+  footerTagline: "Crack the Clue, Math It Through!",
+  stayConnected: "Tetap terhubung",
+  comingSoon: "Segera hadir",
   heroLineOne: "Misteri besar.",
   heroLineTwo: "Detektif cilik.",
   heroDescription:
