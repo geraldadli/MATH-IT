@@ -1,12 +1,12 @@
-import { useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode, type RefObject } from 'react'
 import {
-  DndContext, DragOverlay, KeyboardSensor, PointerSensor,
-  useDraggable, useDroppable, useSensor, useSensors, type DragEndEvent,
+  DndContext, DragOverlay, KeyboardSensor, PointerSensor, pointerWithin, rectIntersection,
+  useDraggable, useDroppable, useSensor, useSensors, type CollisionDetection, type DragEndEvent,
 } from '@dnd-kit/core'
 import { useGame } from './GameContext'
 import { translations } from './i18n'
 import { createBoard, getBoardCase, getCase, getReviewZones, isSolved, moveToken } from './gameLogic'
-import type { BoardState, CaseId, ZoneId } from './types'
+import type { BoardState, CaseId, DropZoneId, ZoneId } from './types'
 import { Biscuit, Icon, ShapeArt, type ShapeName } from './Illustrations'
 import InteractionDemo from './InteractionDemo'
 import EvidenceChart from './EvidenceChart'
@@ -75,6 +75,49 @@ function DropArea({ id, children, className, label, placeLabel, selected, disabl
   </section>
 }
 
+// Dock targets share their group's id with a prefix, so a drop on either lands in the same group.
+const DOCK = 'dock-'
+const zoneOf = (id: string | number) => String(id).replace(DOCK, '') as ZoneId
+
+// A pointer over the dock means the dock, even when the clue overlay also overlaps the tray behind it.
+const collision: CollisionDetection = (args) => {
+  const hits = pointerWithin(args)
+  const dock = hits.filter(({ id }) => String(id).startsWith(DOCK))
+  return dock.length ? dock : hits.length ? hits : rectIntersection(args)
+}
+
+// On phones the clues and their groups rarely fit on one screen. Show the dock while the clues are
+// on screen and the groups are not, so a clue can reach its group without scrolling.
+function useDock(tray: RefObject<HTMLElement | null>, zones: RefObject<HTMLElement | null>) {
+  const [shown, setShown] = useState(false)
+  useEffect(() => {
+    const phone = window.matchMedia('(max-width: 900px)')
+    let trayInView = false, zonesInView = false
+    const update = () => setShown(phone.matches && trayInView && !zonesInView)
+    const trayWatch = new IntersectionObserver(([entry]) => { trayInView = entry.isIntersecting; update() })
+    // The groups count as visible only once enough of them is on screen to drop into.
+    const zonesWatch = new IntersectionObserver(([entry]) => { zonesInView = entry.isIntersecting; update() }, { rootMargin: '0px 0px -160px 0px' })
+    if (tray.current) trayWatch.observe(tray.current)
+    if (zones.current) zonesWatch.observe(zones.current)
+    phone.addEventListener('change', update)
+    return () => { trayWatch.disconnect(); zonesWatch.disconnect(); phone.removeEventListener('change', update) }
+  }, [tray, zones])
+  return shown
+}
+
+function DockTarget({ id, label, count, placeLabel, countLabel, selected, review, onTap }: {
+  id: DropZoneId; label: string; count: number; placeLabel: string; countLabel: string;
+  selected: boolean; review: boolean; onTap: () => void;
+}) {
+  const { setNodeRef, isOver } = useDroppable({ id: DOCK + id })
+  return <button ref={setNodeRef} type="button" data-sound="custom" onClick={onTap}
+    className={`dock-target zone-${id}${isOver ? ' is-over' : ''}${selected ? ' can-place' : ''}${review ? ' needs-review' : ''}`}
+    aria-label={`${selected ? `${placeLabel}: ` : ''}${label}, ${count} ${countLabel}`}>
+    <span className="dock-label">{label}</span>
+    <span className="dock-count" key={count} aria-hidden="true">{count}</span>
+  </button>
+}
+
 export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
   return getCase(caseId).kind === 'dashboard'
     ? <DashboardBoard caseId={caseId} onNext={onNext} />
@@ -96,11 +139,17 @@ function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
   const [dragging, setDragging] = useState<Selection | null>(null)
   const [feedback, setFeedback] = useState<'retry' | 'solved' | null>(null)
   const { earnedPoints, newLevel, solve } = useCaseSolve(caseId)
+  const trayRef = useRef<HTMLDivElement>(null)
+  const zonesRef = useRef<HTMLDivElement>(null)
+  const dockWanted = useDock(trayRef, zonesRef)
+  // Keep the dock steady for a whole drag, even if the page moves underneath it.
+  const [dockDuringDrag, setDockDuringDrag] = useState(false)
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
     useSensor(KeyboardSensor, { keyboardCodes: { start: ['Space'], cancel: ['Escape'], end: ['Space'] } }),
   )
   const solved = feedback === 'solved'
+  const dockShown = !solved && (dragging ? dockDuringDrag : dockWanted)
   const reviewZones = feedback === 'retry' ? getReviewZones(caseId, board) : []
   const reviewTray = feedback === 'retry' && board.tray.length > 0
   const tokenLabel = (token: number) => level.tokenLabels?.[token] ?? level.tokenWords?.[token][language] ?? String(token)
@@ -112,7 +161,7 @@ function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
       : label.replaceAll('¼', t.quarter).replaceAll('½', t.half).replaceAll('¾', t.threeQuarters).replace('/', ` ${t.fractionOver} `).replaceAll('□', t.missingNumber)
     return `${sharing ? t.biscuit : t.clue} ${readable}`
   }
-  const zoneName = (id: string | number) => id === 'tray' ? t.tray : level.dropZones.find((zone) => zone.id === id)?.label[language] ?? ''
+  const zoneName = (id: string | number) => zoneOf(id) === 'tray' ? t.tray : level.dropZones.find((zone) => zone.id === zoneOf(id))?.label[language] ?? ''
   const isCopy = (token: number) => (level.copies?.[token] ?? 1) > 1 && level.dropZones.some(({ id }) => board[id].includes(token))
   const availableCopies = board.tray.filter(isCopy)
 
@@ -129,7 +178,7 @@ function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
   }
 
   function finishDrag({ active, over }: DragEndEvent) {
-    if (over && active.data.current) place(active.data.current as Selection, over.id as ZoneId)
+    if (over && active.data.current) place(active.data.current as Selection, zoneOf(over.id))
     setDragging(null)
   }
 
@@ -162,7 +211,8 @@ function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
   return <article className={`game-board${solved ? ' is-solved' : ''}`}>
     <CaseBriefing caseId={caseId} />
 
-    <DndContext sensors={sensors} onDragStart={({ active }) => {
+    <DndContext sensors={sensors} collisionDetection={collision} autoScroll={!dockShown} onDragStart={({ active }) => {
+      setDockDuringDrag(dockWanted)
       setDragging(active.data.current as Selection)
       setSelected(null)
       playSound('drag')
@@ -180,15 +230,15 @@ function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
 
         {level.chart && <EvidenceChart chart={level.chart} language={language} />}
 
-        <DropArea id="tray" className="evidence-tray" label={t.tray} placeLabel={t.placeHere}
+        <div ref={trayRef}><DropArea id="tray" className="evidence-tray" label={t.tray} placeLabel={t.placeHere}
           reviewLabel={reviewTray ? t.cluesWaiting : undefined}
           selected={!!selected && selected.zone !== 'tray'} disabled={solved} onPlace={() => place(selected, 'tray')}>
           <div className="tray-heading"><span>{t.tray}</span><span className="tray-count">{board.tray.length} {t.left}</span></div>
           <div className="tray-tokens">{board.tray.map((token) => renderToken(token, 'tray'))}{!board.tray.length && <span className="tray-empty" aria-hidden="true">✓</span>}</div>
           {!!availableCopies.length && <p className="copy-note">{availableCopies.map(tokenText).join(', ')} · {t.copyAvailable}</p>}
-        </DropArea>
+        </DropArea></div>
 
-        <div className="dropzones">
+        <div className="dropzones" ref={zonesRef}>
           {level.dropZones.map(({ id, label }) => <DropArea key={id} id={id}
             className={`evidence-zone zone-${id}${sharing ? '' : ' number-zone'}`}
             label={label[language]} placeLabel={t.placeHere} selected={!!selected && selected.zone !== id}
@@ -202,6 +252,14 @@ function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
               {!board[id].length && <div className="zone-placeholder" aria-hidden="true"><Icon name="book" size={32} /></div>}
             </div>
           </DropArea>)}
+        </div>
+
+        {/* Tap a clue then a group, or drag onto a group. With nothing chosen, a group scrolls into view. */}
+        <div className={`zone-dock${dockShown ? ' is-shown' : ''}`} role="group" aria-label={t.groups}>
+          {level.dropZones.map(({ id, label }) => <DockTarget key={id} id={id} label={label[language]} count={board[id].length}
+            placeLabel={t.placeHere} countLabel={t.cluesInZone} selected={!!selected && selected.zone !== id} review={reviewZones.includes(id)}
+            onTap={() => selected && selected.zone !== id ? place(selected, id)
+              : document.querySelector(`[data-zone="${id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' })} />)}
         </div>
 
         {feedback && <div className={`feedback-panel feedback-${feedback}`} role="status" aria-live="polite">

@@ -566,3 +566,19 @@
 }
 /* Narrow plots label every other gridline so the numbers never collide. */
 @media(max-width:480px) { .dashboard-scale span:nth-child(even) { display: none; } }
+
+/* Phones: the group dock pins the three groups to the bottom of the screen while the clues are in view. */
+.zone-dock { display: none; }
+@media(max-width:900px) {
+  .zone-dock { position: fixed; z-index: 30; left: 12px; right: 12px; bottom: calc(10px + env(safe-area-inset-bottom)); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; max-width: 640px; margin-inline: auto; padding: 8px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); box-shadow: 0 10px 28px var(--c-35496666); visibility: hidden; opacity: 0; transform: translateY(16px); transition: opacity .2s, transform .2s, visibility .2s; }
+  .zone-dock.is-shown { visibility: visible; opacity: 1; transform: none; }
+}
+.dock-target { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; min-width: 0; min-height: 66px; padding: 8px 6px; border: 1.5px dashed var(--c-c5d4ea); border-radius: 13px; background: var(--c-eef2fc); color: var(--text-fg); font-size: 13px; font-weight: 600; line-height: 1.25; text-align: center; }
+.dock-target.zone-b { background: var(--lavender); border-color: var(--c-d1c7e2); }
+.dock-target.zone-c { background: var(--peach); border-color: var(--c-e4cfc2); }
+.dock-label { max-width: 100%; overflow-wrap: anywhere; }
+.dock-count { display: grid; place-items: center; min-width: 26px; height: 22px; padding: 0 7px; border-radius: 11px; background: var(--surface); font-size: 12px; font-variant-numeric: tabular-nums; }
+.dock-target.can-place { border: 2px solid var(--blue); }
+.dock-target.is-over { border: 2px solid var(--blue); box-shadow: 0 0 0 4px var(--c-5279ad1f); transform: scale(1.04); }
+.dock-target.needs-review { border: 2px solid var(--c-bf984e); }
+@media (prefers-reduced-motion: no-preference) { .dock-count { animation: reward-pop .45s ease-out; } }
