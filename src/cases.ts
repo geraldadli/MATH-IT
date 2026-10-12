@@ -553,6 +553,123 @@ export const caseLevels: CaseLevel[] = [
     ],
     preview: "◔ ½ ¼",
   },
+  // Dashboard cases add one tool at a time: filter, then sort, then grouping and the table view.
+  {
+    id: 25, kind: "dashboard",
+    title: { en: "The canteen dashboard", id: "Dasbor kantin" },
+    skill: { en: "Dashboards: filter", id: "Dasbor: filter" },
+    mission: { en: "Which day sold the most milk? Filter, then tap the bar.", id: "Hari apa susu paling banyak terjual? Gunakan filter, lalu ketuk batangnya." },
+    dashboard: {
+      title: { en: "Canteen snacks sold this week", id: "Jajanan kantin terjual minggu ini" },
+      measure: { en: "snacks sold", id: "jajanan terjual" },
+      dimensions: [
+        {
+          label: { en: "Day", id: "Hari" },
+          categories: [
+            { key: "mon", label: { en: "Monday", id: "Senin" } },
+            { key: "tue", label: { en: "Tuesday", id: "Selasa" } },
+            { key: "wed", label: { en: "Wednesday", id: "Rabu" } },
+            { key: "thu", label: { en: "Thursday", id: "Kamis" } },
+            { key: "fri", label: { en: "Friday", id: "Jumat" } },
+          ],
+        },
+        {
+          label: { en: "Snack", id: "Jajanan" },
+          categories: [
+            { key: "fruit", label: { en: "Fruit", id: "Buah" } },
+            { key: "bread", label: { en: "Bread", id: "Roti" } },
+            { key: "milk", label: { en: "Milk", id: "Susu" } },
+          ],
+        },
+      ],
+      // Rows are days; columns are fruit, bread, milk. All snacks together peak on a different day.
+      values: [[6, 11, 4], [10, 6, 7], [7, 12, 8], [5, 4, 12], [8, 7, 5]],
+      tools: ["filter"],
+      start: { groupBy: 0, filter: "all", sort: "none", view: "chart" },
+      goal: { groupBy: 0, filter: "milk", pick: "most" },
+    },
+    hints: [
+      { text: { en: "The filter shows one snack at a time. Which one?", id: "Filter menampilkan satu jajanan saja. Jajanan apa yang ditanya?" }, visual: "▼ ? → ▮ ▮ ▮" },
+      { text: { en: "Find the longest bar, then tap it to choose.", id: "Cari batang terpanjang, lalu ketuk untuk memilih." }, visual: "▮▮ ▮▮▮▮ ▮ → ?" },
+      { text: { en: "Close bars? Compare their ends against the scale lines.", id: "Batang hampir sama? Bandingkan ujungnya dengan garis skala." }, visual: "▮▮▮| ▮▮▮▮| ?" },
+    ],
+    preview: "▼ ▮▮▮",
+  },
+  {
+    id: 26, kind: "dashboard",
+    title: { en: "The library dashboard", id: "Dasbor perpustakaan" },
+    skill: { en: "Dashboards: sort", id: "Dasbor: urutkan" },
+    mission: { en: "Sort fewest science books first. Which class comes first?", id: "Urutkan buku sains dari yang paling sedikit. Kelas mana yang pertama?" },
+    dashboard: {
+      title: { en: "Books borrowed this month", id: "Buku dipinjam bulan ini" },
+      measure: { en: "books", id: "buku" },
+      dimensions: [
+        {
+          label: { en: "Class", id: "Kelas" },
+          categories: ["3A", "3B", "3C", "3D", "3E"].map((name) => ({ key: name.toLowerCase(), label: { en: `Class ${name}`, id: `Kelas ${name}` } })),
+        },
+        {
+          label: { en: "Book type", id: "Jenis buku" },
+          categories: [
+            { key: "stories", label: { en: "Stories", id: "Cerita" } },
+            { key: "science", label: { en: "Science", id: "Sains" } },
+            { key: "comics", label: { en: "Comics", id: "Komik" } },
+          ],
+        },
+      ],
+      // Rows are classes; columns are stories, science, comics. Science bars differ by one, so sorting helps.
+      values: [[12, 9, 8], [10, 7, 6], [14, 8, 9], [11, 6, 10], [13, 10, 7]],
+      tools: ["filter", "sort"],
+      start: { groupBy: 0, filter: "all", sort: "none", view: "chart" },
+      goal: { groupBy: 0, filter: "science", sort: "asc", pick: "fewest" },
+    },
+    hints: [
+      { text: { en: "Which kind of book does the question ask about?", id: "Jenis buku apa yang ditanyakan?" }, visual: "▼ ?" },
+      { text: { en: "Sort puts bars in order. Which order puts fewest first?", id: "Urutkan menyusun batang. Urutan mana yang menaruh tersedikit di atas?" }, visual: "▁ ▃ ▅ ▇ ?" },
+      { text: { en: "After sorting, the top bar answers. Tap it.", id: "Setelah diurutkan, batang teratas adalah jawabannya. Ketuk batang itu." }, visual: "? ← ▁" },
+    ],
+    preview: "▁▃▅▇",
+  },
+  {
+    id: 27, kind: "dashboard",
+    title: { en: "The sports day dashboard", id: "Dasbor hari olahraga" },
+    skill: { en: "Dashboards: group & view", id: "Dasbor: kelompok & tampilan" },
+    mission: { en: "In which event did Blue team score the most points?", id: "Di lomba apa tim Biru mendapat poin terbanyak?" },
+    dashboard: {
+      title: { en: "Sports day points", id: "Poin hari olahraga" },
+      measure: { en: "points", id: "poin" },
+      dimensions: [
+        {
+          label: { en: "Team", id: "Tim" },
+          categories: [
+            { key: "red", label: { en: "Red", id: "Merah" } },
+            { key: "blue", label: { en: "Blue", id: "Biru" } },
+            { key: "green", label: { en: "Green", id: "Hijau" } },
+            { key: "yellow", label: { en: "Yellow", id: "Kuning" } },
+          ],
+        },
+        {
+          label: { en: "Event", id: "Lomba" },
+          categories: [
+            { key: "running", label: { en: "Running", id: "Lari" } },
+            { key: "sack", label: { en: "Sack race", id: "Balap karung" } },
+            { key: "tug", label: { en: "Tug of war", id: "Tarik tambang" } },
+          ],
+        },
+      ],
+      // Rows are teams; columns are running, sack race, tug of war. All teams together win a different event.
+      values: [[30, 20, 25], [15, 35, 20], [25, 15, 40], [20, 25, 30]],
+      tools: ["groupBy", "filter", "sort", "view"],
+      start: { groupBy: 0, filter: "all", sort: "none", view: "chart" },
+      goal: { groupBy: 1, filter: "blue", pick: "most" },
+    },
+    hints: [
+      { text: { en: "The answer is an event. What should each bar show?", id: "Jawabannya sebuah lomba. Setiap batang harus menunjukkan apa?" }, visual: "▮ = ?" },
+      { text: { en: "Use the filter to keep only one team.", id: "Gunakan filter untuk menyisakan satu tim saja." }, visual: "▼ ?" },
+      { text: { en: "Bars close together? The table view shows exact numbers.", id: "Batang hampir sama? Tampilan tabel menunjukkan angka pastinya." }, visual: "▦ → ?" },
+    ],
+    preview: "▦ ▮▇",
+  },
 ];
 
 // Units follow the TIMSS Grade 4 content domains, with algebra and reasoning
@@ -562,7 +679,7 @@ export const units: CaseUnit[] = [
   { id: 1, title: { en: "Numbers & operations", id: "Bilangan & operasi hitung" }, cases: [1, 2, 3, 4, 5, 6, 7, 8, 9, 16] },
   { id: 2, title: { en: "Algebra & reasoning", id: "Aljabar & penalaran" }, cases: [12, 14, 15, 18, 19] },
   { id: 3, title: { en: "Measurement & geometry", id: "Pengukuran & geometri" }, cases: [10, 11, 13, 17] },
-  { id: 4, title: { en: "Data analysis", id: "Analisis data" }, cases: [20, 21, 22, 23, 24] },
+  { id: 4, title: { en: "Data analysis", id: "Analisis data" }, cases: [20, 21, 22, 23, 24, 25, 26, 27] },
 ];
 
 export function getCase(caseId: CaseId): CaseLevel {

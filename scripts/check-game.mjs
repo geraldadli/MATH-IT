@@ -13,6 +13,7 @@ import {
   moveToken,
   normaliseCompletedCases,
 } from "../src/gameLogic.ts";
+import { dashboardAnswer, dashboardRows, filterDimension, isDashboardSolved, niceScale, pickRow, reviewDashboard } from "../src/dashboard.ts";
 import { XP_PER_CASE, detectiveLevels, getLevel, getLevelProgress, xpForCases } from "../src/levels.ts";
 
 let board = createBoard(1);
@@ -118,7 +119,7 @@ assert.equal(isCaseUnlocked(12, []), true, "Every unit opens with its first case
 assert.equal(isCaseUnlocked(19, [12, 14, 15]), false);
 assert.equal(isCaseUnlocked(13, [10]), false);
 
-assert.equal(caseLevels.length, 24);
+assert.equal(caseLevels.length, 27);
 assert.deepEqual(units.map((unit) => unit.id), [1, 2, 3, 4]);
 assert.ok(units.every((unit) => unit.cases.length >= 3 && unit.cases.length <= 10), "Units stay roughly balanced");
 assert.deepEqual(
@@ -130,6 +131,87 @@ for (const unit of units) {
   assert.ok(unit.title.en && unit.title.id, `Unit ${unit.id} needs a bilingual title`);
   assert.deepEqual([...unit.cases].sort((a, b) => a - b), unit.cases, `Unit ${unit.id} adds new cases at its end`);
 }
+// The goal view, with any sort the question asks for.
+const goalSettings = (spec, overrides = {}) => ({
+  ...spec.start, groupBy: spec.goal.groupBy, filter: spec.goal.filter, sort: spec.goal.sort ?? spec.start.sort, ...overrides,
+});
+const filterOptions = (spec, groupBy) => ["all", ...spec.dimensions[filterDimension(groupBy)].categories.map((category) => category.key)];
+
+function checkDashboard({ id, dashboard: spec }) {
+  const [rowDimension, columnDimension] = spec.dimensions;
+  assert.equal(spec.values.length, rowDimension.categories.length, `Case ${id}: one row of values per category`);
+  assert.ok(spec.values.every((row) => row.length === columnDimension.categories.length && row.every((value) => Number.isInteger(value) && value >= 0)), `Case ${id}: a whole, non-negative value in every cell`);
+  const keys = spec.dimensions.flatMap((dimension) => dimension.categories.map((category) => category.key));
+  assert.equal(new Set(keys).size, keys.length, `Case ${id}: category keys are unique across both dimensions`);
+  assert.ok(!keys.includes("all"), `Case ${id}: "all" is reserved for the unfiltered view`);
+  for (const language of ["en", "id"]) {
+    assert.ok(spec.title[language] && spec.measure[language], `Case ${id}: bilingual title and measure`);
+    assert.ok(spec.dimensions.every((dimension) => dimension.label[language] && dimension.categories.every((category) => category.label[language])), `Case ${id}: bilingual labels`);
+  }
+
+  // Every setting the question needs must be reachable with the tools on offer.
+  assert.equal(new Set(spec.tools).size, spec.tools.length);
+  assert.equal(spec.start.filter, "all", `Case ${id}: start unfiltered`);
+  assert.equal(spec.start.view, "chart", `Case ${id}: start on the chart`);
+  if (spec.goal.groupBy !== spec.start.groupBy) assert.ok(spec.tools.includes("groupBy"), `Case ${id}: changing the bars needs the group tool`);
+  if (spec.goal.filter !== "all") assert.ok(spec.tools.includes("filter"), `Case ${id}: the question needs the filter tool`);
+  if (spec.goal.sort && spec.goal.sort !== spec.start.sort) assert.ok(spec.tools.includes("sort"), `Case ${id}: the question needs the sort tool`);
+  assert.ok(filterOptions(spec, spec.goal.groupBy).includes(spec.goal.filter), `Case ${id}: the goal filter exists`);
+
+  // One clear answer, and only the right combination of tools reveals it.
+  const answer = dashboardAnswer(spec);
+  const goalRows = dashboardRows(spec, goalSettings(spec, { sort: "none" }));
+  const answerValue = goalRows.find((row) => row.key === answer).value;
+  assert.equal(goalRows.filter((row) => row.value === answerValue).length, 1, `Case ${id}: the answer bar has no tie`);
+  for (const filter of filterOptions(spec, spec.goal.groupBy).filter((option) => option !== spec.goal.filter)) {
+    const rows = dashboardRows(spec, goalSettings(spec, { filter, sort: "none" }));
+    assert.notEqual(pickRow(rows, spec.goal.pick).key, answer, `Case ${id}: filtering by ${filter} must point to a different bar`);
+  }
+
+  // Sorting orders bars by value and keeps ties in their natural order.
+  const natural = spec.dimensions[spec.goal.groupBy].categories.map((category) => category.key);
+  assert.deepEqual(dashboardRows(spec, goalSettings(spec, { sort: "none" })).map((row) => row.key), natural);
+  const ascending = dashboardRows(spec, goalSettings(spec, { sort: "asc" })).map((row) => row.value);
+  const descending = dashboardRows(spec, goalSettings(spec, { sort: "desc" })).map((row) => row.value);
+  assert.ok(ascending.every((value, index) => index === 0 || ascending[index - 1] <= value), `Case ${id}: fewest first ascends`);
+  assert.ok(descending.every((value, index) => index === 0 || descending[index - 1] >= value), `Case ${id}: most first descends`);
+  if (spec.goal.sort) assert.equal(dashboardRows(spec, goalSettings(spec))[0].key, answer, `Case ${id}: after the asked-for sort, the answer is the first bar`);
+
+  // Solving needs the right tools and the right bar; the view never matters.
+  const goal = goalSettings(spec);
+  assert.equal(isDashboardSolved(spec, goal, answer), true, `Case ${id} must be solvable through its tools`);
+  assert.equal(isDashboardSolved(spec, { ...goal, view: "table" }, answer), true, `Case ${id}: the table view answers too`);
+  assert.equal(isDashboardSolved(spec, spec.start, null), false);
+  assert.deepEqual(reviewDashboard(spec, goal, null), { tools: [], answer: "missing" });
+  assert.deepEqual(reviewDashboard(spec, goal, goalRows.find((row) => row.key !== answer).key), { tools: [], answer: "wrong" }, `Case ${id}: a wrong bar flags no tool`);
+  if (spec.goal.filter !== "all") {
+    assert.deepEqual(reviewDashboard(spec, { ...goal, filter: "all" }, answer).tools, ["filter"], `Case ${id}: a missing filter is flagged`);
+    assert.equal(isDashboardSolved(spec, { ...goal, filter: "all" }, answer), false, `Case ${id}: the right bar is not enough without the filter`);
+  }
+  if (spec.goal.sort) {
+    const wrongSort = spec.goal.sort === "asc" ? "desc" : "asc";
+    assert.deepEqual(reviewDashboard(spec, { ...goal, sort: wrongSort }, answer).tools, ["sort"], `Case ${id}: a wrong sort is flagged`);
+  }
+  if (spec.tools.includes("groupBy")) {
+    const otherBars = { ...goal, groupBy: spec.goal.groupBy === 0 ? 1 : 0, filter: "all" };
+    const review = reviewDashboard(spec, otherBars, answer);
+    assert.ok(review.tools.includes("groupBy") && !review.tools.includes("filter"), `Case ${id}: wrong bars are flagged before the filter`);
+    assert.equal(review.answer, "wrong");
+  }
+
+  // Every reachable view fits a scale of at most six steps that ends on a gridline.
+  for (const groupBy of spec.tools.includes("groupBy") ? [0, 1] : [spec.start.groupBy]) {
+    for (const filter of filterOptions(spec, groupBy)) {
+      const largest = Math.max(...dashboardRows(spec, { ...spec.start, groupBy, filter }).map((row) => row.value));
+      const scale = niceScale(largest);
+      assert.ok(scale.max >= largest && scale.max % scale.step === 0 && scale.max / scale.step <= 6, `Case ${id}: ${filter} fits its scale`);
+    }
+  }
+  assert.throws(() => createBoard(id), /dashboard/, `Case ${id} has no clue board`);
+  assert.deepEqual(getReviewZones(id, createBoard(1)), []);
+  assert.equal(isSolved(id, createBoard(1)), false);
+}
+
 const progress = [];
 for (const level of units.flatMap((unit) => unit.cases.map(getCase))) {
   const id = level.id;
@@ -144,8 +226,6 @@ for (const level of units.flatMap((unit) => unit.cases.map(getCase))) {
     assert.equal(isCaseUnlocked(id, progress.filter((solved) => solved !== unit.cases[0])), false, `Case ${id} requires every earlier case in its unit`);
     assert.equal(isCaseUnlocked(id, [id]), false, `Case ${id} cannot unlock itself`);
   }
-  assert.deepEqual(level.dropZones.map((zone) => zone.id), ["a", "b", "c"]);
-  assert.equal(new Set(level.tokens).size, level.tokens.length);
   assert.equal(level.hints.length, 3);
   for (const language of ["en", "id"]) {
     assert.ok(level.title[language] && level.skill[language] && level.mission[language]);
@@ -155,8 +235,15 @@ for (const level of units.flatMap((unit) => unit.cases.map(getCase))) {
       assert.ok(hint.text[language].split(/\s+/).length <= 12, `Case ${id} hints must stay concise`);
       assert.ok(!/\d\s*=\s*\d/.test(hint.visual), `Case ${id} hints must not show solved numeric equalities`);
     }
-    assert.ok(level.dropZones.every((zone) => zone.label[language]));
   }
+  if (level.kind === "dashboard") {
+    checkDashboard(level);
+    progress.push(id);
+    continue;
+  }
+  assert.deepEqual(level.dropZones.map((zone) => zone.id), ["a", "b", "c"]);
+  assert.equal(new Set(level.tokens).size, level.tokens.length);
+  for (const language of ["en", "id"]) assert.ok(level.dropZones.every((zone) => zone.label[language]));
   if (id >= 3) assert.ok(level.tokens.every((token) => level.tokenLabels?.[token] || (level.tokenWords?.[token].en && level.tokenWords[token].id)));
   if (level.chart) {
     const { chart } = level;
@@ -238,7 +325,7 @@ assert.deepEqual(normaliseCompletedCases(progress), [...progress].sort((a, b) =>
 for (const malformed of [null, undefined, "[1,2]", {}, 12, true]) {
   assert.deepEqual(normaliseCompletedCases(malformed), []);
 }
-for (const invalidId of [0, 25, -1, NaN]) {
+for (const invalidId of [0, 28, -1, NaN]) {
   assert.throws(() => getCase(invalidId), /Unknown case/);
   assert.equal(isSolved(invalidId, createBoard(1)), false);
   assert.equal(isCaseUnlocked(invalidId, progress), false);
@@ -272,5 +359,5 @@ for (let solved = 0; solved < caseLevels.length; solved++) {
 }
 
 console.log(
-  "Game checks passed: all 24 cases in 4 units, invalid solutions, reusable copies, undo, sequential locking, saved-progress migration, and detective levels.",
+  `Game checks passed: all ${caseLevels.length} cases in 4 units, dashboard tools and answers, invalid solutions, reusable copies, undo, sequential locking, saved-progress migration, and detective levels.`,
 );

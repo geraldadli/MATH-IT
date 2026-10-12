@@ -1,16 +1,18 @@
-import { useRef, useState, type CSSProperties, type ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 import {
   DndContext, DragOverlay, KeyboardSensor, PointerSensor,
   useDraggable, useDroppable, useSensor, useSensors, type DragEndEvent,
 } from '@dnd-kit/core'
 import { useGame } from './GameContext'
 import { translations } from './i18n'
-import { caseLevels, caseNumber, createBoard, getCase, getReviewZones, getUnit, isSolved, moveToken } from './gameLogic'
+import { createBoard, getBoardCase, getCase, getReviewZones, isSolved, moveToken } from './gameLogic'
 import type { BoardState, CaseId, ZoneId } from './types'
 import { Biscuit, Icon, ShapeArt, type ShapeName } from './Illustrations'
 import InteractionDemo from './InteractionDemo'
 import EvidenceChart from './EvidenceChart'
-import { getLevel, xpForCases, type DetectiveLevel } from './levels'
+import DashboardBoard from './DashboardBoard'
+import { CaseBriefing, HintFooter, SolvedFeedback } from './CaseParts'
+import { useCaseSolve } from './useCaseSolve'
 
 type Selection = { token: number; zone: ZoneId }
 
@@ -74,12 +76,16 @@ function DropArea({ id, children, className, label, placeLabel, selected, disabl
 }
 
 export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
-  const { player, completeCase, playSound } = useGame()
+  return getCase(caseId).kind === 'dashboard'
+    ? <DashboardBoard caseId={caseId} onNext={onNext} />
+    : <ClueBoard caseId={caseId} onNext={onNext} />
+}
+
+function ClueBoard({ caseId, onNext }: { caseId: CaseId; onNext: () => void }) {
+  const { player, playSound } = useGame()
   const language = player.language
   const t = translations[language].board
-  const level = getCase(caseId)
-  const unit = getUnit(caseId)
-  const lastInUnit = unit.cases[unit.cases.length - 1] === caseId
+  const level = getBoardCase(caseId)
   const sharing = level.kind === 'sharing'
   const notebook = level.cardStyle === 'notebook'
   const tokenClass = sharing ? 'biscuit-token' : notebook ? 'number-token expression-token notebook-token'
@@ -89,10 +95,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   const [selected, setSelected] = useState<Selection | null>(null)
   const [dragging, setDragging] = useState<Selection | null>(null)
   const [feedback, setFeedback] = useState<'retry' | 'solved' | null>(null)
-  const [earnedPoints, setEarnedPoints] = useState(false)
-  const [newLevel, setNewLevel] = useState<DetectiveLevel | null>(null)
-  const [hintStep, setHintStep] = useState(0)
-  const hint = useRef<HTMLDialogElement>(null)
+  const { earnedPoints, newLevel, solve } = useCaseSolve(caseId)
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 6 } }),
     useSensor(KeyboardSensor, { keyboardCodes: { start: ['Space'], cancel: ['Escape'], end: ['Space'] } }),
@@ -140,14 +143,8 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   function checkEvidence() {
     setSelected(null)
     if (isSolved(caseId, board)) {
-      const firstSolve = !player.completedCases.includes(caseId)
-      const before = getLevel(xpForCases(player.completedCases.length))
-      const after = getLevel(xpForCases(player.completedCases.length + (firstSolve ? 1 : 0)))
-      setEarnedPoints(firstSolve)
-      setNewLevel(after.level > before.level ? after : null)
-      completeCase(caseId)
+      solve()
       setFeedback('solved')
-      playSound(after.level > before.level ? 'levelUp' : 'correct')
     } else { setFeedback('retry'); playSound('click') }
   }
 
@@ -163,11 +160,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   }
 
   return <article className={`game-board${solved ? ' is-solved' : ''}`}>
-    <header className="case-briefing">
-      <div className="case-eyebrow"><span className="case-number">{t.unit} {unit.id} · {t.case} {String(caseNumber(caseId)).padStart(2, '0')}</span>{level.skill[language]}</div>
-      <h2>{level.title[language]}</h2>
-      <p className="mission-copy">{level.mission[language]}</p>
-    </header>
+    <CaseBriefing caseId={caseId} />
 
     <DndContext sensors={sensors} onDragStart={({ active }) => {
       setDragging(active.data.current as Selection)
@@ -216,23 +209,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
             {reviewZones.length > 0 && <span>{t.reviewGroups} {reviewZones.map(zoneName).join(', ')}. </span>}
             {reviewTray && <span>{t.finishTray}</span>}
             {!reviewZones.length && !reviewTray && t.feedbackSorting}
-          </p></> : <>
-            <div className="success-reward">
-              <div className="celebration-burst" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <span key={index} style={{ '--i': index } as CSSProperties} />)}</div>
-              <span className="reward-badge" aria-label={earnedPoints ? t.solvedDetail : undefined}>
-                <Icon name="star" size={22} />{earnedPoints && <strong aria-hidden="true">+100</strong>}
-              </span>
-              {earnedPoints && <span className="points-float" aria-hidden="true">+100 XP</span>}
-            </div>
-            <div className="success-copy"><strong>{t.solved}</strong>
-              {newLevel && <span className="level-up" key={newLevel.level}>
-                <span className="level-up-badge" aria-hidden="true">{newLevel.level}</span>
-                <span><strong>{t.levelUp}</strong> {t.newRank}: {newLevel.title[language]}<span className="sr-only"> ({t.level} {newLevel.level})</span></span>
-              </span>}
-              <p>{!earnedPoints ? t.solvedAgain : !lastInUnit ? t.nextUnlocked
-              : caseLevels.every(({ id }) => player.completedCases.includes(id)) ? t.casebookComplete : t.unitComplete}</p></div>
-            <button className="text-button" onClick={onNext}>{lastInUnit ? t.allSolved : t.nextCase} <span aria-hidden="true">→</span></button>
-          </>}
+          </p></> : <SolvedFeedback caseId={caseId} earnedPoints={earnedPoints} newLevel={newLevel} onNext={onNext} />}
         </div>}
 
         <div className="board-toolbar"><div className="history-actions">
@@ -245,21 +222,6 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
       <DragOverlay>{dragging && <div className={`evidence-token drag-overlay ${tokenClass}`}><TokenFace sharing={sharing} notebook={notebook} label={tokenLabel(dragging.token)} /></div>}</DragOverlay>
     </DndContext>
 
-    <footer className="board-footer"><button className="hint-button" data-sound="custom" onClick={() => { setHintStep(0); hint.current?.showModal(); playSound('hint') }}><Icon name="help" size={18} />{t.needHint}</button><span className="calm-indicator"><Icon name="sun" size={18} />{t.noTimer}</span></footer>
-
-    <dialog ref={hint} className="hint-dialog" aria-labelledby="hint-heading">
-      <button className="dialog-close" aria-label={t.closeDialog} onClick={() => hint.current?.close()}><Icon name="close" /></button>
-      <h2 id="hint-heading">{t.hintTitle}</h2>
-      <div className="hint-prompt" aria-live="polite" aria-atomic="true">
-        <span className="hint-progress">{t.needHint} {hintStep + 1} / {level.hints.length}</span>
-        <p>{level.hints[hintStep].text[language]}</p>
-        <div className="hint-equation">{level.hints[hintStep].visual}</div>
-      </div>
-      <div className="hint-navigation">
-        <button className="subtle-button" disabled={hintStep === 0} onClick={() => setHintStep(hintStep - 1)}>{t.previousHint}</button>
-        <button className="subtle-button" disabled={hintStep === level.hints.length - 1} onClick={() => setHintStep(hintStep + 1)}>{t.nextHint}<Icon name="arrow" size={16} /></button>
-      </div>
-      <button className="primary-button" onClick={() => hint.current?.close()}>{t.closeHint}</button>
-    </dialog>
+    <HintFooter caseId={caseId} />
   </article>
 }

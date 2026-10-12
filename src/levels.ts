@@ -9,7 +9,8 @@ export interface DetectiveLevel {
 }
 
 // Early ranks arrive quickly; later ones need a few more cases each.
-// The last rank needs every case, so it marks a finished casebook.
+// The last rank needs every case, so it marks a finished casebook. Thresholds only
+// ever move down when cases are added, so no saved detective loses a rank.
 export const detectiveLevels: DetectiveLevel[] = [
   { level: 1, minXp: 0, title: { en: "Rookie", id: "Detektif Pemula" } },
   { level: 2, minXp: 100, title: { en: "Clue Spotter", id: "Pencari Petunjuk" } },
@@ -19,7 +20,8 @@ export const detectiveLevels: DetectiveLevel[] = [
   { level: 6, minXp: 1100, title: { en: "Senior Detective", id: "Detektif Senior" } },
   { level: 7, minXp: 1500, title: { en: "Inspector", id: "Inspektur" } },
   { level: 8, minXp: 1900, title: { en: "Chief Inspector", id: "Kepala Inspektur" } },
-  { level: 9, minXp: 2400, title: { en: "Master Detective", id: "Detektif Ulung" } },
+  { level: 9, minXp: 2300, title: { en: "Master Detective", id: "Detektif Ulung" } },
+  { level: 10, minXp: 2700, title: { en: "Legendary Detective", id: "Detektif Legendaris" } },
 ];
 
 export interface LevelProgress {

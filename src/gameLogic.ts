@@ -1,5 +1,5 @@
 import { caseLevels, getCase, units } from "./cases.ts";
-import type { BoardState, CaseId, CaseLevel, CaseUnit, DropZone, DropZoneId, UnitId, ZoneId } from "./types.ts";
+import type { BoardCase, BoardState, CaseId, CaseLevel, CaseUnit, DashboardCase, DropZone, DropZoneId, UnitId, ZoneId } from "./types.ts";
 
 export { caseLevels, getCase, units } from "./cases.ts";
 
@@ -14,8 +14,26 @@ export function caseNumber(caseId: CaseId): number {
   return getUnit(caseId).cases.indexOf(caseId) + 1;
 }
 
+// Clue boards exist only for clue cases; dashboard cases have their own tools.
+export function getBoardCase(caseId: CaseId): BoardCase {
+  const level = getCase(caseId);
+  if (level.kind === "dashboard") throw new Error(`Case ${caseId} is a dashboard, not a clue board`);
+  return level;
+}
+
+export function getDashboardCase(caseId: CaseId): DashboardCase {
+  const level = getCase(caseId);
+  if (level.kind !== "dashboard") throw new Error(`Case ${caseId} is a clue board, not a dashboard`);
+  return level;
+}
+
+function findBoardCase(caseId: CaseId): BoardCase | undefined {
+  const level = caseLevels.find((candidate) => candidate.id === caseId);
+  return level?.kind === "dashboard" ? undefined : level;
+}
+
 export function createBoard(caseId: CaseId): BoardState {
-  return { tray: [...getCase(caseId).tokens], a: [], b: [], c: [] };
+  return { tray: [...getBoardCase(caseId).tokens], a: [], b: [], c: [] };
 }
 
 export function moveToken(
@@ -25,7 +43,7 @@ export function moveToken(
   to: ZoneId,
   caseId: CaseId,
 ): BoardState {
-  const level = caseLevels.find((candidate) => candidate.id === caseId);
+  const level = findBoardCase(caseId);
   if (
     !level ||
     !level.tokens.includes(token) ||
@@ -71,7 +89,8 @@ function matchesGroup({ condition }: DropZone, tokens: number[]): boolean {
 }
 
 export function getReviewZones(caseId: CaseId, board: BoardState): DropZoneId[] {
-  const level = getCase(caseId);
+  const level = findBoardCase(caseId);
+  if (!level) return [];
   return level.dropZones.filter((zone) => {
     // While sharing, only an overfilled group needs correction; others may be unfinished.
     if (zone.condition.kind === "count" && board.tray.length > 0 &&
@@ -82,7 +101,7 @@ export function getReviewZones(caseId: CaseId, board: BoardState): DropZoneId[] 
 }
 
 export function isSolved(caseId: CaseId, board: BoardState): boolean {
-  const level = caseLevels.find((candidate) => candidate.id === caseId);
+  const level = findBoardCase(caseId);
   if (!level || board.tray.length !== 0) return false;
   const placed = [...board.a, ...board.b, ...board.c];
   if (placed.some((token) => !level.tokens.includes(token))) return false;

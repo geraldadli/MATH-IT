@@ -25,7 +25,11 @@ export type IconName =
   | "instagram"
   | "youtube"
   | "email"
-  | "settings";
+  | "settings"
+  | "bars"
+  | "filter"
+  | "sort"
+  | "table";
 
 const icons: Record<IconName, ReactNode> = {
   instagram: (
@@ -136,6 +140,15 @@ const icons: Record<IconName, ReactNode> = {
     <>
       <path d="m10 3-1 3-3 1-3-1-1 4 3 2v3l-1 3 3 3 3-2h3l3 1 3-3-1-3v-3l2-3-3-3-3 1-2-2Z" />
       <circle cx="11" cy="12" r="3" />
+    </>
+  ),
+  bars: <path d="M4 20h16M7 16V9m5 7V4m5 12v-5" />,
+  filter: <path d="M4 5h16l-6 7.5V19l-4-2v-4.5Z" />,
+  sort: <path d="M4 6h10M4 12h7M4 18h4m10-12v12m-3-3 3 3 3-3" />,
+  table: (
+    <>
+      <rect x="3" y="4" width="18" height="16" rx="3" />
+      <path d="M3 10h18M3 15h18M10 4v16" />
     </>
   ),
 };
