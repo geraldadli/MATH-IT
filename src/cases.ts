@@ -390,7 +390,7 @@ export const caseLevels: CaseLevel[] = [
       axis: { en: "students", id: "siswa" },
       categories: [{ en: "Mango", id: "Mangga" }, { en: "Banana", id: "Pisang" }, { en: "Rambutan", id: "Rambutan" }, { en: "Papaya", id: "Pepaya" }],
       values: [8, 5, 10, 3],
-      max: 10, labelStep: 2, iconValue: 2,
+      icon: "person", iconValue: 2,
     },
     tokens: [6, 1, 4, 7, 2, 5, 3],
     tokenWords: {
@@ -484,6 +484,75 @@ export const caseLevels: CaseLevel[] = [
     ],
     preview: "↗ cm",
   },
+  {
+    id: 23, kind: "sorting",
+    title: { en: "The reading corner", id: "Pojok baca" },
+    skill: { en: "Pictograph keys", id: "Kunci piktogram" },
+    mission: { en: "Each book icon is 10 books. Half an icon is 5.", id: "Setiap ikon buku bernilai 10 buku. Setengah ikon bernilai 5." },
+    chart: {
+      kind: "pictograph",
+      title: { en: "Books borrowed this week", id: "Buku dipinjam minggu ini" },
+      axis: { en: "books", id: "buku" },
+      categories: [{ en: "Monday", id: "Senin" }, { en: "Tuesday", id: "Selasa" }, { en: "Wednesday", id: "Rabu" }, { en: "Thursday", id: "Kamis" }],
+      values: [30, 45, 15, 30],
+      icon: "book", iconValue: 10,
+    },
+    tokens: [4, 7, 1, 5, 3, 6, 2],
+    tokenWords: {
+      1: { en: "How many books on Wednesday?", id: "Berapa buku dipinjam hari Rabu?" },
+      2: { en: "How many more on Tuesday than Monday?", id: "Berapa lebih banyak hari Selasa daripada Senin?" },
+      3: { en: "How many books on Monday?", id: "Berapa buku dipinjam hari Senin?" },
+      4: { en: "How many books on Thursday?", id: "Berapa buku dipinjam hari Kamis?" },
+      5: { en: "How many more on Tuesday than Wednesday?", id: "Berapa lebih banyak hari Selasa daripada Rabu?" },
+      6: { en: "How many books on Tuesday?", id: "Berapa buku dipinjam hari Selasa?" },
+      7: { en: "Monday and Wednesday together?", id: "Senin dan Rabu digabung?" },
+    },
+    dropZones: [
+      { id: "a", label: { en: "15 books", id: "15 buku" }, condition: { kind: "values", values: [1, 2] } },
+      { id: "b", label: { en: "30 books", id: "30 buku" }, condition: { kind: "values", values: [3, 4, 5] } },
+      { id: "c", label: { en: "45 books", id: "45 buku" }, condition: { kind: "values", values: [6, 7] } },
+    ],
+    hints: [
+      { text: { en: "Check the key. Count each row in tens.", id: "Lihat kuncinya. Hitung setiap baris lompat sepuluh." }, visual: "▮ ▮ ▮ → 10, 20, ?" },
+      { text: { en: "Half a book is half of ten.", id: "Setengah buku bernilai setengah dari sepuluh." }, visual: "▮ ▮ ▌ → 10, 20, ?" },
+      { text: { en: "Compare two rows. Count only the extra icons.", id: "Bandingkan dua baris. Hitung ikon yang lebih saja." }, visual: "▮▮▮▮▌ − ▮▮▮ → ?" },
+    ],
+    preview: "▮ ▮ ▌",
+  },
+  {
+    id: 24, kind: "sorting",
+    title: { en: "The way to school", id: "Cara ke sekolah" },
+    skill: { en: "Pie charts", id: "Diagram lingkaran" },
+    mission: { en: "There are 24 students. Use the slices to find how many.", id: "Ada 24 siswa. Gunakan potongan lingkaran untuk mencari banyaknya." },
+    chart: {
+      kind: "pie",
+      title: { en: "How our 24 students get to school", id: "Cara 24 siswa kami pergi ke sekolah" },
+      axis: { en: "students", id: "siswa" },
+      categories: [{ en: "Walk", id: "Jalan kaki" }, { en: "Angkot", id: "Angkot" }, { en: "Bicycle", id: "Sepeda" }, { en: "Motorbike", id: "Sepeda motor" }],
+      values: [12, 6, 3, 3],
+    },
+    tokens: [3, 6, 1, 7, 4, 2, 5],
+    tokenWords: {
+      1: { en: "How many ride a bicycle?", id: "Berapa yang naik sepeda?" },
+      2: { en: "How many come by motorbike?", id: "Berapa yang naik sepeda motor?" },
+      3: { en: "How many ride an angkot?", id: "Berapa yang naik angkot?" },
+      4: { en: "How many more walk than ride an angkot?", id: "Berapa lebih banyak yang jalan kaki daripada naik angkot?" },
+      5: { en: "Bicycle and motorbike together?", id: "Sepeda dan sepeda motor digabung?" },
+      6: { en: "How many walk?", id: "Berapa yang jalan kaki?" },
+      7: { en: "How many do not walk?", id: "Berapa yang tidak jalan kaki?" },
+    },
+    dropZones: [
+      { id: "a", label: { en: "3 students", id: "3 siswa" }, condition: { kind: "values", values: [1, 2] } },
+      { id: "b", label: { en: "6 students", id: "6 siswa" }, condition: { kind: "values", values: [3, 4, 5] } },
+      { id: "c", label: { en: "12 students", id: "12 siswa" }, condition: { kind: "values", values: [6, 7] } },
+    ],
+    hints: [
+      { text: { en: "Half the circle is half the class. What is half of 24?", id: "Setengah lingkaran berarti setengah kelas. Berapa setengah dari 24?" }, visual: "◐ → 24 ÷ 2 → ?" },
+      { text: { en: "Thin white lines cut the circle into 8 equal parts.", id: "Garis putih tipis membagi lingkaran menjadi 8 bagian sama." }, visual: "24 ÷ 8 → ?" },
+      { text: { en: "Count the parts in a slice, then multiply.", id: "Hitung bagian dalam satu potongan, lalu kalikan." }, visual: "◔ → 2 × ? → ?" },
+    ],
+    preview: "◔ ½ ¼",
+  },
 ];
 
 // Units follow the TIMSS Grade 4 content domains, with algebra and reasoning
@@ -493,7 +562,7 @@ export const units: CaseUnit[] = [
   { id: 1, title: { en: "Numbers & operations", id: "Bilangan & operasi hitung" }, cases: [1, 2, 3, 4, 5, 6, 7, 8, 9, 16] },
   { id: 2, title: { en: "Algebra & reasoning", id: "Aljabar & penalaran" }, cases: [12, 14, 15, 18, 19] },
   { id: 3, title: { en: "Measurement & geometry", id: "Pengukuran & geometri" }, cases: [10, 11, 13, 17] },
-  { id: 4, title: { en: "Data analysis", id: "Analisis data" }, cases: [20, 21, 22] },
+  { id: 4, title: { en: "Data analysis", id: "Analisis data" }, cases: [20, 21, 22, 23, 24] },
 ];
 
 export function getCase(caseId: CaseId): CaseLevel {

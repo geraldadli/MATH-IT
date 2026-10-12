@@ -13,6 +13,7 @@ import {
   moveToken,
   normaliseCompletedCases,
 } from "../src/gameLogic.ts";
+import { XP_PER_CASE, detectiveLevels, getLevel, getLevelProgress, xpForCases } from "../src/levels.ts";
 
 let board = createBoard(1);
 assert.deepEqual(getReviewZones(1, board), [], "An untouched board should point to the tray, not blame empty groups");
@@ -107,7 +108,8 @@ assert.equal(isCaseUnlocked(2, [2]), false);
 assert.equal(isCaseUnlocked(2, [1]), true);
 assert.equal(isCaseUnlocked(3, [1, 2]), true);
 assert.equal(isCaseUnlocked(13, [1, 2]), false);
-assert.equal(isCaseUnlocked(23, [1, 2]), false);
+assert.equal(isCaseUnlocked(25, [1, 2]), false);
+assert.equal(isCaseUnlocked(24, [20, 21, 22]), false);
 assert.equal(isCaseUnlocked(10, []), true, "Every unit opens with its first case");
 assert.equal(isCaseUnlocked(20, []), true, "Every unit opens with its first case");
 assert.equal(isCaseUnlocked(11, [10]), true, "Units progress independently");
@@ -116,7 +118,7 @@ assert.equal(isCaseUnlocked(12, []), true, "Every unit opens with its first case
 assert.equal(isCaseUnlocked(19, [12, 14, 15]), false);
 assert.equal(isCaseUnlocked(13, [10]), false);
 
-assert.equal(caseLevels.length, 22);
+assert.equal(caseLevels.length, 24);
 assert.deepEqual(units.map((unit) => unit.id), [1, 2, 3, 4]);
 assert.ok(units.every((unit) => unit.cases.length >= 3 && unit.cases.length <= 10), "Units stay roughly balanced");
 assert.deepEqual(
@@ -159,8 +161,17 @@ for (const level of units.flatMap((unit) => unit.cases.map(getCase))) {
   if (level.chart) {
     const { chart } = level;
     assert.equal(chart.categories.length, chart.values.length, `Case ${id}: one value per category`);
-    assert.ok(chart.values.every((value) => value >= 0 && value <= chart.max), `Case ${id}: values fit the scale`);
-    assert.equal(chart.max % (chart.labelStep / 2), 0, `Case ${id}: the scale ends on a gridline`);
+    if (chart.kind === "bar" || chart.kind === "line") {
+      assert.ok(chart.values.every((value) => value >= 0 && value <= chart.max), `Case ${id}: values fit the scale`);
+      assert.equal(chart.max % (chart.labelStep / 2), 0, `Case ${id}: the scale ends on a gridline`);
+    }
+    if (chart.kind === "pictograph")
+      assert.ok(chart.values.every((value) => value % (chart.iconValue / 2) === 0), `Case ${id}: rows need only whole or half icons`);
+    if (chart.kind === "pie") {
+      const total = chart.values.reduce((sum, value) => sum + value, 0);
+      assert.ok(chart.values.length >= 3 && chart.values.length <= 4, `Case ${id}: a pie keeps to the validated colours`);
+      assert.ok(chart.values.every((value) => value > 0 && (value * 8) % total === 0), `Case ${id}: slices line up with the eighth guides`);
+    }
   }
 
   // These answer groups are independent of the authored validation conditions.
@@ -178,6 +189,8 @@ for (const level of units.flatMap((unit) => unit.cases.map(getCase))) {
     20: { a: [1, 2], b: [3, 4, 5], c: [6, 7] },
     21: { a: [1, 2], b: [3, 4, 7], c: [5, 6] },
     22: { a: [1, 2], b: [3, 4], c: [5, 6, 7] },
+    23: { a: [1, 2], b: [3, 4, 5], c: [6, 7] },
+    24: { a: [1, 2], b: [3, 4, 5], c: [6, 7] },
   };
   const solution = solutions[id] ?? { a: [1, 4], b: [2, 5], c: [3, 6] };
   let attempt = createBoard(id);
@@ -225,11 +238,39 @@ assert.deepEqual(normaliseCompletedCases(progress), [...progress].sort((a, b) =>
 for (const malformed of [null, undefined, "[1,2]", {}, 12, true]) {
   assert.deepEqual(normaliseCompletedCases(malformed), []);
 }
-for (const invalidId of [0, 23, -1, NaN]) {
+for (const invalidId of [0, 25, -1, NaN]) {
   assert.throws(() => getCase(invalidId), /Unknown case/);
   assert.equal(isSolved(invalidId, createBoard(1)), false);
   assert.equal(isCaseUnlocked(invalidId, progress), false);
 }
+const maxXp = xpForCases(caseLevels.length);
+assert.equal(XP_PER_CASE, 100);
+assert.equal(detectiveLevels[0].minXp, 0, "Every new detective starts with a rank");
+assert.equal(detectiveLevels.at(-1).minXp, maxXp, "The top rank needs every case");
+detectiveLevels.forEach((rank, index) => {
+  assert.equal(rank.level, index + 1);
+  assert.equal(rank.minXp % XP_PER_CASE, 0, `Level ${rank.level} is reached by whole cases`);
+  assert.ok(rank.title.en && rank.title.id, `Level ${rank.level} needs a bilingual title`);
+  if (index > 1) {
+    const step = rank.minXp - detectiveLevels[index - 1].minXp;
+    assert.ok(step >= detectiveLevels[index - 1].minXp - detectiveLevels[index - 2].minXp, "Levels never get easier to reach");
+  }
+});
+assert.equal(getLevel(0).level, 1);
+assert.equal(getLevel(XP_PER_CASE).level, 2, "The first solved case earns a level");
+assert.equal(getLevel(299).level, 2);
+assert.equal(getLevel(300).level, 3);
+assert.equal(getLevel(maxXp).level, detectiveLevels.length);
+assert.equal(getLevel(maxXp + 500).level, detectiveLevels.length);
+assert.equal(getLevel(-50).level, 1);
+assert.equal(getLevel(NaN).level, 1);
+assert.deepEqual(getLevelProgress(400), { current: detectiveLevels[2], next: detectiveLevels[3], xpIntoLevel: 100, xpForLevel: 200 });
+assert.equal(getLevelProgress(maxXp).next, undefined, "The top rank has no next level");
+for (let solved = 0; solved < caseLevels.length; solved++) {
+  const gain = getLevel(xpForCases(solved + 1)).level - getLevel(xpForCases(solved)).level;
+  assert.ok(gain === 0 || gain === 1, "One case never skips a level");
+}
+
 console.log(
-  "Game checks passed: all 22 cases in 4 units, invalid solutions, reusable copies, undo, sequential locking, and saved-progress migration.",
+  "Game checks passed: all 24 cases in 4 units, invalid solutions, reusable copies, undo, sequential locking, saved-progress migration, and detective levels.",
 );

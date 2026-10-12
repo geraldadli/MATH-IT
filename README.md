@@ -1,6 +1,6 @@
 # Math It!
 
-Crack the Clue, Math It Through! Twenty-two bilingual, pressure-free mathematics cases for Grade 3 (Phase B).
+Crack the Clue, Math It Through! Twenty-four bilingual, pressure-free mathematics cases for Grade 3 (Phase B).
 
 ## Run
 
@@ -32,17 +32,33 @@ The cases are grouped into four units. They follow the TIMSS Grade 4 content dom
 | 1 · Numbers & operations | sharing, multiples, addition, subtraction, comparing, multiplication, division, place value, fractions, money |
 | 2 · Algebra & reasoning | two-step problems, missing numbers, estimation, word problems, spotting mistakes |
 | 3 · Measurement & geometry | length, elapsed time, 2D shapes, mass |
-| 4 · Data analysis | pictographs, bar charts, line charts |
+| 4 · Data analysis | pictographs, bar charts, line charts, pictograph keys, pie charts |
 
 Every unit is open from the start. Within a unit, cases are numbered from 1 and each solved case unlocks the next. Case IDs stay fixed for saved progress, and new cases join the end of their unit.
 
-Each case has three destinations. Start with sharing 12 biscuits and sorting multiples, then investigate addition, subtraction, comparisons, multiplication, division, place value, fractions, length, elapsed time, and two-step calculations. Cases 13–17 fill the remaining Phase B curriculum areas: sorting 2D shapes by equal sides and right angles (geometry), missing numbers (early algebra), estimating by rounding, Rupiah prices and change, and grams and kilograms. Their answer groups hold different numbers of clues, so the last clues cannot be placed by elimination. Cases 18–22 target the weakest areas in Indonesia's PISA and TIMSS results: reading, applying, and reasoning. Players choose the operation a short story needs (including a "how many more" story that needs subtraction), check the answers in a suspect's notebook (drawn as lined paper, with the suspect's answer in red pen) and decide whether each is correct, forgot to carry or borrow, or used the wrong sign, and answer questions from a pictograph, a bar chart, and a line chart of a growing bean sprout.
+Each case has three destinations. Start with sharing 12 biscuits and sorting multiples, then investigate addition, subtraction, comparisons, multiplication, division, place value, fractions, length, elapsed time, and two-step calculations. Cases 13–17 fill the remaining Phase B curriculum areas: sorting 2D shapes by equal sides and right angles (geometry), missing numbers (early algebra), estimating by rounding, Rupiah prices and change, and grams and kilograms. Their answer groups hold different numbers of clues, so the last clues cannot be placed by elimination. Cases 18–22 target the weakest areas in Indonesia's PISA and TIMSS results: reading, applying, and reasoning. Players choose the operation a short story needs (including a "how many more" story that needs subtraction), check the answers in a suspect's notebook (drawn as lined paper, with the suspect's answer in red pen) and decide whether each is correct, forgot to carry or borrow, or used the wrong sign, and answer questions from a pictograph, a bar chart, and a line chart of a growing bean sprout. Unit 4 continues with a reading-corner pictograph, where each book icon is 10 books and half an icon is 5, and a pie chart of how 24 students get to school. Its slices are halves, quarters, and eighths, with faint white guides marking each eighth so children can count equal parts.
 
 Charts are drawn as inline SVG that fits its container. Values are deliberately unlabeled, because reading them from the scale is the skill being practised, and unnumbered half-step gridlines support reading between labels. On narrow screens, two-word axis labels stack onto two lines. Screen readers get each chart as a data table. The first two cases preserve existing players’ progress.
 
 Checking an incorrect arrangement highlights only the groups needing review, using a warm border and a “Look again” label without identifying individual answers or destinations. Remaining clues highlight the tray. Moving a clue, undoing, or resetting clears this feedback. On screens up to 650px wide, groups stack vertically and clues have touch targets of at least 52px.
 
-In the multiples case, 12 has two copies so it can belong to both groups; in the shapes case, the square does the same. Move either copy to change its group, or return it to the tray. Each first completion earns 100 points, up to 2,200 points; replays do not award additional points. Saved progress keeps each unit's uninterrupted run of solved cases, so progress saved before units existed carries over.
+In the multiples case, 12 has two copies so it can belong to both groups; in the shapes case, the square does the same. Move either copy to change its group, or return it to the tray. Each first completion earns 100 XP, up to 2,400 XP; replays do not award more. Saved progress keeps each unit's uninterrupted run of solved cases, so progress saved before units existed carries over.
+
+XP raises the detective's level. Early levels come quickly and later ones need a few more cases, and the top rank needs every case:
+
+| Level | Rank (EN / ID) | XP |
+|---|---|---|
+| 1 | Rookie / Detektif Pemula | 0 |
+| 2 | Clue Spotter / Pencari Petunjuk | 100 |
+| 3 | Junior Detective / Detektif Junior | 300 |
+| 4 | Puzzle Solver / Pemecah Teka-teki | 500 |
+| 5 | Detective / Detektif | 800 |
+| 6 | Senior Detective / Detektif Senior | 1,100 |
+| 7 | Inspector / Inspektur | 1,500 |
+| 8 | Chief Inspector / Kepala Inspektur | 1,900 |
+| 9 | Master Detective / Detektif Ulung | 2,400 |
+
+The dashboard shows the current rank with an XP bar and the XP left to the next level, and the profile avatar carries a level chip. A solve that crosses a threshold adds a "Level up!" callout with the new rank and plays a brighter fanfare. XP and level are always recalculated from solved cases, so they cannot drift from saved progress.
 
 The ID/EN switch translates the interface, instructions, hints, and feedback. The profile button edits the detective card. The top-bar Sound button enables bubbly click, pickup, drop, hint, and success sounds alongside an original, softly layered music loop. Audio continues across the welcome screen, dashboard, and cases, pauses when the tab is hidden, and stops when muted. The sound preference is saved; browsers may require a click or keypress before playback begins. All audio is synthesized locally with Web Audio, with no downloaded tracks or new audio dependencies.
 
@@ -52,17 +68,18 @@ Hints offer one short thinking prompt at a time, with optional next/back control
 
 - `src/types.ts`: strict player, avatar, case, and drop-zone types.
 - `src/i18n.ts`: English and Indonesian dictionaries.
-- `src/cases.ts`: the four units, the twenty-two cases, bilingual missions, token labels, accepted groups, and visual hints.
-- `src/GameContext.tsx`: profile, language, sound preference, score, and per-unit progress saved in localStorage.
+- `src/cases.ts`: the four units, the twenty-four cases, bilingual missions, token labels, accepted groups, and visual hints.
+- `src/GameContext.tsx`: profile, language, sound preference, XP, and per-unit progress saved in localStorage.
+- `src/levels.ts`: XP per case, the nine bilingual detective ranks, and level progress.
 - `src/gameLogic.ts`: immutable clue movement, case validation, and unit progression.
 - `src/GameBoard.tsx`: @dnd-kit/core workspace, history, feedback, and native hint dialog.
-- `src/EvidenceChart.tsx`: responsive SVG bar, line, and pictograph charts with a screen-reader table.
+- `src/EvidenceChart.tsx`: responsive SVG bar, line, pictograph, and pie charts with a screen-reader table.
 - `src/InteractionDemo.tsx`: dismissible, replayable drag/tap demonstration.
 - `src/App.tsx`: onboarding, dashboard, gameplay navigation, and profile editor.
 - `src/Illustrations.tsx`: original vector artwork and icons.
 - `src/audio.ts`: bubble sound synthesis and the original 64-step melody.
 - `src/useAudio.ts`: shared playback, click sounds, muting, and tab visibility handling.
-- `scripts/check-game.mjs`: dependency-free checks solving all twenty-two cases, validating chart data, rejecting invalid solutions, enforcing per-unit progression, normalizing saved progress, and verifying copies and undo snapshots.
+- `scripts/check-game.mjs`: dependency-free checks solving all twenty-four cases, validating chart data, rejecting invalid solutions, enforcing per-unit progression, normalizing saved progress, verifying copies and undo snapshots, and checking the level curve.
 - `scripts/check-audio.mjs`: checks sound envelopes, pitch glides, volume bounds, oscillator cleanup, and melody looping.
 
 Profiles and completed cases stay on this browser/device; in-progress clue placements reset when leaving a case. Storage failures do not interrupt play. No backend or account is required. Google Fonts are optional; system fonts are the fallback.

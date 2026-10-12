@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#5279ad" />
+    <meta name="theme-color" content="#141b2e" />
+    <script>
+      // Apply the saved theme before first paint so the page never flashes the wrong colours.
+      try { document.documentElement.dataset.theme = localStorage.getItem("math-it-theme") === "light" ? "light" : "dark"; }
+      catch { document.documentElement.dataset.theme = "dark"; }
+    </script>
     <meta name="description" content="Little detectives, big discoveries. Explore playful, pressure-free math mysteries with Math It!" />
     <title>Math It! — Math mysteries for little detectives</title>
   </head>

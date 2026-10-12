@@ -1,4 +1,4 @@
-export type Sound = "click" | "drag" | "drop" | "correct" | "hint";
+export type Sound = "click" | "drag" | "drop" | "correct" | "hint" | "levelUp";
 
 export const MUSIC_STEP_SECONDS = 0.36;
 const melody = [
@@ -37,9 +37,13 @@ export function playEffect(context: BaseAudioContext, sound: Sound) {
   const notes: Record<Sound, number[]> = {
     click: [660], drag: [520, 780], drop: [880, 590],
     correct: [523.25, 659.25, 783.99, 1046.5], hint: [659.25, 880],
+    levelUp: [659.25, 783.99, 1046.5, 1318.51],
   };
+  // Rewards ring as clear chimes; everyday actions stay bubbly.
+  const chime = sound === "correct" || sound === "levelUp";
+  const spacing = sound === "levelUp" ? 0.12 : 0.09;
   notes[sound].forEach((note, index) => {
-    tone(context, note, context.currentTime + index * 0.09, sound === "correct" ? 0.32 : 0.16, 0.065, sound !== "correct");
+    tone(context, note, context.currentTime + index * spacing, sound === "levelUp" ? 0.42 : chime ? 0.32 : 0.16, 0.065, !chime);
   });
 }
 

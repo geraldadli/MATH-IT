@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import { isCaseUnlocked, normaliseCompletedCases } from "./gameLogic";
+import { xpForCases } from "./levels";
 import type { AvatarConfig, CaseId, Language, UserState } from "./types";
 import { useAudio } from "./useAudio";
 import type { Sound } from "./audio";
@@ -11,7 +12,7 @@ const defaultPlayer: UserState = {
   avatar: { animal: "fox", color: "teal" },
   language: "en",
   completedCases: [],
-  score: 0,
+  xp: 0,
   soundEnabled: true,
 };
 
@@ -37,7 +38,7 @@ function readPlayer(): UserState {
       avatar: validAvatar(data.avatar) ? data.avatar : defaultPlayer.avatar,
       language: data.language === "id" ? "id" : "en",
       completedCases,
-      score: completedCases.length * 100,
+      xp: xpForCases(completedCases.length),
       soundEnabled: typeof data.soundEnabled === "boolean"
         ? data.soundEnabled
         : defaultPlayer.soundEnabled,
@@ -89,7 +90,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
       )
         return current;
       const completedCases = [...current.completedCases, caseId];
-      return { ...current, completedCases, score: completedCases.length * 100 };
+      return { ...current, completedCases, xp: xpForCases(completedCases.length) };
     });
   }
 

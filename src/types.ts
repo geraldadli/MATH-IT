@@ -1,5 +1,5 @@
 export type Language = "en" | "id";
-export type CaseId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22;
+export type CaseId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24;
 export type Localized = Record<Language, string>;
 export type UnitId = 1 | 2 | 3 | 4;
 export type DropZoneId = "a" | "b" | "c";
@@ -15,7 +15,7 @@ export interface UserState {
   avatar: AvatarConfig;
   language: Language;
   completedCases: CaseId[];
-  score: number;
+  xp: number;
   soundEnabled: boolean;
 }
 
@@ -37,16 +37,17 @@ export interface CaseUnit {
   cases: CaseId[];
 }
 
-export interface EvidenceChart {
-  kind: "bar" | "line" | "pictograph";
+interface ChartData {
   title: Localized;
   axis: Localized;
   categories: Localized[];
   values: number[];
-  max: number;
-  labelStep: number;
-  iconValue?: number;
 }
+
+export type EvidenceChart =
+  | ChartData & { kind: "bar" | "line"; max: number; labelStep: number }
+  | ChartData & { kind: "pictograph"; icon: "person" | "book"; iconValue: number }
+  | ChartData & { kind: "pie" };
 
 export interface CaseLevel {
   id: CaseId;

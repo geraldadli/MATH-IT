@@ -8,6 +8,7 @@ import { shellTranslations } from "./i18n";
 import { Avatar, BakeryScene, Icon } from "./Illustrations";
 import type { AvatarConfig, CaseId, UnitId } from "./types";
 import { caseLevels, caseNumber, getCase, getNextCase, getUnit, isCaseUnlocked, units } from "./gameLogic";
+import { getLevel, getLevelProgress } from "./levels";
 import "./App.css";
 
 function DetectiveForm({
@@ -158,7 +159,36 @@ function ProgressSummary() {
       </div>
       <div className="progress-copy">
         <span>{t.casesSolved}</span>
-        <span key={player.score} className="points-total" aria-label={player.score + " " + t.detectivePoints}><Icon name="star" size={15} />{player.score}</span>
+        <span key={player.xp} className="points-total" aria-label={player.xp + " " + t.detectivePoints}><Icon name="star" size={15} />{player.xp} XP</span>
+      </div>
+      <LevelCard />
+    </div>
+  );
+}
+
+function LevelCard() {
+  const { player } = useGame();
+  const t = shellTranslations[player.language];
+  const { current, next, xpIntoLevel, xpForLevel } = getLevelProgress(player.xp);
+  const percent = next ? Math.round((xpIntoLevel / xpForLevel) * 100) : 100;
+  return (
+    <div className={"level-card level-" + current.level}>
+      <span key={current.level} className="level-badge" aria-hidden="true">
+        <small>{t.levelShort}</small>{current.level}
+      </span>
+      <div className="level-copy">
+        <strong>
+          <span className="sr-only">{t.level} {current.level}: </span>
+          {current.title[player.language]}
+        </strong>
+        <div className="xp-bar" role="progressbar" aria-label={t.detectivePoints}
+          aria-valuemin={0} aria-valuemax={next ? xpForLevel : 1} aria-valuenow={next ? xpIntoLevel : 1}
+          aria-valuetext={next ? `${xpIntoLevel}/${xpForLevel} XP` : t.topRank}>
+          <span style={{ width: percent + "%" }} />
+        </div>
+        <span className="xp-note">
+          {next ? `${next.minXp - player.xp} ${t.xpToLevel} ${next.level}` : t.topRank}
+        </span>
       </div>
     </div>
   );
@@ -234,6 +264,17 @@ function MathIt() {
   const profileDialog = useRef<HTMLDialogElement>(null);
   const [profileVersion, setProfileVersion] = useState(0);
   const started = Boolean(player.name);
+  // index.html applies the saved theme before first paint; start from what it chose.
+  const [theme, setTheme] = useState<"dark" | "light">(() => document.documentElement.dataset.theme === "light" ? "light" : "dark");
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#141b2e" : "#f7f2e7");
+    try {
+      localStorage.setItem("math-it-theme", theme);
+    } catch {
+      // The theme still switches for this visit when storage is unavailable.
+    }
+  }, [theme]);
   useEffect(() => {
     const scroll = new Lenis({
       autoRaf: true,
@@ -291,8 +332,14 @@ function MathIt() {
                 <button key={language} onClick={() => setLanguage(language)} aria-pressed={player.language === language} className={player.language === language ? "active" : ""}>{language.toUpperCase()}</button>
               ))}
             </div>
-            <button className="profile-button" onClick={openProfile} disabled={!started} aria-label={started ? t.editProfile + ": " + player.name : t.newDetective}>
-              <span className="profile-avatar"><Avatar {...player.avatar} /></span>
+            <button className="theme-toggle" onClick={() => setTheme(theme === "dark" ? "light" : "dark")} aria-label={theme === "dark" ? t.themeLight : t.themeDark} title={theme === "dark" ? t.themeLight : t.themeDark}>
+              <Icon name={theme === "dark" ? "sun" : "moon"} size={20} />
+            </button>
+            <button className="profile-button" onClick={openProfile} disabled={!started} aria-label={started ? t.editProfile + ": " + player.name + ", " + t.level + " " + getLevel(player.xp).level : t.newDetective}>
+              <span className="profile-avatar-wrap">
+                <span className="profile-avatar"><Avatar {...player.avatar} /></span>
+                {started && <span key={getLevel(player.xp).level} className="profile-level" aria-hidden="true">{getLevel(player.xp).level}</span>}
+              </span>
               {started && <strong>{player.name}</strong>}
             </button>
           </div>

@@ -10,6 +10,7 @@ import type { BoardState, CaseId, ZoneId } from './types'
 import { Biscuit, Icon, ShapeArt, type ShapeName } from './Illustrations'
 import InteractionDemo from './InteractionDemo'
 import EvidenceChart from './EvidenceChart'
+import { getLevel, xpForCases, type DetectiveLevel } from './levels'
 
 type Selection = { token: number; zone: ZoneId }
 
@@ -89,6 +90,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   const [dragging, setDragging] = useState<Selection | null>(null)
   const [feedback, setFeedback] = useState<'retry' | 'solved' | null>(null)
   const [earnedPoints, setEarnedPoints] = useState(false)
+  const [newLevel, setNewLevel] = useState<DetectiveLevel | null>(null)
   const [hintStep, setHintStep] = useState(0)
   const hint = useRef<HTMLDialogElement>(null)
   const sensors = useSensors(
@@ -138,10 +140,14 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   function checkEvidence() {
     setSelected(null)
     if (isSolved(caseId, board)) {
-      setEarnedPoints(!player.completedCases.includes(caseId))
+      const firstSolve = !player.completedCases.includes(caseId)
+      const before = getLevel(xpForCases(player.completedCases.length))
+      const after = getLevel(xpForCases(player.completedCases.length + (firstSolve ? 1 : 0)))
+      setEarnedPoints(firstSolve)
+      setNewLevel(after.level > before.level ? after : null)
       completeCase(caseId)
       setFeedback('solved')
-      playSound('correct')
+      playSound(after.level > before.level ? 'levelUp' : 'correct')
     } else { setFeedback('retry'); playSound('click') }
   }
 
@@ -216,9 +222,14 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
               <span className="reward-badge" aria-label={earnedPoints ? t.solvedDetail : undefined}>
                 <Icon name="star" size={22} />{earnedPoints && <strong aria-hidden="true">+100</strong>}
               </span>
-              {earnedPoints && <span className="points-float" aria-hidden="true">+100 ★</span>}
+              {earnedPoints && <span className="points-float" aria-hidden="true">+100 XP</span>}
             </div>
-            <div className="success-copy"><strong>{t.solved}</strong><p>{!earnedPoints ? t.solvedAgain : !lastInUnit ? t.nextUnlocked
+            <div className="success-copy"><strong>{t.solved}</strong>
+              {newLevel && <span className="level-up" key={newLevel.level}>
+                <span className="level-up-badge" aria-hidden="true">{newLevel.level}</span>
+                <span><strong>{t.levelUp}</strong> {t.newRank}: {newLevel.title[language]}<span className="sr-only"> ({t.level} {newLevel.level})</span></span>
+              </span>}
+              <p>{!earnedPoints ? t.solvedAgain : !lastInUnit ? t.nextUnlocked
               : caseLevels.every(({ id }) => player.completedCases.includes(id)) ? t.casebookComplete : t.unitComplete}</p></div>
             <button className="text-button" onClick={onNext}>{lastInUnit ? t.allSolved : t.nextCase} <span aria-hidden="true">→</span></button>
           </>}
