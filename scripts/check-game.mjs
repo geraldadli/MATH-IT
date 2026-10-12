@@ -1,8 +1,11 @@
 import assert from "node:assert/strict";
 import {
   caseLevels,
+  caseNumber,
   getCase,
   getNextCase,
+  getUnit,
+  units,
   createBoard,
   isCaseUnlocked,
   isSolved,
@@ -105,16 +108,38 @@ assert.equal(isCaseUnlocked(2, [1]), true);
 assert.equal(isCaseUnlocked(3, [1, 2]), true);
 assert.equal(isCaseUnlocked(13, [1, 2]), false);
 assert.equal(isCaseUnlocked(23, [1, 2]), false);
+assert.equal(isCaseUnlocked(10, []), true, "Every unit opens with its first case");
+assert.equal(isCaseUnlocked(20, []), true, "Every unit opens with its first case");
+assert.equal(isCaseUnlocked(11, [10]), true, "Units progress independently");
+assert.equal(isCaseUnlocked(16, [1, 2, 3, 4, 5, 6, 7, 8, 9]), true, "Unit 1 skips cases from other units");
+assert.equal(isCaseUnlocked(12, []), true, "Every unit opens with its first case");
+assert.equal(isCaseUnlocked(19, [12, 14, 15]), false);
+assert.equal(isCaseUnlocked(13, [10]), false);
 
 assert.equal(caseLevels.length, 22);
+assert.deepEqual(units.map((unit) => unit.id), [1, 2, 3, 4]);
+assert.ok(units.every((unit) => unit.cases.length >= 3 && unit.cases.length <= 10), "Units stay roughly balanced");
+assert.deepEqual(
+  units.flatMap((unit) => unit.cases).sort((a, b) => a - b),
+  caseLevels.map((level) => level.id),
+  "Every case belongs to exactly one unit",
+);
+for (const unit of units) {
+  assert.ok(unit.title.en && unit.title.id, `Unit ${unit.id} needs a bilingual title`);
+  assert.deepEqual([...unit.cases].sort((a, b) => a - b), unit.cases, `Unit ${unit.id} adds new cases at its end`);
+}
 const progress = [];
-for (const level of caseLevels) {
+for (const level of units.flatMap((unit) => unit.cases.map(getCase))) {
   const id = level.id;
+  const unit = getUnit(id);
+  const position = unit.cases.indexOf(id);
   assert.equal(getCase(id), level);
+  assert.equal(caseNumber(id), position + 1);
   assert.equal(getNextCase(progress), level);
+  assert.equal(getNextCase(progress, unit.id), level);
   assert.equal(isCaseUnlocked(id, progress), true);
-  if (id > 1) {
-    assert.equal(isCaseUnlocked(id, progress.slice(1)), false, `Case ${id} requires every earlier case`);
+  if (position > 0) {
+    assert.equal(isCaseUnlocked(id, progress.filter((solved) => solved !== unit.cases[0])), false, `Case ${id} requires every earlier case in its unit`);
     assert.equal(isCaseUnlocked(id, [id]), false, `Case ${id} cannot unlock itself`);
   }
   assert.deepEqual(level.dropZones.map((zone) => zone.id), ["a", "b", "c"]);
@@ -176,6 +201,9 @@ for (const level of caseLevels) {
 }
 
 assert.equal(getNextCase(progress), undefined);
+for (const unit of units) assert.equal(getNextCase(progress, unit.id), undefined);
+assert.equal(getNextCase([1, 3], 4).id, 20, "Each unit has its own next case");
+assert.equal(getNextCase([12, 14], 2).id, 15);
 const sharedCopy = moveToken(createBoard(2), 12, "tray", "a", 2);
 assert.deepEqual(getReviewZones(2, sharedCopy), [], "A valid reusable copy must not be flagged");
 assert.deepEqual(getReviewZones(2, moveToken(sharedCopy, 12, "tray", "c", 2)), ["c"], "Flag only the incorrect copy's group");
@@ -186,7 +214,14 @@ assert.deepEqual(normaliseCompletedCases([1, 2, 4, 5]), [1, 2]);
 assert.deepEqual(normaliseCompletedCases([1, "2", 3]), [1]);
 assert.deepEqual(normaliseCompletedCases([2, 3]), []);
 assert.deepEqual(normaliseCompletedCases(["1", 2]), []);
-assert.deepEqual(normaliseCompletedCases(progress), progress);
+assert.deepEqual(normaliseCompletedCases([20, 10]), [10, 20], "Keep progress in every unit");
+assert.deepEqual(normaliseCompletedCases([11, 21]), [], "Each unit keeps only its uninterrupted run");
+assert.deepEqual(
+  normaliseCompletedCases([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "Progress from the original twelve cases survives the move to units",
+);
+assert.deepEqual(normaliseCompletedCases(progress), [...progress].sort((a, b) => a - b));
 for (const malformed of [null, undefined, "[1,2]", {}, 12, true]) {
   assert.deepEqual(normaliseCompletedCases(malformed), []);
 }
@@ -196,5 +231,5 @@ for (const invalidId of [0, 23, -1, NaN]) {
   assert.equal(isCaseUnlocked(invalidId, progress), false);
 }
 console.log(
-  "Game checks passed: all 22 cases, invalid solutions, reusable copies, undo, sequential locking, and saved-progress migration.",
+  "Game checks passed: all 22 cases in 4 units, invalid solutions, reusable copies, undo, sequential locking, and saved-progress migration.",
 );

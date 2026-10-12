@@ -5,7 +5,7 @@ import {
 } from '@dnd-kit/core'
 import { useGame } from './GameContext'
 import { translations } from './i18n'
-import { caseLevels, createBoard, getCase, getReviewZones, isSolved, moveToken } from './gameLogic'
+import { caseLevels, caseNumber, createBoard, getCase, getReviewZones, getUnit, isSolved, moveToken } from './gameLogic'
 import type { BoardState, CaseId, ZoneId } from './types'
 import { Biscuit, Icon, ShapeArt, type ShapeName } from './Illustrations'
 import InteractionDemo from './InteractionDemo'
@@ -13,8 +13,13 @@ import EvidenceChart from './EvidenceChart'
 
 type Selection = { token: number; zone: ZoneId }
 
-function TokenFace({ sharing, label }: { sharing: boolean; label: string }) {
+function TokenFace({ sharing, notebook, label }: { sharing: boolean; notebook: boolean; label: string }) {
   if (sharing) return <Biscuit className="biscuit-art" />
+  if (notebook) {
+    // The suspect's own answer is written in their pen, so it reads as work to check.
+    const [work, answer] = label.split(' = ')
+    return <span className="notebook-entry"><span>{work}</span><span className="suspect-answer">= {answer}</span></span>
+  }
   if (label.startsWith('shape:')) return <ShapeArt shape={label.slice(6) as ShapeName} />
   // Long equations, prices, and weights break before "=", "+" or "−", and after "×".
   const lineBreak = label.includes(' = ') ? / (?== )/ : /Rp|\bk?g\b/.test(label) && /[+−×]/.test(label) ? / (?=[+−] )|(?<=×) / : null
@@ -72,8 +77,12 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   const language = player.language
   const t = translations[language].board
   const level = getCase(caseId)
+  const unit = getUnit(caseId)
+  const lastInUnit = unit.cases[unit.cases.length - 1] === caseId
   const sharing = level.kind === 'sharing'
-  const tokenClass = sharing ? 'biscuit-token' : level.tokenLabels ? 'number-token expression-token' : level.tokenWords ? 'story-token' : 'number-token'
+  const notebook = level.cardStyle === 'notebook'
+  const tokenClass = sharing ? 'biscuit-token' : notebook ? 'number-token expression-token notebook-token'
+    : level.tokenLabels ? 'number-token expression-token' : level.tokenWords ? 'story-token' : 'number-token'
   const [board, setBoard] = useState<BoardState>(() => createBoard(caseId))
   const [history, setHistory] = useState<BoardState[]>([])
   const [selected, setSelected] = useState<Selection | null>(null)
@@ -144,12 +153,12 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
       onSelect={() => {
         setSelected(selected?.token === token && selected.zone === zone ? null : { token, zone })
         playSound('drag')
-      }}><TokenFace sharing={sharing} label={tokenLabel(token)} /></EvidenceToken>
+      }}><TokenFace sharing={sharing} notebook={notebook} label={tokenLabel(token)} /></EvidenceToken>
   }
 
   return <article className={`game-board${solved ? ' is-solved' : ''}`}>
     <header className="case-briefing">
-      <div className="case-eyebrow"><span className="case-number">{t.case} {String(caseId).padStart(2, '0')}</span>{level.skill[language]}</div>
+      <div className="case-eyebrow"><span className="case-number">{t.unit} {unit.id} · {t.case} {String(caseNumber(caseId)).padStart(2, '0')}</span>{level.skill[language]}</div>
       <h2>{level.title[language]}</h2>
       <p className="mission-copy">{level.mission[language]}</p>
     </header>
@@ -168,7 +177,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
       },
     }}>
       <div className="board-workspace">
-        <div className="workspace-intro"><Icon name="hand" size={18} /><p aria-live="polite">{selected ? `${tokenName(selected.token)} · ${t.selectedHelp}` : t.dragHelp}</p><InteractionDemo autoShow={caseId === 1 && !player.completedCases.includes(1)} language={language} /></div>
+        <div className="workspace-intro"><Icon name="hand" size={18} /><p aria-live="polite">{selected ? `${tokenName(selected.token)} · ${t.selectedHelp}` : t.dragHelp}</p><InteractionDemo autoShow={!player.completedCases.length} language={language} /></div>
 
         {level.chart && <EvidenceChart chart={level.chart} language={language} />}
 
@@ -209,8 +218,9 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
               </span>
               {earnedPoints && <span className="points-float" aria-hidden="true">+100 ★</span>}
             </div>
-            <div className="success-copy"><strong>{t.solved}</strong><p>{earnedPoints ? (caseId < caseLevels.length ? t.nextUnlocked : t.casebookComplete) : t.solvedAgain}</p></div>
-            <button className="text-button" onClick={onNext}>{caseId < caseLevels.length ? t.nextCase : t.allSolved} <span aria-hidden="true">→</span></button>
+            <div className="success-copy"><strong>{t.solved}</strong><p>{!earnedPoints ? t.solvedAgain : !lastInUnit ? t.nextUnlocked
+              : caseLevels.every(({ id }) => player.completedCases.includes(id)) ? t.casebookComplete : t.unitComplete}</p></div>
+            <button className="text-button" onClick={onNext}>{lastInUnit ? t.allSolved : t.nextCase} <span aria-hidden="true">→</span></button>
           </>}
         </div>}
 
@@ -221,7 +231,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
           <button className="subtle-button" onClick={reset}><Icon name="reset" size={18} />{solved ? t.playAgain : t.reset}</button>
         </div><button className="primary-button check-button" data-sound="custom" onClick={checkEvidence} disabled={solved}><Icon name="check" size={18} />{t.checkEvidence}</button></div>
       </div>
-      <DragOverlay>{dragging && <div className={`evidence-token drag-overlay ${tokenClass}`}><TokenFace sharing={sharing} label={tokenLabel(dragging.token)} /></div>}</DragOverlay>
+      <DragOverlay>{dragging && <div className={`evidence-token drag-overlay ${tokenClass}`}><TokenFace sharing={sharing} notebook={notebook} label={tokenLabel(dragging.token)} /></div>}</DragOverlay>
     </DndContext>
 
     <footer className="board-footer"><button className="hint-button" data-sound="custom" onClick={() => { setHintStep(0); hint.current?.showModal(); playSound('hint') }}><Icon name="help" size={18} />{t.needHint}</button><span className="calm-indicator"><Icon name="sun" size={18} />{t.noTimer}</span></footer>

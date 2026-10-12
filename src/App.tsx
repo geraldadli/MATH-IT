@@ -6,8 +6,8 @@ import { GameProvider, useGame } from "./GameContext";
 import GameBoard from "./GameBoard";
 import { shellTranslations } from "./i18n";
 import { Avatar, BakeryScene, Icon } from "./Illustrations";
-import type { AvatarConfig, CaseId } from "./types";
-import { caseLevels, getNextCase, isCaseUnlocked } from "./gameLogic";
+import type { AvatarConfig, CaseId, UnitId } from "./types";
+import { caseLevels, caseNumber, getCase, getNextCase, getUnit, isCaseUnlocked, units } from "./gameLogic";
 import "./App.css";
 
 function DetectiveForm({
@@ -164,20 +164,24 @@ function ProgressSummary() {
   );
 }
 
-function Dashboard({ openCase }: { openCase: (id: CaseId) => void }) {
+function Dashboard({ unitId, chooseUnit, openCase }: {
+  unitId: UnitId; chooseUnit: (id: UnitId) => void; openCase: (id: CaseId) => void;
+}) {
   const { player } = useGame();
   const t = shellTranslations[player.language];
-  const next = getNextCase(player.completedCases);
-  const upcoming = next ? caseLevels.slice(next.id, next.id + 2) : [];
-  const completedCases = caseLevels.filter((level) => player.completedCases.includes(level.id));
+  const unit = units.find((candidate) => candidate.id === unitId) ?? units[0];
+  const next = getNextCase(player.completedCases, unit.id);
+  const nextIndex = next ? unit.cases.indexOf(next.id) : -1;
+  const upcoming = next ? unit.cases.slice(nextIndex + 1, nextIndex + 3).map(getCase) : [];
+  const completedCases = unit.cases.filter((id) => player.completedCases.includes(id)).map(getCase);
   function caseCard(level: (typeof caseLevels)[number]) {
     const locked = !isCaseUnlocked(level.id, player.completedCases);
     return <button
       className={"case-file pastel-" + (level.id - 1) % 4 + (locked ? " locked" : " completed")}
       key={level.id} disabled={locked} onClick={() => openCase(level.id)}
-      aria-label={t.case + " " + level.id + ": " + level.title[player.language] + ". " + (locked ? t.locked : t.completed)}
+      aria-label={t.case + " " + caseNumber(level.id) + ": " + level.title[player.language] + ". " + (locked ? t.locked : t.completed)}
     >
-      <div className="file-top"><span className="file-number">{String(level.id).padStart(2, "0")}</span><Icon name={locked ? "lock" : "check"} size={16} /></div>
+      <div className="file-top"><span className="file-number">{String(caseNumber(level.id)).padStart(2, "0")}</span><Icon name={locked ? "lock" : "check"} size={16} /></div>
       <div className="file-symbol" aria-hidden="true">{level.preview}</div>
       <h3>{level.title[player.language]}</h3>
       {locked && <span className="sr-only">{t.lockedAfter}</span>}
@@ -185,11 +189,21 @@ function Dashboard({ openCase }: { openCase: (id: CaseId) => void }) {
   }
   return (
     <section className="dashboard-board">
+      <nav className="unit-picker" aria-label={t.units}>
+        {units.map((option) => <button key={option.id} className={"unit-option unit-" + option.id + (option.id === unit.id ? " active" : "")}
+          aria-pressed={option.id === unit.id} onClick={() => chooseUnit(option.id)}>
+          <span className="unit-number">{t.unit} {option.id}</span>
+          <strong>{option.title[player.language]}</strong>
+          <span className="unit-progress">
+            <Icon name="check" size={13} />{option.cases.filter((id) => player.completedCases.includes(id)).length}/{option.cases.length}
+          </span>
+        </button>)}
+      </nav>
       <div className="dashboard-feature">
         <div className="feature-copy">
-          <span className="eyebrow">{next ? t.case + " " + String(next.id).padStart(2, "0") : t.allSolved}</span>
+          <span className="eyebrow">{t.unit} {unit.id} · {next ? t.case + " " + String(caseNumber(next.id)).padStart(2, "0") : t.unitDone}</span>
           <h2>{next ? next.title[player.language] : t.allSolvedTitle}</h2>
-          <button className="primary-button" onClick={() => openCase(next?.id ?? 1)}>
+          <button className="primary-button" onClick={() => openCase(next?.id ?? unit.cases[0])}>
             {next ? t.openCase : t.revisitCase}<Icon name="arrow" size={18} />
           </button>
         </div>
@@ -215,6 +229,7 @@ function MathIt() {
   const { player, setLanguage, setSoundEnabled } = useGame();
   const t = shellTranslations[player.language];
   const [selectedCase, setSelectedCase] = useState<CaseId | null>(null);
+  const [unitId, setUnitId] = useState<UnitId>(() => getUnit(getNextCase(player.completedCases)?.id ?? 1).id);
   const caseNavigation = useRef<HTMLElement>(null);
   const profileDialog = useRef<HTMLDialogElement>(null);
   const [profileVersion, setProfileVersion] = useState(0);
@@ -248,8 +263,14 @@ function MathIt() {
     profileDialog.current?.showModal();
   }
   function openCase(id: CaseId) {
-    if (isCaseUnlocked(id, player.completedCases)) setSelectedCase(id);
+    if (!isCaseUnlocked(id, player.completedCases)) return;
+    setSelectedCase(id);
+    setUnitId(getUnit(id).id);
   }
+  const unitCases = units.find((unit) => unit.id === unitId)?.cases ?? [];
+  const unitNext = getNextCase(player.completedCases, unitId);
+  // Show this unit's solved cases, the current one, and two locked previews.
+  const navigationCases = unitNext ? unitCases.slice(0, unitCases.indexOf(unitNext.id) + 3) : unitCases;
   return (
     <>
       <header className="topbar">
@@ -286,17 +307,18 @@ function MathIt() {
           {selectedCase !== null && (
             <nav className="case-navigation" ref={caseNavigation} aria-label={t.caseFiles}>
               <button className="overview-tab" onClick={() => setSelectedCase(null)} aria-label={t.overview}><Icon name="home" size={19} /></button>
-              {caseLevels.filter((level) => level.id <= (getNextCase(player.completedCases)?.id ?? caseLevels.length) + 2).map((level) => {
+              <span className="navigation-unit">{t.unit} {unitId}</span>
+              {navigationCases.map(getCase).map((level) => {
                 const completed = player.completedCases.includes(level.id);
                 const locked = !isCaseUnlocked(level.id, player.completedCases);
                 return (
                   <button
                     key={level.id} className={(selectedCase === level.id ? "selected" : "") + (completed ? " completed" : "")}
                     disabled={locked} onClick={() => openCase(level.id)}
-                    aria-label={t.case + " " + level.id + ": " + level.title[player.language] + ". " + (locked ? t.locked : completed ? t.completed : t.ready)}
+                    aria-label={t.unit + " " + unitId + ", " + t.case + " " + caseNumber(level.id) + ": " + level.title[player.language] + ". " + (locked ? t.locked : completed ? t.completed : t.ready)}
                     aria-current={selectedCase === level.id ? "step" : undefined}
                   >
-                    <span>{level.id}</span>
+                    <span>{caseNumber(level.id)}</span>
                     {completed && <Icon name="check" size={11} />}
                     {locked && <Icon name="lock" size={10} />}
                   </button>
@@ -304,10 +326,10 @@ function MathIt() {
               })}
             </nav>
           )}
-          {selectedCase === null ? <Dashboard openCase={openCase} /> : (
+          {selectedCase === null ? <Dashboard unitId={unitId} chooseUnit={setUnitId} openCase={openCase} /> : (
             <GameBoard key={selectedCase} caseId={selectedCase} onNext={() => {
-              const next = caseLevels.find((level) => level.id === selectedCase + 1);
-              if (next) openCase(next.id);
+              const next = unitCases[unitCases.indexOf(selectedCase) + 1];
+              if (next) openCase(next);
               else setSelectedCase(null);
             }} />
           )}

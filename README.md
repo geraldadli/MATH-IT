@@ -23,15 +23,26 @@ npm run build
 
 Create a detective name, pick an animal partner and coat color, then open the first case. Drag clues with a mouse or touch, or select a clue and choose its destination. Keyboard users can press Enter to select, Tab to a destination button, and Enter to place; Space and arrow keys also support dragging. Undo, reset, and illustrated hints are always available without penalties.
 
-The first case opens a short drag/tap demonstration. Dismiss it with “Let me try”, the close button, or Escape; dismissal is remembered on this device. “How to move” reopens it from any case. The demonstration never moves real clues and respects reduced-motion preferences. The dashboard features the current case, previews the next two, and keeps solved cases in an expandable replay section.
+A player's first case opens a short drag/tap demonstration. Dismiss it with “Let me try”, the close button, or Escape; dismissal is remembered on this device. “How to move” reopens it from any case. The demonstration never moves real clues and respects reduced-motion preferences. The dashboard starts with a unit picker showing each unit's progress. For the chosen unit, it features the current case, previews the next two, and keeps solved cases in an expandable replay section.
 
-Each case has three destinations and unlocks the next case when solved. Start with sharing 12 biscuits and sorting multiples, then investigate addition, subtraction, comparisons, multiplication, division, place value, fractions, length, elapsed time, and two-step calculations. Cases 13–17 fill the remaining Phase B curriculum areas: sorting 2D shapes by equal sides and right angles (geometry), missing numbers (early algebra), estimating by rounding, Rupiah prices and change, and grams and kilograms. Their answer groups hold different numbers of clues, so the last clues cannot be placed by elimination. Cases 18–22 target the weakest areas in Indonesia's PISA and TIMSS results: reading, applying, and reasoning. Players choose the operation a short story needs (including a "how many more" story that needs subtraction), diagnose a suspect's worked answers as correct, a regrouping slip, or the wrong operation, and answer questions from a pictograph, a bar chart, and a line chart of a growing bean sprout.
+The cases are grouped into four units. They follow the TIMSS Grade 4 content domains, with algebra and reasoning split out of Number to keep the units balanced:
+
+| Unit | Cases |
+|---|---|
+| 1 · Numbers & operations | sharing, multiples, addition, subtraction, comparing, multiplication, division, place value, fractions, money |
+| 2 · Algebra & reasoning | two-step problems, missing numbers, estimation, word problems, spotting mistakes |
+| 3 · Measurement & geometry | length, elapsed time, 2D shapes, mass |
+| 4 · Data analysis | pictographs, bar charts, line charts |
+
+Every unit is open from the start. Within a unit, cases are numbered from 1 and each solved case unlocks the next. Case IDs stay fixed for saved progress, and new cases join the end of their unit.
+
+Each case has three destinations. Start with sharing 12 biscuits and sorting multiples, then investigate addition, subtraction, comparisons, multiplication, division, place value, fractions, length, elapsed time, and two-step calculations. Cases 13–17 fill the remaining Phase B curriculum areas: sorting 2D shapes by equal sides and right angles (geometry), missing numbers (early algebra), estimating by rounding, Rupiah prices and change, and grams and kilograms. Their answer groups hold different numbers of clues, so the last clues cannot be placed by elimination. Cases 18–22 target the weakest areas in Indonesia's PISA and TIMSS results: reading, applying, and reasoning. Players choose the operation a short story needs (including a "how many more" story that needs subtraction), check the answers in a suspect's notebook (drawn as lined paper, with the suspect's answer in red pen) and decide whether each is correct, forgot to carry or borrow, or used the wrong sign, and answer questions from a pictograph, a bar chart, and a line chart of a growing bean sprout.
 
 Charts are drawn as inline SVG that fits its container. Values are deliberately unlabeled, because reading them from the scale is the skill being practised, and unnumbered half-step gridlines support reading between labels. On narrow screens, two-word axis labels stack onto two lines. Screen readers get each chart as a data table. The first two cases preserve existing players’ progress.
 
 Checking an incorrect arrangement highlights only the groups needing review, using a warm border and a “Look again” label without identifying individual answers or destinations. Remaining clues highlight the tray. Moving a clue, undoing, or resetting clears this feedback. On screens up to 650px wide, groups stack vertically and clues have touch targets of at least 52px.
 
-In the multiples case, 12 has two copies so it can belong to both groups; in the shapes case, the square does the same. Move either copy to change its group, or return it to the tray. Each first completion earns 100 points, up to 2,200 points; replays do not award additional points. Saved progress keeps only the uninterrupted sequence of solved cases.
+In the multiples case, 12 has two copies so it can belong to both groups; in the shapes case, the square does the same. Move either copy to change its group, or return it to the tray. Each first completion earns 100 points, up to 2,200 points; replays do not award additional points. Saved progress keeps each unit's uninterrupted run of solved cases, so progress saved before units existed carries over.
 
 The ID/EN switch translates the interface, instructions, hints, and feedback. The profile button edits the detective card. The top-bar Sound button enables bubbly click, pickup, drop, hint, and success sounds alongside an original, softly layered music loop. Audio continues across the welcome screen, dashboard, and cases, pauses when the tab is hidden, and stops when muted. The sound preference is saved; browsers may require a click or keypress before playback begins. All audio is synthesized locally with Web Audio, with no downloaded tracks or new audio dependencies.
 
@@ -41,9 +52,9 @@ Hints offer one short thinking prompt at a time, with optional next/back control
 
 - `src/types.ts`: strict player, avatar, case, and drop-zone types.
 - `src/i18n.ts`: English and Indonesian dictionaries.
-- `src/cases.ts`: the twenty-two cases, bilingual missions, token labels, accepted groups, and visual hints.
-- `src/GameContext.tsx`: profile, language, sound preference, score, and linear progress saved in localStorage.
-- `src/gameLogic.ts`: immutable clue movement and case validation.
+- `src/cases.ts`: the four units, the twenty-two cases, bilingual missions, token labels, accepted groups, and visual hints.
+- `src/GameContext.tsx`: profile, language, sound preference, score, and per-unit progress saved in localStorage.
+- `src/gameLogic.ts`: immutable clue movement, case validation, and unit progression.
 - `src/GameBoard.tsx`: @dnd-kit/core workspace, history, feedback, and native hint dialog.
 - `src/EvidenceChart.tsx`: responsive SVG bar, line, and pictograph charts with a screen-reader table.
 - `src/InteractionDemo.tsx`: dismissible, replayable drag/tap demonstration.
@@ -51,7 +62,7 @@ Hints offer one short thinking prompt at a time, with optional next/back control
 - `src/Illustrations.tsx`: original vector artwork and icons.
 - `src/audio.ts`: bubble sound synthesis and the original 64-step melody.
 - `src/useAudio.ts`: shared playback, click sounds, muting, and tab visibility handling.
-- `scripts/check-game.mjs`: dependency-free checks solving all twenty-two cases, validating chart data, rejecting invalid solutions, enforcing progression, normalizing saved progress, and verifying copies and undo snapshots.
+- `scripts/check-game.mjs`: dependency-free checks solving all twenty-two cases, validating chart data, rejecting invalid solutions, enforcing per-unit progression, normalizing saved progress, and verifying copies and undo snapshots.
 - `scripts/check-audio.mjs`: checks sound envelopes, pitch glides, volume bounds, oscillator cleanup, and melody looping.
 
 Profiles and completed cases stay on this browser/device; in-progress clue placements reset when leaving a case. Storage failures do not interrupt play. No backend or account is required. Google Fonts are optional; system fonts are the fallback.

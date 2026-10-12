@@ -1,7 +1,18 @@
-import { caseLevels, getCase } from "./cases.ts";
-import type { BoardState, CaseId, CaseLevel, DropZone, DropZoneId, ZoneId } from "./types.ts";
+import { caseLevels, getCase, units } from "./cases.ts";
+import type { BoardState, CaseId, CaseLevel, CaseUnit, DropZone, DropZoneId, UnitId, ZoneId } from "./types.ts";
 
-export { caseLevels, getCase } from "./cases.ts";
+export { caseLevels, getCase, units } from "./cases.ts";
+
+export function getUnit(caseId: CaseId): CaseUnit {
+  const unit = units.find((candidate) => candidate.cases.includes(caseId));
+  if (!unit) throw new Error(`Unknown case: ${caseId}`);
+  return unit;
+}
+
+// Cases are numbered within their unit, starting at 1.
+export function caseNumber(caseId: CaseId): number {
+  return getUnit(caseId).cases.indexOf(caseId) + 1;
+}
 
 export function createBoard(caseId: CaseId): BoardState {
   return { tray: [...getCase(caseId).tokens], a: [], b: [], c: [] };
@@ -91,20 +102,29 @@ export function isCaseUnlocked(
   caseId: CaseId,
   completedCases: number[],
 ): boolean {
-  return caseLevels.some((level) => level.id === caseId) &&
-    caseLevels.every((level) => level.id >= caseId || completedCases.includes(level.id));
+  const unit = units.find((candidate) => candidate.cases.includes(caseId));
+  return !!unit && unit.cases.slice(0, unit.cases.indexOf(caseId))
+    .every((id) => completedCases.includes(id));
 }
 
 export function normaliseCompletedCases(saved: unknown): CaseId[] {
   if (!Array.isArray(saved)) return [];
-  const completed: CaseId[] = [];
-  for (const level of caseLevels) {
-    if (!saved.includes(level.id)) break;
-    completed.push(level.id);
+  // Keep each unit's uninterrupted run of solved cases.
+  const completed = new Set<CaseId>();
+  for (const unit of units) {
+    for (const id of unit.cases) {
+      if (!saved.includes(id)) break;
+      completed.add(id);
+    }
   }
-  return completed;
+  return caseLevels.map((level) => level.id).filter((id) => completed.has(id));
 }
 
-export function getNextCase(completedCases: number[]): CaseLevel | undefined {
-  return caseLevels[normaliseCompletedCases(completedCases).length];
+export function getNextCase(completedCases: number[], unitId?: UnitId): CaseLevel | undefined {
+  const completed = normaliseCompletedCases(completedCases);
+  const next = units
+    .filter((unit) => unitId === undefined || unit.id === unitId)
+    .flatMap((unit) => unit.cases)
+    .find((id) => !completed.includes(id));
+  return next === undefined ? undefined : getCase(next);
 }

@@ -1,6 +1,7 @@
 const en = {
   board: {
     case: 'CASE',
+    unit: 'UNIT',
     dragHelp: 'Drag or tap a clue.',
     howToMove: 'How to move',
     closeDemo: 'Close demonstration',
@@ -31,6 +32,7 @@ const en = {
     solvedDetail: '+100 points',
     nextUnlocked: 'Next case unlocked!',
     casebookComplete: 'You solved every case!',
+    unitComplete: 'Unit complete! Try another unit.',
     solvedAgain: 'Nicely done again.',
     nextCase: 'Next case',
     allSolved: 'Casebook',
@@ -62,6 +64,7 @@ const en = {
 const id: typeof en = {
   board: {
     case: 'KASUS',
+    unit: 'UNIT',
     dragHelp: 'Seret atau ketuk petunjuk.',
     howToMove: 'Cara memindahkan',
     closeDemo: 'Tutup contoh',
@@ -92,6 +95,7 @@ const id: typeof en = {
     solvedDetail: '+100 poin',
     nextUnlocked: 'Kasus berikutnya terbuka!',
     casebookComplete: 'Semua kasus terpecahkan!',
+    unitComplete: 'Unit selesai! Coba unit lain.',
     solvedAgain: 'Berhasil lagi.',
     nextCase: 'Kasus berikutnya',
     allSolved: 'Buku kasus',
@@ -157,6 +161,9 @@ const shellEn = {
   caseFiles: "Case files",
   upNext: "Coming up",
   unlockMore: "Solve your case to unlock the next one.",
+  unit: "UNIT",
+  units: "Units",
+  unitDone: "Unit complete!",
   solvedCases: "Play solved cases",
   case: "CASE",
   noTimer: "No timer. Take your time.",
@@ -213,6 +220,9 @@ const shellId: typeof shellEn = {
   caseFiles: "Berkas kasus",
   upNext: "Selanjutnya",
   unlockMore: "Pecahkan kasusmu untuk membuka kasus berikutnya.",
+  unit: "UNIT",
+  units: "Unit",
+  unitDone: "Unit selesai!",
   solvedCases: "Mainkan kasus yang sudah selesai",
   case: "KASUS",
   noTimer: "Tanpa timer. Santai saja.",

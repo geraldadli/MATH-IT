@@ -1,4 +1,4 @@
-import type { CaseId, CaseLevel } from "./types.ts";
+import type { CaseId, CaseLevel, CaseUnit } from "./types.ts";
 
 export const caseLevels: CaseLevel[] = [
   {
@@ -363,18 +363,19 @@ export const caseLevels: CaseLevel[] = [
     id: 19, kind: "sorting",
     title: { en: "The suspect's notebook", id: "Buku catatan tersangka" },
     skill: { en: "Spotting mistakes", id: "Mencari kesalahan" },
-    mission: { en: "Check each answer. Is it right, or what went wrong?", id: "Periksa setiap jawaban. Benar, atau apa yang keliru?" },
+    mission: { en: "Check the suspect's answers. Right, or what went wrong?", id: "Periksa jawaban tersangka. Benar, atau apa yang keliru?" },
+    cardStyle: "notebook",
     tokens: [4, 2, 7, 1, 6, 3, 5],
     tokenLabels: { 1: "13 + 7 = 20", 2: "52 − 28 = 36", 3: "45 + 38 = 73", 4: "6 × 3 = 9", 5: "61 − 37 = 24", 6: "20 ÷ 4 = 16", 7: "71 − 23 = 52" },
     dropZones: [
-      { id: "a", label: { en: "Correct", id: "Benar" }, condition: { kind: "values", values: [1, 5] } },
-      { id: "b", label: { en: "Regrouping slip", id: "Lupa menyimpan/meminjam" }, condition: { kind: "values", values: [2, 3, 7] } },
-      { id: "c", label: { en: "Wrong operation", id: "Salah operasi" }, condition: { kind: "values", values: [4, 6] } },
+      { id: "a", label: { en: "Correct ✓", id: "Benar ✓" }, condition: { kind: "values", values: [1, 5] } },
+      { id: "b", label: { en: "Forgot to carry or borrow", id: "Lupa menyimpan atau meminjam" }, condition: { kind: "values", values: [2, 3, 7] } },
+      { id: "c", label: { en: "Used the wrong sign", id: "Salah memakai tanda" }, condition: { kind: "values", values: [4, 6] } },
     ],
     hints: [
       { text: { en: "Redo the calculation yourself. Does your answer match?", id: "Hitung ulang sendiri. Apakah hasilmu sama?" }, visual: "52 − 28 → ?" },
-      { text: { en: "Did they forget to carry or trade a ten?", id: "Apakah mereka lupa menyimpan atau meminjam satu puluhan?" }, visual: "5 + 8 → 13 → ?" },
-      { text: { en: "Try a different operation. Does it give their answer?", id: "Coba operasi lain. Apakah hasilnya sama dengan jawaban mereka?" }, visual: "6 ? 3 → 9" },
+      { text: { en: "Did they forget to carry or borrow a ten?", id: "Apakah mereka lupa menyimpan atau meminjam satu puluhan?" }, visual: "5 + 8 → 13 → ?" },
+      { text: { en: "Try a different sign. Does it give their answer?", id: "Coba tanda lain. Apakah hasilnya sama dengan jawaban mereka?" }, visual: "6 ? 3 → 9" },
     ],
     preview: "✓ ✗",
   },
@@ -483,6 +484,16 @@ export const caseLevels: CaseLevel[] = [
     ],
     preview: "↗ cm",
   },
+];
+
+// Units follow the TIMSS Grade 4 content domains, with algebra and reasoning
+// split out of Number. Each unit is its own track; new cases join the end of
+// a unit so saved progress stays valid.
+export const units: CaseUnit[] = [
+  { id: 1, title: { en: "Numbers & operations", id: "Bilangan & operasi hitung" }, cases: [1, 2, 3, 4, 5, 6, 7, 8, 9, 16] },
+  { id: 2, title: { en: "Algebra & reasoning", id: "Aljabar & penalaran" }, cases: [12, 14, 15, 18, 19] },
+  { id: 3, title: { en: "Measurement & geometry", id: "Pengukuran & geometri" }, cases: [10, 11, 13, 17] },
+  { id: 4, title: { en: "Data analysis", id: "Analisis data" }, cases: [20, 21, 22] },
 ];
 
 export function getCase(caseId: CaseId): CaseLevel {
