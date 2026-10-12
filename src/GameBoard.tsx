@@ -7,13 +7,21 @@ import { useGame } from './GameContext'
 import { translations } from './i18n'
 import { caseLevels, createBoard, getCase, getReviewZones, isSolved, moveToken } from './gameLogic'
 import type { BoardState, CaseId, ZoneId } from './types'
-import { Biscuit, Icon } from './Illustrations'
+import { Biscuit, Icon, ShapeArt, type ShapeName } from './Illustrations'
 import InteractionDemo from './InteractionDemo'
+import EvidenceChart from './EvidenceChart'
 
 type Selection = { token: number; zone: ZoneId }
 
 function TokenFace({ sharing, label }: { sharing: boolean; label: string }) {
   if (sharing) return <Biscuit className="biscuit-art" />
+  if (label.startsWith('shape:')) return <ShapeArt shape={label.slice(6) as ShapeName} />
+  // Long equations, prices, and weights break before "=", "+" or "−", and after "×".
+  const lineBreak = label.includes(' = ') ? / (?== )/ : /Rp|\bk?g\b/.test(label) && /[+−×]/.test(label) ? / (?=[+−] )|(?<=×) / : null
+  if (lineBreak)
+    return <span className="stacked-token">{label.split(lineBreak).map((part) => <span key={part}>
+      {part.split('□').flatMap((piece, index) => index ? [<span className="blank-box" key={index} />, piece] : [piece])}
+    </span>)}</span>
   if (label.includes('→')) {
     const [start, end] = label.split('→')
     return <span className="time-token"><span>{start.trim()}</span><span>→</span><span>{end.trim()}</span></span>
@@ -65,7 +73,7 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   const t = translations[language].board
   const level = getCase(caseId)
   const sharing = level.kind === 'sharing'
-  const tokenClass = sharing ? 'biscuit-token' : level.tokenLabels ? 'number-token expression-token' : 'number-token'
+  const tokenClass = sharing ? 'biscuit-token' : level.tokenLabels ? 'number-token expression-token' : level.tokenWords ? 'story-token' : 'number-token'
   const [board, setBoard] = useState<BoardState>(() => createBoard(caseId))
   const [history, setHistory] = useState<BoardState[]>([])
   const [selected, setSelected] = useState<Selection | null>(null)
@@ -81,12 +89,13 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
   const solved = feedback === 'solved'
   const reviewZones = feedback === 'retry' ? getReviewZones(caseId, board) : []
   const reviewTray = feedback === 'retry' && board.tray.length > 0
-  const tokenLabel = (token: number) => level.tokenLabels?.[token] ?? String(token)
+  const tokenLabel = (token: number) => level.tokenLabels?.[token] ?? level.tokenWords?.[token][language] ?? String(token)
+  const tokenText = (token: number) => level.tokenWords?.[token][language] ?? tokenLabel(token)
   const tokenName = (token: number) => {
-    const label = tokenLabel(token)
+    const label = tokenText(token)
     const readable = /^[■□]+$/.test(label)
       ? `${[...label].filter((part) => part === '■').length} ${t.of} ${label.length} ${t.partsShaded}`
-      : label.replaceAll('¼', t.quarter).replaceAll('½', t.half).replaceAll('¾', t.threeQuarters).replace('/', ` ${t.fractionOver} `)
+      : label.replaceAll('¼', t.quarter).replaceAll('½', t.half).replaceAll('¾', t.threeQuarters).replace('/', ` ${t.fractionOver} `).replaceAll('□', t.missingNumber)
     return `${sharing ? t.biscuit : t.clue} ${readable}`
   }
   const zoneName = (id: string | number) => id === 'tray' ? t.tray : level.dropZones.find((zone) => zone.id === id)?.label[language] ?? ''
@@ -161,12 +170,14 @@ export default function GameBoard({ caseId, onNext }: { caseId: CaseId; onNext: 
       <div className="board-workspace">
         <div className="workspace-intro"><Icon name="hand" size={18} /><p aria-live="polite">{selected ? `${tokenName(selected.token)} · ${t.selectedHelp}` : t.dragHelp}</p><InteractionDemo autoShow={caseId === 1 && !player.completedCases.includes(1)} language={language} /></div>
 
+        {level.chart && <EvidenceChart chart={level.chart} language={language} />}
+
         <DropArea id="tray" className="evidence-tray" label={t.tray} placeLabel={t.placeHere}
           reviewLabel={reviewTray ? t.cluesWaiting : undefined}
           selected={!!selected && selected.zone !== 'tray'} disabled={solved} onPlace={() => place(selected, 'tray')}>
           <div className="tray-heading"><span>{t.tray}</span><span className="tray-count">{board.tray.length} {t.left}</span></div>
           <div className="tray-tokens">{board.tray.map((token) => renderToken(token, 'tray'))}{!board.tray.length && <span className="tray-empty" aria-hidden="true">✓</span>}</div>
-          {!!availableCopies.length && <p className="copy-note">{availableCopies.map(tokenLabel).join(', ')} · {t.copyAvailable}</p>}
+          {!!availableCopies.length && <p className="copy-note">{availableCopies.map(tokenText).join(', ')} · {t.copyAvailable}</p>}
         </DropArea>
 
         <div className="dropzones">

@@ -1,5 +1,5 @@
 export type Language = "en" | "id";
-export type CaseId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+export type CaseId = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22;
 export type Localized = Record<Language, string>;
 export type DropZoneId = "a" | "b" | "c";
 export type ZoneId = "tray" | DropZoneId;
@@ -30,6 +30,17 @@ export interface DropZone {
   condition: DropZoneCondition;
 }
 
+export interface EvidenceChart {
+  kind: "bar" | "line" | "pictograph";
+  title: Localized;
+  axis: Localized;
+  categories: Localized[];
+  values: number[];
+  max: number;
+  labelStep: number;
+  iconValue?: number;
+}
+
 export interface CaseLevel {
   id: CaseId;
   kind: "sharing" | "sorting";
@@ -38,6 +49,8 @@ export interface CaseLevel {
   mission: Localized;
   tokens: number[];
   tokenLabels?: Record<number, string>;
+  tokenWords?: Record<number, Localized>;
+  chart?: EvidenceChart;
   dropZones: [DropZone, DropZone, DropZone];
   copies?: Record<number, number>;
   hints: { text: Localized; visual: string }[];

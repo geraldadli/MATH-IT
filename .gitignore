@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local proposal document
+/JAMESON TEAM_Proposal Study2Challenge 2026_Draft.docx

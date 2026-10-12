@@ -324,6 +324,34 @@ export function Biscuit({ className }: { className?: string }) {
   );
 }
 
+export type ShapeName =
+  | "square"
+  | "rhombus"
+  | "rectangle"
+  | "right-triangle"
+  | "triangle"
+  | "parallelogram";
+
+// Outlines plus the small square marks that show right angles.
+const shapes: Record<ShapeName, { outline: string; corners?: string }> = {
+  square: { outline: "M14 8h32v32H14Z", corners: "M20 8v6h-6M40 8v6h6M46 34h-6v6M14 34h6v6" },
+  rhombus: { outline: "M30 10 54 24 30 38 6 24Z" },
+  rectangle: { outline: "M6 12h48v24H6Z", corners: "M12 12v6H6M48 12v6h6M54 30h-6v6M6 30h6v6" },
+  "right-triangle": { outline: "M10 8v32h40Z", corners: "M10 34h6v6" },
+  triangle: { outline: "M30 6 52 42H8Z" },
+  parallelogram: { outline: "M16 12h40L44 38H4Z" },
+};
+
+export function ShapeArt({ shape }: { shape: ShapeName }) {
+  const { outline, corners } = shapes[shape];
+  return (
+    <svg className="shape-art" viewBox="0 0 60 48" fill="none" aria-hidden="true">
+      <path d={outline} fill="#dfe8f6" stroke="#5f7fae" strokeWidth="2.5" strokeLinejoin="round" />
+      {corners && <path d={corners} stroke="#c0705a" strokeWidth="2" />}
+    </svg>
+  );
+}
+
 export function BakeryScene({
   className,
   language = "en",

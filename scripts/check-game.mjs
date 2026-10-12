@@ -104,8 +104,9 @@ assert.equal(isCaseUnlocked(2, [2]), false);
 assert.equal(isCaseUnlocked(2, [1]), true);
 assert.equal(isCaseUnlocked(3, [1, 2]), true);
 assert.equal(isCaseUnlocked(13, [1, 2]), false);
+assert.equal(isCaseUnlocked(23, [1, 2]), false);
 
-assert.equal(caseLevels.length, 12);
+assert.equal(caseLevels.length, 22);
 const progress = [];
 for (const level of caseLevels) {
   const id = level.id;
@@ -129,14 +130,31 @@ for (const level of caseLevels) {
     }
     assert.ok(level.dropZones.every((zone) => zone.label[language]));
   }
-  if (id >= 3) assert.ok(level.tokens.every((token) => level.tokenLabels[token]));
+  if (id >= 3) assert.ok(level.tokens.every((token) => level.tokenLabels?.[token] || (level.tokenWords?.[token].en && level.tokenWords[token].id)));
+  if (level.chart) {
+    const { chart } = level;
+    assert.equal(chart.categories.length, chart.values.length, `Case ${id}: one value per category`);
+    assert.ok(chart.values.every((value) => value >= 0 && value <= chart.max), `Case ${id}: values fit the scale`);
+    assert.equal(chart.max % (chart.labelStep / 2), 0, `Case ${id}: the scale ends on a gridline`);
+  }
 
   // These answer groups are independent of the authored validation conditions.
-  const solution = id === 1
-    ? { a: [1, 2, 3, 4], b: [5, 6, 7, 8], c: [9, 10, 11, 12] }
-    : id === 2
-      ? { a: [9, 12, 15], b: [8, 12, 16], c: [7] }
-      : { a: [1, 4], b: [2, 5], c: [3, 6] };
+  // The square (1) sits in both shape groups, so it is not first in "a".
+  const solutions = {
+    1: { a: [1, 2, 3, 4], b: [5, 6, 7, 8], c: [9, 10, 11, 12] },
+    2: { a: [9, 12, 15], b: [8, 12, 16], c: [7] },
+    13: { a: [2, 1], b: [1, 3, 4], c: [5, 6] },
+    14: { a: [1, 4, 7], b: [2, 5], c: [3, 6] },
+    15: { a: [1, 4], b: [2, 5, 7], c: [3, 6] },
+    16: { a: [1, 4], b: [2, 5], c: [3, 6, 7] },
+    17: { a: [1, 4], b: [2, 5, 7, 8], c: [3, 6] },
+    18: { a: [1, 4], b: [2, 5, 7], c: [3, 6] },
+    19: { a: [1, 5], b: [2, 3, 7], c: [4, 6] },
+    20: { a: [1, 2], b: [3, 4, 5], c: [6, 7] },
+    21: { a: [1, 2], b: [3, 4, 7], c: [5, 6] },
+    22: { a: [1, 2], b: [3, 4], c: [5, 6, 7] },
+  };
+  const solution = solutions[id] ?? { a: [1, 4], b: [2, 5], c: [3, 6] };
   let attempt = createBoard(id);
   assert.equal(isSolved(id, attempt), false);
   for (const [zone, tokens] of Object.entries(solution)) {
@@ -172,11 +190,11 @@ assert.deepEqual(normaliseCompletedCases(progress), progress);
 for (const malformed of [null, undefined, "[1,2]", {}, 12, true]) {
   assert.deepEqual(normaliseCompletedCases(malformed), []);
 }
-for (const invalidId of [0, 13, -1, NaN]) {
+for (const invalidId of [0, 23, -1, NaN]) {
   assert.throws(() => getCase(invalidId), /Unknown case/);
   assert.equal(isSolved(invalidId, createBoard(1)), false);
   assert.equal(isCaseUnlocked(invalidId, progress), false);
 }
 console.log(
-  "Game checks passed: all 12 cases, invalid solutions, reusable copies, undo, sequential locking, and saved-progress migration.",
+  "Game checks passed: all 22 cases, invalid solutions, reusable copies, undo, sequential locking, and saved-progress migration.",
 );
