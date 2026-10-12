@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;450;500;550;600;650;700&family=Short+Stack&display=swap");
 :root {
   font-family: "Onest", sans-serif;
+  /* Stop iOS enlarging text in landscape, which can push layouts wider than the screen. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   color: var(--text-fg);
   background: var(--bg);
   font-synthesis: none;

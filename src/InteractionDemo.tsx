@@ -36,16 +36,17 @@ export default function InteractionDemo({ autoShow, language }: { autoShow: bool
         {(['drag', 'tap'] as const).map((option) => <button key={option} aria-pressed={mode === option} onClick={() => { setMode(option); setReplay((value) => value + 1) }}>{option === 'drag' ? t.demoDrag : t.demoTap}</button>)}
       </div>
       <p id="demo-description" aria-live="polite">{mode === 'drag' ? t.demoDragHelp : t.demoTapHelp}</p>
+      {/* The tray, arrow, group, and tap rings follow the theme; the clue and pointer keep their own colours. */}
       <svg key={`${mode}-${replay}`} className={`demo-stage demo-${mode}`} viewBox="0 0 300 132" role="img" aria-labelledby="demo-description">
-        <rect x="12" y="22" width="88" height="88" rx="17" fill="#f5f7fd" stroke="#bdcfe7" strokeDasharray="5 4" />
-        <path d="M121 66h53m-8-7 8 7-8 7" fill="none" stroke="#8fa9cc" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <rect className="demo-destination" x="200" y="22" width="88" height="88" rx="17" fill="#e7f0eb" stroke="#a6c5b2" strokeWidth="2" />
+        <rect x="12" y="22" width="88" height="88" rx="17" style={{ fill: 'var(--c-f3f5fc)', stroke: 'var(--c-c7d4e9)' }} strokeDasharray="5 4" />
+        <path d="M121 66h53m-8-7 8 7-8 7" fill="none" style={{ stroke: 'var(--c-8caad0)' }} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <rect className="demo-destination" x="200" y="22" width="88" height="88" rx="17" style={{ fill: 'var(--mint)', stroke: 'var(--c-a9cbbb)' }} strokeWidth="2" />
         <g className="demo-clue">
           <rect x="32" y="42" width="48" height="48" rx="12" fill="#f7dfaa" stroke="#b49962" strokeWidth="2" />
           <path d="m56 52 4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1Z" fill="#fff8e8" stroke="#b49962" strokeLinejoin="round" />
         </g>
-        <circle className="demo-tap-first" cx="56" cy="66" r="30" fill="none" stroke="#5279ad" strokeWidth="3" />
-        <circle className="demo-tap-second" cx="244" cy="66" r="30" fill="none" stroke="#5279ad" strokeWidth="3" />
+        <circle className="demo-tap-first" cx="56" cy="66" r="30" fill="none" style={{ stroke: 'var(--blue)' }} strokeWidth="3" />
+        <circle className="demo-tap-second" cx="244" cy="66" r="30" fill="none" style={{ stroke: 'var(--blue)' }} strokeWidth="3" />
         <g className="demo-pointer"><path d="m66 78 0 20 5-5 5 9 4-2-5-9 8 0Z" fill="#8eafd7" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /></g>
       </svg>
       <div className="demo-labels" aria-hidden="true"><span>{t.clue}</span><span>{t.demoGroup}</span></div>

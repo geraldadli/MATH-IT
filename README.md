@@ -60,6 +60,8 @@ XP raises the detective's level. Early levels come quickly and later ones need a
 
 The dashboard shows the current rank with an XP bar and the XP left to the next level, and the profile avatar carries a level chip. A solve that crosses a threshold adds a "Level up!" callout with the new rank and plays a brighter fanfare. XP and level are always recalculated from solved cases, so they cannot drift from saved progress.
 
+The app uses the Night Desk theme: a navy dark mode (the default) and a warm-paper Day Desk light mode, both with amber accents. Headings use Short Stack and body text uses Onest. The sun/moon button at the top right switches modes in one click. The choice is saved on this device, and a small script in `index.html` applies it before first paint so the page never flashes the wrong colours. Every colour is a token defined twice in `src/index.css`, once per mode. Charts use their own `--chart-*` tokens: the pie keeps the validated categorical order, with steps re-chosen for the dark surface. The avatar colour swatches keep each partner's real coat colour in both modes. On screens up to 520px wide the top-bar controls shrink so all five fit. The wordmark gets smaller from 400px and hides at 350px, leaving the brand mark as the home button. It is also the only top-bar item allowed to give way, so the controls always stay on screen. The page never grows wider than the phone: anything that pokes out sideways is clipped, and iOS landscape text enlargement is turned off. Without this, zooming out on a phone would show an empty strip on the right.
+
 The ID/EN switch translates the interface, instructions, hints, and feedback. The profile button edits the detective card. The top-bar Sound button enables bubbly click, pickup, drop, hint, and success sounds alongside an original, softly layered music loop. Audio continues across the welcome screen, dashboard, and cases, pauses when the tab is hidden, and stops when muted. The sound preference is saved; browsers may require a click or keypress before playback begins. All audio is synthesized locally with Web Audio, with no downloaded tracks or new audio dependencies.
 
 Hints offer one short thinking prompt at a time, with optional next/back controls and unfinished visual examples. They guide a method without revealing card answers. Lenis gives mouse-wheel and trackpad scrolling a gentle coast after input stops; touch keeps the device’s native momentum. Clicking, keyboard input, and changing cases stop the coast so controls and draggable clues stay stable. Dialogs and nested scroll areas scroll natively. Reduced-motion preferences disable inertia and decorative motion. Dashboard and welcome sections also glide into view in browsers with CSS view-timeline support.
@@ -73,7 +75,8 @@ Hints offer one short thinking prompt at a time, with optional next/back control
 - `src/levels.ts`: XP per case, the nine bilingual detective ranks, and level progress.
 - `src/gameLogic.ts`: immutable clue movement, case validation, and unit progression.
 - `src/GameBoard.tsx`: @dnd-kit/core workspace, history, feedback, and native hint dialog.
-- `src/EvidenceChart.tsx`: responsive SVG bar, line, pictograph, and pie charts with a screen-reader table.
+- `src/EvidenceChart.tsx`: responsive SVG bar, line, pictograph, and pie charts with a screen-reader table, coloured by theme tokens.
+- `src/index.css`: fonts, base styles, and the light and dark colour tokens.
 - `src/InteractionDemo.tsx`: dismissible, replayable drag/tap demonstration.
 - `src/App.tsx`: onboarding, dashboard, gameplay navigation, and profile editor.
 - `src/Illustrations.tsx`: original vector artwork and icons.
