@@ -17,6 +17,13 @@ export interface UserState {
   completedCases: CaseId[];
   xp: number;
   soundEnabled: boolean;
+  unitVideos: Partial<Record<UnitId, UnitVideoProgress>>;
+}
+
+export interface UnitVideoProgress {
+  position: number;
+  ranges: [number, number][];
+  completed: boolean;
 }
 
 export type DropZoneCondition =

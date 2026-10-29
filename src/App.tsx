@@ -9,6 +9,9 @@ import { Avatar, BakeryScene, Icon } from "./Illustrations";
 import type { AvatarConfig, CaseId, UnitId } from "./types";
 import { caseLevels, caseNumber, getCase, getNextCase, getUnit, isCaseUnlocked, units } from "./gameLogic";
 import { getLevel, getLevelProgress } from "./levels";
+import UnitIntroduction from "./UnitIntroduction";
+import { accessibleRoute, canAccessCase, firstUnitRoute, readRoute, routeHash } from "./navigation";
+import type { AppRoute } from "./navigation";
 import "./App.css";
 
 function DetectiveForm({
@@ -194,8 +197,30 @@ function LevelCard() {
   );
 }
 
-function Dashboard({ unitId, chooseUnit, openCase }: {
-  unitId: UnitId; chooseUnit: (id: UnitId) => void; openCase: (id: CaseId) => void;
+function UnitPicker({ unitId, chooseUnit, reviewVideo }: {
+  unitId: UnitId; chooseUnit: (id: UnitId) => void; reviewVideo: (id: UnitId) => void;
+}) {
+  const { player } = useGame();
+  const t = shellTranslations[player.language];
+  return <nav className="unit-picker" aria-label={t.units}>
+    {units.map((option) => <div key={option.id} className={"unit-option unit-" + option.id + (option.id === unitId ? " active" : "")}>
+      <button className="unit-select" aria-pressed={option.id === unitId} onClick={() => chooseUnit(option.id)}>
+        <span className="unit-number">{t.unit} {option.id}</span>
+        <strong>{option.title[player.language]}</strong>
+        <span className="unit-progress"><Icon name="check" size={13} />{option.cases.filter((id) => player.completedCases.includes(id)).length}/{option.cases.length}</span>
+      </button>
+      <span className="unit-video-state"><Icon name={player.unitVideos[option.id]?.completed ? "check" : "lock"} size={13} />
+        {player.language === "en" ? (player.unitVideos[option.id]?.completed ? "Introduction complete" : "Watch to unlock") : (player.unitVideos[option.id]?.completed ? "Pengantar selesai" : "Tonton untuk membuka")}
+      </span>
+      <button className="unit-review" onClick={() => reviewVideo(option.id)} aria-label={`${player.language === "en" ? "Review Video" : "Tonton Lagi"}: ${t.unit} ${option.id}`}>
+        <Icon name="youtube" size={16} />{player.language === "en" ? "Review Video" : "Tonton Lagi"}
+      </button>
+    </div>)}
+  </nav>;
+}
+
+function Dashboard({ unitId, openCase, reviewVideo }: {
+  unitId: UnitId; openCase: (id: CaseId) => void; reviewVideo: (id: UnitId) => void;
 }) {
   const { player } = useGame();
   const t = shellTranslations[player.language];
@@ -219,16 +244,10 @@ function Dashboard({ unitId, chooseUnit, openCase }: {
   }
   return (
     <section className="dashboard-board">
-      <nav className="unit-picker" aria-label={t.units}>
-        {units.map((option) => <button key={option.id} className={"unit-option unit-" + option.id + (option.id === unit.id ? " active" : "")}
-          aria-pressed={option.id === unit.id} onClick={() => chooseUnit(option.id)}>
-          <span className="unit-number">{t.unit} {option.id}</span>
-          <strong>{option.title[player.language]}</strong>
-          <span className="unit-progress">
-            <Icon name="check" size={13} />{option.cases.filter((id) => player.completedCases.includes(id)).length}/{option.cases.length}
-          </span>
-        </button>)}
-      </nav>
+      <div className="unit-page-heading">
+        <div><span className="eyebrow">{t.unit} {unit.id}</span><h2>{unit.title[player.language]}</h2></div>
+        <button className="unit-review" onClick={() => reviewVideo(unit.id)}><Icon name="youtube" size={18} />{player.language === "en" ? "Review Video" : "Tonton Lagi"}</button>
+      </div>
       <div className="dashboard-feature">
         <div className="feature-copy">
           <span className="eyebrow">{t.unit} {unit.id} · {next ? t.case + " " + String(caseNumber(next.id)).padStart(2, "0") : t.unitDone}</span>
@@ -258,12 +277,33 @@ function Dashboard({ unitId, chooseUnit, openCase }: {
 function MathIt() {
   const { player, setLanguage, setSoundEnabled } = useGame();
   const t = shellTranslations[player.language];
-  const [selectedCase, setSelectedCase] = useState<CaseId | null>(null);
-  const [unitId, setUnitId] = useState<UnitId>(() => getUnit(getNextCase(player.completedCases)?.id ?? 1).id);
+  const [route, setRoute] = useState<AppRoute>(() => accessibleRoute(readRoute(window.location.hash, firstUnitRoute(player.completedCases).unitId), player));
+  const visibleRoute = accessibleRoute(route, player);
+  const unitId = visibleRoute.unitId;
+  const selectedCase = visibleRoute.kind === "case" ? visibleRoute.caseId : null;
   const caseNavigation = useRef<HTMLElement>(null);
   const profileDialog = useRef<HTMLDialogElement>(null);
   const [profileVersion, setProfileVersion] = useState(0);
   const started = Boolean(player.name);
+  useEffect(() => {
+    const followLocation = () => setRoute(accessibleRoute(readRoute(window.location.hash, unitId), player));
+    window.addEventListener("hashchange", followLocation);
+    window.addEventListener("popstate", followLocation);
+    return () => {
+      window.removeEventListener("hashchange", followLocation);
+      window.removeEventListener("popstate", followLocation);
+    };
+  }, [player, unitId]);
+  useEffect(() => {
+    window.history.replaceState(null, "", routeHash(route));
+  }, [route]);
+  function navigate(next: AppRoute) {
+    const allowed = accessibleRoute(next, player);
+    if (window.location.hash !== routeHash(allowed)) window.history.pushState(null, "", routeHash(allowed));
+    setRoute(allowed);
+  }
+  const showUnit = (id: UnitId = unitId) => navigate({ kind: "unit", unitId: id });
+  const reviewVideo = (id: UnitId) => navigate({ kind: "video", unitId: id });
   // index.html applies the saved theme before first paint; start from what it chose.
   const [theme, setTheme] = useState<"dark" | "light">(() => document.documentElement.dataset.theme === "light" ? "light" : "dark");
   useEffect(() => {
@@ -297,16 +337,14 @@ function MathIt() {
       window.removeEventListener("keydown", settle, true);
       scroll.destroy();
     };
-  }, [selectedCase, started]);
+  }, [route, selectedCase, started]);
   function openProfile() {
     if (!started) return;
     setProfileVersion((value) => value + 1);
     profileDialog.current?.showModal();
   }
   function openCase(id: CaseId) {
-    if (!isCaseUnlocked(id, player.completedCases)) return;
-    setSelectedCase(id);
-    setUnitId(getUnit(id).id);
+    navigate({ kind: "case", caseId: id, unitId: getUnit(id).id });
   }
   const unitCases = units.find((unit) => unit.id === unitId)?.cases ?? [];
   const unitNext = getNextCase(player.completedCases, unitId);
@@ -316,7 +354,7 @@ function MathIt() {
     <>
       <header className="topbar">
         <div className="topbar-inner">
-          <button className="brand" onClick={() => setSelectedCase(null)} aria-label={t.home}>
+          <button className="brand" onClick={() => showUnit()} aria-label={t.home}>
             <span className="brand-mark"><Icon name="search" size={26} /><span>✦</span></span>
             <span className="brand-title">Math<span> It!</span></span>
           </button>
@@ -345,19 +383,20 @@ function MathIt() {
           </div>
         </div>
       </header>
-      {!started ? <StartScreen onStart={() => setSelectedCase(null)} /> : (
+      {!started ? <StartScreen onStart={() => {}} /> : (
         <main className="main-layout">
           <div className="page-heading">
             <div><h1>{t.hello} {player.name}<span className="hello-spark" aria-hidden="true">✦</span></h1><p>{selectedCase === null ? t.chooseCase : t.keepGoing}</p></div>
             <ProgressSummary />
           </div>
+          {selectedCase === null && <UnitPicker unitId={unitId} chooseUnit={showUnit} reviewVideo={reviewVideo} />}
           {selectedCase !== null && (
             <nav className="case-navigation" ref={caseNavigation} aria-label={t.caseFiles}>
-              <button className="overview-tab" onClick={() => setSelectedCase(null)} aria-label={t.overview}><Icon name="home" size={19} /></button>
+              <button className="overview-tab" onClick={() => showUnit()} aria-label={t.overview}><Icon name="home" size={19} /></button>
               <span className="navigation-unit">{t.unit} {unitId}</span>
               {navigationCases.map(getCase).map((level) => {
                 const completed = player.completedCases.includes(level.id);
-                const locked = !isCaseUnlocked(level.id, player.completedCases);
+                const locked = !canAccessCase(level.id, player);
                 return (
                   <button
                     key={level.id} className={(selectedCase === level.id ? "selected" : "") + (completed ? " completed" : "")}
@@ -371,13 +410,20 @@ function MathIt() {
                   </button>
                 );
               })}
+              <button className="case-review-video" onClick={() => reviewVideo(unitId)} aria-label={player.language === "en" ? "Review Video" : "Tonton Lagi"}><Icon name="youtube" size={18} /></button>
             </nav>
           )}
-          {selectedCase === null ? <Dashboard unitId={unitId} chooseUnit={setUnitId} openCase={openCase} /> : (
+          {visibleRoute.kind === "video" ? <UnitIntroduction key={unitId} unitId={unitId} onStart={() => showUnit()} onBack={() => {
+            if (player.unitVideos[unitId]?.completed) showUnit();
+            else {
+              document.querySelector(".unit-picker")?.scrollIntoView({ block: "start", behavior: "instant" });
+              document.querySelector<HTMLButtonElement>(".unit-option.active .unit-select")?.focus({ preventScroll: true });
+            }
+          }} /> : selectedCase === null ? <Dashboard unitId={unitId} openCase={openCase} reviewVideo={reviewVideo} /> : (
             <GameBoard key={selectedCase} caseId={selectedCase} onNext={() => {
               const next = unitCases[unitCases.indexOf(selectedCase) + 1];
               if (next) openCase(next);
-              else setSelectedCase(null);
+              else showUnit();
             }} />
           )}
         </main>
@@ -386,7 +432,7 @@ function MathIt() {
         <div className="footer-inner">
           <div className="footer-main">
             <div className="footer-about">
-              <button className="brand" onClick={() => setSelectedCase(null)} aria-label={t.home}>
+              <button className="brand" onClick={() => showUnit()} aria-label={t.home}>
                 <span className="brand-mark"><Icon name="search" size={24} /><span>✦</span></span>
                 <span className="brand-title">Math<span> It!</span></span>
               </button>

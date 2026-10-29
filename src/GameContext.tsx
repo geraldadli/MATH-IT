@@ -1,10 +1,12 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
-import { isCaseUnlocked, normaliseCompletedCases } from "./gameLogic";
+import { normaliseCompletedCases } from "./gameLogic";
 import { xpForCases } from "./levels";
-import type { AvatarConfig, CaseId, Language, UserState } from "./types";
+import type { AvatarConfig, CaseId, Language, UnitId, UnitVideoProgress, UserState } from "./types";
 import { useAudio } from "./useAudio";
 import type { Sound } from "./audio";
+import { canAccessCase } from "./navigation";
+import { mergeUnitVideos, mergeVideoProgress, normaliseUnitVideos, unitVideos } from "./videoProgress";
 
 const STORAGE_KEY = "math-it-player";
 const defaultPlayer: UserState = {
@@ -14,6 +16,7 @@ const defaultPlayer: UserState = {
   completedCases: [],
   xp: 0,
   soundEnabled: true,
+  unitVideos: {},
 };
 
 function validAvatar(value: unknown): value is AvatarConfig {
@@ -42,6 +45,7 @@ function readPlayer(): UserState {
       soundEnabled: typeof data.soundEnabled === "boolean"
         ? data.soundEnabled
         : defaultPlayer.soundEnabled,
+      unitVideos: normaliseUnitVideos(data.unitVideos),
     };
   } catch {
     return defaultPlayer;
@@ -56,25 +60,42 @@ interface GameContextValue {
   completeCase: (caseId: CaseId) => void;
   setSoundEnabled: (enabled: boolean) => void;
   playSound: (sound: Sound) => void;
+  saveVideoProgress: (unitId: UnitId, progress: UnitVideoProgress) => void;
+  setVideoActive: (active: boolean) => void;
 }
 
 const GameContext = createContext<GameContextValue | null>(null);
 
 export function GameProvider({ children }: { children: ReactNode }) {
-  const [player, setPlayer] = useState<UserState>(readPlayer);
-  const playSound = useAudio(player.soundEnabled);
+  const [player, renderPlayer] = useState<UserState>(readPlayer);
+  const currentPlayer = useRef(player);
+  const [videoActive, setVideoActive] = useState(false);
+  const playSound = useAudio(player.soundEnabled && !videoActive);
+
+  // Persist at the same moment as the update, including pagehide/unmount saves.
+  // Relying only on a later React effect can lose the last position on refresh.
+  const setPlayer = useCallback((update: (current: UserState) => UserState) => {
+    // Another open tab may have earned progress since this tab last rendered.
+    const stored = readPlayer();
+    const completedCases = normaliseCompletedCases([...currentPlayer.current.completedCases, ...stored.completedCases]);
+    const next = update({ ...currentPlayer.current, completedCases, xp: xpForCases(completedCases.length),
+      unitVideos: mergeUnitVideos(currentPlayer.current.unitVideos, stored.unitVideos) });
+    if (next === currentPlayer.current) return;
+    currentPlayer.current = next;
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); } catch { /* Play still works without storage. */ }
+    renderPlayer(next);
+  }, []);
+
+  const saveVideoProgress = useCallback((unitId: UnitId, progress: UnitVideoProgress) => {
+    setPlayer((current) => ({ ...current, unitVideos: {
+      ...current.unitVideos,
+      [unitId]: mergeVideoProgress(current.unitVideos[unitId], progress, unitVideos[unitId].duration),
+    } }));
+  }, [setPlayer]);
 
   useEffect(() => {
     document.documentElement.lang = player.language;
   }, [player.language]);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(player));
-    } catch {
-      // Private browsing or a full device must not interrupt the investigation.
-    }
-  }, [player]);
 
   function updateProfile(name: string, avatar: AvatarConfig) {
     const cleanName = name.trim().slice(0, 24);
@@ -85,7 +106,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
   function completeCase(caseId: CaseId) {
     setPlayer((current) => {
       if (
-        !isCaseUnlocked(caseId, current.completedCases) ||
+        !canAccessCase(caseId, current) ||
         current.completedCases.includes(caseId)
       )
         return current;
@@ -104,6 +125,8 @@ export function GameProvider({ children }: { children: ReactNode }) {
         updateProfile,
         completeCase,
         playSound,
+        saveVideoProgress,
+        setVideoActive,
         setSoundEnabled: (soundEnabled) =>
           setPlayer((current) => ({ ...current, soundEnabled })),
       }}

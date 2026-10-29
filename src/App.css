@@ -115,6 +115,16 @@
 .unit-number { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--blue-fg); }
 .unit-option strong { font: 450 18px/1.25 "Short Stack",sans-serif; }
 .unit-progress { display: flex; align-items: center; gap: 5px; margin-top: 2px; font-size: 12px; color: var(--muted-fg); font-variant-numeric: tabular-nums; }
+.unit-select { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; width: 100%; flex: 1; min-height: 96px; padding: 0; background: none; color: inherit; text-align: left; }
+.unit-select > strong { overflow-wrap: anywhere; }
+.unit-video-state { display: flex; align-items: center; gap: 5px; margin-top: 8px; font-size: 11px; color: var(--muted-fg); }
+.unit-review { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--blue-fg); font-size: 12px; font-weight: 600; }
+.unit-option .unit-review { width: 100%; margin-top: 7px; }
+.unit-review:hover { border-color: var(--blue); }
+.unit-page-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 8px 0 22px; }
+.unit-page-heading h2 { margin-top: 6px; font: 450 clamp(20px, 3vw, 27px)/1.3 "Short Stack",sans-serif; }
+.unit-page-heading .unit-review { flex-shrink: 0; }
+@media (max-width: 520px) { .unit-option { padding: 12px; } .unit-option.active { padding: 11.5px; } .unit-select { min-height: 105px; } .unit-page-heading { align-items: flex-start; flex-direction: column; } }
 .navigation-unit { flex-shrink: 0; padding: 0 4px; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--blue-fg); }
 .case-files-heading { display: flex; align-items: center; gap: 10px; margin: 30px 0 18px; }
 .case-files-heading h2 { font: 450 23px "Short Stack",sans-serif; }
@@ -582,3 +592,11 @@
 .dock-target.is-over { border: 2px solid var(--blue); box-shadow: 0 0 0 4px var(--c-5279ad1f); transform: scale(1.04); }
 .dock-target.needs-review { border: 2px solid var(--c-bf984e); }
 @media (prefers-reduced-motion: no-preference) { .dock-count { animation: reward-pop .45s ease-out; } }
+/* Keep the existing compact phone unit cards, with separate tap targets for review. */
+@media (max-width: 650px) {
+  .unit-option { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; }
+  .unit-select { grid-row: 1 / span 2; min-height: 84px; justify-content: center; }
+  .unit-option .unit-review { width: auto; min-width: 106px; margin: 0; }
+  .unit-video-state { margin: 0; font-size: 10px; }
+  .unit-select .unit-progress { margin: 3px 0 0; }
+}

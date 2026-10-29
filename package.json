@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "test": "node scripts/check-game.mjs && node scripts/check-audio.mjs",
+    "test": "node scripts/check-game.mjs && node scripts/check-audio.mjs && node scripts/check-videos.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
