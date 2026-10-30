@@ -5,7 +5,8 @@ import type { FormEvent } from "react";
 import { GameProvider, useGame } from "./GameContext";
 import GameBoard from "./GameBoard";
 import { shellTranslations } from "./i18n";
-import { Avatar, BakeryScene, Icon } from "./Illustrations";
+import { Avatar, Icon } from "./Illustrations";
+import { mascotImages } from "./mascots";
 import type { AvatarConfig, CaseId, UnitId } from "./types";
 import { caseLevels, caseNumber, getCase, getNextCase, getUnit, isCaseUnlocked, units } from "./gameLogic";
 import { getLevel, getLevelProgress } from "./levels";
@@ -17,9 +18,11 @@ import "./App.css";
 function DetectiveForm({
   editing = false,
   onDone,
+  onAvatarChange,
 }: {
   editing?: boolean;
   onDone: () => void;
+  onAvatarChange?: (avatar: AvatarConfig) => void;
 }) {
   const { player, startGame, updateProfile } = useGame();
   const t = shellTranslations[player.language];
@@ -40,7 +43,7 @@ function DetectiveForm({
     <form className="detective-form" onSubmit={submit}>
       <div className="badge-preview">
         <span className="badge-spark one">✦</span>
-        <Avatar {...avatar} />
+        <Avatar {...avatar} animate />
         <span className="badge-spark two">✧</span>
       </div>
       <div className="form-title">
@@ -86,7 +89,11 @@ function DetectiveForm({
                 name="animal"
                 value={animal}
                 checked={avatar.animal === animal}
-                onChange={() => setAvatar({ ...avatar, animal })}
+                onChange={() => {
+                  const nextAvatar = { ...avatar, animal };
+                  setAvatar(nextAvatar);
+                  onAvatarChange?.(nextAvatar);
+                }}
               />
               <Avatar animal={animal} color={avatar.color} />
               <span>{t[animal]}</span>
@@ -99,26 +106,8 @@ function DetectiveForm({
           ))}
         </div>
       </fieldset>
-      <fieldset className="color-field">
-        <legend>{t.partnerColor}</legend>
-        <div className="color-options">
-          {(["teal", "yellow", "coral"] as const).map((color) => (
-            <label className={`color-option color-${color}`} key={color}>
-              <input
-                type="radio"
-                name="color"
-                value={color}
-                checked={avatar.color === color}
-                onChange={() => setAvatar({ ...avatar, color })}
-              />
-              <span className="sr-only">{t[color]}</span>
-              {avatar.color === color && <Icon name="check" size={15} />}
-            </label>
-          ))}
-        </div>
-      </fieldset>
       <button className="primary-button form-submit" type="submit">
-        {editing ? t.saveProfile : t.startInvestigation}
+        {editing ? t.saveProfile : player.name ? t.continueInvestigation : t.startInvestigation}
         <Icon name="arrow" size={19} />
       </button>
       {!editing && (
@@ -134,15 +123,27 @@ function DetectiveForm({
 function StartScreen({ onStart }: { onStart: () => void }) {
   const { player } = useGame();
   const t = shellTranslations[player.language];
+  const [selectedAvatar, setSelectedAvatar] = useState(player.avatar);
   return (
     <main className="start-layout">
       <section className="welcome-story">
         <span className="bureau-pill"><Icon name="search" size={15} />{t.bureau}</span>
         <h1>{t.heroLineOne}<br /><span>{t.heroLineTwo}</span></h1>
         <p className="welcome-description">{t.heroDescription}</p>
-        <div className="story-illustration"><BakeryScene language={player.language} /></div>
+        <div className="welcome-mascot">
+          <img
+            key={`${selectedAvatar.animal}-${selectedAvatar.color}`}
+            className="avatar-pop"
+            src={mascotImages[selectedAvatar.animal]}
+            alt={t.heroMascotAlt[selectedAvatar.animal]}
+            width={1254}
+            height={1254}
+            fetchPriority="high"
+            decoding="async"
+          />
+        </div>
       </section>
-      <section className="onboarding-card"><DetectiveForm onDone={onStart} /></section>
+      <section className="onboarding-card"><DetectiveForm onDone={onStart} onAvatarChange={setSelectedAvatar} /></section>
     </main>
   );
 }
@@ -258,7 +259,7 @@ function Dashboard({ unitId, openCase, reviewVideo }: {
         </div>
         <div className="feature-art" aria-hidden="true">
           <span className="feature-symbol">{next?.preview ?? "★"}</span>
-          <Avatar {...player.avatar} />
+          <Avatar {...player.avatar} animate />
         </div>
       </div>
       {upcoming.length > 0 && <section className="upcoming-section" aria-labelledby="upcoming-heading">
@@ -275,7 +276,7 @@ function Dashboard({ unitId, openCase, reviewVideo }: {
 }
 
 function MathIt() {
-  const { player, setLanguage, setSoundEnabled } = useGame();
+  const { player, isSignedIn, logOut, setLanguage, setSoundEnabled } = useGame();
   const t = shellTranslations[player.language];
   const [route, setRoute] = useState<AppRoute>(() => accessibleRoute(readRoute(window.location.hash, firstUnitRoute(player.completedCases).unitId), player));
   const visibleRoute = accessibleRoute(route, player);
@@ -284,7 +285,7 @@ function MathIt() {
   const caseNavigation = useRef<HTMLElement>(null);
   const profileDialog = useRef<HTMLDialogElement>(null);
   const [profileVersion, setProfileVersion] = useState(0);
-  const started = Boolean(player.name);
+  const started = isSignedIn;
   useEffect(() => {
     const followLocation = () => setRoute(accessibleRoute(readRoute(window.location.hash, unitId), player));
     window.addEventListener("hashchange", followLocation);
@@ -295,8 +296,8 @@ function MathIt() {
     };
   }, [player, unitId]);
   useEffect(() => {
-    window.history.replaceState(null, "", routeHash(route));
-  }, [route]);
+    window.history.replaceState(null, "", started ? routeHash(route) : "#/");
+  }, [route, started]);
   function navigate(next: AppRoute) {
     const allowed = accessibleRoute(next, player);
     if (window.location.hash !== routeHash(allowed)) window.history.pushState(null, "", routeHash(allowed));
@@ -343,6 +344,11 @@ function MathIt() {
     setProfileVersion((value) => value + 1);
     profileDialog.current?.showModal();
   }
+  function handleLogOut() {
+    profileDialog.current?.close();
+    logOut();
+    setRoute(firstUnitRoute(player.completedCases));
+  }
   function openCase(id: CaseId) {
     navigate({ kind: "case", caseId: id, unitId: getUnit(id).id });
   }
@@ -380,10 +386,15 @@ function MathIt() {
               </span>
               {started && <strong>{player.name}</strong>}
             </button>
+            {started && (
+              <button className="logout-button" onClick={handleLogOut} aria-label={t.logOut} title={t.logOut}>
+                <Icon name="logout" size={20} /><span>{t.logOut}</span>
+              </button>
+            )}
           </div>
         </div>
       </header>
-      {!started ? <StartScreen onStart={() => {}} /> : (
+      {!started ? <StartScreen onStart={() => showUnit(firstUnitRoute(player.completedCases).unitId)} /> : (
         <main className="main-layout">
           <div className="page-heading">
             <div><h1>{t.hello} {player.name}<span className="hello-spark" aria-hidden="true">✦</span></h1><p>{selectedCase === null ? t.chooseCase : t.keepGoing}</p></div>

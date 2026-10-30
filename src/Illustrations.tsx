@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { shellTranslations } from "./i18n";
+import { mascotImages } from "./mascots";
 
 export type IconName =
   | "search"
@@ -16,6 +17,7 @@ export type IconName =
   | "close"
   | "sparkle"
   | "home"
+  | "logout"
   | "leaf"
   | "help"
   | "undo"
@@ -103,6 +105,7 @@ const icons: Record<IconName, ReactNode> = {
       <path d="M9 20v-7h6v7" />
     </>
   ),
+  logout: <path d="M9 4H4v16h5m5-13 5 5-5 5m-5-5h12" />,
   leaf: (
     <>
       <path d="M20 3C9 2 3 7 4 14c1 8 14 10 16-11ZM4 21 15 10" />
@@ -282,19 +285,24 @@ export function Avatar({
   animal,
   color,
   className,
+  animate = false,
 }: {
   animal: Animal;
   color: Color;
   className?: string;
+  animate?: boolean;
 }) {
   return (
     <svg
-      className={className}
+      key={animate ? `${animal}-${color}` : undefined}
+      className={animate ? [className, "avatar-pop"].filter(Boolean).join(" ") : className}
       viewBox="0 0 120 120"
       fill="none"
       aria-hidden="true"
     >
-      <Detective animal={animal} color={color} />
+      {/* Preserve each mascot's colors; the chosen color accents its badge. */}
+      <circle cx="60" cy="60" r="55" fill={palettes[color].coat} fillOpacity=".16" stroke={palettes[color].coat} strokeOpacity=".65" strokeWidth="2" />
+      <image href={mascotImages[animal]} width="120" height="120" preserveAspectRatio="xMidYMid meet" />
     </svg>
   );
 }

@@ -9,6 +9,7 @@ import { canAccessCase } from "./navigation";
 import { mergeUnitVideos, mergeVideoProgress, normaliseUnitVideos, unitVideos } from "./videoProgress";
 
 const STORAGE_KEY = "math-it-player";
+const SESSION_KEY = "math-it-signed-in";
 const defaultPlayer: UserState = {
   name: "",
   avatar: { animal: "fox", color: "teal" },
@@ -54,6 +55,8 @@ function readPlayer(): UserState {
 
 interface GameContextValue {
   player: UserState;
+  isSignedIn: boolean;
+  logOut: () => void;
   setLanguage: (language: Language) => void;
   startGame: (name: string, avatar: AvatarConfig) => void;
   updateProfile: (name: string, avatar: AvatarConfig) => void;
@@ -68,6 +71,10 @@ const GameContext = createContext<GameContextValue | null>(null);
 
 export function GameProvider({ children }: { children: ReactNode }) {
   const [player, renderPlayer] = useState<UserState>(readPlayer);
+  const [isSignedIn, renderSignedIn] = useState(() => {
+    try { return Boolean(player.name) && localStorage.getItem(SESSION_KEY) !== "false"; }
+    catch { return Boolean(player.name); }
+  });
   const currentPlayer = useRef(player);
   const [videoActive, setVideoActive] = useState(false);
   const playSound = useAudio(player.soundEnabled && !videoActive);
@@ -99,8 +106,18 @@ export function GameProvider({ children }: { children: ReactNode }) {
 
   function updateProfile(name: string, avatar: AvatarConfig) {
     const cleanName = name.trim().slice(0, 24);
-    if (!cleanName || !validAvatar(avatar)) return;
+    if (!cleanName || !validAvatar(avatar)) return false;
     setPlayer((current) => ({ ...current, name: cleanName, avatar }));
+    return true;
+  }
+
+  function setSignedIn(active: boolean) {
+    try { localStorage.setItem(SESSION_KEY, String(active)); } catch { /* The session still works without storage. */ }
+    renderSignedIn(active);
+  }
+
+  function startGame(name: string, avatar: AvatarConfig) {
+    if (updateProfile(name, avatar)) setSignedIn(true);
   }
 
   function completeCase(caseId: CaseId) {
@@ -119,9 +136,11 @@ export function GameProvider({ children }: { children: ReactNode }) {
     <GameContext.Provider
       value={{
         player,
+        isSignedIn,
+        logOut: () => setSignedIn(false),
         setLanguage: (language) =>
           setPlayer((current) => ({ ...current, language })),
-        startGame: updateProfile,
+        startGame,
         updateProfile,
         completeCase,
         playSound,
