@@ -361,8 +361,7 @@ function MathIt() {
       <header className="topbar">
         <div className="topbar-inner">
           <button className="brand" onClick={() => showUnit()} aria-label={t.home}>
-            <span className="brand-mark"><Icon name="search" size={26} /><span>✦</span></span>
-            <span className="brand-title">Math<span> It!</span></span>
+            <img className="brand-logo" src="/math-it-logo.png" alt="Math It — Detektif Matematika" width="1254" height="1254" />
           </button>
           <div className="header-doodles" aria-hidden="true">
             <span>+</span><span>×</span><span>=</span><span>✦</span>
@@ -444,8 +443,7 @@ function MathIt() {
           <div className="footer-main">
             <div className="footer-about">
               <button className="brand" onClick={() => showUnit()} aria-label={t.home}>
-                <span className="brand-mark"><Icon name="search" size={24} /><span>✦</span></span>
-                <span className="brand-title">Math<span> It!</span></span>
+                <img className="brand-logo" src="/math-it-logo.png" alt="Math It — Detektif Matematika" width="1254" height="1254" />
               </button>
               <p>{t.footerTagline}</p>
             </div>

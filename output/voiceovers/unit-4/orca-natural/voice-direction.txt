@@ -1,0 +1,13 @@
+UNIT 4 VOICE DIRECTION
+Voice: Adult male
+Character: The curious chart guide
+
+Use a different adult male narrator from Unit 2. Give him a lighter middle-pitched voice with a clear, crisp tone. He sounds like a friendly museum guide helping children discover patterns: curious, engaged, and gently animated. Use clear, lightly American-accented English at the voice's natural speaking speed. Lightly emphasize key, scale, filter, sort, and table so children notice the tools. Introduce a question with a small rise in pitch, and explain the result with a confident, relaxed finish. Create energy through expression rather than faster speech. Avoid a sports-commentator delivery, advertising hype, robotic rhythm, or excessive pitch changes. Keep this same male voice throughout Unit 4.
+
+Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully. Distinguish characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the four-second silent thinking pause before the answer.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Narration is a separate voice track; music and drawing sounds belong in the video edit. The audition line is already part of the script and must not be added again.
+
+Latest user clarification: Forget the 110 words-per-minute goal; focus on a natural speed setting. Synthesis speed and playback speed remain 1.0.
+
+Interface limitation: The connected speech tool has no free-form style field. These production directions are saved separately and are never submitted as spoken text. Detailed performance-direction compliance requires a listening review.

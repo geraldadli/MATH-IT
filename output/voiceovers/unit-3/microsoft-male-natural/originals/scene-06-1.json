@@ -1,0 +1,159 @@
+{
+  "id": "scene-06-1",
+  "scene": 6,
+  "text": "Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 0,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 1000000,
+      "duration": 2625000,
+      "text": "Match"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 3750000,
+      "duration": 1250000,
+      "text": "your"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 5125000,
+      "duration": 5375000,
+      "text": "units"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 12875000,
+      "duration": 2500000,
+      "text": "count"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 15500000,
+      "duration": 2250000,
+      "text": "time"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17875000,
+      "duration": 5625000,
+      "text": "carefully"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 26125000,
+      "duration": 1000000,
+      "text": "and"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 27250000,
+      "duration": 1875000,
+      "text": "check"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 29250000,
+      "duration": 2500000,
+      "text": "shape"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 31875000,
+      "duration": 5125000,
+      "text": "properties"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 37125000,
+      "duration": 4125000,
+      "text": "instead"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 41375000,
+      "duration": 1000000,
+      "text": "of"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42500000,
+      "duration": 3500000,
+      "text": "guessing"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46125000,
+      "duration": 1625000,
+      "text": "from"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 47875000,
+      "duration": 6500000,
+      "text": "appearance"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 58500000,
+      "duration": 1625000,
+      "text": "Take"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 60250000,
+      "duration": 1125000,
+      "text": "your"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 61500000,
+      "duration": 3500000,
+      "text": "time"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 68875000,
+      "duration": 375000,
+      "text": "and"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 69375000,
+      "duration": 2250000,
+      "text": "try"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 71750000,
+      "duration": 750000,
+      "text": "the"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 72625000,
+      "duration": 3125000,
+      "text": "Unit"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 75875000,
+      "duration": 2500000,
+      "text": "Three"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78500000,
+      "duration": 5875000,
+      "text": "quizzes"
+    }
+  ],
+  "sha256": "6f3c3f6f0ebc8a71b311c4cb2369a500539c4e571676198ebf47940ddb985232"
+}

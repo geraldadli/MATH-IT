@@ -1,0 +1,95 @@
+{
+  "source_video": "C:/Users/Asus/Downloads/Math It Unit 3.mp4",
+  "status": "blocked_by_speech_allowance",
+  "new_audio_created": false,
+  "selected_voice": {
+    "name": "Ruth - Warm & Soothing",
+    "id": "1f1b14d399cf4e9592334bb7c170ef65",
+    "requested_engine": "heygen_voice",
+    "speed": 1,
+    "unit_1_voice": "Melissa - Friendly",
+    "unit_1_voice_id": "1776ddbd05374fa480e92f0297bbc67e"
+  },
+  "source_narration": "Exact six Narration fields in docs/lesson-videos/unit-prompts/unit-3.txt; production directions are excluded.",
+  "user_pacing": "Natural speed; earlier document's 110 WPM target is superseded.",
+  "style_control": {
+    "free_form_field_available": false,
+    "directions_submitted_as_speech": false,
+    "limitation": "Connected create_speech has no voice/style instructions field; voice choice is the available delivery control."
+  },
+  "script_words": 172,
+  "audition_line_occurrences": 1,
+  "timeline_seconds": 120,
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 7,
+      "narration": "Our toolkit measures length, mass, and time, and helps us investigate shapes.",
+      "timing_validation": "Pending successful synthesis"
+    },
+    {
+      "scene": 2,
+      "start": 7,
+      "end": 32,
+      "narration": "One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.",
+      "timing_validation": "Pending successful synthesis"
+    },
+    {
+      "scene": 3,
+      "start": 32,
+      "end": 54,
+      "narration": "One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.",
+      "timing_validation": "Pending successful synthesis"
+    },
+    {
+      "scene": 4,
+      "start": 54,
+      "end": 78,
+      "narration": "An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.",
+      "timing_validation": "Pending successful synthesis"
+    },
+    {
+      "scene": 5,
+      "start": 78,
+      "end": 105,
+      "narration": "A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule? Neither.",
+      "timing_validation": "Pending successful synthesis"
+    },
+    {
+      "scene": 6,
+      "start": 105,
+      "end": 120,
+      "narration": "Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!",
+      "timing_validation": "Pending successful synthesis"
+    }
+  ],
+  "thinking_pause": {
+    "after": "Does it fit either rule?",
+    "before": "Neither.",
+    "seconds": 4,
+    "verification": "Requested as SSML; waveform verification pending successful synthesis."
+  },
+  "service_error": {
+    "outputType": "speech.limit",
+    "error": true,
+    "errorCode": "insufficient_credit",
+    "statusCode": 402,
+    "retryable": false,
+    "title": "Your free speech allowance",
+    "message": "You have 28 seconds of free voice-generation time left. This request needs 87 seconds. Try a shorter script. Your allowance renews next month.",
+    "actionLabel": "Continue on HeyGen",
+    "actionUrl": "https://www.heygen.com",
+    "docUrl": "https://developers.heygen.com/docs/error-codes#insufficient-credit",
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "remaining_allowance_seconds": 28,
+  "required_allowance_seconds": 87,
+  "next_step": "User adds sufficient HeyGen speech credit or waits for renewal, then explicitly approves another generation.",
+  "review": {
+    "audio_listening": "Unavailable: no new audio",
+    "timing": "Pending",
+    "old_unit_3_files": "Existing Microsoft Aria output is not newly generated HeyGen audio."
+  }
+}
+

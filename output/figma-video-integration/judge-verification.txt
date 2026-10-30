@@ -1,0 +1,60 @@
+MATH IT! — FIGMA VIDEO FLOW VERIFICATION
+Date: 30 October 2026
+Verdict: PASS for all eight core flows
+
+Unit                               Desktop      Mobile
+1  Numbers & operations            PASS         PASS
+2  Algebra & reasoning             PASS         PASS
+3  Measurement & geometry          PASS         PASS
+4  Data analysis                   PASS         PASS
+
+Live testing used desktop 1280 x 720 and mobile 390 x 844 viewports.
+Each 120-second introduction was played normally to completion. No forward
+seeking or artificial completion was used to unlock a unit.
+
+Every unit/platform passed:
+- Correct video assignment.
+- Fresh direct lesson link redirects to the matching introduction.
+- Start Unit remains disabled before completion.
+- Video completion opens the matching completion state.
+- Start Unit unlocks the correct unit and its first lesson.
+- Review Video works from completion, unit page, and unit card.
+- Lesson access stays unlocked after review.
+
+Additional live checks passed:
+- Pause/resume, rewind, sound, and review replay/seeking controls.
+- Interrupted viewing retained 36.351281 seconds on mobile Unit 2 and
+  104.818475 seconds on desktop Unit 4.
+- Completing one unit did not unlock another.
+- Rapid mobile review-to-unit-to-lesson navigation.
+- Corrected Unit 4 Home return on mobile, and locked-unit context on desktop.
+
+FIXES APPLIED IN THE FIGMA FILE
+1. Added delayed playback guards for late-loading media; video-end completion
+   now requires an explicit Play action.
+2. Restored the unit thumbnail when reopening a video.
+3. Made video route changes immediate to prevent ignored rapid taps and
+   overlapping moving layouts.
+4. Corrected copied Home links to retain the containing unit's progress flag,
+   dashboard, and introduction.
+
+FINAL STRUCTURAL AUDIT
+- 24 editable video flow screens.
+- 132 unit-specific Home links.
+- 204 prototype destinations checked across the two pages.
+- Correct native video hashes for all 24 video placements.
+- No completion resets or broken destinations found.
+- No lesson content, website source, or scores changed.
+
+All eight core flows were tested live. After the navigation-only repair,
+mobile rapid navigation and Home-return regression checks ran live; desktop
+Unit 4 locked-context checks and both-page structural audits also passed.
+
+SCOPE LIMIT
+Figma progress is prototype-session state. Durable per-student completion
+and resume across future sessions remain website behavior.
+
+Evidence: judge-live-results.json, judge-verification.json, the four
+judge-m*-complete.png files, judge-final-mobile-review.png, and
+judge-final-desktop-intro.png in this folder.
+

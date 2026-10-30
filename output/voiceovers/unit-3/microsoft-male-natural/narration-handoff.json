@@ -1,0 +1,243 @@
+{
+  "provider": "Microsoft Edge online neural speech",
+  "tool": "edge-tts",
+  "tool_version": "7.3.1",
+  "voice": "en-US-AndrewNeural",
+  "gender": "Male",
+  "locale": "en-US",
+  "character": "Warm male detective",
+  "synthesis_settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "playback_speed": 1.0,
+  "time_stretch": false,
+  "fixed_words_per_minute": null,
+  "script_word_count": 172,
+  "audition_line_occurrences": 1,
+  "new_synthesis": true,
+  "constant_gain_db": 0.8199999999999998,
+  "editions": {
+    "Continuous": {
+      "wav": "Unit 3 - Warm Male Detective - Natural - Continuous.wav",
+      "mp3": "Unit 3 - Warm Male Detective - Natural - Continuous.mp3",
+      "duration_seconds": 71.984125,
+      "integrated_loudness_lufs": -19.36,
+      "true_peak_dbtp": -1.5,
+      "thinking_pause": {
+        "start": 58.27025,
+        "end": 62.27025,
+        "duration_seconds": 4,
+        "verified_zero_pcm_samples": 192000
+      },
+      "wav_sha256": "92791fcd7a6799ff5be2fd8d2574ffaa907dc5bdbcfc9b935ecab19902899870"
+    },
+    "120s": {
+      "wav": "Unit 3 - Warm Male Detective - Natural - 120s.wav",
+      "mp3": "Unit 3 - Warm Male Detective - Natural - 120s.mp3",
+      "duration_seconds": 120.0,
+      "integrated_loudness_lufs": -19.34,
+      "true_peak_dbtp": -1.5,
+      "thinking_pause": {
+        "start": 98.4,
+        "end": 102.4,
+        "duration_seconds": 4,
+        "verified_zero_pcm_samples": 192000
+      },
+      "wav_sha256": "e5e81e3bdc15092c991f3a892a349be67e08195b220724f178103cd7dabd4105"
+    }
+  },
+  "source_to_final": [
+    {
+      "id": "scene-01-1",
+      "scene": 1,
+      "text": "Our toolkit measures length, mass, and time, and helps us investigate shapes.",
+      "source_in_seconds": 0.12970833333333334,
+      "source_out_seconds": 5.2240416666666665,
+      "source_duration_seconds": 5.544,
+      "retained_seconds": 5.094333333333333,
+      "playback_speed": 1.0,
+      "sha256": "9e51b292b615ec73f18aa3c9c49cde38b07d8ac66de7500c94ae1027a792f0d3",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 0.2,
+      "continuous_end_seconds": 5.294333333333333,
+      "timed_start_seconds": 0.5,
+      "timed_end_seconds": 5.594333333333333,
+      "scene_start_seconds": 0,
+      "scene_end_seconds": 7,
+      "fits_original_scene": true
+    },
+    {
+      "id": "scene-02-1",
+      "scene": 2,
+      "text": "One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.",
+      "source_in_seconds": 0.138125,
+      "source_out_seconds": 13.1375625,
+      "source_duration_seconds": 13.44,
+      "retained_seconds": 12.9994375,
+      "playback_speed": 1.0,
+      "sha256": "cb21b93951bb03e9b10f8df9844890fa6623dedc37071dadbb4df16c90137156",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 6.044333333333333,
+      "continuous_end_seconds": 19.043770833333333,
+      "timed_start_seconds": 7.6,
+      "timed_end_seconds": 20.5994375,
+      "scene_start_seconds": 7,
+      "scene_end_seconds": 32,
+      "fits_original_scene": true
+    },
+    {
+      "id": "scene-03-1",
+      "scene": 3,
+      "text": "One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.",
+      "source_in_seconds": 0.13920833333333332,
+      "source_out_seconds": 14.196104166666666,
+      "source_duration_seconds": 14.52,
+      "retained_seconds": 14.056895833333334,
+      "playback_speed": 1.0,
+      "sha256": "3096c1b36b6ddf7b4d3a692c1214e179224a140f7ef3001bb73604675c778a7f",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 19.793770833333333,
+      "continuous_end_seconds": 33.85066666666667,
+      "timed_start_seconds": 32.6,
+      "timed_end_seconds": 46.65689583333333,
+      "scene_start_seconds": 32,
+      "scene_end_seconds": 54,
+      "fits_original_scene": true
+    },
+    {
+      "id": "scene-04-1",
+      "scene": 4,
+      "text": "An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.",
+      "source_in_seconds": 0.12658333333333333,
+      "source_out_seconds": 12.114208333333334,
+      "source_duration_seconds": 12.432,
+      "retained_seconds": 11.987625,
+      "playback_speed": 1.0,
+      "sha256": "75293164b438c35dc121439a2e796883548365ff13db2605a158a5892799f910",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 34.60066666666667,
+      "continuous_end_seconds": 46.58829166666667,
+      "timed_start_seconds": 54.6,
+      "timed_end_seconds": 66.587625,
+      "scene_start_seconds": 54,
+      "scene_end_seconds": 78,
+      "fits_original_scene": true
+    },
+    {
+      "id": "scene-05-1",
+      "scene": 5,
+      "text": "A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule?",
+      "source_in_seconds": 0.12729166666666666,
+      "source_out_seconds": 11.05925,
+      "source_duration_seconds": 11.376,
+      "retained_seconds": 10.931958333333334,
+      "playback_speed": 1.0,
+      "sha256": "fb2bdcf0931e8a58eedae58ae83528ca962e4da57b161c7b5020237e18a06815",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 47.33829166666667,
+      "continuous_end_seconds": 58.27025,
+      "timed_start_seconds": 87.46804166666666,
+      "timed_end_seconds": 98.4,
+      "scene_start_seconds": 78,
+      "scene_end_seconds": 105,
+      "fits_original_scene": true
+    },
+    {
+      "id": "scene-05-2",
+      "scene": 5,
+      "text": "Neither.",
+      "source_in_seconds": 0.1388125,
+      "source_out_seconds": 0.5455,
+      "source_duration_seconds": 0.864,
+      "retained_seconds": 0.4066875,
+      "playback_speed": 1.0,
+      "sha256": "20432105be178fe9abaa03606625e5cd007e01be6980dc6e18d2656964fb8984",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 62.27025,
+      "continuous_end_seconds": 62.6769375,
+      "timed_start_seconds": 102.4,
+      "timed_end_seconds": 102.8066875,
+      "scene_start_seconds": 78,
+      "scene_end_seconds": 105,
+      "fits_original_scene": true
+    },
+    {
+      "id": "scene-06-1",
+      "scene": 6,
+      "text": "Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!",
+      "source_in_seconds": 0.133375,
+      "source_out_seconds": 8.4905625,
+      "source_duration_seconds": 8.808,
+      "retained_seconds": 8.3571875,
+      "playback_speed": 1.0,
+      "sha256": "6f3c3f6f0ebc8a71b311c4cb2369a500539c4e571676198ebf47940ddb985232",
+      "word_boundary_tokens_match_exact_script": true,
+      "continuous_start_seconds": 63.4269375,
+      "continuous_end_seconds": 71.784125,
+      "timed_start_seconds": 105.5,
+      "timed_end_seconds": 113.8571875,
+      "scene_start_seconds": 105,
+      "scene_end_seconds": 120,
+      "fits_original_scene": true
+    }
+  ],
+  "original_scene_windows": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 7
+    },
+    {
+      "scene": 2,
+      "start": 7,
+      "end": 32
+    },
+    {
+      "scene": 3,
+      "start": 32,
+      "end": 54
+    },
+    {
+      "scene": 4,
+      "start": 54,
+      "end": 78
+    },
+    {
+      "scene": 5,
+      "start": 78,
+      "end": 105
+    },
+    {
+      "scene": 6,
+      "start": 105,
+      "end": 120
+    }
+  ],
+  "style_limitation": "Voice is selected for its catalog Warm personality. This tool has no free-form acting field.",
+  "review": {
+    "decode": "Passed",
+    "script_boundary_tokens": "All match",
+    "every_part_fits_original_scene": true,
+    "thinking_pause": "Four seconds of zero PCM samples in both editions",
+    "clipping": "Passed",
+    "listening": "Not performed; automated checks only.",
+    "independent_transcription": {
+      "per_part_report": "transcription-check.json",
+      "continuous_report": "continuous-transcription-check.json",
+      "full_verbatim_asr_match": false,
+      "findings": [
+        "The retained source synthesizer word-boundary tokens match every submitted word in all seven parts.",
+        "Per-part ASR added trailing words on some clips; these additions do not recur in the continuous transcription.",
+        "Continuous ASR repeated Does and omitted Neither; separate source-part ASR recognizes the question and Neither correctly.",
+        "Both ASR passes render elapsed as a lapse. Synthesizer boundary records elapsed as one word; no listening review has resolved this phonetic spelling difference."
+      ]
+    }
+  },
+  "loudness_comparison": {
+    "reference": "Unit 2 Microsoft Andrew natural narration",
+    "reference_lufs": -19.47,
+    "unit3_timed_lufs": -19.34
+  }
+}

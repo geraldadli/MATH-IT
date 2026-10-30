@@ -1,0 +1,15 @@
+Generation mode: built-in image_gen
+Selected image: math-it-bear-detective-editorial.png
+User-selected source: exec-d63ffcfc-14ea-4172-8750-840a99a5e957.png
+
+Generation prompt:
+Use case: style-transfer.
+Asset type: Transparent PNG mascot for the Math It children's math website, used at small avatar sizes.
+Input image 1 is the edit target and reference for the bear's identity and detective outfit ONLY.
+Primary request: Completely redraw this bear in a flat editorial illustration style: clean, deliberately simplified shapes, simple eyes, and minimal shading. This is a decisive stylistic redesign.
+Keep: A single friendly warm light-brown bear, round ears, cream muzzle, tiny dark navy eyes, gentle smile, subtle blush, muted butter-yellow detective cap and matching coat with rounded lapels. Centered front-facing waist-up pose; paws simply rest by the lapels; kind and quietly confident personality. Keep the muted palette compatible with pale blue, lavender, cream, and mint.
+New visual language: Sophisticated children's magazine / editorial mascot illustration, drawn from broad crisp flat shapes with a distinctive easy-to-read silhouette. Solid dot or short oval eyes with NO white sclera and NO highlights. Small flat navy nose; one simple curved smile. Rounded but not inflated forms. Solid uniform color fills and a restrained palette, at most one flat darker fill per garment for minimal shading. Facial features use a few thin navy strokes. Eliminate fur strands, fabric texture, painted texture, gradients, airbrushing, dimensional modeling, realistic light, gloss, and specular highlights. No heavily outlined outer silhouette. Clean flat 2D graphic, not a 3D render or plush toy.
+Composition: Square high-resolution PNG; preserve a complete waist-up silhouette, with about 10–12% clear space around the cap, ears, shoulders, and lower waist edge. Strong readability at 57px and 98px.
+Background: Truly transparent alpha background, no white rectangle, no colored backdrop, no checkerboard illustration, no ground shadow.
+No text, lettering, props, symbols, badges, border, watermark, photorealism, glossy eyes, or plastic finish.
+

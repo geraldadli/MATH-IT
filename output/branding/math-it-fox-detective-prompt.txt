@@ -1,0 +1,18 @@
+Created with the built-in image_gen tool.
+
+Initial generation prompt:
+
+Use case: illustration-story.
+Asset type: Original friendly fox detective mascot PNG for “Math It,” a children's math learning website.
+Scene/backdrop: Truly transparent background with clean alpha, no environment or background painting.
+Subject: One centered, front-facing, waist-up orange fox. Pointed ears, cream muzzle, small dark navy eyes, gentle smile, softly blushed cheeks. Dusty blue detective cap and matching dusty blue coat with rounded lapels. Curious and encouraging expression, welcoming to children.
+Style/medium: Polished storybook illustration, delicate painted texture, soft dimensional shading, rounded shapes, restrained subtle navy contours.
+Composition/framing: Square high-resolution canvas, ideally 2048 × 2048. Single waist-up character centered. Entire cap, both pointed ears and both shoulders visible, with generous clear transparent space around ears and shoulders. Clean natural waist-up silhouette suitable as a standalone website mascot.
+Lighting/mood: Soft upper-left lighting, gentle shadows, warm, calm, curious, encouraging.
+Color palette: Muted orange, cream, dusty blue and restrained navy; harmonizes with pale blue, lavender, cream and mint website backgrounds.
+Constraints: Original character design. No text or lettering, no props, no border, no watermark, no heavy black outlines, no photorealism, no glossy plastic finish. Transparent background PNG; preserve real transparency, do not paint a checkerboard.
+
+Final refinement prompt:
+
+Edit this Math It fox detective mascot with one precise design change: replace the two large, wide-open eyes with much smaller, simple dark navy oval eyes, each about one third the current eye area. Use restrained small soft highlights and no prominent white sclera, giving a gentle, curious, encouraging storybook expression. Preserve the original fox identity, face shape, cream muzzle, softly blushed cheeks, gentle smile, pointed ears, dusty blue cap and matching coat with rounded lapels, paws, front-facing waist-up composition, painted texture, soft upper-left lighting and subtle navy contours. Keep generous clear space around ears and shoulders. Preserve the true transparent background and clean alpha edges. Deliver a high-resolution square PNG, ideally 2048 × 2048. No text, props, border, watermark, heavy black outlines, photorealism, or glossy plastic finish.
+

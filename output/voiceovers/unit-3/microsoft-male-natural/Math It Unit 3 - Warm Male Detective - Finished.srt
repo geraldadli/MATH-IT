@@ -1,0 +1,103 @@
+1
+00:00:00,500 --> 00:00:03,624
+Our toolkit measures length, mass, and time,
+
+2
+00:00:04,100 --> 00:00:05,763
+and helps us investigate shapes.
+
+3
+00:00:07,600 --> 00:00:09,423
+One meter is one hundred centimeters.
+
+4
+00:00:11,800 --> 00:00:13,759
+Half a meter is fifty centimeters.
+
+5
+00:00:15,600 --> 00:00:18,148
+Before adding lengths, use the same unit.
+
+6
+00:00:20,000 --> 00:00:23,727
+Two meters and thirty centimeters becomes two hundred plus thirty:
+
+7
+00:00:25,700 --> 00:00:27,154
+two hundred thirty centimeters.
+
+8
+00:00:32,600 --> 00:00:34,926
+One kilogram is one thousand grams.
+
+9
+00:00:36,600 --> 00:00:38,948
+Half a kilogram is five hundred grams.
+
+10
+00:00:40,600 --> 00:00:43,847
+Change kilograms into grams before combining them.
+
+11
+00:00:45,200 --> 00:00:47,881
+One kilogram plus two hundred fifty grams
+
+12
+00:00:48,600 --> 00:00:51,030
+makes one thousand two hundred fifty grams.
+
+13
+00:00:54,600 --> 00:00:55,998
+An hour has sixty minutes.
+
+14
+00:00:57,600 --> 00:00:59,327
+Count forward to find elapsed time.
+
+15
+00:01:01,200 --> 00:01:03,721
+From nine forty to ten o’clock is twenty minutes.
+
+16
+00:01:06,800 --> 00:01:09,111
+Continue five more minutes to ten oh five.
+
+17
+00:01:11,800 --> 00:01:14,331
+Twenty plus five makes twenty-five minutes.
+
+18
+00:01:18,600 --> 00:01:21,323
+A square has four equal sides and right angles,
+
+19
+00:01:23,400 --> 00:01:24,199
+even when turned.
+
+20
+00:01:25,800 --> 00:01:27,512
+A right angle is a square corner.
+
+21
+00:01:30,000 --> 00:01:33,324
+This triangle has three equal sides and no right angle.
+
+22
+00:01:37,429 --> 00:01:38,400
+Does it fit either rule?
+
+23
+00:01:42,400 --> 00:01:42,807
+Neither.
+
+24
+00:01:45,500 --> 00:01:47,796
+Match your units, count time carefully,
+
+25
+00:01:48,800 --> 00:01:51,810
+and check shape properties instead of guessing from appearance.
+
+26
+00:01:53,800 --> 00:01:56,603
+Take your time, and try the Unit Three quizzes!

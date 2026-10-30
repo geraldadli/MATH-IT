@@ -1,0 +1,21 @@
+Generation mode: built-in image_gen
+Final image: math-it-bear-detective.png
+Verified dimensions: 1254 x 1254 pixels
+Format: PNG with alpha transparency
+
+Initial generation prompt:
+Use case: illustration-story
+Asset type: Original mascot PNG for “Math It,” a children's math learning website.
+Primary request: Create a single original, friendly bear detective mascot, centered and front-facing, shown waist-up.
+Subject: A warm light-brown bear with round ears, a cream muzzle, small dark navy eyes, a gentle smile, and softly blushed cheeks. Dress the bear in a warm pastel yellow detective cap and a matching coat with rounded lapels. Expression conveys kindness and reassuring confidence.
+Style/medium: Polished storybook illustration with delicate painted texture, soft dimensional shading, rounded shapes, and subtle navy contours.
+Composition/framing: Square high-resolution image, ideally 2048 × 2048 pixels. Entire cap, ears, shoulders, and waist-up torso visible. Generous clear transparent space around the ears and shoulders. Keep the whole silhouette comfortably inside the canvas.
+Lighting/mood: Soft upper-left lighting; warm, welcoming, and reassuring.
+Color palette: Muted warm light brown, cream, pastel butter yellow, soft blush, and subtle navy; harmonizes with pale blue, lavender, cream, and mint website backgrounds.
+Scene/backdrop: Truly transparent background with clean alpha edges. No scenery, backdrop color, or ground shadow.
+Text: None.
+Avoid: Text, letters, numbers, props, magnifying glass, badges with symbols, border, watermark, heavy black outlines, photorealism, or glossy plastic finish.
+
+Final refinement prompt:
+Refine this original Math It bear detective mascot, preserving its character identity, warm light-brown fur, cream muzzle, small dark navy eyes, gentle smile, softly blushed cheeks, pastel yellow detective cap and matching rounded-lapel coat, delicate painted storybook texture, soft dimensional shading, and soft upper-left lighting. Change the composition: use a square high-resolution PNG canvas, ideally 2048 x 2048 or higher. Scale the waist-up character down so it occupies roughly 76% of the canvas width and 80% of the canvas height, with at least 10% genuinely transparent padding above the cap, beneath the waist-up silhouette, and around both ears and shoulders. Show the complete waist-up silhouette, with a clean, softly rounded lower waist edge fully inside the canvas. Keep the face front-facing and upright, with reassuring confidence. Preserve transparent alpha background and clean edges; no colored backdrop or floor shadow. Do not add any text, props, border, watermark, heavy black outlines, photorealism, or glossy plastic finish.
+

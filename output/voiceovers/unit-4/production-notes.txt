@@ -1,0 +1,15 @@
+Unit 4: The curious chart guide
+
+These are copies of the existing Eric narration and narrated video, verified again on 2026-10-30. No new speech was generated successfully during this request.
+
+Voice: Microsoft en-US-EricNeural, distinct from Unit 2's en-US-AndrewNeural.
+Duration: 120 seconds. Speech-only measured pace: 111.91 words per minute.
+Thinking pause: 101.600 to 105.600 seconds, exactly four seconds of zero-valued PCM audio before the answer.
+All seven scenes fit their allotted time. The video stream matches the supplied original. A full decode passed.
+Loudness: -16.25 LUFS integrated, -1.49 dBTP true peak.
+
+The existing track was synthesized phrase by phrase with varying generation rates and small tempo adjustments. This is not the proposed continuous, naturally paced replacement take. Neither the existing export nor its performance has been reviewed by listening during this request. Script-token checks use the synthesis engine's word boundaries, not independent transcription.
+
+A replacement was requested once from HeyGen using Mike, voice ID 3ae75279043648ce8f96310333c9288f, Starfish, English (US), speed 1.0, with the exact script and silent-break markup. HeyGen rejected the request with HTTP 400: This workspace requires Orca for public voices. Select Orca or choose another voice. No replacement audio was returned. No retry or engine substitution has been made; user confirmation is pending.
+
+The connected speech interface has no free-form performance/style instruction field. Direction can be retained separately, but detailed emphasis, pitch movement, and the complete character performance cannot be asserted as applied by that interface.

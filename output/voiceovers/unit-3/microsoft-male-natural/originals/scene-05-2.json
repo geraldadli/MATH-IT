@@ -1,0 +1,21 @@
+{
+  "id": "scene-05-2",
+  "scene": 5,
+  "text": "Neither.",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 0,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 1000000,
+      "duration": 3875000,
+      "text": "Neither"
+    }
+  ],
+  "sha256": "20432105be178fe9abaa03606625e5cd007e01be6980dc6e18d2656964fb8984"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "screens": 13,
+  "brokenLinks": 0,
+  "textOutsideDrawings": 0,
+  "browserErrors": [],
+  "flow": [
+    "welcome",
+    "casebook",
+    "demo",
+    "clues",
+    "hint",
+    "clues",
+    "success"
+  ],
+  "mobileFlow": [
+    "welcome-mobile",
+    "casebook-mobile"
+  ]
+}

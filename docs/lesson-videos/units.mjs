@@ -1,0 +1,208 @@
+// Four English unit-overview videos. Each scene has an explicit duration;
+// a pauseAfter value identifies the exact point for a four-second silent pause.
+export const videos = [
+  {
+    unitId: 1,
+    goal: 'Introduce how place value, comparisons, operations, multiples, fractions, and money help solve everyday number problems.',
+    setting: 'A school-fair preparation table: number cards, sticker packs, equal supply bags, a paper banner, and a simple price tag.',
+    accuracy: 'Base-ten blocks must represent their exact values. Regroup 10 ones as 1 ten without changing the total. Keep groups equal. Use equal-area fraction strips. Show Rupiah with Indonesian thousands separators: Rp 3.000 means three thousand rupiah. Do not draw realistic banknotes.',
+    scenes: [
+      {
+        seconds: 6, title: 'Welcome to the school fair',
+        visual: 'A drawn hand writes the unit title. Add a small cat detective badge and a school-fair table.',
+        screen: 'Unit 1\nNumbers & operations',
+        narration: 'Welcome, detective! Let us use numbers to prepare our school fair.',
+      },
+      {
+        seconds: 15, title: 'Place value and comparison',
+        visual: 'Draw a place-value mat. Place 2 hundred flats, 3 ten rods, and 6 ones. Build 236, then compare it with 230 on a short number line.',
+        screen: 'Hundreds | Tens | Ones\n200 + 30 + 6 = 236\n236 > 230',
+        narration: 'Two hundreds, three tens, and six ones make two hundred thirty-six. It is greater than two hundred thirty. Compare the place values, starting with the hundreds.',
+      },
+      {
+        seconds: 22, title: 'Addition and subtraction',
+        visual: 'Use two sticker packs labeled 27 and 15. Combine the ones, exchange 10 ones for a ten rod, and reveal 42. Reverse the action to remove 15, explicitly exchanging one ten when needed.',
+        screen: '27 + 15 = 42\n10 ones = 1 ten\n42 − 15 = 27',
+        narration: 'Addition joins amounts. Twenty-seven plus fifteen is forty-two. Exchange ten ones for one ten when needed. Subtraction takes an amount away. Forty-two minus fifteen returns us to twenty-seven. The operations help check each other.',
+      },
+      {
+        seconds: 20, title: 'Multiplication, division, and equal sharing',
+        visual: 'Draw 3 supply bags with 5 pencils each. Count the groups, gather the 15 pencils, then share them back one per bag in each round.',
+        screen: '3 groups × 5 each = 15\n15 ÷ 3 = 5 each',
+        narration: 'Three bags with five pencils each make fifteen pencils. That is multiplication: equal groups. Sharing fifteen equally among three bags gives five each. That is division. Check that every bag has the same number.',
+      },
+      {
+        seconds: 13, title: 'Multiples',
+        visual: 'Draw two short, evenly spaced number paths. Make jumps of 3 on the first and 5 on the second. Circle 15 on both paths.',
+        screen: '3, 6, 9, 12, 15\n5, 10, 15\n15 fits both patterns',
+        narration: 'Multiples follow equal jumps. Count in threes or fives. Fifteen appears in both patterns, so one number can fit two rules.',
+      },
+      {
+        seconds: 14, title: 'Fractions of a whole',
+        visual: 'Draw three identical paper-banner strips, each split into 4 equal parts. Shade 1 part, then 2, then 3; keep labels beneath their matching strips.',
+        screen: '1/4\n2/4 = 1/2\n3/4',
+        narration: 'Fractions describe equal parts of a whole. One of four parts is one quarter. Two quarters make one half. Three shaded parts make three quarters.',
+      },
+      {
+        seconds: 22, title: 'Money and a thinking pause',
+        visual: 'Draw two price tags and add their amounts on a receipt. Show the payment. Ask about change, hold for 4 seconds, then write the subtraction and return three plain thousand-rupiah tokens.',
+        screen: 'Rp 3.000 + Rp 4.000 = Rp 7.000\nPay: Rp 10.000\nChange: ? → Rp 3.000',
+        narration: 'Three thousand plus four thousand costs seven thousand rupiah. Pay ten thousand. How much change? Three thousand: subtract the cost from your payment.',
+        pauseAfter: 'How much change?',
+      },
+      {
+        seconds: 8, title: 'Ready for the unit quizzes',
+        visual: 'Clear the worked examples. Leave a pencil, a tick, and the detective badge beside the final message.',
+        screen: 'Read → Choose a method → Check\nTry the Unit 1 quizzes',
+        narration: 'Read, choose your method, and check your answer. Try the Unit One quizzes!',
+      },
+    ],
+  },
+  {
+    unitId: 2,
+    goal: 'Introduce choosing operations from stories, following brackets, finding missing numbers, estimating, and checking mistakes.',
+    setting: 'A detective notebook with a story card, a two-step lock, a missing-number box, a number line, and a calculation to check.',
+    accuracy: 'Do not choose operations from isolated keywords. Brackets determine the first step in the shown examples. Use ≈ for an estimate and = for exact equality. Label incorrect work as a claim until it is corrected. Regrouping a ten changes the tens count.',
+    scenes: [
+      {
+        seconds: 6, title: 'Think like a detective',
+        visual: 'Draw a notebook and a magnifying glass. Write the unit title in a clear hand-drawn heading.',
+        screen: 'Unit 2\nAlgebra & reasoning',
+        narration: 'Good detectives explain their thinking. Let us investigate five useful strategies.',
+      },
+      {
+        seconds: 20, title: 'Understand a word problem',
+        visual: 'Show small pictures of joining objects, taking some away, and repeated equal groups. Then align bars of 17 and 11 stickers to reveal their gap.',
+        screen: 'Join: +\nTake away or compare: −\nEqual groups: ×\n17 − 11 = 6',
+        narration: 'Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.',
+      },
+      {
+        seconds: 18, title: 'Solve two steps in order',
+        visual: 'Write the expression, circle only the brackets, replace them with 9, then complete the multiplication. Keep each line aligned beneath the previous one.',
+        screen: '(5 + 4) × 3\n9 × 3 = 27',
+        narration: 'For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.',
+      },
+      {
+        seconds: 18, title: 'Find a missing number',
+        visual: 'Draw a part-whole bar for an unknown amount plus 9 equaling 23. Undo the addition. Then show six equal groups totaling 30 to find the second missing number.',
+        screen: '□ + 9 = 23 → □ = 14\n6 × □ = 30 → □ = 5',
+        narration: 'A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.',
+      },
+      {
+        seconds: 20, title: 'Estimate with nearby tens',
+        visual: 'Place 37 between 30 and 40, and 24 between 20 and 30, with equal tick spacing. Move each to the nearer ten. Use an approximate-equality symbol for the original sum.',
+        screen: '37 → 40\n24 → 20\n37 + 24 ≈ 60\nHalfway? Round up.',
+        narration: 'Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.',
+      },
+      {
+        seconds: 24, title: 'Spot a mistake and think',
+        visual: 'Show a clearly labeled claim with the answer 35. Ask what was missed and pause for 4 seconds. Exchange the 15 ones to correct the total to 45. Finish by contrasting five groups of four with five plus four.',
+        screen: 'Claim: 27 + 18 gives 35\nCheck: 27 + 18 = 45\n5 × 4 = 20; 5 + 4 = 9',
+        narration: 'Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed? The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.',
+        pauseAfter: 'What was missed?',
+      },
+      {
+        seconds: 14, title: 'Ready for the unit quizzes',
+        visual: 'Draw five small reminder icons: story, brackets, box, rounded number, and check mark. End with the quiz invitation.',
+        screen: 'Understand → Work in steps → Check\nTry the Unit 2 quizzes',
+        narration: 'Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!',
+      },
+    ],
+  },
+  {
+    unitId: 3,
+    goal: 'Introduce converting length and mass units, counting elapsed minutes, and sorting shapes by sides and right angles.',
+    setting: 'A small detective toolkit containing a ribbon ruler, a balance scale, a clock timeline, and geometric clue cards.',
+    accuracy: '1 m = 100 cm; half a meter = 50 cm. 1 kg = 1000 g; half a kilogram = 500 g. An hour has 60 minutes. Draw proportional lengths and correct right-angle markers. A rotated square remains a square. The practice triangle is equilateral with no right angle.',
+    scenes: [
+      {
+        seconds: 7, title: 'Open the measuring toolkit',
+        visual: 'Draw a toolkit opening to reveal a ruler, scale, clock, and shape card. Add the unit title.',
+        screen: 'Unit 3\nMeasurement & geometry',
+        narration: 'Our toolkit measures length, mass, and time, and helps us investigate shapes.',
+      },
+      {
+        seconds: 25, title: 'Measure length',
+        visual: 'Draw a one-meter strip with a clear midpoint, then two full strips plus a 30-centimeter piece. Convert to centimeters before combining. Reveal one equation at a time.',
+        screen: '1 m = 100 cm\n1/2 m = 50 cm\n2 m + 30 cm = 230 cm',
+        narration: 'One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.',
+      },
+      {
+        seconds: 22, title: 'Measure mass',
+        visual: 'Balance one kilogram against two 500-gram packets. Then place a one-kilogram packet beside a 250-gram packet and rewrite both in grams.',
+        screen: '1 kg = 1000 g\n1/2 kg = 500 g\n1000 g + 250 g = 1250 g',
+        narration: 'One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.',
+      },
+      {
+        seconds: 24, title: 'Count elapsed time',
+        visual: 'Draw a forward timeline from 09:40 to 10:05. Stop at 10:00 and label the two jumps. If a clock face appears, move both hands correctly.',
+        screen: '1 hour = 60 minutes\n09:40 → 10:00 → 10:05\n20 + 5 = 25 minutes',
+        narration: 'An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.',
+      },
+      {
+        seconds: 27, title: 'Investigate shape properties',
+        visual: 'Draw two rule cards: four equal sides and a right angle. Put a rotated square under both rules. Draw an equilateral triangle with three equal-side ticks. Ask the question, pause for 4 seconds, then label it Neither.',
+        screen: '4 equal sides?\nRight angle = square corner\nSquare: both rules\nTriangle shown: neither',
+        narration: 'A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule? Neither.',
+        pauseAfter: 'Does it fit either rule?',
+      },
+      {
+        seconds: 15, title: 'Ready for the unit quizzes',
+        visual: 'Return the four tools to their slots. Keep a unit label beside each measurement and a tick beside the property cards.',
+        screen: 'Match units → Count carefully → Check properties\nTry the Unit 3 quizzes',
+        narration: 'Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!',
+      },
+    ],
+  },
+  {
+    unitId: 4,
+    goal: 'Introduce pictograph keys, bar and line scales, pie-chart shares, and dashboard grouping, filtering, sorting, and table views.',
+    setting: 'A classroom evidence board with separate small charts, ending with a simple sports-day dashboard. Clear the board between chart types.',
+    accuracy: 'A half symbol represents half the key value, not half a person or object. Bar-chart scale labels increase by four with halfway gridlines worth two. Line-chart days are equally spaced. A 32-child pie chart has eight equal 45-degree parts. Dashboard data: Orange scores Relay 6, Skipping 11, Throwing 8; Purple scores Relay 18, Skipping 3, Throwing 7. All-team totals are 24, 14, 15. Set Bars show to Event before filtering Orange; grouping changes reset the filter. Sort Most first gives Skipping 11, Throwing 8, Relay 6. Chart and table must agree.',
+    scenes: [
+      {
+        seconds: 5, title: 'Read the evidence',
+        visual: 'Draw the unit title and a small chart folder beside the detective badge.',
+        screen: 'Unit 4\nData analysis',
+        narration: 'Charts turn information into clues. Let us read them!',
+      },
+      {
+        seconds: 20, title: 'Read pictograph keys',
+        visual: 'First show a person-symbol key and a row of two full symbols plus one half. Clear it, then introduce a book-symbol key worth ten and one half-symbol worth five.',
+        screen: '1 person symbol = 2 children\n2 + 2 + 1 = 5 children\n1 book symbol = 10 books\nHalf book symbol = 5 books',
+        narration: 'Read the picture key first. If one symbol means two children, two symbols and a half mean five children. A different key may give one book symbol ten books. Then half a symbol means five books.',
+      },
+      {
+        seconds: 18, title: 'Read bar-chart scales',
+        visual: 'Draw museum visitor bars: Monday 8 and Tuesday 14. Use a zero baseline, labels at 0, 4, 8, 12, 16, and thin halfway lines. Trace Tuesday to fourteen, then compare the bars.',
+        screen: 'Scale: 0, 4, 8, 12, 16\nHalfway between 12 and 16 is 14\n14 − 8 = 6 more',
+        narration: 'For bars, read the scale. Halfway between twelve and sixteen is fourteen. This bar shows fourteen visitors. Another shows eight. Subtract to find the difference: six more visitors.',
+      },
+      {
+        seconds: 18, title: 'Read change on a line chart',
+        visual: 'Draw seedling heights on equally spaced Days 1, 2, and 3: 2, 4, and 9 cm. Read the last two dots, then bracket their height difference.',
+        screen: 'Heights: 2 cm → 4 cm → 9 cm\nGrowth from Day 2 to Day 3:\n9 − 4 = 5 cm',
+        narration: 'A line chart tracks change over time. Read the dots against the height scale. Growing from four centimeters to nine centimeters means five centimeters of growth. Height and growth are different.',
+      },
+      {
+        seconds: 16, title: 'Read shares of a circle',
+        visual: 'Draw a pie chart for 32 children split into 8 equal wedges. Group them into sectors of 4, 2, 1, and 1 wedges. Reveal each fraction and count beside its sector.',
+        screen: '32 children ÷ 8 equal parts = 4 per part\n1/2 = 16 children\n1/4 = 8 children\n1/8 = 4 children',
+        narration: 'A pie chart shows parts of a whole. Thirty-two children split into eight equal parts means four per part. Half means sixteen children; one quarter means eight.',
+      },
+      {
+        seconds: 33, title: 'Use dashboard tools and think',
+        visual: 'Show the question about Orange team. Start with team bars. Change Bars show to Event, then Filter to Orange. Redraw event bars at 6, 11, and 8. Choose Sort: Most first; move bars and labels together. Switch View to Table. Ask which event is first, hold for 4 seconds, then highlight Skipping with 11 points.',
+        screen: 'Which event scored most for Orange?\nBars show: Event → Filter: Orange\nSort: Most first → View: Table\nSkipping 11 | Throwing 8 | Relay 6',
+        narration: 'To compare Orange team’s events, choose Event for what the bars show, then filter to Orange. Sort most first to put the largest score on top. Switch to Table for exact numbers; the data stays the same. Which event is first? Skipping, with eleven points.',
+        pauseAfter: 'Which event is first?',
+      },
+      {
+        seconds: 10, title: 'Ready for the unit quizzes',
+        visual: 'Draw four small reminders: key, scale, question, and a check mark. End on the detective badge.',
+        screen: 'Read the key and scale\nMatch the view to the question\nTry the Unit 4 quizzes',
+        narration: 'Check the key, scale, and question. Choose the view you need, then try the Unit Four quizzes!',
+      },
+    ],
+  },
+];

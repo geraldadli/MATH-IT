@@ -1,0 +1,63 @@
+MATH IT! VIDEO PROMPT
+Unit 4 · Chapter 2: The bakery's best day
+Unit: Data analysis
+Topic: Bar charts
+Duration: 110 seconds (1:50)
+Language: English only
+
+LEARNING GOAL
+Read vertical bars using a numbered scale and unlabeled intermediate gridlines, then add or compare values.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+Example chart: museum visitors, Monday 8, Tuesday 14, Wednesday 20. Vertical axis begins at 0; labels are 0, 4, 8, 12, 16, 20; thin intermediate gridlines represent 2 visitors. Equal bar widths, equal scale intervals, no misleading perspective.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:13 · Hook
+Visual and animation: Draw a museum sign, three vertical bars, and labeled axes. Do not write values above the bars yet.
+On-screen text, revealed progressively:
+Museum visitors
+Narration: “These bars show museum visitors. The scale tells us what each bar is worth.”
+
+SCENE 2 · 0:13–0:40 · Explain the idea
+Visual and animation: Trace the vertical scale from zero in steps of four. Point to the thin halfway line between twelve and sixteen.
+On-screen text, revealed progressively:
+12 → 14 → 16
+Narration: “Read the scale before reading the bars. The numbered lines go up by four. A thin line halfway between them adds two. The line between twelve and sixteen means fourteen.”
+
+SCENE 3 · 0:40–1:11 · Worked example
+Visual and animation: Trace from Tuesday’s bar top horizontally to fourteen. Repeat for Monday and Wednesday, revealing values only after reading the scale. Add Monday and Tuesday.
+On-screen text, revealed progressively:
+Tue = 14
+Mon = 8
+Wed = 20
+8 + 14 = 22
+Narration: “Follow Tuesday’s bar across to the scale: fourteen visitors. Monday has eight and Wednesday has twenty. For Monday and Tuesday together, add eight and fourteen. That makes twenty-two visitors.”
+
+SCENE 4 · 1:11–1:35 · Try, pause, and reveal
+Visual and animation: Highlight Monday and Tuesday. Hold for four seconds, then bracket the difference between their heights.
+On-screen text, revealed progressively:
+14 − 8 = 6 more visitors
+Narration: “How many more visitors came on Tuesday than Monday? Read both bars, then subtract. Fourteen minus eight equals six more visitors.”
+
+SCENE 5 · 1:35–1:50 · Recap and quiz invitation
+Visual and animation: Draw three check marks beside the scale, bar top, and operation.
+On-screen text, revealed progressively:
+Read scale → Trace bar → Calculate
+Narration: “Read the scale, trace the bar, and choose the operation the question needs. Your chart quiz is next!”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.

@@ -1,0 +1,21 @@
+Math It cat detective — flat editorial redesign
+Method: built-in ImageGen, style transfer with one refinement.
+Final image: math-it-cat-detective-editorial.png
+
+Redesign prompt:
+Use case: style-transfer.
+Asset type: redesigned cat detective mascot for the Math It children's math learning website, transparent PNG.
+Reference role: the attached image identifies the gray cat and lavender detective costume only. Redraw the character completely in a flat editorial illustration style.
+Primary request: A clean, original, intentionally designed two-dimensional cat detective mascot with broad simplified shapes, SMALL solid navy dot/oval eyes, a tiny flat nose, a gentle curved smile, cream muzzle, two delicate whiskers per cheek, and flat subtle blush patches. Friendly, clever, patient, encouraging. Gray cat with triangular ears, lavender detective cap and lavender coat with rounded lapels, waist-up and front-facing. Simplify the thoughtful paw-near-chin pose into a few clear rounded shapes.
+Style: crisp flat editorial illustration for a contemporary children's education brand. Confident economical contour lines in muted navy, a restricted harmonious pastel palette, geometric simplicity with warm organic curves, very few interior details. Flat solid color fills. Minimal shading: at most one small hard-edged flat shadow shape beneath the cap. Keep the entire character equally flat. Small dot eyes have NO shine or white highlights. Cream muzzle is a simple solid shape. Cheeks have no gradient.
+Palette: cool soft gray fur, warm cream muzzle, muted lavender cap and coat, a slightly deeper lavender flat accent, restrained dusty blush, dark navy linework. Harmonizes with cream, pale blue, mint and lavender as well as navy dark mode.
+Composition: single centered waist-up portrait on a square high-resolution canvas with generous transparent clearance above the ears and beside the shoulders; all ears, cap, whiskers and shoulders fully visible, clean complete lower silhouette. Flat matte graphic with a readable silhouette at 48 pixels.
+Background: genuine fully transparent alpha, clean edges, no baked-in backdrop or badge, no checkerboard, no cast shadow.
+Avoid absolutely: painted or watercolor texture, fur strands, soft rendered lighting, gradients, realistic volume, airbrushing, 3D effects, plush toy appearance, glossy eyes, reflective nose, heavy black outlines, excessive folds, decorative sparkles, extra props, letters, text, logos, borders, watermark.
+
+Refinement prompt:
+Refine this exact cat mascot into a truly FLAT, solid-color editorial illustration.
+Change only the color treatment and simplify interior details. Replace EVERY gradient, airbrushed transition, shaded fold, lighting effect, rim highlight, and textured area with perfectly UNIFORM SOLID COLOR. Each closed shape is one flat ink color. The face must be one uniform cool gray, the cream muzzle one uniform cream, the coat and cap one uniform muted lavender, the inner ears and small blush circles one uniform dusty pink. Dark navy simple dot eyes have no white glints. Use at most one separate muted darker lavender shape under the cap brim; remove all other shadows. Remove decorative pale fur tufts inside the ears. Simplify the cap to a few broad clean panels and coat to rounded lapels and simple paw/sleeve shapes. Keep small eyes, gray cat identity, cream muzzle, gentle smile, delicate whiskers, lavender detective costume, friendly patient thoughtful pose, front-facing waist-up composition. Keep contours subtle navy and consistent.
+Think flat cut-paper shapes or a carefully drawn vector illustration, NOT a shaded cartoon render. Absolutely no gradients or tonal rendering anywhere.
+Keep the complete character inside the frame with transparent breathing room on every side and a clean lower silhouette. Final high-resolution PNG with real transparent alpha. No background circle or badge, checkerboard, text, props, watermark, decorative marks, or shadow behind the character.
+

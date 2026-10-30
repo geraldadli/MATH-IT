@@ -1,0 +1,36 @@
+{
+  "authorization": "User: Retry the Unit 3 narration with Ruth.",
+  "client_date": "2026-10-30",
+  "request": {
+    "voiceId": "1f1b14d399cf4e9592334bb7c170ef65",
+    "engine": "heygen_voice",
+    "language": "en",
+    "speed": 1,
+    "inputType": "ssml",
+    "text": "<speak>Our toolkit measures length, mass, and time, and helps us investigate shapes.<break time=\"1.2s\"/>One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.<break time=\"1.2s\"/>One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.<break time=\"1.2s\"/>An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.<break time=\"1.2s\"/>A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule?<break time=\"4s\"/>Neither.<break time=\"1.2s\"/>Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!</speak>"
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Your free speech allowance. You have 28 seconds of free voice-generation time left. This request needs 87 seconds. Try a shorter script. Your allowance renews next month. No audio was created."
+      }
+    ],
+    "structuredContent": {
+      "outputType": "speech.limit",
+      "error": true,
+      "errorCode": "insufficient_credit",
+      "statusCode": 402,
+      "retryable": false,
+      "title": "Your free speech allowance",
+      "message": "You have 28 seconds of free voice-generation time left. This request needs 87 seconds. Try a shorter script. Your allowance renews next month.",
+      "actionLabel": "Continue on HeyGen",
+      "actionUrl": "https://www.heygen.com",
+      "docUrl": "https://developers.heygen.com/docs/error-codes#insufficient-credit",
+      "error_code": "INVALID_ARGUMENT"
+    },
+    "isError": true
+  },
+  "new_audio_created": false
+}
+

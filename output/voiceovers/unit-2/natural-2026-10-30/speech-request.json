@@ -1,0 +1,8 @@
+{
+  "voiceId": "31e2fd6e7c924bc9be987ac4cfaac5e8",
+  "engine": "heygen_voice",
+  "inputType": "ssml",
+  "language": "en",
+  "speed": 1,
+  "text": "<speak>Good detectives explain their thinking. Let us investigate five useful strategies.<break time=\"1s\"/>Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.<break time=\"1s\"/>For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.<break time=\"1s\"/>A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.<break time=\"1s\"/>Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.<break time=\"1s\"/>Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed?<break time=\"4s\"/> The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.<break time=\"1s\"/>Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!</speak>"
+}

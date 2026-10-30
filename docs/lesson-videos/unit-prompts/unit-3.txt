@@ -1,0 +1,100 @@
+MATH IT! — UNIT 3 VIDEO PROMPT
+Measurement & geometry
+Duration: 120 seconds (2:00)
+Language: English only
+Narrator: Female — The patient explorer
+One video for the whole unit
+
+UNIT TOPICS
+Measuring length; Elapsed time; 2D shapes; Mass
+
+LEARNING GOAL
+Introduce converting length and mass units, counting elapsed minutes, and sorting shapes by sides and right angles.
+
+VIDEO CREATION PROMPT
+Create ONE finished two-minute educational video in English for Grade 3 children, approximately ages 8–9, for Math It! This is an introductory overview of the entire unit, watched before the children attempt that unit's quizzes. Use the timed storyboard below, with a few connected examples and one short thinking pause. Do not expand it into separate chapter videos.
+
+VISUAL STYLE
+Use a simple hand-drawn whiteboard animation with a hand writing and drawing on a warm white board. Format: 16:9 landscape, preferably 1920 × 1080. Use dark navy outlines and a few blue, teal, and amber highlights. Keep the same small friendly cat detective badge across all four unit videos. Use a fixed front-facing camera, clear handwriting, large numerals, and simple flat illustrations. Reveal one idea at a time; erase or fade the previous example before introducing the next. Move objects only to demonstrate the mathematics. Keep labels readable on a phone. No complex 3D, busy backgrounds, flashing, or rapid camera motion.
+
+NARRATION AND PACING
+Use the exact supplied English narration and the unit-specific voice profile below, spoken warmly and clearly at approximately 110 words per minute. Keep that unit's selected voice consistent in every scene. Use spare time within each scene for drawing and reading. Do not add filler speech. Preserve the stated scene durations and total of 120 seconds. On-screen text describes the final state of a scene: reveal it gradually in sync with the explanation. Do not reveal the answer to the practice question until after the explicitly marked four-second silent pause. Use large English captions below the drawing area, at most two short lines at once. Music is optional and very quiet. Keep the tone encouraging, with no countdown or pressure to answer quickly.
+
+PRODUCTION RULES
+Use the supplied example numbers, equations, units, and exact object counts. Draw equal parts and chart scales accurately. Worked examples teach a method; do not add the actual quiz's answer key. Finish with the unit quiz invitation in the script. If your generator makes only short clips, generate each timed scene consistently and assemble them into ONE unit video. Add precise text, equations, narration, and captions during editing if the generator cannot render them reliably.
+
+UNIT 3 VOICE PROFILE — Measurement & geometry
+Voice: Female
+Character: The patient explorer
+
+VOICE GENERATION PROMPT
+Use a different adult female narrator from Unit 1. Give her a fuller middle-pitched voice with a gentle, grounded warmth. She sounds like a patient science teacher demonstrating tools beside a child: calm, attentive, and interested in small discoveries. Use clear, lightly American-accented English at approximately 110 words per minute. Articulate centimeters, meters, grams, kilograms, and minutes carefully, keeping each number naturally connected to its unit. Use modest pitch changes and clear sentence endings. Sound encouraging without breathiness, whispering, or a sleepy pace. Keep this same female voice throughout Unit 3.
+
+SHARED VOICE DIRECTION
+Cast four distinct adult voices: female for Unit 1, male for Unit 2, a different female for Unit 3, and a different male for Unit 4. Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target approximately 110 spoken words per minute so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+“Our toolkit measures length, mass, and time, and helps us investigate shapes.”
+
+SETTING
+A small detective toolkit containing a ribbon ruler, a balance scale, a clock timeline, and geometric clue cards.
+
+MATHEMATICAL ACCURACY
+1 m = 100 cm; half a meter = 50 cm. 1 kg = 1000 g; half a kilogram = 500 g. An hour has 60 minutes. Draw proportional lengths and correct right-angle markers. A rotated square remains a square. The practice triangle is equilateral with no right angle.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:07 · Open the measuring toolkit
+Visual and animation: Draw a toolkit opening to reveal a ruler, scale, clock, and shape card. Add the unit title.
+On-screen text (reveal progressively):
+Unit 3
+Measurement & geometry
+Narration: “Our toolkit measures length, mass, and time, and helps us investigate shapes.”
+
+SCENE 2 · 0:07–0:32 · Measure length
+Visual and animation: Draw a one-meter strip with a clear midpoint, then two full strips plus a 30-centimeter piece. Convert to centimeters before combining. Reveal one equation at a time.
+On-screen text (reveal progressively):
+1 m = 100 cm
+1/2 m = 50 cm
+2 m + 30 cm = 230 cm
+Narration: “One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.”
+
+SCENE 3 · 0:32–0:54 · Measure mass
+Visual and animation: Balance one kilogram against two 500-gram packets. Then place a one-kilogram packet beside a 250-gram packet and rewrite both in grams.
+On-screen text (reveal progressively):
+1 kg = 1000 g
+1/2 kg = 500 g
+1000 g + 250 g = 1250 g
+Narration: “One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.”
+
+SCENE 4 · 0:54–1:18 · Count elapsed time
+Visual and animation: Draw a forward timeline from 09:40 to 10:05. Stop at 10:00 and label the two jumps. If a clock face appears, move both hands correctly.
+On-screen text (reveal progressively):
+1 hour = 60 minutes
+09:40 → 10:00 → 10:05
+20 + 5 = 25 minutes
+Narration: “An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.”
+
+SCENE 5 · 1:18–1:45 · Investigate shape properties
+Visual and animation: Draw two rule cards: four equal sides and a right angle. Put a rotated square under both rules. Draw an equilateral triangle with three equal-side ticks. Ask the question, pause for 4 seconds, then label it Neither.
+On-screen text (reveal progressively):
+4 equal sides?
+Right angle = square corner
+Square: both rules
+Triangle shown: neither
+Narration: “A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule? Neither.”
+PAUSE: Immediately after “Does it fit either rule?”, hold silently for 4 seconds. Then continue the remaining narration and reveal the answer. This pause is included in the scene time.
+
+SCENE 6 · 1:45–2:00 · Ready for the unit quizzes
+Visual and animation: Return the four tools to their slots. Keep a unit label beside each measurement and a tick beside the property cards.
+On-screen text (reveal progressively):
+Match units → Count carefully → Check properties
+Try the Unit 3 quizzes
+Narration: “Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!”
+
+FINAL PRODUCTION CHECK
+Check the mathematical examples, narration and caption agreement, the selected unit voice, readable text, the four-second thinking pause, total duration of 120 seconds, and the closing invitation to this unit's quizzes.

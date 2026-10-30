@@ -1,0 +1,81 @@
+{
+  "id": "scene-01-1",
+  "scene": 1,
+  "text": "Good detectives explain their thinking. Let us investigate five useful strategies.",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 0,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 1000000,
+      "duration": 1250000,
+      "text": "Good"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 2375000,
+      "duration": 5500000,
+      "text": "detectives"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8000000,
+      "duration": 5000000,
+      "text": "explain"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 13125000,
+      "duration": 1375000,
+      "text": "their"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14625000,
+      "duration": 4125000,
+      "text": "thinking"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22875000,
+      "duration": 875000,
+      "text": "Let"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23875000,
+      "duration": 1125000,
+      "text": "us"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 25125000,
+      "duration": 6375000,
+      "text": "investigate"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 32250000,
+      "duration": 3875000,
+      "text": "five"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36250000,
+      "duration": 3625000,
+      "text": "useful"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 40000000,
+      "duration": 7000000,
+      "text": "strategies"
+    }
+  ],
+  "sha256": "0b94f172b93045d1c28b0356c0a9ce98192d2e465ce23fd33238c2dff2dafedc"
+}

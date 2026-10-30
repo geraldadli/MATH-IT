@@ -1,0 +1,13 @@
+Charts turn information into clues. Let us read them!
+
+Read the picture key first. If one symbol means two children, two symbols and a half mean five children. A different key may give one book symbol ten books. Then half a symbol means five books.
+
+For bars, read the scale. Halfway between twelve and sixteen is fourteen. This bar shows fourteen visitors. Another shows eight. Subtract to find the difference: six more visitors.
+
+A line chart tracks change over time. Read the dots against the height scale. Growing from four centimeters to nine centimeters means five centimeters of growth. Height and growth are different.
+
+A pie chart shows parts of a whole. Thirty-two children split into eight equal parts means four per part. Half means sixteen children; one quarter means eight.
+
+To compare Orange team’s events, choose Event for what the bars show, then filter to Orange. Sort most first to put the largest score on top. Switch to Table for exact numbers; the data stays the same. Which event is first? Skipping, with eleven points.
+
+Check the key, scale, and question. Choose the view you need, then try the Unit Four quizzes!

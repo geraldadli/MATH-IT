@@ -1,0 +1,63 @@
+MATH IT! VIDEO PROMPT
+Unit 4 · Chapter 6: The canteen dashboard
+Unit: Data analysis
+Topic: Dashboards: filter
+Duration: 105 seconds (1:45)
+Language: English only
+
+LEARNING GOAL
+Use a dashboard filter to isolate the category named in a question before comparing horizontal bars and choosing an answer.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+Use a new three-day fruit-and-bread example: Monday fruit 8 bread 10; Tuesday fruit 4 bread 16; Wednesday fruit 6 bread 10. All totals are 18, 20, 16, so Tuesday leads overall; fruit alone peaks on Monday. Keep a fixed 0–20 axis and read the active filter label. Filtering hides other categories without deleting records.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:12 · Hook
+Visual and animation: Draw a simple dashboard with Filter chips All, Fruit, Bread and three horizontal day bars. The question asks which day sold most fruit.
+On-screen text, revealed progressively:
+Which day sold the most fruit?
+Narration: “A dashboard can show many kinds of data. We need the view that matches our question.”
+
+SCENE 2 · 0:12–0:36 · Explain the idea
+Visual and animation: Start with All selected and totals eighteen, twenty, sixteen. Circle the word fruit in the question and move the drawn hand toward the Fruit chip.
+On-screen text, revealed progressively:
+Filter: All
+Showing all snacks
+Narration: “All shows fruit and bread together. Tuesday has the longest total bar, but our question asks only about fruit. A filter keeps just the category we want to inspect.”
+
+SCENE 3 · 0:36–1:05 · Worked example
+Visual and animation: Tap Fruit. Animate the three bar lengths changing to eight, four, and six. Update the showing line, trace the scale, and select Monday.
+On-screen text, revealed progressively:
+Filter: Fruit
+Showing fruit
+Monday = 8
+Narration: “Choose Fruit, then check the showing label. Now the bars mean fruit sold on each day. Monday reaches eight and has the longest bar. Changing the view changed which day answered our question.”
+
+SCENE 4 · 1:05–1:32 · Try, pause, and reveal
+Visual and animation: Keep Fruit active and ask for the fewest instead. Hold for four seconds, then outline Tuesday’s shortest bar and read four.
+On-screen text, revealed progressively:
+Fewest fruit: Tuesday, 4
+Narration: “With the fruit filter still active, which day sold the fewest? Tuesday has the shortest bar, reaching four. We used the same filter but answered a different question.”
+
+SCENE 5 · 1:32–1:45 · Recap and quiz invitation
+Visual and animation: Show three compact cues beside the dashboard; no actual app controls are required in the video.
+On-screen text, revealed progressively:
+Read → Filter → Choose a bar
+Narration: “Match the filter to the question, check the view, then choose your bar. Try the dashboard quiz!”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.

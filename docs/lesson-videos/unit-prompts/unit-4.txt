@@ -1,0 +1,111 @@
+MATH IT! — UNIT 4 VIDEO PROMPT
+Data analysis
+Duration: 120 seconds (2:00)
+Language: English only
+Narrator: Male — The curious chart guide
+One video for the whole unit
+
+UNIT TOPICS
+Pictographs; Bar charts; Line charts; Pictograph keys; Pie charts; Dashboards: filter; Dashboards: sort; Dashboards: group & view
+
+LEARNING GOAL
+Introduce pictograph keys, bar and line scales, pie-chart shares, and dashboard grouping, filtering, sorting, and table views.
+
+VIDEO CREATION PROMPT
+Create ONE finished two-minute educational video in English for Grade 3 children, approximately ages 8–9, for Math It! This is an introductory overview of the entire unit, watched before the children attempt that unit's quizzes. Use the timed storyboard below, with a few connected examples and one short thinking pause. Do not expand it into separate chapter videos.
+
+VISUAL STYLE
+Use a simple hand-drawn whiteboard animation with a hand writing and drawing on a warm white board. Format: 16:9 landscape, preferably 1920 × 1080. Use dark navy outlines and a few blue, teal, and amber highlights. Keep the same small friendly cat detective badge across all four unit videos. Use a fixed front-facing camera, clear handwriting, large numerals, and simple flat illustrations. Reveal one idea at a time; erase or fade the previous example before introducing the next. Move objects only to demonstrate the mathematics. Keep labels readable on a phone. No complex 3D, busy backgrounds, flashing, or rapid camera motion.
+
+NARRATION AND PACING
+Use the exact supplied English narration and the unit-specific voice profile below, spoken warmly and clearly at approximately 110 words per minute. Keep that unit's selected voice consistent in every scene. Use spare time within each scene for drawing and reading. Do not add filler speech. Preserve the stated scene durations and total of 120 seconds. On-screen text describes the final state of a scene: reveal it gradually in sync with the explanation. Do not reveal the answer to the practice question until after the explicitly marked four-second silent pause. Use large English captions below the drawing area, at most two short lines at once. Music is optional and very quiet. Keep the tone encouraging, with no countdown or pressure to answer quickly.
+
+PRODUCTION RULES
+Use the supplied example numbers, equations, units, and exact object counts. Draw equal parts and chart scales accurately. Worked examples teach a method; do not add the actual quiz's answer key. Finish with the unit quiz invitation in the script. If your generator makes only short clips, generate each timed scene consistently and assemble them into ONE unit video. Add precise text, equations, narration, and captions during editing if the generator cannot render them reliably.
+
+UNIT 4 VOICE PROFILE — Data analysis
+Voice: Male
+Character: The curious chart guide
+
+VOICE GENERATION PROMPT
+Use a different adult male narrator from Unit 2. Give him a lighter middle-pitched voice with a clear, crisp tone. He sounds like a friendly museum guide helping children discover patterns: curious, engaged, and gently animated. Use clear, lightly American-accented English at approximately 110 words per minute. Lightly emphasize key, scale, filter, sort, and table so children notice the tools. Introduce a question with a small rise in pitch, and explain the result with a confident, relaxed finish. Create energy through expression rather than faster speech. Avoid a sports-commentator delivery, advertising hype, robotic rhythm, or excessive pitch changes. Keep this same male voice throughout Unit 4.
+
+SHARED VOICE DIRECTION
+Cast four distinct adult voices: female for Unit 1, male for Unit 2, a different female for Unit 3, and a different male for Unit 4. Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target approximately 110 spoken words per minute so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+“Charts turn information into clues. Let us read them!”
+
+SETTING
+A classroom evidence board with separate small charts, ending with a simple sports-day dashboard. Clear the board between chart types.
+
+MATHEMATICAL ACCURACY
+A half symbol represents half the key value, not half a person or object. Bar-chart scale labels increase by four with halfway gridlines worth two. Line-chart days are equally spaced. A 32-child pie chart has eight equal 45-degree parts. Dashboard data: Orange scores Relay 6, Skipping 11, Throwing 8; Purple scores Relay 18, Skipping 3, Throwing 7. All-team totals are 24, 14, 15. Set Bars show to Event before filtering Orange; grouping changes reset the filter. Sort Most first gives Skipping 11, Throwing 8, Relay 6. Chart and table must agree.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:05 · Read the evidence
+Visual and animation: Draw the unit title and a small chart folder beside the detective badge.
+On-screen text (reveal progressively):
+Unit 4
+Data analysis
+Narration: “Charts turn information into clues. Let us read them!”
+
+SCENE 2 · 0:05–0:25 · Read pictograph keys
+Visual and animation: First show a person-symbol key and a row of two full symbols plus one half. Clear it, then introduce a book-symbol key worth ten and one half-symbol worth five.
+On-screen text (reveal progressively):
+1 person symbol = 2 children
+2 + 2 + 1 = 5 children
+1 book symbol = 10 books
+Half book symbol = 5 books
+Narration: “Read the picture key first. If one symbol means two children, two symbols and a half mean five children. A different key may give one book symbol ten books. Then half a symbol means five books.”
+
+SCENE 3 · 0:25–0:43 · Read bar-chart scales
+Visual and animation: Draw museum visitor bars: Monday 8 and Tuesday 14. Use a zero baseline, labels at 0, 4, 8, 12, 16, and thin halfway lines. Trace Tuesday to fourteen, then compare the bars.
+On-screen text (reveal progressively):
+Scale: 0, 4, 8, 12, 16
+Halfway between 12 and 16 is 14
+14 − 8 = 6 more
+Narration: “For bars, read the scale. Halfway between twelve and sixteen is fourteen. This bar shows fourteen visitors. Another shows eight. Subtract to find the difference: six more visitors.”
+
+SCENE 4 · 0:43–1:01 · Read change on a line chart
+Visual and animation: Draw seedling heights on equally spaced Days 1, 2, and 3: 2, 4, and 9 cm. Read the last two dots, then bracket their height difference.
+On-screen text (reveal progressively):
+Heights: 2 cm → 4 cm → 9 cm
+Growth from Day 2 to Day 3:
+9 − 4 = 5 cm
+Narration: “A line chart tracks change over time. Read the dots against the height scale. Growing from four centimeters to nine centimeters means five centimeters of growth. Height and growth are different.”
+
+SCENE 5 · 1:01–1:17 · Read shares of a circle
+Visual and animation: Draw a pie chart for 32 children split into 8 equal wedges. Group them into sectors of 4, 2, 1, and 1 wedges. Reveal each fraction and count beside its sector.
+On-screen text (reveal progressively):
+32 children ÷ 8 equal parts = 4 per part
+1/2 = 16 children
+1/4 = 8 children
+1/8 = 4 children
+Narration: “A pie chart shows parts of a whole. Thirty-two children split into eight equal parts means four per part. Half means sixteen children; one quarter means eight.”
+
+SCENE 6 · 1:17–1:50 · Use dashboard tools and think
+Visual and animation: Show the question about Orange team. Start with team bars. Change Bars show to Event, then Filter to Orange. Redraw event bars at 6, 11, and 8. Choose Sort: Most first; move bars and labels together. Switch View to Table. Ask which event is first, hold for 4 seconds, then highlight Skipping with 11 points.
+On-screen text (reveal progressively):
+Which event scored most for Orange?
+Bars show: Event → Filter: Orange
+Sort: Most first → View: Table
+Skipping 11 | Throwing 8 | Relay 6
+Narration: “To compare Orange team’s events, choose Event for what the bars show, then filter to Orange. Sort most first to put the largest score on top. Switch to Table for exact numbers; the data stays the same. Which event is first? Skipping, with eleven points.”
+PAUSE: Immediately after “Which event is first?”, hold silently for 4 seconds. Then continue the remaining narration and reveal the answer. This pause is included in the scene time.
+
+SCENE 7 · 1:50–2:00 · Ready for the unit quizzes
+Visual and animation: Draw four small reminders: key, scale, question, and a check mark. End on the detective badge.
+On-screen text (reveal progressively):
+Read the key and scale
+Match the view to the question
+Try the Unit 4 quizzes
+Narration: “Check the key, scale, and question. Choose the view you need, then try the Unit Four quizzes!”
+
+FINAL PRODUCTION CHECK
+Check the mathematical examples, narration and caption agreement, the selected unit voice, readable text, the four-second thinking pause, total duration of 120 seconds, and the closing invitation to this unit's quizzes.

@@ -1,0 +1,457 @@
+MATH IT! — FOUR UNIT VIDEO PROMPTS
+
+4 videos total: one two-minute English overview for each unit, followed by that unit's quizzes. Each prompt includes simple hand-writing-on-a-whiteboard animation, timed visual slides, exact narration, on-screen text, a distinct narrator profile, one four-second thinking pause, and a quiz invitation. Narrators: Unit 1 female, Unit 2 male, Unit 3 a different female, and Unit 4 a different male.
+
+CONTENTS
+Video 1 — Numbers & operations — 2:00
+Video 2 — Algebra & reasoning — 2:00
+Video 3 — Measurement & geometry — 2:00
+Video 4 — Data analysis — 2:00
+
+HOW TO USE
+Copy one complete unit prompt into your video production workflow. Generate one finished video per unit. If your generator makes short clips, assemble that unit's scenes into its two-minute video. These are brief unit overviews using representative examples. Children can pause or replay before trying the quizzes.
+
+MATH IT! — UNIT 1 VIDEO PROMPT
+Numbers & operations
+Duration: 120 seconds (2:00)
+Language: English only
+Narrator: Female — The cheerful guide
+One video for the whole unit
+
+UNIT TOPICS
+Equal sharing; Multiples; Addition; Subtraction; Comparing numbers; Multiplication; Division; Place value; Fractions; Money
+
+LEARNING GOAL
+Introduce how place value, comparisons, operations, multiples, fractions, and money help solve everyday number problems.
+
+VIDEO CREATION PROMPT
+Create ONE finished two-minute educational video in English for Grade 3 children, approximately ages 8–9, for Math It! This is an introductory overview of the entire unit, watched before the children attempt that unit's quizzes. Use the timed storyboard below, with a few connected examples and one short thinking pause. Do not expand it into separate chapter videos.
+
+VISUAL STYLE
+Use a simple hand-drawn whiteboard animation with a hand writing and drawing on a warm white board. Format: 16:9 landscape, preferably 1920 × 1080. Use dark navy outlines and a few blue, teal, and amber highlights. Keep the same small friendly cat detective badge across all four unit videos. Use a fixed front-facing camera, clear handwriting, large numerals, and simple flat illustrations. Reveal one idea at a time; erase or fade the previous example before introducing the next. Move objects only to demonstrate the mathematics. Keep labels readable on a phone. No complex 3D, busy backgrounds, flashing, or rapid camera motion.
+
+NARRATION AND PACING
+Use the exact supplied English narration and the unit-specific voice profile below, spoken warmly and clearly at approximately 110 words per minute. Keep that unit's selected voice consistent in every scene. Use spare time within each scene for drawing and reading. Do not add filler speech. Preserve the stated scene durations and total of 120 seconds. On-screen text describes the final state of a scene: reveal it gradually in sync with the explanation. Do not reveal the answer to the practice question until after the explicitly marked four-second silent pause. Use large English captions below the drawing area, at most two short lines at once. Music is optional and very quiet. Keep the tone encouraging, with no countdown or pressure to answer quickly.
+
+PRODUCTION RULES
+Use the supplied example numbers, equations, units, and exact object counts. Draw equal parts and chart scales accurately. Worked examples teach a method; do not add the actual quiz's answer key. Finish with the unit quiz invitation in the script. If your generator makes only short clips, generate each timed scene consistently and assemble them into ONE unit video. Add precise text, equations, narration, and captions during editing if the generator cannot render them reliably.
+
+UNIT 1 VOICE PROFILE — Numbers & operations
+Voice: Female
+Character: The cheerful guide
+
+VOICE GENERATION PROMPT
+Use an adult female narrator with a bright, warm voice and a comfortable medium-high pitch. She sounds like a friendly teacher welcoming children to an activity: cheerful, curious, and encouraging. Let a slight smile come through in her voice. Give counting a gentle rhythm and make each number easy to distinguish. Use clear, lightly American-accented English at approximately 110 words per minute. Keep the energy lively but controlled; avoid squeaky delivery, baby talk, exaggerated excitement, and a singsong reading of every sentence. Give questions a small lift in pitch, then sound reassuring when explaining the answer. Keep this same female voice throughout Unit 1.
+
+SHARED VOICE DIRECTION
+Cast four distinct adult voices: female for Unit 1, male for Unit 2, a different female for Unit 3, and a different male for Unit 4. Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target approximately 110 spoken words per minute so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+“Welcome, detective! Let us use numbers to prepare our school fair.”
+
+SETTING
+A school-fair preparation table: number cards, sticker packs, equal supply bags, a paper banner, and a simple price tag.
+
+MATHEMATICAL ACCURACY
+Base-ten blocks must represent their exact values. Regroup 10 ones as 1 ten without changing the total. Keep groups equal. Use equal-area fraction strips. Show Rupiah with Indonesian thousands separators: Rp 3.000 means three thousand rupiah. Do not draw realistic banknotes.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:06 · Welcome to the school fair
+Visual and animation: A drawn hand writes the unit title. Add a small cat detective badge and a school-fair table.
+On-screen text (reveal progressively):
+Unit 1
+Numbers & operations
+Narration: “Welcome, detective! Let us use numbers to prepare our school fair.”
+
+SCENE 2 · 0:06–0:21 · Place value and comparison
+Visual and animation: Draw a place-value mat. Place 2 hundred flats, 3 ten rods, and 6 ones. Build 236, then compare it with 230 on a short number line.
+On-screen text (reveal progressively):
+Hundreds | Tens | Ones
+200 + 30 + 6 = 236
+236 > 230
+Narration: “Two hundreds, three tens, and six ones make two hundred thirty-six. It is greater than two hundred thirty. Compare the place values, starting with the hundreds.”
+
+SCENE 3 · 0:21–0:43 · Addition and subtraction
+Visual and animation: Use two sticker packs labeled 27 and 15. Combine the ones, exchange 10 ones for a ten rod, and reveal 42. Reverse the action to remove 15, explicitly exchanging one ten when needed.
+On-screen text (reveal progressively):
+27 + 15 = 42
+10 ones = 1 ten
+42 − 15 = 27
+Narration: “Addition joins amounts. Twenty-seven plus fifteen is forty-two. Exchange ten ones for one ten when needed. Subtraction takes an amount away. Forty-two minus fifteen returns us to twenty-seven. The operations help check each other.”
+
+SCENE 4 · 0:43–1:03 · Multiplication, division, and equal sharing
+Visual and animation: Draw 3 supply bags with 5 pencils each. Count the groups, gather the 15 pencils, then share them back one per bag in each round.
+On-screen text (reveal progressively):
+3 groups × 5 each = 15
+15 ÷ 3 = 5 each
+Narration: “Three bags with five pencils each make fifteen pencils. That is multiplication: equal groups. Sharing fifteen equally among three bags gives five each. That is division. Check that every bag has the same number.”
+
+SCENE 5 · 1:03–1:16 · Multiples
+Visual and animation: Draw two short, evenly spaced number paths. Make jumps of 3 on the first and 5 on the second. Circle 15 on both paths.
+On-screen text (reveal progressively):
+3, 6, 9, 12, 15
+5, 10, 15
+15 fits both patterns
+Narration: “Multiples follow equal jumps. Count in threes or fives. Fifteen appears in both patterns, so one number can fit two rules.”
+
+SCENE 6 · 1:16–1:30 · Fractions of a whole
+Visual and animation: Draw three identical paper-banner strips, each split into 4 equal parts. Shade 1 part, then 2, then 3; keep labels beneath their matching strips.
+On-screen text (reveal progressively):
+1/4
+2/4 = 1/2
+3/4
+Narration: “Fractions describe equal parts of a whole. One of four parts is one quarter. Two quarters make one half. Three shaded parts make three quarters.”
+
+SCENE 7 · 1:30–1:52 · Money and a thinking pause
+Visual and animation: Draw two price tags and add their amounts on a receipt. Show the payment. Ask about change, hold for 4 seconds, then write the subtraction and return three plain thousand-rupiah tokens.
+On-screen text (reveal progressively):
+Rp 3.000 + Rp 4.000 = Rp 7.000
+Pay: Rp 10.000
+Change: ? → Rp 3.000
+Narration: “Three thousand plus four thousand costs seven thousand rupiah. Pay ten thousand. How much change? Three thousand: subtract the cost from your payment.”
+PAUSE: Immediately after “How much change?”, hold silently for 4 seconds. Then continue the remaining narration and reveal the answer. This pause is included in the scene time.
+
+SCENE 8 · 1:52–2:00 · Ready for the unit quizzes
+Visual and animation: Clear the worked examples. Leave a pencil, a tick, and the detective badge beside the final message.
+On-screen text (reveal progressively):
+Read → Choose a method → Check
+Try the Unit 1 quizzes
+Narration: “Read, choose your method, and check your answer. Try the Unit One quizzes!”
+
+FINAL PRODUCTION CHECK
+Check the mathematical examples, narration and caption agreement, the selected unit voice, readable text, the four-second thinking pause, total duration of 120 seconds, and the closing invitation to this unit's quizzes.
+
+
+========================================================================
+
+MATH IT! — UNIT 2 VIDEO PROMPT
+Algebra & reasoning
+Duration: 120 seconds (2:00)
+Language: English only
+Narrator: Male — The thoughtful detective
+One video for the whole unit
+
+UNIT TOPICS
+Two-step problems; Missing numbers; Estimation; Word problems; Spotting mistakes
+
+LEARNING GOAL
+Introduce choosing operations from stories, following brackets, finding missing numbers, estimating, and checking mistakes.
+
+VIDEO CREATION PROMPT
+Create ONE finished two-minute educational video in English for Grade 3 children, approximately ages 8–9, for Math It! This is an introductory overview of the entire unit, watched before the children attempt that unit's quizzes. Use the timed storyboard below, with a few connected examples and one short thinking pause. Do not expand it into separate chapter videos.
+
+VISUAL STYLE
+Use a simple hand-drawn whiteboard animation with a hand writing and drawing on a warm white board. Format: 16:9 landscape, preferably 1920 × 1080. Use dark navy outlines and a few blue, teal, and amber highlights. Keep the same small friendly cat detective badge across all four unit videos. Use a fixed front-facing camera, clear handwriting, large numerals, and simple flat illustrations. Reveal one idea at a time; erase or fade the previous example before introducing the next. Move objects only to demonstrate the mathematics. Keep labels readable on a phone. No complex 3D, busy backgrounds, flashing, or rapid camera motion.
+
+NARRATION AND PACING
+Use the exact supplied English narration and the unit-specific voice profile below, spoken warmly and clearly at approximately 110 words per minute. Keep that unit's selected voice consistent in every scene. Use spare time within each scene for drawing and reading. Do not add filler speech. Preserve the stated scene durations and total of 120 seconds. On-screen text describes the final state of a scene: reveal it gradually in sync with the explanation. Do not reveal the answer to the practice question until after the explicitly marked four-second silent pause. Use large English captions below the drawing area, at most two short lines at once. Music is optional and very quiet. Keep the tone encouraging, with no countdown or pressure to answer quickly.
+
+PRODUCTION RULES
+Use the supplied example numbers, equations, units, and exact object counts. Draw equal parts and chart scales accurately. Worked examples teach a method; do not add the actual quiz's answer key. Finish with the unit quiz invitation in the script. If your generator makes only short clips, generate each timed scene consistently and assemble them into ONE unit video. Add precise text, equations, narration, and captions during editing if the generator cannot render them reliably.
+
+UNIT 2 VOICE PROFILE — Algebra & reasoning
+Voice: Male
+Character: The thoughtful detective
+
+VOICE GENERATION PROMPT
+Use an adult male narrator with a warm, smooth voice and a comfortable medium-low pitch. He sounds like a patient detective helping a child think through a puzzle: thoughtful, curious, and quietly confident. Use clear, lightly American-accented English at approximately 110 words per minute. Gently emphasize reasoning words such as first, then, compare, and check. Make questions sound inviting, and corrections sound kind and matter-of-fact. Keep the rhythm steady, allowing the existing script pauses to do their work. Avoid a booming bass, stern teacher voice, suspenseful whisper, or crime-trailer performance. Keep this same male voice throughout Unit 2.
+
+SHARED VOICE DIRECTION
+Cast four distinct adult voices: female for Unit 1, male for Unit 2, a different female for Unit 3, and a different male for Unit 4. Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target approximately 110 spoken words per minute so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+“Good detectives explain their thinking. Let us investigate five useful strategies.”
+
+SETTING
+A detective notebook with a story card, a two-step lock, a missing-number box, a number line, and a calculation to check.
+
+MATHEMATICAL ACCURACY
+Do not choose operations from isolated keywords. Brackets determine the first step in the shown examples. Use ≈ for an estimate and = for exact equality. Label incorrect work as a claim until it is corrected. Regrouping a ten changes the tens count.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:06 · Think like a detective
+Visual and animation: Draw a notebook and a magnifying glass. Write the unit title in a clear hand-drawn heading.
+On-screen text (reveal progressively):
+Unit 2
+Algebra & reasoning
+Narration: “Good detectives explain their thinking. Let us investigate five useful strategies.”
+
+SCENE 2 · 0:06–0:26 · Understand a word problem
+Visual and animation: Show small pictures of joining objects, taking some away, and repeated equal groups. Then align bars of 17 and 11 stickers to reveal their gap.
+On-screen text (reveal progressively):
+Join: +
+Take away or compare: −
+Equal groups: ×
+17 − 11 = 6
+Narration: “Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.”
+
+SCENE 3 · 0:26–0:44 · Solve two steps in order
+Visual and animation: Write the expression, circle only the brackets, replace them with 9, then complete the multiplication. Keep each line aligned beneath the previous one.
+On-screen text (reveal progressively):
+(5 + 4) × 3
+9 × 3 = 27
+Narration: “For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.”
+
+SCENE 4 · 0:44–1:02 · Find a missing number
+Visual and animation: Draw a part-whole bar for an unknown amount plus 9 equaling 23. Undo the addition. Then show six equal groups totaling 30 to find the second missing number.
+On-screen text (reveal progressively):
+□ + 9 = 23 → □ = 14
+6 × □ = 30 → □ = 5
+Narration: “A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.”
+
+SCENE 5 · 1:02–1:22 · Estimate with nearby tens
+Visual and animation: Place 37 between 30 and 40, and 24 between 20 and 30, with equal tick spacing. Move each to the nearer ten. Use an approximate-equality symbol for the original sum.
+On-screen text (reveal progressively):
+37 → 40
+24 → 20
+37 + 24 ≈ 60
+Halfway? Round up.
+Narration: “Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.”
+
+SCENE 6 · 1:22–1:46 · Spot a mistake and think
+Visual and animation: Show a clearly labeled claim with the answer 35. Ask what was missed and pause for 4 seconds. Exchange the 15 ones to correct the total to 45. Finish by contrasting five groups of four with five plus four.
+On-screen text (reveal progressively):
+Claim: 27 + 18 gives 35
+Check: 27 + 18 = 45
+5 × 4 = 20; 5 + 4 = 9
+Narration: “Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed? The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.”
+PAUSE: Immediately after “What was missed?”, hold silently for 4 seconds. Then continue the remaining narration and reveal the answer. This pause is included in the scene time.
+
+SCENE 7 · 1:46–2:00 · Ready for the unit quizzes
+Visual and animation: Draw five small reminder icons: story, brackets, box, rounded number, and check mark. End with the quiz invitation.
+On-screen text (reveal progressively):
+Understand → Work in steps → Check
+Try the Unit 2 quizzes
+Narration: “Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!”
+
+FINAL PRODUCTION CHECK
+Check the mathematical examples, narration and caption agreement, the selected unit voice, readable text, the four-second thinking pause, total duration of 120 seconds, and the closing invitation to this unit's quizzes.
+
+
+========================================================================
+
+MATH IT! — UNIT 3 VIDEO PROMPT
+Measurement & geometry
+Duration: 120 seconds (2:00)
+Language: English only
+Narrator: Female — The patient explorer
+One video for the whole unit
+
+UNIT TOPICS
+Measuring length; Elapsed time; 2D shapes; Mass
+
+LEARNING GOAL
+Introduce converting length and mass units, counting elapsed minutes, and sorting shapes by sides and right angles.
+
+VIDEO CREATION PROMPT
+Create ONE finished two-minute educational video in English for Grade 3 children, approximately ages 8–9, for Math It! This is an introductory overview of the entire unit, watched before the children attempt that unit's quizzes. Use the timed storyboard below, with a few connected examples and one short thinking pause. Do not expand it into separate chapter videos.
+
+VISUAL STYLE
+Use a simple hand-drawn whiteboard animation with a hand writing and drawing on a warm white board. Format: 16:9 landscape, preferably 1920 × 1080. Use dark navy outlines and a few blue, teal, and amber highlights. Keep the same small friendly cat detective badge across all four unit videos. Use a fixed front-facing camera, clear handwriting, large numerals, and simple flat illustrations. Reveal one idea at a time; erase or fade the previous example before introducing the next. Move objects only to demonstrate the mathematics. Keep labels readable on a phone. No complex 3D, busy backgrounds, flashing, or rapid camera motion.
+
+NARRATION AND PACING
+Use the exact supplied English narration and the unit-specific voice profile below, spoken warmly and clearly at approximately 110 words per minute. Keep that unit's selected voice consistent in every scene. Use spare time within each scene for drawing and reading. Do not add filler speech. Preserve the stated scene durations and total of 120 seconds. On-screen text describes the final state of a scene: reveal it gradually in sync with the explanation. Do not reveal the answer to the practice question until after the explicitly marked four-second silent pause. Use large English captions below the drawing area, at most two short lines at once. Music is optional and very quiet. Keep the tone encouraging, with no countdown or pressure to answer quickly.
+
+PRODUCTION RULES
+Use the supplied example numbers, equations, units, and exact object counts. Draw equal parts and chart scales accurately. Worked examples teach a method; do not add the actual quiz's answer key. Finish with the unit quiz invitation in the script. If your generator makes only short clips, generate each timed scene consistently and assemble them into ONE unit video. Add precise text, equations, narration, and captions during editing if the generator cannot render them reliably.
+
+UNIT 3 VOICE PROFILE — Measurement & geometry
+Voice: Female
+Character: The patient explorer
+
+VOICE GENERATION PROMPT
+Use a different adult female narrator from Unit 1. Give her a fuller middle-pitched voice with a gentle, grounded warmth. She sounds like a patient science teacher demonstrating tools beside a child: calm, attentive, and interested in small discoveries. Use clear, lightly American-accented English at approximately 110 words per minute. Articulate centimeters, meters, grams, kilograms, and minutes carefully, keeping each number naturally connected to its unit. Use modest pitch changes and clear sentence endings. Sound encouraging without breathiness, whispering, or a sleepy pace. Keep this same female voice throughout Unit 3.
+
+SHARED VOICE DIRECTION
+Cast four distinct adult voices: female for Unit 1, male for Unit 2, a different female for Unit 3, and a different male for Unit 4. Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target approximately 110 spoken words per minute so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+“Our toolkit measures length, mass, and time, and helps us investigate shapes.”
+
+SETTING
+A small detective toolkit containing a ribbon ruler, a balance scale, a clock timeline, and geometric clue cards.
+
+MATHEMATICAL ACCURACY
+1 m = 100 cm; half a meter = 50 cm. 1 kg = 1000 g; half a kilogram = 500 g. An hour has 60 minutes. Draw proportional lengths and correct right-angle markers. A rotated square remains a square. The practice triangle is equilateral with no right angle.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:07 · Open the measuring toolkit
+Visual and animation: Draw a toolkit opening to reveal a ruler, scale, clock, and shape card. Add the unit title.
+On-screen text (reveal progressively):
+Unit 3
+Measurement & geometry
+Narration: “Our toolkit measures length, mass, and time, and helps us investigate shapes.”
+
+SCENE 2 · 0:07–0:32 · Measure length
+Visual and animation: Draw a one-meter strip with a clear midpoint, then two full strips plus a 30-centimeter piece. Convert to centimeters before combining. Reveal one equation at a time.
+On-screen text (reveal progressively):
+1 m = 100 cm
+1/2 m = 50 cm
+2 m + 30 cm = 230 cm
+Narration: “One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.”
+
+SCENE 3 · 0:32–0:54 · Measure mass
+Visual and animation: Balance one kilogram against two 500-gram packets. Then place a one-kilogram packet beside a 250-gram packet and rewrite both in grams.
+On-screen text (reveal progressively):
+1 kg = 1000 g
+1/2 kg = 500 g
+1000 g + 250 g = 1250 g
+Narration: “One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.”
+
+SCENE 4 · 0:54–1:18 · Count elapsed time
+Visual and animation: Draw a forward timeline from 09:40 to 10:05. Stop at 10:00 and label the two jumps. If a clock face appears, move both hands correctly.
+On-screen text (reveal progressively):
+1 hour = 60 minutes
+09:40 → 10:00 → 10:05
+20 + 5 = 25 minutes
+Narration: “An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.”
+
+SCENE 5 · 1:18–1:45 · Investigate shape properties
+Visual and animation: Draw two rule cards: four equal sides and a right angle. Put a rotated square under both rules. Draw an equilateral triangle with three equal-side ticks. Ask the question, pause for 4 seconds, then label it Neither.
+On-screen text (reveal progressively):
+4 equal sides?
+Right angle = square corner
+Square: both rules
+Triangle shown: neither
+Narration: “A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule? Neither.”
+PAUSE: Immediately after “Does it fit either rule?”, hold silently for 4 seconds. Then continue the remaining narration and reveal the answer. This pause is included in the scene time.
+
+SCENE 6 · 1:45–2:00 · Ready for the unit quizzes
+Visual and animation: Return the four tools to their slots. Keep a unit label beside each measurement and a tick beside the property cards.
+On-screen text (reveal progressively):
+Match units → Count carefully → Check properties
+Try the Unit 3 quizzes
+Narration: “Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!”
+
+FINAL PRODUCTION CHECK
+Check the mathematical examples, narration and caption agreement, the selected unit voice, readable text, the four-second thinking pause, total duration of 120 seconds, and the closing invitation to this unit's quizzes.
+
+
+========================================================================
+
+MATH IT! — UNIT 4 VIDEO PROMPT
+Data analysis
+Duration: 120 seconds (2:00)
+Language: English only
+Narrator: Male — The curious chart guide
+One video for the whole unit
+
+UNIT TOPICS
+Pictographs; Bar charts; Line charts; Pictograph keys; Pie charts; Dashboards: filter; Dashboards: sort; Dashboards: group & view
+
+LEARNING GOAL
+Introduce pictograph keys, bar and line scales, pie-chart shares, and dashboard grouping, filtering, sorting, and table views.
+
+VIDEO CREATION PROMPT
+Create ONE finished two-minute educational video in English for Grade 3 children, approximately ages 8–9, for Math It! This is an introductory overview of the entire unit, watched before the children attempt that unit's quizzes. Use the timed storyboard below, with a few connected examples and one short thinking pause. Do not expand it into separate chapter videos.
+
+VISUAL STYLE
+Use a simple hand-drawn whiteboard animation with a hand writing and drawing on a warm white board. Format: 16:9 landscape, preferably 1920 × 1080. Use dark navy outlines and a few blue, teal, and amber highlights. Keep the same small friendly cat detective badge across all four unit videos. Use a fixed front-facing camera, clear handwriting, large numerals, and simple flat illustrations. Reveal one idea at a time; erase or fade the previous example before introducing the next. Move objects only to demonstrate the mathematics. Keep labels readable on a phone. No complex 3D, busy backgrounds, flashing, or rapid camera motion.
+
+NARRATION AND PACING
+Use the exact supplied English narration and the unit-specific voice profile below, spoken warmly and clearly at approximately 110 words per minute. Keep that unit's selected voice consistent in every scene. Use spare time within each scene for drawing and reading. Do not add filler speech. Preserve the stated scene durations and total of 120 seconds. On-screen text describes the final state of a scene: reveal it gradually in sync with the explanation. Do not reveal the answer to the practice question until after the explicitly marked four-second silent pause. Use large English captions below the drawing area, at most two short lines at once. Music is optional and very quiet. Keep the tone encouraging, with no countdown or pressure to answer quickly.
+
+PRODUCTION RULES
+Use the supplied example numbers, equations, units, and exact object counts. Draw equal parts and chart scales accurately. Worked examples teach a method; do not add the actual quiz's answer key. Finish with the unit quiz invitation in the script. If your generator makes only short clips, generate each timed scene consistently and assemble them into ONE unit video. Add precise text, equations, narration, and captions during editing if the generator cannot render them reliably.
+
+UNIT 4 VOICE PROFILE — Data analysis
+Voice: Male
+Character: The curious chart guide
+
+VOICE GENERATION PROMPT
+Use a different adult male narrator from Unit 2. Give him a lighter middle-pitched voice with a clear, crisp tone. He sounds like a friendly museum guide helping children discover patterns: curious, engaged, and gently animated. Use clear, lightly American-accented English at approximately 110 words per minute. Lightly emphasize key, scale, filter, sort, and table so children notice the tools. Introduce a question with a small rise in pitch, and explain the result with a confident, relaxed finish. Create energy through expression rather than faster speech. Avoid a sports-commentator delivery, advertising hype, robotic rhythm, or excessive pitch changes. Keep this same male voice throughout Unit 4.
+
+SHARED VOICE DIRECTION
+Cast four distinct adult voices: female for Unit 1, male for Unit 2, a different female for Unit 3, and a different male for Unit 4. Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target approximately 110 spoken words per minute so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+“Charts turn information into clues. Let us read them!”
+
+SETTING
+A classroom evidence board with separate small charts, ending with a simple sports-day dashboard. Clear the board between chart types.
+
+MATHEMATICAL ACCURACY
+A half symbol represents half the key value, not half a person or object. Bar-chart scale labels increase by four with halfway gridlines worth two. Line-chart days are equally spaced. A 32-child pie chart has eight equal 45-degree parts. Dashboard data: Orange scores Relay 6, Skipping 11, Throwing 8; Purple scores Relay 18, Skipping 3, Throwing 7. All-team totals are 24, 14, 15. Set Bars show to Event before filtering Orange; grouping changes reset the filter. Sort Most first gives Skipping 11, Throwing 8, Relay 6. Chart and table must agree.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:05 · Read the evidence
+Visual and animation: Draw the unit title and a small chart folder beside the detective badge.
+On-screen text (reveal progressively):
+Unit 4
+Data analysis
+Narration: “Charts turn information into clues. Let us read them!”
+
+SCENE 2 · 0:05–0:25 · Read pictograph keys
+Visual and animation: First show a person-symbol key and a row of two full symbols plus one half. Clear it, then introduce a book-symbol key worth ten and one half-symbol worth five.
+On-screen text (reveal progressively):
+1 person symbol = 2 children
+2 + 2 + 1 = 5 children
+1 book symbol = 10 books
+Half book symbol = 5 books
+Narration: “Read the picture key first. If one symbol means two children, two symbols and a half mean five children. A different key may give one book symbol ten books. Then half a symbol means five books.”
+
+SCENE 3 · 0:25–0:43 · Read bar-chart scales
+Visual and animation: Draw museum visitor bars: Monday 8 and Tuesday 14. Use a zero baseline, labels at 0, 4, 8, 12, 16, and thin halfway lines. Trace Tuesday to fourteen, then compare the bars.
+On-screen text (reveal progressively):
+Scale: 0, 4, 8, 12, 16
+Halfway between 12 and 16 is 14
+14 − 8 = 6 more
+Narration: “For bars, read the scale. Halfway between twelve and sixteen is fourteen. This bar shows fourteen visitors. Another shows eight. Subtract to find the difference: six more visitors.”
+
+SCENE 4 · 0:43–1:01 · Read change on a line chart
+Visual and animation: Draw seedling heights on equally spaced Days 1, 2, and 3: 2, 4, and 9 cm. Read the last two dots, then bracket their height difference.
+On-screen text (reveal progressively):
+Heights: 2 cm → 4 cm → 9 cm
+Growth from Day 2 to Day 3:
+9 − 4 = 5 cm
+Narration: “A line chart tracks change over time. Read the dots against the height scale. Growing from four centimeters to nine centimeters means five centimeters of growth. Height and growth are different.”
+
+SCENE 5 · 1:01–1:17 · Read shares of a circle
+Visual and animation: Draw a pie chart for 32 children split into 8 equal wedges. Group them into sectors of 4, 2, 1, and 1 wedges. Reveal each fraction and count beside its sector.
+On-screen text (reveal progressively):
+32 children ÷ 8 equal parts = 4 per part
+1/2 = 16 children
+1/4 = 8 children
+1/8 = 4 children
+Narration: “A pie chart shows parts of a whole. Thirty-two children split into eight equal parts means four per part. Half means sixteen children; one quarter means eight.”
+
+SCENE 6 · 1:17–1:50 · Use dashboard tools and think
+Visual and animation: Show the question about Orange team. Start with team bars. Change Bars show to Event, then Filter to Orange. Redraw event bars at 6, 11, and 8. Choose Sort: Most first; move bars and labels together. Switch View to Table. Ask which event is first, hold for 4 seconds, then highlight Skipping with 11 points.
+On-screen text (reveal progressively):
+Which event scored most for Orange?
+Bars show: Event → Filter: Orange
+Sort: Most first → View: Table
+Skipping 11 | Throwing 8 | Relay 6
+Narration: “To compare Orange team’s events, choose Event for what the bars show, then filter to Orange. Sort most first to put the largest score on top. Switch to Table for exact numbers; the data stays the same. Which event is first? Skipping, with eleven points.”
+PAUSE: Immediately after “Which event is first?”, hold silently for 4 seconds. Then continue the remaining narration and reveal the answer. This pause is included in the scene time.
+
+SCENE 7 · 1:50–2:00 · Ready for the unit quizzes
+Visual and animation: Draw four small reminders: key, scale, question, and a check mark. End on the detective badge.
+On-screen text (reveal progressively):
+Read the key and scale
+Match the view to the question
+Try the Unit 4 quizzes
+Narration: “Check the key, scale, and question. Choose the view you need, then try the Unit Four quizzes!”
+
+FINAL PRODUCTION CHECK
+Check the mathematical examples, narration and caption agreement, the selected unit voice, readable text, the four-second thinking pause, total duration of 120 seconds, and the closing invitation to this unit's quizzes.

@@ -3,14 +3,10 @@
 .topbar { position: relative; isolation: isolate; background: radial-gradient(ellipse at 12% 0%, var(--c-f0f5ff) 0%, transparent 55%), linear-gradient(110deg, var(--c-d9e8fc), var(--c-e4e2f6) 70%, var(--c-e4efed)); border-bottom: 1px solid var(--c-cbdaf0); border-radius: 0 0 28px 28px; box-shadow: 0 5px 0 var(--c-dfe7f340); }
 .topbar::after { content: ""; position: absolute; bottom: 0; left: 28px; right: 28px; height: 4px; border-radius: 4px; background: linear-gradient(to right, var(--c-94b5de) 0% 40%, var(--c-baa8d9) 40% 65%, var(--c-eed498) 65% 82%, var(--c-a9cbbb) 82%); }
 .topbar-inner, .main-layout, .footer-inner { width: min(1100px, calc(100% - 64px)); margin-inline: auto; }
-.topbar-inner { min-height: 108px; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 18px; }
-.brand { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 0; background: none; }
-.brand-mark { display: grid; place-items: center; width: 45px; height: 45px; border: 2px solid var(--c-fcfdff); border-radius: 15px; background: var(--c-6e91bd); color: var(--c-ffffff-fg); transform: rotate(-6deg); position: relative; box-shadow: 0 4px 0 var(--c-779ac630); }
-.brand-mark > span { position: absolute; right: 5px; top: 1px; font-size: 16px; color: var(--c-f6e4ac-fg); }
-.brand-title { font: 500 30px "Short Stack", sans-serif; }
-.brand-title > span { color: var(--blue-fg); }
-/* The wordmark is the only top-bar item that may give way, so the controls always stay on screen. */
-.brand-title { white-space: nowrap; min-width: 0; overflow: hidden; }
+.topbar-inner { min-height: 108px; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 6px; }
+.brand { display: block; flex: 0 1 100px; width: 100px; min-width: 44px; padding: 0; border-radius: 12px; background: none; }
+.brand-logo { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.footer-about .brand { width: 140px; }
 .header-doodles { display: flex; align-items: center; gap: 13px; pointer-events: none; }
 .header-doodles > span { display: grid; place-items: center; width: 43px; height: 43px; border: 2px solid var(--c-ffffffb3); border-radius: 13px; background: var(--c-f9e9c2); color: var(--c-826b3f-fg); font: 500 29px "Short Stack", sans-serif; transform: rotate(-12deg); box-shadow: 0 4px 0 var(--c-526b9210); }
 .header-doodles > span:nth-child(2) { background: var(--c-eee8fa); color: var(--c-82709b-fg); transform: translateY(6px) rotate(8deg); }
@@ -313,12 +309,9 @@
   .sound-toggle > span { display: none; }
   .logout-button > span { display: none; }
   .logout-button { width: 40px; padding: 0; }
-  .topbar-inner { min-height: 84px; gap: 10px; }
+  .topbar-inner { min-height: 84px; gap: 10px; padding-block: 8px; }
   .topbar-actions { gap: 12px; }
-  .brand-title { font-size: 27px; }
-  .brand { gap: 9px; }
-  .brand-mark { width: 39px; height: 39px; border-radius: 12px; }
-  .brand-mark > svg { width: 23px; }
+  .topbar .brand { flex-basis: 80px; width: 80px; }
   .profile-button strong { display: none; }
   .profile-avatar { width: 38px; height: 38px; }
   .language-toggle button { min-width: 34px; min-height: 32px; font-size: 11px; }
@@ -400,8 +393,6 @@
 @media(max-width:360px) {
   .sound-toggle { min-width: 36px; padding: 7px; }
   .topbar-inner,.main-layout,.footer-inner,.start-layout { width: calc(100% - 28px); }
-  .brand-title { font-size: 23px; }
-  .brand-mark { width: 34px; height: 34px; }
   .topbar-actions { gap: 7px; }
   .profile-avatar { width: 33px; height: 33px; }
   .language-toggle { padding: 3px; }
@@ -493,16 +484,18 @@
   .topbar-inner { gap: 8px; }
   .topbar-actions { gap: 5px; }
   .theme-toggle, .sound-toggle, .logout-button { width: 36px; min-width: 36px; height: 36px; min-height: 36px; padding: 0; }
-  .brand { gap: 8px; }
-  .brand-mark { width: 34px; height: 34px; }
-  .brand-title { font-size: 20px; }
+  .topbar .brand { flex-basis: 72px; width: 72px; }
   .language-toggle { padding: 3px; }
   .language-toggle button { min-width: 29px; }
   .profile-avatar { width: 34px; height: 34px; }
 }
-@media(max-width:400px) { .brand-title { font-size: 17px; } }
-/* The brand mark alone stays as the home button on the narrowest screens. */
-@media(max-width:350px) { .brand-title { display: none; } }
+/* Keep the complete logo and every control available on narrow phones. */
+@media(max-width:350px) {
+  .topbar .brand { flex-basis: 52px; width: 52px; }
+  .topbar-inner { gap: 6px; }
+  .topbar-actions { gap: 4px; }
+}
+@media(max-width:310px) { .topbar-inner { flex-wrap: wrap; justify-content: center; } }
 
 /* Dashboard cases: tool cards beside a live bar chart. Bars run sideways so long names fit on phones. */
 .dashboard { display: grid; grid-template-columns: minmax(220px, 280px) minmax(0, 1fr); gap: 18px; align-items: start; }

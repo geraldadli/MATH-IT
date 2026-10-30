@@ -1,0 +1,81 @@
+{
+  "id": "scene-06-1",
+  "scene": 6,
+  "text": "Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed?",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 4,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 1000000,
+      "duration": 2000000,
+      "text": "Check"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 3125000,
+      "duration": 1625000,
+      "text": "this"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 4875000,
+      "duration": 3500000,
+      "text": "claim"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 12000000,
+      "duration": 5750000,
+      "text": "twenty-seven"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17875000,
+      "duration": 3875000,
+      "text": "plus"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23125000,
+      "duration": 5125000,
+      "text": "eighteen"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 30875000,
+      "duration": 3250000,
+      "text": "equals"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 34250000,
+      "duration": 7625000,
+      "text": "thirty-five"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46000000,
+      "duration": 625000,
+      "text": "What"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46750000,
+      "duration": 1125000,
+      "text": "was"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 48000000,
+      "duration": 4500000,
+      "text": "missed"
+    }
+  ],
+  "sha256": "d27a5b3bc3dfd8ee55cc591936034d711a1a9136dab7ea7b3ec624fe9d19081d"
+}

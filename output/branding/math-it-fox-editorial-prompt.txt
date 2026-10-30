@@ -1,0 +1,11 @@
+Created with the built-in image_gen tool, using the current cat and bear avatars as style references.
+
+Use case: illustration-story.
+Asset type: One transparent PNG fox avatar for the existing Math It detective mascot family.
+Input images: Image 1 (gray cat in lavender detective clothes) and Image 2 (brown bear in yellow detective clothes) are STYLE REFERENCES ONLY. Create a NEW FOX character, do not change or reproduce the cat or bear and do not make a group image.
+Primary request: Make the matching third member of this exact avatar family: a friendly orange FOX detective in a muted dusty blue cap and matching blue coat. Waist up, front facing, oversized rounded head, pointed fox ears, broad cream muzzle and cheeks, tiny dark navy oval eyes without shiny highlights, simple curved eyebrows and a small encouraging smile. Small flat peach cheek circles. Both small orange paws gently holding the coat lapels, like the bear reference.
+Style/medium: Match the references' simplified flat editorial children's illustration: smooth clean shapes, sparse deliberate contours and seams, a few simple flat color shadow shapes, minimal shading, rounded coat lapels. Match their head-to-body ratio, facial feature scale, gentle asymmetry, and overall silhouette. Favor the cat's simple navy facial features and the bear's soft restrained outlines. The result must look like it belongs beside THESE specific avatars, not like a different illustration system.
+Color palette: Muted warm orange fur, ivory/cream muzzle, dusty blue coat and cap, restrained navy facial features and subtle navy contours. Soft salmon blush.
+Composition/framing: One single centered fox only on a square canvas, full cap and both pointed ears visible, waist-up crop, clear transparent margin around the silhouette. Match the reference images' avatar framing. High-resolution PNG.
+Constraints: Real transparent background with clean alpha. No environment, no text, no logos, no props, no border, no watermark. No detailed fur, no painted hair texture, no photorealism, no 3D rendering, no plastic gloss, no glassy eyes, no airbrushed volumetric modeling. Keep shapes simple and the face friendly. Do not add a wave or extra fingers.
+

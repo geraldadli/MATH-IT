@@ -1,0 +1,173 @@
+[
+  {
+    "id": "welcome",
+    "title": "Welcome & detective setup",
+    "short": "Welcome & setup",
+    "notes": [
+      [
+        "A story, then an action",
+        "A two-column desktop composition balances the learning promise with a short setup form. The illustration stays a labeled placeholder."
+      ],
+      [
+        "One clear first step",
+        "Name, partner, colour, then the primary action. No account creation interrupts the child’s first investigation."
+      ],
+      [
+        "Quiet, persistent controls",
+        "Language, sound preference and desk mode sit in the header. Grayscale separates hierarchy from final brand colours."
+      ]
+    ]
+  },
+  {
+    "id": "casebook",
+    "title": "Casebook & learning units",
+    "short": "Casebook",
+    "notes": [
+      [
+        "Progress has a place",
+        "A greeting leads the page. Cases solved, rank and XP sit beside it without competing with the next activity."
+      ],
+      [
+        "Four independent tracks",
+        "All four units are available. Each unit shows its own progress; individual cases unlock in sequence within that unit."
+      ],
+      [
+        "A clear next action",
+        "The current case receives the largest card. Two upcoming cases appear below; replayable solved cases sit in a disclosure."
+      ]
+    ]
+  },
+  {
+    "id": "clues",
+    "title": "The clue workspace",
+    "short": "Clue activity",
+    "notes": [
+      [
+        "Read before doing",
+        "Unit, case number, skill, title and a single mission establish the task before interactive clues appear."
+      ],
+      [
+        "Objects before destinations",
+        "The clue tray precedes three evidence bags. Tap a clue and a bag, or drag it directly. Undo and Reset make exploration reversible."
+      ],
+      [
+        "Check when ready",
+        "The primary Check action sits at the end of the workspace. Hints and the no-timer reminder have a separate, calm footer."
+      ]
+    ]
+  },
+  {
+    "id": "demo",
+    "title": "First-use movement guide",
+    "short": "Movement guide",
+    "notes": [
+      [
+        "Explain the gesture",
+        "The modal demonstrates drag and tap as equal ways to move a clue. The production site animates this guidance."
+      ],
+      [
+        "Keep the activity in view",
+        "A muted backdrop preserves context. The explanation sits above the existing board rather than on a new page."
+      ],
+      [
+        "Easy to dismiss",
+        "A close button, Escape, and “Let me try” return focus to the task. Reopen the guide from “How to move”."
+      ]
+    ]
+  },
+  {
+    "id": "hint",
+    "title": "Hints without pressure",
+    "short": "Hint dialog",
+    "notes": [
+      [
+        "One idea at a time",
+        "A short prompt supports thinking without revealing the completed arrangement. The step count sets expectations."
+      ],
+      [
+        "Visual support",
+        "An unfinished visual example reinforces the method. Back and Another hint let the learner set the pace."
+      ],
+      [
+        "Return to the same task",
+        "“Let me try” closes the dialog. Clue placements remain intact, and hints carry no penalty."
+      ]
+    ]
+  },
+  {
+    "id": "retry",
+    "title": "Supportive retry feedback",
+    "short": "Retry state",
+    "notes": [
+      [
+        "Feedback stays local",
+        "Only groups needing review receive a dashed border and “Look again” label. The correct group keeps its neutral appearance."
+      ],
+      [
+        "Keep the learner in control",
+        "The board is preserved. A clue move, Undo or Reset clears the review state so the learner can try again."
+      ],
+      [
+        "No countdown, no penalty",
+        "A brief explanation encourages equal sharing. The primary action remains Check; hints are still available."
+      ]
+    ]
+  },
+  {
+    "id": "success",
+    "title": "Success & next-case progression",
+    "short": "Success state",
+    "notes": [
+      [
+        "Celebrate in context",
+        "The result appears below the completed groups. The learner can connect the arrangement with the outcome."
+      ],
+      [
+        "Make progress tangible",
+        "The first solve awards 100 XP, raises the detective to level 2 and unlocks the next case. Replays do not add XP."
+      ],
+      [
+        "A natural continuation",
+        "“Next case” leads to the next activity. The header and casebook also reflect the updated progress."
+      ]
+    ]
+  },
+  {
+    "id": "data",
+    "title": "Explore data & choose an answer",
+    "short": "Data activity",
+    "notes": [
+      [
+        "Tools before the chart",
+        "Bars show, Filter, Sort and View each pair a label with a short explanation. The mobile layout uses two columns."
+      ],
+      [
+        "Read the evidence",
+        "Horizontal bars leave room for category labels. Values stay off bars to practise scale reading; table view offers exact numbers."
+      ],
+      [
+        "An intentional answer",
+        "Select Event, filter Blue, then choose the event with the most points. Both the tool setup and the answer are checked."
+      ]
+    ]
+  },
+  {
+    "id": "profile",
+    "title": "Edit the detective profile",
+    "short": "Profile settings",
+    "notes": [
+      [
+        "A familiar form",
+        "Reuse the setup fields and ordering, with the detective’s current name and partner already selected."
+      ],
+      [
+        "Focus on the edit",
+        "A compact single-column form limits distractions. Save profile returns to the casebook."
+      ],
+      [
+        "Production placement",
+        "The existing website opens this form in a dialog. This standalone specimen exposes the fields for proposal review."
+      ]
+    ]
+  }
+]

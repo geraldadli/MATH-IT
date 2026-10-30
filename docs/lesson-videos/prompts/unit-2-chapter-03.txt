@@ -1,0 +1,64 @@
+MATH IT! VIDEO PROMPT
+Unit 2 · Chapter 3: The quick guess
+Unit: Algebra & reasoning
+Topic: Estimation
+Duration: 105 seconds (1:45)
+Language: English only
+
+LEARNING GOAL
+Round each operand to the nearest ten, estimate a sum or difference, and distinguish an estimate from an exact answer.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+For positive whole numbers halfway between tens, round up. Use 37 + 24 ≈ 40 + 20 = 60; 183 − 62 ≈ 180 − 60 = 120; and 66 + 13 ≈ 70 + 10 = 80. Keep ≈ distinct from =.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:12 · Hook
+Visual and animation: Draw two stacks labeled 37 and 24 beside a magnifying glass.
+On-screen text, revealed progressively:
+About how many?
+Narration: “Sometimes a quick estimate is enough. We can use nearby tens to make the calculation easier.”
+
+SCENE 2 · 0:12–0:37 · Explain the idea
+Visual and animation: Draw separate equally spaced number lines from thirty to forty and twenty to thirty. Mark thirty-seven and twenty-four, then animate each moving to the closest ten.
+On-screen text, revealed progressively:
+37 → 40
+24 → 20
+Narration: “Thirty-seven is closer to forty than thirty. Twenty-four is closer to twenty than thirty. When a whole number is exactly halfway, such as thirty-five, we round up to the next ten.”
+
+SCENE 3 · 0:37–1:08 · Worked example
+Visual and animation: Combine the rounded values, using an approximate-equality symbol. Wipe the board and show a subtraction example with both operands rounded.
+On-screen text, revealed progressively:
+37 + 24 ≈ 60
+183 − 62 ≈ 120
+Narration: “Forty plus twenty is sixty, so our first total is about sixty. For one hundred eighty-three minus sixty-two, use one hundred eighty minus sixty. That estimate is one hundred twenty. An estimate is close, not necessarily exact.”
+
+SCENE 4 · 1:08–1:32 · Try, pause, and reveal
+Visual and animation: Write 66 + 13. Hold for four seconds, then show each rounding arrow before the estimated sum.
+On-screen text, revealed progressively:
+66 → 70
+13 → 10
+66 + 13 ≈ 80
+Narration: “Try estimating sixty-six plus thirteen. Round each number to a nearby ten. Seventy plus ten makes eighty, so the total is about eighty.”
+
+SCENE 5 · 1:32–1:45 · Recap and quiz invitation
+Visual and animation: Circle the approximately-equal sign and write a short reminder.
+On-screen text, revealed progressively:
+Round each → Calculate → About
+Narration: “Round the numbers, calculate with the rounded values, and say about. Use this shortcut in your quiz!”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.

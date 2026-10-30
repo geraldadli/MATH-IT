@@ -1,0 +1,62 @@
+MATH IT! VIDEO PROMPT
+Unit 1 · Chapter 5: The number checkpoint
+Unit: Numbers & operations
+Topic: Comparing numbers
+Duration: 95 seconds (1:35)
+Language: English only
+
+LEARNING GOAL
+Evaluate a calculation before comparing its result with a reference number using less than, equal to, or greater than.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+Use 50 as the teaching reference, distinct from the quiz reference of 40. The open side of < or > faces the larger value; number-line spacing must be equal.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:10 · Hook
+Visual and animation: Draw a number checkpoint labeled 50 and a clue labeled 32 + 15.
+On-screen text, revealed progressively:
+Calculate, then compare
+Narration: “This checkpoint compares answers with fifty. First we must solve the clue.”
+
+SCENE 2 · 0:10–0:34 · Explain the idea
+Visual and animation: Write 32 + 15 = 47. Draw a number line from forty to sixty, mark forty-seven and fifty, and trace left to right.
+On-screen text, revealed progressively:
+47 < 50
+Narration: “Thirty-two plus fifteen makes forty-seven. Forty-seven is left of fifty on the number line, so it is less than fifty. Compare the answer, not just one number in the clue.”
+
+SCENE 3 · 0:34–1:01 · Worked example
+Visual and animation: Add clue 68 − 18 = 50 and clue 29 + 24 = 53. Mark both results and draw three comparison signs.
+On-screen text, revealed progressively:
+50 = 50
+53 > 50
+Narration: “Sixty-eight minus eighteen equals fifty, so the values are equal. Twenty-nine plus twenty-four makes fifty-three, which is greater than fifty. The open side of the comparison sign faces the larger number.”
+
+SCENE 4 · 1:01–1:24 · Try, pause, and reveal
+Visual and animation: Write 61 − 13 beside a checkpoint of fifty. Hold for four seconds, then mark forty-eight to the left.
+On-screen text, revealed progressively:
+61 − 13 = 48
+48 < 50
+Narration: “Try sixty-one minus thirteen. Is the answer less than, equal to, or greater than fifty? It is forty-eight, so it is less than fifty.”
+
+SCENE 5 · 1:24–1:35 · Recap and quiz invitation
+Visual and animation: Draw a calculator pencil icon followed by a number line icon.
+On-screen text, revealed progressively:
+Solve → Compare
+Narration: “Solve first. Read the checkpoint number carefully, then compare. You are ready for your quiz!”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.

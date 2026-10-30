@@ -1,0 +1,13 @@
+Voice: Female
+Character: The patient explorer
+
+VOICE GENERATION PROMPT
+Use a different adult female narrator from Unit 1. Give her a fuller middle-pitched voice with a gentle, grounded warmth. She sounds like a patient science teacher demonstrating tools beside a child: calm, attentive, and interested in small discoveries. Use clear, lightly American-accented English. Articulate centimeters, meters, grams, kilograms, and minutes carefully, keeping each number naturally connected to its unit. Use modest pitch changes and clear sentence endings. Sound encouraging without breathiness, whispering, or a sleepy pace. Keep this same female voice throughout Unit 3.
+
+SHARED VOICE DIRECTION
+Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target speaking naturally at a natural speed so the existing two-minute storyboards remain usable. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is already part of the script and must not be added a second time. Check each generated scene against its allotted time before assembling the video.
+

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1296" width="1060" height="1296" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#3a4256"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M530 206 L530 244" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M530 356 L530 394" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="542" y="372" font-size="17" font-weight="700" fill="#3a4256" text-anchor="start" dominant-baseline="central">Ya</text>
+<path d="M530 456 L530 494" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M530 556 L530 594" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M530 656 L530 694" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M530 756 L530 794" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M530 906 L530 944" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="542" y="922" font-size="17" font-weight="700" fill="#3a4256" text-anchor="start" dominant-baseline="central">Ya</text>
+<path d="M530 1006 L530 1044" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M530 1156 L530 1194" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="542" y="1172" font-size="17" font-weight="700" fill="#3a4256" text-anchor="start" dominant-baseline="central">Tidak</text>
+<path d="M650 301 L718 301" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="658" y="285" font-size="17" font-weight="700" fill="#3a4256" text-anchor="start" dominant-baseline="central">Tidak</text>
+<path d="M870 331 L870 426 L682 426" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polygon points="736,271 1036,271 1004,331 704,331" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="870" y="301" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Isi nama &amp; pilih karakter</text>
+<path d="M410 851 L342 851" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="402" y="835" font-size="17" font-weight="700" fill="#3a4256" text-anchor="end" dominant-baseline="central">Tidak</text>
+<path d="M195 821 L195 626 L378 626" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polygon points="66,821 356,821 324,881 34,881" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="195" y="851" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Muncul tanda “Cek lagi”</text>
+<path d="M650 1101 L750 1101 L750 526" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M750 526 L682 526" fill="none" stroke="#3a4256" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="658" y="1085" font-size="17" font-weight="700" fill="#3a4256" text-anchor="start" dominant-baseline="central">Ya</text>
+<rect x="430" y="150" width="200" height="56" rx="28" fill="#fde7c2" stroke="#d98a12" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="178" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Mulai</text>
+<polygon points="530,246 650,301 530,356 410,301" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="289.6" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Sudah punya</text><text x="530" y="312.40000000000003" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">profil?</text>
+<rect x="380" y="396" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="426" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Dasbor: pilih unit</text>
+<rect x="380" y="496" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="526" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Buka kasus &amp; baca misi</text>
+<polygon points="396,596 696,596 664,656 364,656" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="626" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Pindahkan petunjuk ke grup</text>
+<rect x="380" y="696" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="726" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Tekan “Periksa”</text>
+<polygon points="530,796 650,851 530,906 410,851" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="839.6" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Jawaban</text><text x="530" y="862.4" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">benar?</text>
+<polygon points="376,946 716,946 684,1006 344,1006" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="976" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Dapat XP, kasus baru terbuka</text>
+<polygon points="530,1046 650,1101 530,1156 410,1101" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="1089.6" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Lanjut</text><text x="530" y="1112.3999999999999" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">main?</text>
+<rect x="430" y="1196" width="200" height="56" rx="28" fill="#fde7c2" stroke="#d98a12" stroke-width="2.5" stroke-linejoin="round"/><text x="530" y="1224" font-size="19" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Selesai</text>
+<text x="530" y="46" font-size="30" font-weight="700" fill="#1f2433" text-anchor="middle">Alur Pengguna Math It!</text>
+<rect x="42" y="74" width="976" height="48" rx="24" fill="#f5f6fa" stroke="#dde1ea"/>
+<rect x="65" y="87" width="44" height="22" rx="11" fill="#fde7c2" stroke="#d98a12" stroke-width="2"/>
+<text x="120" y="98" font-size="15" fill="#1f2433" dominant-baseline="central">Mulai / selesai</text>
+<rect x="267" y="87" width="44" height="22" rx="3" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2"/>
+<text x="322" y="98" font-size="15" fill="#1f2433" dominant-baseline="central">Layar / tindakan</text>
+<polygon points="499,84 521,98 499,112 477,98" fill="#fbe0e0" stroke="#c4504f" stroke-width="2"/>
+<text x="532" y="98" font-size="15" fill="#1f2433" dominant-baseline="central">Keputusan</text>
+<polygon points="648,87 686,87 678,109 640,109" fill="#dff3ea" stroke="#2f8f68" stroke-width="2"/>
+<text x="696" y="98" font-size="15" fill="#1f2433" dominant-baseline="central">Masukan / keluaran</text>
+<path d="M871 98 L911 98" stroke="#3a4256" stroke-width="2.4" marker-end="url(#ah)"/>
+<text x="926" y="98" font-size="15" fill="#1f2433" dominant-baseline="central">Arah alur</text>
+</svg>

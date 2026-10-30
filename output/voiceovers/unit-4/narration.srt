@@ -1,0 +1,131 @@
+1
+00:00:00,150 --> 00:00:02,850
+Charts turn information into clues.
+
+2
+00:00:02,950 --> 00:00:04,980
+Let us read them!
+
+3
+00:00:05,150 --> 00:00:07,877
+Read the picture key first.
+
+4
+00:00:08,100 --> 00:00:11,373
+If one symbol means two children,
+
+5
+00:00:11,450 --> 00:00:15,814
+two symbols and a half mean five children.
+
+6
+00:00:16,000 --> 00:00:21,300
+A different key may give one book symbol ten books.
+
+7
+00:00:21,400 --> 00:00:24,980
+Then half a symbol means five books.
+
+8
+00:00:25,150 --> 00:00:27,877
+For bars, read the scale.
+
+9
+00:00:28,450 --> 00:00:32,268
+Halfway between twelve and sixteen is fourteen.
+
+10
+00:00:32,700 --> 00:00:35,400
+This bar shows fourteen visitors.
+
+11
+00:00:35,450 --> 00:00:37,086
+Another shows eight.
+
+12
+00:00:37,450 --> 00:00:41,814
+Subtract to find the difference: six more visitors.
+
+13
+00:00:43,100 --> 00:00:46,918
+A line chart tracks change over time.
+
+14
+00:00:47,300 --> 00:00:51,100
+Read the dots against the height scale.
+
+15
+00:00:51,150 --> 00:00:54,850
+Growing from four centimeters to nine centimeters
+
+16
+00:00:54,900 --> 00:00:57,627
+means five centimeters of growth.
+
+17
+00:00:57,700 --> 00:01:00,427
+Height and growth are different.
+
+18
+00:01:01,150 --> 00:01:05,050
+A pie chart shows parts of a whole.
+
+19
+00:01:05,100 --> 00:01:08,650
+Thirty-two children split into eight equal parts
+
+20
+00:01:08,700 --> 00:01:10,650
+means four per part.
+
+21
+00:01:10,700 --> 00:01:12,882
+Half means sixteen children;
+
+22
+00:01:13,050 --> 00:01:15,232
+one quarter means eight.
+
+23
+00:01:18,100 --> 00:01:20,750
+To compare Orange team’s events,
+
+24
+00:01:20,800 --> 00:01:24,600
+choose Event for what the bars show,
+
+25
+00:01:24,650 --> 00:01:26,832
+then filter to Orange.
+
+26
+00:01:27,400 --> 00:01:32,855
+Sort most first to put the largest score on top.
+
+27
+00:01:33,250 --> 00:01:36,523
+Switch to Table for exact numbers;
+
+28
+00:01:36,620 --> 00:01:39,347
+the data stays the same.
+
+29
+00:01:39,420 --> 00:01:41,600
+Which event is first?
+
+30
+00:01:45,600 --> 00:01:47,782
+Skipping, with eleven points.
+
+31
+00:01:50,150 --> 00:01:53,423
+Check the key, scale, and question.
+
+32
+00:01:53,480 --> 00:01:56,207
+Choose the view you need,
+
+33
+00:01:56,280 --> 00:01:59,553
+then try the Unit Four quizzes!

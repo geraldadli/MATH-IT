@@ -1,0 +1,39 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Subtitle,Arial,44,&H004D2A20,&H004D2A20,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,220,140,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:04.18,Subtitle,,0,0,0,,{\pos(1025,978)}Our toolkit measures length, mass, and time,
+Dialogue: 0,0:00:04.18,0:00:06.95,Subtitle,,0,0,0,,{\pos(1025,978)}and helps us investigate shapes.
+Dialogue: 0,0:00:07.60,0:00:10.96,Subtitle,,0,0,0,,{\pos(1025,978)}One meter is one hundred centimeters.
+Dialogue: 0,0:00:11.80,0:00:15.01,Subtitle,,0,0,0,,{\pos(1025,978)}Half a meter is fifty centimeters.
+Dialogue: 0,0:00:15.60,0:00:19.44,Subtitle,,0,0,0,,{\pos(1025,978)}Before adding lengths, use the same unit.
+Dialogue: 0,0:00:20.00,0:00:24.74,Subtitle,,0,0,0,,{\pos(1025,978)}Two meters and thirty centimeters\Nbecomes two hundred plus thirty:
+Dialogue: 0,0:00:24.74,0:00:27.49,Subtitle,,0,0,0,,{\pos(1025,978)}two hundred thirty centimeters.
+Dialogue: 0,0:00:32.60,0:00:36.16,Subtitle,,0,0,0,,{\pos(1025,978)}One kilogram is one thousand grams.
+Dialogue: 0,0:00:36.50,0:00:40.01,Subtitle,,0,0,0,,{\pos(1025,978)}Half a kilogram is five hundred grams.
+Dialogue: 0,0:00:40.60,0:00:44.84,Subtitle,,0,0,0,,{\pos(1025,978)}Change kilograms into grams before combining them.
+Dialogue: 0,0:00:46.20,0:00:49.51,Subtitle,,0,0,0,,{\pos(1025,978)}One kilogram plus two hundred fifty grams
+Dialogue: 0,0:00:49.51,0:00:53.22,Subtitle,,0,0,0,,{\pos(1025,978)}makes one thousand two hundred fifty grams.
+Dialogue: 0,0:00:54.60,0:00:57.43,Subtitle,,0,0,0,,{\pos(1025,978)}An hour has sixty minutes.
+Dialogue: 0,0:00:57.60,0:01:00.75,Subtitle,,0,0,0,,{\pos(1025,978)}Count forward to find elapsed time.
+Dialogue: 0,0:01:01.20,0:01:05.30,Subtitle,,0,0,0,,{\pos(1025,978)}From nine forty to ten o’clock is twenty minutes.
+Dialogue: 0,0:01:06.80,0:01:10.59,Subtitle,,0,0,0,,{\pos(1025,978)}Continue five more minutes to ten oh five.
+Dialogue: 0,0:01:11.80,0:01:15.64,Subtitle,,0,0,0,,{\pos(1025,978)}Twenty plus five makes twenty-five minutes.
+Dialogue: 0,0:01:18.60,0:01:22.31,Subtitle,,0,0,0,,{\pos(1025,978)}A square has four equal sides and right angles,
+Dialogue: 0,0:01:22.31,0:01:24.18,Subtitle,,0,0,0,,{\pos(1025,978)}even when turned.
+Dialogue: 0,0:01:25.80,0:01:28.74,Subtitle,,0,0,0,,{\pos(1025,978)}A right angle is a square corner.
+Dialogue: 0,0:01:30.00,0:01:34.92,Subtitle,,0,0,0,,{\pos(1025,978)}This triangle has three equal sides and no right angle.
+Dialogue: 0,0:01:36.90,0:01:42.38,Subtitle,,0,0,0,,{\pos(1025,978)}Does it fit either rule?
+Dialogue: 0,0:01:42.40,0:01:43.86,Subtitle,,0,0,0,,{\pos(1025,978)}Neither.
+Dialogue: 0,0:01:45.50,0:01:48.71,Subtitle,,0,0,0,,{\pos(1025,978)}Match your units, count time carefully,
+Dialogue: 0,0:01:48.71,0:01:53.31,Subtitle,,0,0,0,,{\pos(1025,978)}and check shape properties instead of guessing from appearance.
+Dialogue: 0,0:01:53.80,0:01:57.80,Subtitle,,0,0,0,,{\pos(1025,978)}Take your time, and try the Unit Three quizzes!

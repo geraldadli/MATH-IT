@@ -1,0 +1,666 @@
+{
+  "source_video": "C:\\Users\\Asus\\Downloads\\Unit 4 Data Analysis.mp4",
+  "source_video_sha256": "57f2b1933e8fea2a5b620bc505e23d632d0b51af4e3e418b2df8fdea08b36230",
+  "existing_take_reused": true,
+  "new_synthesis_requests": 0,
+  "voice_name": "Mike",
+  "voice_id": "3ae75279043648ce8f96310333c9288f",
+  "engine_requested_on_source": "orca",
+  "engine_returned_on_source": "orca",
+  "source_speech_request_id": "14cc18cee272497881bb0b7f0c719ac3",
+  "unit_2_voice_name": "Warm William",
+  "different_from_unit_2": true,
+  "source_audio": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-4\\orca-natural\\Unit 4 - Curious Chart Guide - Natural.wav",
+  "source_audio_sha256": "8801255cd49bccc8d88acb62a934d8f3a29631fb49ca3f41f31d1957161d767c",
+  "source_duration_seconds": 77.5136875,
+  "final_duration_seconds": 120.0,
+  "sample_rate": 48000,
+  "channels": 1,
+  "synthesis_speed": 1.0,
+  "playback_speed": 1.0,
+  "target_words_per_minute": null,
+  "script_matches_storyboard": true,
+  "audition_line_occurrences": 1,
+  "all_nonzero_source_samples_retained": true,
+  "thinking_pause": {
+    "start": 101.6,
+    "end": 105.6,
+    "seconds": 4.0,
+    "zero_pcm_samples": 192000
+  },
+  "scene_checks": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 5,
+      "speech_start": 0.6875833333333333,
+      "speech_end": 3.955041666666667,
+      "fits": true
+    },
+    {
+      "scene": 2,
+      "start": 5,
+      "end": 25,
+      "speech_start": 5.524666666666667,
+      "speech_end": 23.6478125,
+      "fits": true
+    },
+    {
+      "scene": 3,
+      "start": 25,
+      "end": 43,
+      "speech_start": 25.9289375,
+      "speech_end": 40.62977083333333,
+      "fits": true
+    },
+    {
+      "scene": 4,
+      "start": 43,
+      "end": 61,
+      "speech_start": 43.32454166666667,
+      "speech_end": 60.343,
+      "fits": true
+    },
+    {
+      "scene": 5,
+      "start": 61,
+      "end": 77,
+      "speech_start": 61.622395833333336,
+      "speech_end": 74.11677083333333,
+      "fits": true
+    },
+    {
+      "scene": 6,
+      "start": 77,
+      "end": 110,
+      "speech_start": 78.4980625,
+      "speech_end": 107.09633333333333,
+      "fits": true
+    },
+    {
+      "scene": 7,
+      "start": 110,
+      "end": 120,
+      "speech_start": 110.1279375,
+      "speech_end": 117.7324375,
+      "fits": true
+    }
+  ],
+  "edits": [
+    {
+      "scene": 1,
+      "cue_ids": [
+        1
+      ],
+      "text": "Charts turn information into clues.",
+      "source_in_sample": 0,
+      "source_out_sample": 102960,
+      "sequence_start_sample": 31200,
+      "sequence_end_sample": 134160,
+      "active_start_seconds": 0.6875833333333333,
+      "active_end_seconds": 2.6553958333333334,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00048828125
+    },
+    {
+      "scene": 1,
+      "cue_ids": [
+        2
+      ],
+      "text": "Let us read them!",
+      "source_in_sample": 102960,
+      "source_out_sample": 168000,
+      "sequence_start_sample": 136800,
+      "sequence_end_sample": 201840,
+      "active_start_seconds": 3.0883541666666665,
+      "active_end_seconds": 3.955041666666667,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00048828125
+    },
+    {
+      "scene": 2,
+      "cue_ids": [
+        3
+      ],
+      "text": "Read the picture key first.",
+      "source_in_sample": 168000,
+      "source_out_sample": 278400,
+      "sequence_start_sample": 228000,
+      "sequence_end_sample": 338400,
+      "active_start_seconds": 5.524666666666667,
+      "active_end_seconds": 6.932270833333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000457763671875
+    },
+    {
+      "scene": 2,
+      "cue_ids": [
+        4,
+        5
+      ],
+      "text": "If one symbol means two children, two symbols and a half mean five children.",
+      "source_in_sample": 278400,
+      "source_out_sample": 486960,
+      "sequence_start_sample": 386400,
+      "sequence_end_sample": 594960,
+      "active_start_seconds": 8.183979166666667,
+      "active_end_seconds": 12.298208333333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 2,
+      "cue_ids": [
+        6
+      ],
+      "text": "A different key may give one book symbol ten books.",
+      "source_in_sample": 486960,
+      "source_out_sample": 624960,
+      "sequence_start_sample": 760800,
+      "sequence_end_sample": 898800,
+      "active_start_seconds": 15.952333333333334,
+      "active_end_seconds": 18.537416666666665,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 2,
+      "cue_ids": [
+        7
+      ],
+      "text": "Then half a symbol means five books.",
+      "source_in_sample": 624960,
+      "source_out_sample": 751200,
+      "sequence_start_sample": 1022400,
+      "sequence_end_sample": 1148640,
+      "active_start_seconds": 21.5063125,
+      "active_end_seconds": 23.6478125,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00048828125
+    },
+    {
+      "scene": 3,
+      "cue_ids": [
+        8
+      ],
+      "text": "For bars, read the scale.",
+      "source_in_sample": 751200,
+      "source_out_sample": 887520,
+      "sequence_start_sample": 1216800,
+      "sequence_end_sample": 1353120,
+      "active_start_seconds": 25.9289375,
+      "active_end_seconds": 28.097875,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 3,
+      "cue_ids": [
+        9
+      ],
+      "text": "Halfway between twelve and sixteen is fourteen.",
+      "source_in_sample": 887520,
+      "source_out_sample": 1024560,
+      "sequence_start_sample": 1360800,
+      "sequence_end_sample": 1497840,
+      "active_start_seconds": 28.450145833333334,
+      "active_end_seconds": 31.122708333333332,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 3,
+      "cue_ids": [
+        10
+      ],
+      "text": "This bar shows fourteen visitors.",
+      "source_in_sample": 1024560,
+      "source_out_sample": 1140480,
+      "sequence_start_sample": 1564800,
+      "sequence_end_sample": 1680720,
+      "active_start_seconds": 32.82866666666666,
+      "active_end_seconds": 34.88854166666667,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.0006103515625
+    },
+    {
+      "scene": 3,
+      "cue_ids": [
+        11
+      ],
+      "text": "Another shows eight.",
+      "source_in_sample": 1140480,
+      "source_out_sample": 1200960,
+      "sequence_start_sample": 1696800,
+      "sequence_end_sample": 1757280,
+      "active_start_seconds": 35.480645833333334,
+      "active_end_seconds": 36.5315,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.0006103515625
+    },
+    {
+      "scene": 3,
+      "cue_ids": [
+        12
+      ],
+      "text": "Subtract to find the difference: six more visitors.",
+      "source_in_sample": 1200960,
+      "source_out_sample": 1372800,
+      "sequence_start_sample": 1792800,
+      "sequence_end_sample": 1964640,
+      "active_start_seconds": 37.448541666666664,
+      "active_end_seconds": 40.62977083333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 4,
+      "cue_ids": [
+        13
+      ],
+      "text": "A line chart tracks change over time.",
+      "source_in_sample": 1372800,
+      "source_out_sample": 1514400,
+      "sequence_start_sample": 2064000,
+      "sequence_end_sample": 2205600,
+      "active_start_seconds": 43.32454166666667,
+      "active_end_seconds": 45.87104166666666,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.0006103515625
+    },
+    {
+      "scene": 4,
+      "cue_ids": [
+        14
+      ],
+      "text": "Read the dots against the height scale.",
+      "source_in_sample": 1514400,
+      "source_out_sample": 1622400,
+      "sequence_start_sample": 2260800,
+      "sequence_end_sample": 2368800,
+      "active_start_seconds": 47.19316666666667,
+      "active_end_seconds": 49.16891666666667,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 4,
+      "cue_ids": [
+        15
+      ],
+      "text": "Growing from four centimeters to nine centimeters",
+      "source_in_sample": 1622400,
+      "source_out_sample": 1755840,
+      "sequence_start_sample": 2452800,
+      "sequence_end_sample": 2586240,
+      "active_start_seconds": 51.257395833333334,
+      "active_end_seconds": 53.79445833333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 4,
+      "cue_ids": [
+        16
+      ],
+      "text": "means five centimeters of growth.",
+      "source_in_sample": 1755840,
+      "source_out_sample": 1852080,
+      "sequence_start_sample": 2635200,
+      "sequence_end_sample": 2731440,
+      "active_start_seconds": 55.014583333333334,
+      "active_end_seconds": 56.795229166666665,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00054931640625
+    },
+    {
+      "scene": 4,
+      "cue_ids": [
+        17
+      ],
+      "text": "Height and growth are different.",
+      "source_in_sample": 1852080,
+      "source_out_sample": 1999200,
+      "sequence_start_sample": 2760000,
+      "sequence_end_sample": 2907120,
+      "active_start_seconds": 57.71041666666667,
+      "active_end_seconds": 60.343,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00048828125
+    },
+    {
+      "scene": 5,
+      "cue_ids": [
+        18
+      ],
+      "text": "A pie chart shows parts of a whole.",
+      "source_in_sample": 1999200,
+      "source_out_sample": 2119200,
+      "sequence_start_sample": 2940000,
+      "sequence_end_sample": 3060000,
+      "active_start_seconds": 61.622395833333336,
+      "active_end_seconds": 63.526916666666665,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 5,
+      "cue_ids": [
+        19,
+        20
+      ],
+      "text": "Thirty-two children split into eight equal parts means four per part.",
+      "source_in_sample": 2119200,
+      "source_out_sample": 2298720,
+      "sequence_start_sample": 3120000,
+      "sequence_end_sample": 3299520,
+      "active_start_seconds": 65.27720833333333,
+      "active_end_seconds": 68.66145833333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 5,
+      "cue_ids": [
+        21,
+        22
+      ],
+      "text": "Half means sixteen children; one quarter means eight.",
+      "source_in_sample": 2298720,
+      "source_out_sample": 2493600,
+      "sequence_start_sample": 3388800,
+      "sequence_end_sample": 3583680,
+      "active_start_seconds": 70.66860416666667,
+      "active_end_seconds": 74.11677083333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        23
+      ],
+      "text": "To compare Orange team\u2019s events,",
+      "source_in_sample": 2493600,
+      "source_out_sample": 2598240,
+      "sequence_start_sample": 3741600,
+      "sequence_end_sample": 3846240,
+      "active_start_seconds": 78.4980625,
+      "active_end_seconds": 80.04541666666667,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000579833984375
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        24
+      ],
+      "text": "choose Event for what the bars show,",
+      "source_in_sample": 2598240,
+      "source_out_sample": 2698560,
+      "sequence_start_sample": 3871200,
+      "sequence_end_sample": 3971520,
+      "active_start_seconds": 80.7310625,
+      "active_end_seconds": 82.59460416666667,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000457763671875
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        25
+      ],
+      "text": "then filter to Orange.",
+      "source_in_sample": 2698560,
+      "source_out_sample": 2772720,
+      "sequence_start_sample": 4056000,
+      "sequence_end_sample": 4130160,
+      "active_start_seconds": 84.82116666666667,
+      "active_end_seconds": 85.9280625,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00048828125
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        26
+      ],
+      "text": "Sort most first to put the largest score on top.",
+      "source_in_sample": 2772720,
+      "source_out_sample": 2918880,
+      "sequence_start_sample": 4183200,
+      "sequence_end_sample": 4329360,
+      "active_start_seconds": 87.42060416666666,
+      "active_end_seconds": 90.07572916666666,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000457763671875
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        27
+      ],
+      "text": "Switch to Table for exact numbers;",
+      "source_in_sample": 2918880,
+      "source_out_sample": 3036000,
+      "sequence_start_sample": 4471200,
+      "sequence_end_sample": 4588320,
+      "active_start_seconds": 93.2615,
+      "active_end_seconds": 95.39972916666666,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00042724609375
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        28
+      ],
+      "text": "the data stays the same.",
+      "source_in_sample": 3036000,
+      "source_out_sample": 3094320,
+      "sequence_start_sample": 4632000,
+      "sequence_end_sample": 4690320,
+      "active_start_seconds": 96.65122916666667,
+      "active_end_seconds": 97.60779166666667,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.00042724609375
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        29
+      ],
+      "text": "Which event is first?",
+      "source_in_sample": 3094320,
+      "source_out_sample": 3162240,
+      "sequence_start_sample": 4808880,
+      "sequence_end_sample": 4876800,
+      "active_start_seconds": 100.28485416666666,
+      "active_end_seconds": 101.56497916666666,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000457763671875
+    },
+    {
+      "scene": 6,
+      "cue_ids": [
+        30
+      ],
+      "text": "Skipping, with eleven points.",
+      "source_in_sample": 3354240,
+      "source_out_sample": 3441120,
+      "sequence_start_sample": 5068800,
+      "sequence_end_sample": 5155680,
+      "active_start_seconds": 105.608125,
+      "active_end_seconds": 107.09633333333333,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.000152587890625
+    },
+    {
+      "scene": 7,
+      "cue_ids": [
+        31
+      ],
+      "text": "Check the key, scale, and question.",
+      "source_in_sample": 3441120,
+      "source_out_sample": 3561600,
+      "sequence_start_sample": 5270400,
+      "sequence_end_sample": 5390880,
+      "active_start_seconds": 110.1279375,
+      "active_end_seconds": 112.26033333333334,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.0006103515625
+    },
+    {
+      "scene": 7,
+      "cue_ids": [
+        32
+      ],
+      "text": "Choose the view you need,",
+      "source_in_sample": 3561600,
+      "source_out_sample": 3631680,
+      "sequence_start_sample": 5440800,
+      "sequence_end_sample": 5510880,
+      "active_start_seconds": 113.45297916666667,
+      "active_end_seconds": 114.63375,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.0006103515625
+    },
+    {
+      "scene": 7,
+      "cue_ids": [
+        33
+      ],
+      "text": "then try the Unit Four quizzes!",
+      "source_in_sample": 3631680,
+      "source_out_sample": 3720657,
+      "sequence_start_sample": 5572800,
+      "sequence_end_sample": 5661777,
+      "active_start_seconds": 116.24364583333333,
+      "active_end_seconds": 117.7324375,
+      "speed": 1.0,
+      "pitch": 1.0,
+      "edge_peak_before_fade": 0.0006103515625
+    }
+  ],
+  "wav_loudness_measurement": {
+    "input_i": "-19.56",
+    "input_tp": "-1.50",
+    "input_lra": "6.70",
+    "input_thresh": "-30.31",
+    "output_i": "-16.63",
+    "output_tp": "-1.50",
+    "output_lra": "6.90",
+    "output_thresh": "-27.43",
+    "normalization_type": "dynamic",
+    "target_offset": "0.63"
+  },
+  "mp4_loudness_measurement": {
+    "input_i": "-19.57",
+    "input_tp": "-1.49",
+    "input_lra": "6.70",
+    "input_thresh": "-30.32",
+    "output_i": "-16.63",
+    "output_tp": "-1.50",
+    "output_lra": "6.90",
+    "output_thresh": "-27.43",
+    "normalization_type": "dynamic",
+    "target_offset": "0.63"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 3600,
+    "source_picture_stream_copied": true,
+    "full_decode": "passed"
+  },
+  "review": {
+    "script_and_pcm_timing": "passed",
+    "independent_asr": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-4\\orca-natural\\transcription-check.json",
+    "asr_limitations": "Source ASR has minor recognition errors; it is not a listening review.",
+    "listening_review": "not_performed",
+    "expressive_delivery": "requires listening review",
+    "free_form_style_field_available": false,
+    "style_directions_spoken": false,
+    "visual_review": {
+      "method": "decoded final frames compared with source",
+      "frame_checks": [
+        {
+          "seconds": 3,
+          "same_as_source": true
+        },
+        {
+          "seconds": 12,
+          "same_as_source": true
+        },
+        {
+          "seconds": 34,
+          "same_as_source": true
+        },
+        {
+          "seconds": 54,
+          "same_as_source": true
+        },
+        {
+          "seconds": 72,
+          "same_as_source": true
+        },
+        {
+          "seconds": 95,
+          "same_as_source": true
+        },
+        {
+          "seconds": 101.6,
+          "same_as_source": true
+        },
+        {
+          "seconds": 105.5,
+          "same_as_source": true
+        },
+        {
+          "seconds": 105.8,
+          "same_as_source": true
+        },
+        {
+          "seconds": 117,
+          "same_as_source": true
+        }
+      ],
+      "answer_caption_reveal": 105.633,
+      "answer_hidden_until_pause_end": true,
+      "continuous_playback": "not_performed"
+    }
+  },
+  "wav": "Unit 4 - Curious Chart Guide - HeyGen.wav",
+  "mp3": "Unit 4 - Curious Chart Guide - HeyGen.mp3",
+  "video_preview": "Unit 4 - Curious Chart Guide - HeyGen.mp4"
+}

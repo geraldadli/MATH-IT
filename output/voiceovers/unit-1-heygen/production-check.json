@@ -1,0 +1,187 @@
+{
+  "source_video": "C:\\Users\\Asus\\Downloads\\Math It Unit 1.mp4",
+  "source_sha256": "26f8446c4f007ef703d7f2c87caa4eca328ff29a66a24675f73ce54400633204",
+  "voice_id": "1776ddbd05374fa480e92f0297bbc67e",
+  "voice_name": "Melissa - Friendly",
+  "requested_engine": "heygen_voice",
+  "returned_engine": "orca",
+  "request_id": "8d393fb98aa6411686d233c800529ee9",
+  "requested_speed": 1.0,
+  "post_speed": 1.0,
+  "source_take_seconds": 73.24734693877551,
+  "final_seconds": 120.0,
+  "language": "en",
+  "style_field_available": false,
+  "style_limitation": "Connected synthesis has no free-form voice/style field; no style instructions were spoken.",
+  "returned_alignment_matches_submitted_script": true,
+  "independent_transcription": "not_performed",
+  "listening_review": "not_performed",
+  "audible_quality": "not_checked",
+  "thinking_pause": {
+    "start": 96.468,
+    "end": 100.468,
+    "seconds": 4.0,
+    "samples": 192000,
+    "lossless_peak": 0
+  },
+  "welcome_line_occurrences": 1,
+  "scene_checks": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 6,
+      "speech_start": 0.5,
+      "speech_end": 4.575,
+      "retained_audio_end": 4.735,
+      "fits": true
+    },
+    {
+      "scene": 2,
+      "start": 6,
+      "end": 21,
+      "speech_start": 6.8,
+      "speech_end": 16.265,
+      "retained_audio_end": 16.347,
+      "fits": true
+    },
+    {
+      "scene": 3,
+      "start": 21,
+      "end": 43,
+      "speech_start": 21.6,
+      "speech_end": 36.563,
+      "retained_audio_end": 36.706,
+      "fits": true
+    },
+    {
+      "scene": 4,
+      "start": 43,
+      "end": 63,
+      "speech_start": 43.5,
+      "speech_end": 55.916,
+      "retained_audio_end": 56.065,
+      "fits": true
+    },
+    {
+      "scene": 5,
+      "start": 63,
+      "end": 76,
+      "speech_start": 63.6,
+      "speech_end": 71.5,
+      "retained_audio_end": 71.735,
+      "fits": true
+    },
+    {
+      "scene": 6,
+      "start": 76,
+      "end": 90,
+      "speech_start": 76.4,
+      "speech_end": 85.155,
+      "retained_audio_end": 85.287,
+      "fits": true
+    },
+    {
+      "scene": 7,
+      "start": 90,
+      "end": 112,
+      "speech_start": 90.6,
+      "speech_end": 103.262,
+      "retained_audio_end": 103.358,
+      "fits": true
+    },
+    {
+      "scene": 8,
+      "start": 112,
+      "end": 120,
+      "speech_start": 112.60000000000001,
+      "speech_end": 116.80175736961452,
+      "retained_audio_end": 117.04235416666667,
+      "fits": true
+    }
+  ],
+  "audio_gain_db": -1.52,
+  "loudness_before_gain": {
+    "input_i": "-18.80",
+    "input_tp": "0.02",
+    "input_lra": "8.20",
+    "input_thresh": "-29.50",
+    "output_i": "-16.72",
+    "output_tp": "-1.50",
+    "output_lra": "7.70",
+    "output_thresh": "-27.42",
+    "normalization_type": "dynamic",
+    "target_offset": "0.72"
+  },
+  "music": false,
+  "sfx": false,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "frames": 3600,
+    "full_decode": "passed"
+  },
+  "caption_reading_speed_flags": [
+    {
+      "id": 3,
+      "characters_per_second": 19.01
+    },
+    {
+      "id": 9,
+      "characters_per_second": 17.49
+    },
+    {
+      "id": 13,
+      "characters_per_second": 18.99
+    },
+    {
+      "id": 14,
+      "characters_per_second": 18.24
+    },
+    {
+      "id": 19,
+      "characters_per_second": 17.47
+    },
+    {
+      "id": 23,
+      "characters_per_second": 18.03
+    },
+    {
+      "id": 27,
+      "characters_per_second": 18.19
+    }
+  ],
+  "encoded_audio_measurement": {
+    "input_i": "-20.33",
+    "input_tp": "-1.52",
+    "input_lra": "8.20",
+    "input_thresh": "-31.03",
+    "output_i": "-16.72",
+    "output_tp": "-1.50",
+    "output_lra": "7.70",
+    "output_thresh": "-27.42",
+    "normalization_type": "dynamic",
+    "target_offset": "0.72"
+  },
+  "visual_review": {
+    "method": "representative decoded frames from final encode",
+    "scene_frames": [
+      2,
+      10,
+      27,
+      49,
+      67,
+      82,
+      95.8,
+      98.4,
+      100.4,
+      100.8,
+      105.5,
+      116
+    ],
+    "all_eight_scenes_inspected": true,
+    "answer_hidden_before_pause_end": true,
+    "answer_caption_visible_after_pause": true,
+    "full_continuous_playback": "not_performed"
+  }
+}

@@ -1,0 +1,63 @@
+MATH IT! VIDEO PROMPT
+Unit 3 · Chapter 2: The clock tower clues
+Unit: Measurement & geometry
+Topic: Elapsed time
+Duration: 105 seconds (1:45)
+Language: English only
+
+LEARNING GOAL
+Find elapsed time by counting forward in minutes, including intervals that cross an hour.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+A clock has 60 minutes per hour; adjacent numbered positions are five minutes apart. Use 09:40 to 10:05 = 25 minutes and 10:50 to 11:10 = 20 minutes. Move both hands correctly or use a labeled timeline.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:13 · Hook
+Visual and animation: Draw a clock tower and two time cards, 09:40 and 10:05.
+On-screen text, revealed progressively:
+How much time passed?
+Narration: “We start at nine forty and finish at ten oh five. How many minutes have passed?”
+
+SCENE 2 · 0:13–0:38 · Explain the idea
+Visual and animation: Draw a clock face with five-minute marks. Pair it with a timeline that crosses ten o’clock.
+On-screen text, revealed progressively:
+1 hour = 60 minutes
+Count forward
+Narration: “An hour has sixty minutes. Each step between clock numbers is five minutes. To find elapsed time, start at the first time and count forward to the second.”
+
+SCENE 3 · 0:38–1:09 · Worked example
+Visual and animation: Animate four five-minute hops from 09:40 to 10:00, then one hop to 10:05. Label the two durations and add them.
+On-screen text, revealed progressively:
+09:40 → 10:00 → 10:05
+20 min + 5 min = 25 min
+Narration: “From nine forty to ten o’clock is twenty minutes. From ten o’clock to ten oh five is five more. Twenty plus five makes twenty-five minutes. Stopping at the hour helps us keep track.”
+
+SCENE 4 · 1:09–1:32 · Try, pause, and reveal
+Visual and animation: Write 10:50 and 11:10 on a fresh timeline. Hold for four seconds, then show two ten-minute jumps via 11:00.
+On-screen text, revealed progressively:
+10:50 → 11:00 → 11:10
+10 min + 10 min = 20 min
+Narration: “Try ten fifty to eleven ten. First reach eleven o’clock, then continue. Ten minutes plus ten minutes makes twenty minutes altogether.”
+
+SCENE 5 · 1:32–1:45 · Recap and quiz invitation
+Visual and animation: Draw a forward arrow with a marked hour boundary.
+On-screen text, revealed progressively:
+Start → Next hour → Finish
+Narration: “Count forward, split at the hour if needed, and add the minutes. Now solve your time quiz!”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.

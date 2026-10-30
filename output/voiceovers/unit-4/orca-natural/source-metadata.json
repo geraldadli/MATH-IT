@@ -1,0 +1,1030 @@
+{
+  "request": {
+    "voiceId": "3ae75279043648ce8f96310333c9288f",
+    "engine": "orca",
+    "language": "en",
+    "locale": "en-US",
+    "speed": 1,
+    "inputType": "ssml",
+    "text": "<speak>Charts turn information into clues. Let us read them!<break time=\"1.2s\"/>Read the picture key first. If one symbol means two children, two symbols and a half mean five children. A different key may give one book symbol ten books. Then half a symbol means five books.<break time=\"1.2s\"/>For bars, read the scale. Halfway between twelve and sixteen is fourteen. This bar shows fourteen visitors. Another shows eight. Subtract to find the difference: six more visitors.<break time=\"1.2s\"/>A line chart tracks change over time. Read the dots against the height scale. Growing from four centimeters to nine centimeters means five centimeters of growth. Height and growth are different.<break time=\"1.2s\"/>A pie chart shows parts of a whole. Thirty-two children split into eight equal parts means four per part. Half means sixteen children; one quarter means eight.<break time=\"1.2s\"/>To compare Orange team’s events, choose Event for what the bars show, then filter to Orange. Sort most first to put the largest score on top. Switch to Table for exact numbers; the data stays the same. Which event is first?<break time=\"4s\"/> Skipping, with eleven points.<break time=\"1.2s\"/>Check the key, scale, and question. Choose the view you need, then try the Unit Four quizzes!</speak>"
+  },
+  "result": {
+    "audio_url": "https://resource2.heygen.ai/text_to_speech/53e5e007174b4690ad7d9ef28e071fda/3ae75279043648ce8f96310333c9288f/id=7c8dd486-0ba3-47e0-b58c-2fc1e82dbc60.wav",
+    "duration": 77.58367346938776,
+    "request_id": "14cc18cee272497881bb0b7f0c719ac3",
+    "word_timestamps": [
+      {
+        "word": "<start>",
+        "start": 0,
+        "end": 0
+      },
+      {
+        "word": "Charts",
+        "start": 0.299,
+        "end": 0.5547
+      },
+      {
+        "word": "turn",
+        "start": 0.683,
+        "end": 0.8107
+      },
+      {
+        "word": "information",
+        "start": 0.896,
+        "end": 1.237
+      },
+      {
+        "word": "into",
+        "start": 1.408,
+        "end": 1.493
+      },
+      {
+        "word": "clues.",
+        "start": 1.579,
+        "end": 2.176
+      },
+      {
+        "word": "Let",
+        "start": 2.56,
+        "end": 2.688
+      },
+      {
+        "word": "us",
+        "start": 2.731,
+        "end": 2.773
+      },
+      {
+        "word": "read",
+        "start": 2.859,
+        "end": 3.029
+      },
+      {
+        "word": "them!",
+        "start": 3.072,
+        "end": 3.253
+      },
+      {
+        "word": "<break time=\"1.2s\"/>",
+        "start": 3.253,
+        "end": 4.453
+      },
+      {
+        "word": "Read",
+        "start": 4.453,
+        "end": 4.6240000000000006
+      },
+      {
+        "word": "the",
+        "start": 4.666,
+        "end": 4.7940000000000005
+      },
+      {
+        "word": "picture",
+        "start": 4.837000000000001,
+        "end": 4.922000000000001
+      },
+      {
+        "word": "key",
+        "start": 5.093,
+        "end": 5.264
+      },
+      {
+        "word": "first.",
+        "start": 5.306,
+        "end": 5.8180000000000005
+      },
+      {
+        "word": "If",
+        "start": 6.16,
+        "end": 6.33
+      },
+      {
+        "word": "one",
+        "start": 6.416,
+        "end": 6.586
+      },
+      {
+        "word": "symbol",
+        "start": 6.6290000000000004,
+        "end": 6.928
+      },
+      {
+        "word": "means",
+        "start": 6.970000000000001,
+        "end": 7.098
+      },
+      {
+        "word": "two",
+        "start": 7.226,
+        "end": 7.354
+      },
+      {
+        "word": "children,",
+        "start": 7.397,
+        "end": 7.888
+      },
+      {
+        "word": "two",
+        "start": 8.165,
+        "end": 8.336
+      },
+      {
+        "word": "symbols",
+        "start": 8.378,
+        "end": 8.677
+      },
+      {
+        "word": "and",
+        "start": 8.719999999999999,
+        "end": 8.805
+      },
+      {
+        "word": "a",
+        "start": 8.847999999999999,
+        "end": 8.889999999999999
+      },
+      {
+        "word": "half",
+        "start": 8.933,
+        "end": 9.061
+      },
+      {
+        "word": "mean",
+        "start": 9.145999999999999,
+        "end": 9.274
+      },
+      {
+        "word": "five",
+        "start": 9.36,
+        "end": 9.572999999999999
+      },
+      {
+        "word": "children.",
+        "start": 9.700999999999999,
+        "end": 10.234
+      },
+      {
+        "word": "A",
+        "start": 10.597,
+        "end": 10.639999999999999
+      },
+      {
+        "word": "different",
+        "start": 10.681999999999999,
+        "end": 10.809999999999999
+      },
+      {
+        "word": "key",
+        "start": 10.981,
+        "end": 11.152
+      },
+      {
+        "word": "may",
+        "start": 11.237,
+        "end": 11.322
+      },
+      {
+        "word": "give",
+        "start": 11.364999999999998,
+        "end": 11.492999999999999
+      },
+      {
+        "word": "one",
+        "start": 11.578,
+        "end": 11.748999999999999
+      },
+      {
+        "word": "book",
+        "start": 11.792,
+        "end": 11.92
+      },
+      {
+        "word": "symbol",
+        "start": 11.962,
+        "end": 12.218
+      },
+      {
+        "word": "ten",
+        "start": 12.303999999999998,
+        "end": 12.474
+      },
+      {
+        "word": "books.",
+        "start": 12.559999999999999,
+        "end": 12.849
+      },
+      {
+        "word": "Then",
+        "start": 13.011,
+        "end": 13.267
+      },
+      {
+        "word": "half",
+        "start": 13.437999999999999,
+        "end": 13.609
+      },
+      {
+        "word": "a",
+        "start": 13.693999999999999,
+        "end": 13.779
+      },
+      {
+        "word": "symbol",
+        "start": 13.822,
+        "end": 14.078
+      },
+      {
+        "word": "means",
+        "start": 14.120999999999999,
+        "end": 14.290999999999999
+      },
+      {
+        "word": "five",
+        "start": 14.418999999999999,
+        "end": 14.674999999999999
+      },
+      {
+        "word": "books.",
+        "start": 14.802999999999999,
+        "end": 15.036999999999999
+      },
+      {
+        "word": "<break time=\"1.2s\"/>",
+        "start": 15.036999999999999,
+        "end": 16.041
+      },
+      {
+        "word": "For",
+        "start": 16.041,
+        "end": 16.211
+      },
+      {
+        "word": "bars,",
+        "start": 16.254,
+        "end": 16.936
+      },
+      {
+        "word": "read",
+        "start": 17.448,
+        "end": 17.662
+      },
+      {
+        "word": "the",
+        "start": 17.705,
+        "end": 17.79
+      },
+      {
+        "word": "scale.",
+        "start": 17.833,
+        "end": 18.366
+      },
+      {
+        "word": "Halfway",
+        "start": 18.686,
+        "end": 19.113
+      },
+      {
+        "word": "between",
+        "start": 19.154999999999998,
+        "end": 19.241
+      },
+      {
+        "word": "twelve",
+        "start": 19.454,
+        "end": 19.752
+      },
+      {
+        "word": "and",
+        "start": 19.794999999999998,
+        "end": 19.88
+      },
+      {
+        "word": "sixteen",
+        "start": 19.923,
+        "end": 20.307
+      },
+      {
+        "word": "is",
+        "start": 20.392,
+        "end": 20.477999999999998
+      },
+      {
+        "word": "fourteen.",
+        "start": 20.52,
+        "end": 21.246
+      },
+      {
+        "word": "This",
+        "start": 21.544999999999998,
+        "end": 21.673
+      },
+      {
+        "word": "bar",
+        "start": 21.758,
+        "end": 21.971
+      },
+      {
+        "word": "shows",
+        "start": 22.099,
+        "end": 22.313
+      },
+      {
+        "word": "fourteen",
+        "start": 22.441,
+        "end": 22.91
+      },
+      {
+        "word": "visitors.",
+        "start": 22.995,
+        "end": 23.593
+      },
+      {
+        "word": "Another",
+        "start": 23.848,
+        "end": 24.019
+      },
+      {
+        "word": "shows",
+        "start": 24.147,
+        "end": 24.36
+      },
+      {
+        "word": "eight.",
+        "start": 24.488,
+        "end": 24.894
+      },
+      {
+        "word": "Subtract",
+        "start": 25.171,
+        "end": 25.555
+      },
+      {
+        "word": "to",
+        "start": 25.683,
+        "end": 25.726
+      },
+      {
+        "word": "find",
+        "start": 25.769,
+        "end": 25.939
+      },
+      {
+        "word": "the",
+        "start": 25.982,
+        "end": 26.067
+      },
+      {
+        "word": "difference:",
+        "start": 26.11,
+        "end": 26.643
+      },
+      {
+        "word": "six",
+        "start": 26.921,
+        "end": 27.134
+      },
+      {
+        "word": "more",
+        "start": 27.262,
+        "end": 27.433
+      },
+      {
+        "word": "visitors.",
+        "start": 27.518,
+        "end": 27.933
+      },
+      {
+        "word": "<break time=\"1.2s\"/>",
+        "start": 27.933,
+        "end": 29.108999999999998
+      },
+      {
+        "word": "A",
+        "start": 29.108999999999998,
+        "end": 29.195
+      },
+      {
+        "word": "line",
+        "start": 29.237,
+        "end": 29.407999999999998
+      },
+      {
+        "word": "chart",
+        "start": 29.493,
+        "end": 29.663999999999998
+      },
+      {
+        "word": "tracks",
+        "start": 29.749,
+        "end": 30.048
+      },
+      {
+        "word": "change",
+        "start": 30.133,
+        "end": 30.389
+      },
+      {
+        "word": "over",
+        "start": 30.474999999999998,
+        "end": 30.56
+      },
+      {
+        "word": "time.",
+        "start": 30.688,
+        "end": 31.285
+      },
+      {
+        "word": "Read",
+        "start": 31.669,
+        "end": 31.883
+      },
+      {
+        "word": "the",
+        "start": 31.925,
+        "end": 32.011
+      },
+      {
+        "word": "dots",
+        "start": 32.053000000000004,
+        "end": 32.224000000000004
+      },
+      {
+        "word": "against",
+        "start": 32.352000000000004,
+        "end": 32.48
+      },
+      {
+        "word": "the",
+        "start": 32.608,
+        "end": 32.650999999999996
+      },
+      {
+        "word": "height",
+        "start": 32.693,
+        "end": 32.821
+      },
+      {
+        "word": "scale.",
+        "start": 32.949,
+        "end": 33.525
+      },
+      {
+        "word": "Growing",
+        "start": 33.888,
+        "end": 34.144
+      },
+      {
+        "word": "from",
+        "start": 34.272,
+        "end": 34.4
+      },
+      {
+        "word": "four",
+        "start": 34.443,
+        "end": 34.656
+      },
+      {
+        "word": "centimeters",
+        "start": 34.741,
+        "end": 35.125
+      },
+      {
+        "word": "to",
+        "start": 35.253,
+        "end": 35.381
+      },
+      {
+        "word": "nine",
+        "start": 35.424,
+        "end": 35.595
+      },
+      {
+        "word": "centimeters",
+        "start": 35.723,
+        "end": 36.064
+      },
+      {
+        "word": "means",
+        "start": 36.32,
+        "end": 36.832
+      },
+      {
+        "word": "five",
+        "start": 37.003,
+        "end": 37.259
+      },
+      {
+        "word": "centimeters",
+        "start": 37.387,
+        "end": 37.685
+      },
+      {
+        "word": "of",
+        "start": 37.813,
+        "end": 37.899
+      },
+      {
+        "word": "growth.",
+        "start": 37.941,
+        "end": 38.580999999999996
+      },
+      {
+        "word": "Height",
+        "start": 39.008,
+        "end": 39.179
+      },
+      {
+        "word": "and",
+        "start": 39.307,
+        "end": 39.477
+      },
+      {
+        "word": "growth",
+        "start": 39.563,
+        "end": 39.819
+      },
+      {
+        "word": "are",
+        "start": 39.947,
+        "end": 40.075
+      },
+      {
+        "word": "different.",
+        "start": 40.117,
+        "end": 40.327
+      },
+      {
+        "word": "<break time=\"1.2s\"/>",
+        "start": 40.327,
+        "end": 41.641
+      },
+      {
+        "word": "A",
+        "start": 41.641,
+        "end": 41.897
+      },
+      {
+        "word": "pie",
+        "start": 41.939,
+        "end": 42.11
+      },
+      {
+        "word": "chart",
+        "start": 42.153,
+        "end": 42.366
+      },
+      {
+        "word": "shows",
+        "start": 42.451,
+        "end": 42.622
+      },
+      {
+        "word": "parts",
+        "start": 42.75,
+        "end": 42.921
+      },
+      {
+        "word": "of",
+        "start": 43.049,
+        "end": 43.091
+      },
+      {
+        "word": "a",
+        "start": 43.134,
+        "end": 43.177
+      },
+      {
+        "word": "whole.",
+        "start": 43.219,
+        "end": 43.774
+      },
+      {
+        "word": "Thirty-two",
+        "start": 44.201,
+        "end": 44.67
+      },
+      {
+        "word": "children",
+        "start": 44.713,
+        "end": 44.883
+      },
+      {
+        "word": "split",
+        "start": 45.054,
+        "end": 45.31
+      },
+      {
+        "word": "into",
+        "start": 45.353,
+        "end": 45.394999999999996
+      },
+      {
+        "word": "eight",
+        "start": 45.522999999999996,
+        "end": 45.737
+      },
+      {
+        "word": "equal",
+        "start": 45.865,
+        "end": 45.993
+      },
+      {
+        "word": "parts",
+        "start": 46.121,
+        "end": 46.333999999999996
+      },
+      {
+        "word": "means",
+        "start": 46.505,
+        "end": 46.675
+      },
+      {
+        "word": "four",
+        "start": 46.803,
+        "end": 47.059
+      },
+      {
+        "word": "per",
+        "start": 47.144999999999996,
+        "end": 47.272999999999996
+      },
+      {
+        "word": "part.",
+        "start": 47.315,
+        "end": 47.785
+      },
+      {
+        "word": "Half",
+        "start": 48.083,
+        "end": 48.382
+      },
+      {
+        "word": "means",
+        "start": 48.467,
+        "end": 48.638
+      },
+      {
+        "word": "sixteen",
+        "start": 48.851,
+        "end": 49.321
+      },
+      {
+        "word": "children;",
+        "start": 49.363,
+        "end": 49.769
+      },
+      {
+        "word": "one",
+        "start": 49.961,
+        "end": 50.345
+      },
+      {
+        "word": "quarter",
+        "start": 50.387,
+        "end": 50.601
+      },
+      {
+        "word": "means",
+        "start": 50.729,
+        "end": 50.857
+      },
+      {
+        "word": "eight.",
+        "start": 50.985,
+        "end": 51.184
+      },
+      {
+        "word": "<break time=\"1.2s\"/>",
+        "start": 51.184,
+        "end": 52.324
+      },
+      {
+        "word": "To",
+        "start": 52.324,
+        "end": 52.451
+      },
+      {
+        "word": "compare",
+        "start": 52.494,
+        "end": 52.75
+      },
+      {
+        "word": "Orange",
+        "start": 52.835,
+        "end": 53.091
+      },
+      {
+        "word": "team’s",
+        "start": 53.177,
+        "end": 53.433
+      },
+      {
+        "word": "events,",
+        "start": 53.475,
+        "end": 53.945
+      },
+      {
+        "word": "choose",
+        "start": 54.201,
+        "end": 54.414
+      },
+      {
+        "word": "Event",
+        "start": 54.542,
+        "end": 54.841
+      },
+      {
+        "word": "for",
+        "start": 54.969,
+        "end": 55.054
+      },
+      {
+        "word": "what",
+        "start": 55.097,
+        "end": 55.182
+      },
+      {
+        "word": "the",
+        "start": 55.225,
+        "end": 55.266999999999996
+      },
+      {
+        "word": "bars",
+        "start": 55.31,
+        "end": 55.481
+      },
+      {
+        "word": "show,",
+        "start": 55.609,
+        "end": 56.057
+      },
+      {
+        "word": "then",
+        "start": 56.333999999999996,
+        "end": 56.505
+      },
+      {
+        "word": "filter",
+        "start": 56.589999999999996,
+        "end": 56.888999999999996
+      },
+      {
+        "word": "to",
+        "start": 56.932,
+        "end": 57.06
+      },
+      {
+        "word": "Orange.",
+        "start": 57.102,
+        "end": 57.763999999999996
+      },
+      {
+        "word": "Sort",
+        "start": 58.211999999999996,
+        "end": 58.467999999999996
+      },
+      {
+        "word": "most",
+        "start": 58.553,
+        "end": 58.766
+      },
+      {
+        "word": "first",
+        "start": 58.894,
+        "end": 59.065
+      },
+      {
+        "word": "to",
+        "start": 59.193,
+        "end": 59.236
+      },
+      {
+        "word": "put",
+        "start": 59.278,
+        "end": 59.364
+      },
+      {
+        "word": "the",
+        "start": 59.406,
+        "end": 59.449
+      },
+      {
+        "word": "largest",
+        "start": 59.492,
+        "end": 59.79
+      },
+      {
+        "word": "score",
+        "start": 59.876,
+        "end": 60.004
+      },
+      {
+        "word": "on",
+        "start": 60.089,
+        "end": 60.132
+      },
+      {
+        "word": "top.",
+        "start": 60.174,
+        "end": 60.793
+      },
+      {
+        "word": "Switch",
+        "start": 61.198,
+        "end": 61.411
+      },
+      {
+        "word": "to",
+        "start": 61.497,
+        "end": 61.582
+      },
+      {
+        "word": "Table",
+        "start": 61.625,
+        "end": 61.795
+      },
+      {
+        "word": "for",
+        "start": 61.923,
+        "end": 62.051
+      },
+      {
+        "word": "exact",
+        "start": 62.137,
+        "end": 62.393
+      },
+      {
+        "word": "numbers;",
+        "start": 62.478,
+        "end": 62.905
+      },
+      {
+        "word": "the",
+        "start": 63.202999999999996,
+        "end": 63.330999999999996
+      },
+      {
+        "word": "data",
+        "start": 63.374,
+        "end": 63.458999999999996
+      },
+      {
+        "word": "stays",
+        "start": 63.545,
+        "end": 63.758
+      },
+      {
+        "word": "the",
+        "start": 63.801,
+        "end": 63.886
+      },
+      {
+        "word": "same.",
+        "start": 63.929,
+        "end": 64.393
+      },
+      {
+        "word": "Which",
+        "start": 64.687,
+        "end": 64.815
+      },
+      {
+        "word": "event",
+        "start": 64.943,
+        "end": 65.071
+      },
+      {
+        "word": "is",
+        "start": 65.156,
+        "end": 65.199
+      },
+      {
+        "word": "first?",
+        "start": 65.284,
+        "end": 65.529
+      },
+      {
+        "word": "<break time=\"4.0s\"/>",
+        "start": 65.529,
+        "end": 69.807
+      },
+      {
+        "word": "Skipping,",
+        "start": 69.807,
+        "end": 70.255
+      },
+      {
+        "word": "with",
+        "start": 70.404,
+        "end": 70.49
+      },
+      {
+        "word": "eleven",
+        "start": 70.575,
+        "end": 70.746
+      },
+      {
+        "word": "points.",
+        "start": 70.874,
+        "end": 71.102
+      },
+      {
+        "word": "<break time=\"1.2s\"/>",
+        "start": 71.102,
+        "end": 72.302
+      },
+      {
+        "word": "Check",
+        "start": 72.302,
+        "end": 72.51500000000001
+      },
+      {
+        "word": "the",
+        "start": 72.60000000000001,
+        "end": 72.686
+      },
+      {
+        "word": "key,",
+        "start": 72.72800000000001,
+        "end": 72.94200000000001
+      },
+      {
+        "word": "scale,",
+        "start": 73.02700000000002,
+        "end": 73.36800000000001
+      },
+      {
+        "word": "and",
+        "start": 73.45400000000001,
+        "end": 73.53900000000002
+      },
+      {
+        "word": "question.",
+        "start": 73.58200000000001,
+        "end": 74.04500000000002
+      },
+      {
+        "word": "Choose",
+        "start": 74.337,
+        "end": 74.55100000000002
+      },
+      {
+        "word": "the",
+        "start": 74.63600000000001,
+        "end": 74.76400000000001
+      },
+      {
+        "word": "view",
+        "start": 74.80700000000002,
+        "end": 74.89200000000001
+      },
+      {
+        "word": "you",
+        "start": 74.93500000000002,
+        "end": 75.06300000000002
+      },
+      {
+        "word": "need,",
+        "start": 75.105,
+        "end": 75.468
+      },
+      {
+        "word": "then",
+        "start": 75.703,
+        "end": 75.831
+      },
+      {
+        "word": "try",
+        "start": 75.873,
+        "end": 76.087
+      },
+      {
+        "word": "the",
+        "start": 76.129,
+        "end": 76.215
+      },
+      {
+        "word": "Unit",
+        "start": 76.257,
+        "end": 76.385
+      },
+      {
+        "word": "Four",
+        "start": 76.471,
+        "end": 76.641
+      },
+      {
+        "word": "quizzes!",
+        "start": 76.727,
+        "end": 77.33295464852608
+      },
+      {
+        "word": "<end>",
+        "start": 77.58367346938776,
+        "end": 77.58367346938776
+      }
+    ],
+    "engine": "orca"
+  },
+  "authorization": "User approved one retry with Orca."
+}

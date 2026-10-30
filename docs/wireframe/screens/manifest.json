@@ -1,0 +1,54 @@
+{
+  "welcome": {
+    "width": 1120,
+    "height": 850
+  },
+  "casebook": {
+    "width": 1120,
+    "height": 875
+  },
+  "clues": {
+    "width": 1120,
+    "height": 1001
+  },
+  "demo": {
+    "width": 1120,
+    "height": 1001
+  },
+  "hint": {
+    "width": 1120,
+    "height": 1001
+  },
+  "retry": {
+    "width": 1120,
+    "height": 1080
+  },
+  "success": {
+    "width": 1120,
+    "height": 1106
+  },
+  "data": {
+    "width": 1120,
+    "height": 1173
+  },
+  "profile": {
+    "width": 1120,
+    "height": 850
+  },
+  "welcome-mobile": {
+    "width": 390,
+    "height": 1081
+  },
+  "casebook-mobile": {
+    "width": 390,
+    "height": 1124
+  },
+  "clues-mobile": {
+    "width": 390,
+    "height": 1406
+  },
+  "data-mobile": {
+    "width": 390,
+    "height": 1356
+  }
+}

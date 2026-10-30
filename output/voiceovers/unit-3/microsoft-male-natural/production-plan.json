@@ -1,0 +1,139 @@
+{
+  "provider": "Microsoft Edge online neural speech",
+  "tool": "edge-tts",
+  "tool_version": "7.3.1",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "intent": "Warm male detective voice, natural rate; latest user direction overrides earlier female casting.",
+  "playback_speed": 1.0,
+  "fixed_wpm": null,
+  "time_stretch": false,
+  "source_script": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-3-heygen\\narration.txt",
+  "source_video": "C:/Users/Asus/Downloads/Math It Unit 3.mp4",
+  "scene_windows": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 7
+    },
+    {
+      "scene": 2,
+      "start": 7,
+      "end": 32
+    },
+    {
+      "scene": 3,
+      "start": 32,
+      "end": 54
+    },
+    {
+      "scene": 4,
+      "start": 54,
+      "end": 78
+    },
+    {
+      "scene": 5,
+      "start": 78,
+      "end": 105
+    },
+    {
+      "scene": 6,
+      "start": 105,
+      "end": 120
+    }
+  ],
+  "parts": [
+    {
+      "id": "scene-01-1",
+      "scene": 1,
+      "text": "Our toolkit measures length, mass, and time, and helps us investigate shapes.",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 0
+    },
+    {
+      "id": "scene-02-1",
+      "scene": 2,
+      "text": "One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 0
+    },
+    {
+      "id": "scene-03-1",
+      "scene": 3,
+      "text": "One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 0
+    },
+    {
+      "id": "scene-04-1",
+      "scene": 4,
+      "text": "An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 0
+    },
+    {
+      "id": "scene-05-1",
+      "scene": 5,
+      "text": "A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule?",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 4
+    },
+    {
+      "id": "scene-05-2",
+      "scene": 5,
+      "text": "Neither.",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 0
+    },
+    {
+      "id": "scene-06-1",
+      "scene": 6,
+      "text": "Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!",
+      "voice": "en-US-AndrewNeural",
+      "settings": {
+        "rate": "+0%",
+        "pitch": "+0Hz",
+        "volume": "+0%"
+      },
+      "pause_after_seconds": 0
+    }
+  ],
+  "target_seconds": 120,
+  "thinking_pause_seconds": 4,
+  "style_field_available": false,
+  "style_limitation": "Voice is selected for its catalog Warm personality. This tool has no free-form acting field."
+}

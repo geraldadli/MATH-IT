@@ -1,0 +1,1284 @@
+{
+  "model": "base.en",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.14,
+      "text": " charts turn information into clues let us read them",
+      "words": [
+        {
+          "word": " charts",
+          "start": 0.0,
+          "end": 0.44,
+          "probability": 0.3331245183944702
+        },
+        {
+          "word": " turn",
+          "start": 0.44,
+          "end": 0.76,
+          "probability": 0.9495788216590881
+        },
+        {
+          "word": " information",
+          "start": 0.76,
+          "end": 1.14,
+          "probability": 0.9766948223114014
+        },
+        {
+          "word": " into",
+          "start": 1.14,
+          "end": 1.46,
+          "probability": 0.9885518550872803
+        },
+        {
+          "word": " clues",
+          "start": 1.46,
+          "end": 1.72,
+          "probability": 0.996025562286377
+        },
+        {
+          "word": " let",
+          "start": 1.72,
+          "end": 2.64,
+          "probability": 0.06720463931560516
+        },
+        {
+          "word": " us",
+          "start": 2.64,
+          "end": 2.74,
+          "probability": 0.986382007598877
+        },
+        {
+          "word": " read",
+          "start": 2.74,
+          "end": 2.92,
+          "probability": 0.9940113425254822
+        },
+        {
+          "word": " them",
+          "start": 2.92,
+          "end": 3.14,
+          "probability": 0.9982959628105164
+        }
+      ]
+    },
+    {
+      "start": 3.96,
+      "end": 10.58,
+      "text": " Read the picture key first if one symbol means two children two symbols and a half mean five children a",
+      "words": [
+        {
+          "word": " Read",
+          "start": 3.96,
+          "end": 4.56,
+          "probability": 0.21458424627780914
+        },
+        {
+          "word": " the",
+          "start": 4.56,
+          "end": 4.72,
+          "probability": 0.9971016049385071
+        },
+        {
+          "word": " picture",
+          "start": 4.72,
+          "end": 4.96,
+          "probability": 0.9917690753936768
+        },
+        {
+          "word": " key",
+          "start": 4.96,
+          "end": 5.18,
+          "probability": 0.9858776330947876
+        },
+        {
+          "word": " first",
+          "start": 5.18,
+          "end": 5.46,
+          "probability": 0.9901926517486572
+        },
+        {
+          "word": " if",
+          "start": 5.46,
+          "end": 6.26,
+          "probability": 0.6194037795066833
+        },
+        {
+          "word": " one",
+          "start": 6.26,
+          "end": 6.46,
+          "probability": 0.9636359214782715
+        },
+        {
+          "word": " symbol",
+          "start": 6.46,
+          "end": 6.78,
+          "probability": 0.9790858626365662
+        },
+        {
+          "word": " means",
+          "start": 6.78,
+          "end": 7.02,
+          "probability": 0.9979963898658752
+        },
+        {
+          "word": " two",
+          "start": 7.02,
+          "end": 7.28,
+          "probability": 0.9335504770278931
+        },
+        {
+          "word": " children",
+          "start": 7.28,
+          "end": 7.62,
+          "probability": 0.9910942912101746
+        },
+        {
+          "word": " two",
+          "start": 7.62,
+          "end": 8.22,
+          "probability": 0.7915040254592896
+        },
+        {
+          "word": " symbols",
+          "start": 8.22,
+          "end": 8.52,
+          "probability": 0.9944384098052979
+        },
+        {
+          "word": " and",
+          "start": 8.52,
+          "end": 8.74,
+          "probability": 0.9601322412490845
+        },
+        {
+          "word": " a",
+          "start": 8.74,
+          "end": 8.8,
+          "probability": 0.983763575553894
+        },
+        {
+          "word": " half",
+          "start": 8.8,
+          "end": 8.98,
+          "probability": 0.9941263198852539
+        },
+        {
+          "word": " mean",
+          "start": 8.98,
+          "end": 9.2,
+          "probability": 0.9609519839286804
+        },
+        {
+          "word": " five",
+          "start": 9.2,
+          "end": 9.52,
+          "probability": 0.969569742679596
+        },
+        {
+          "word": " children",
+          "start": 9.52,
+          "end": 9.76,
+          "probability": 0.9908464550971985
+        },
+        {
+          "word": " a",
+          "start": 9.76,
+          "end": 10.58,
+          "probability": 0.8833054900169373
+        }
+      ]
+    },
+    {
+      "start": 10.58,
+      "end": 15.12,
+      "text": " Different key may give one book symbol ten books then half a symbol means five books",
+      "words": [
+        {
+          "word": " Different",
+          "start": 10.58,
+          "end": 10.76,
+          "probability": 0.2913639545440674
+        },
+        {
+          "word": " key",
+          "start": 10.76,
+          "end": 11.06,
+          "probability": 0.9750495553016663
+        },
+        {
+          "word": " may",
+          "start": 11.06,
+          "end": 11.26,
+          "probability": 0.992352306842804
+        },
+        {
+          "word": " give",
+          "start": 11.26,
+          "end": 11.4,
+          "probability": 0.9963235855102539
+        },
+        {
+          "word": " one",
+          "start": 11.4,
+          "end": 11.64,
+          "probability": 0.9908085465431213
+        },
+        {
+          "word": " book",
+          "start": 11.64,
+          "end": 11.84,
+          "probability": 0.9785747528076172
+        },
+        {
+          "word": " symbol",
+          "start": 11.84,
+          "end": 12.06,
+          "probability": 0.9787032008171082
+        },
+        {
+          "word": " ten",
+          "start": 12.06,
+          "end": 12.4,
+          "probability": 0.7186802625656128
+        },
+        {
+          "word": " books",
+          "start": 12.4,
+          "end": 12.62,
+          "probability": 0.9931869506835938
+        },
+        {
+          "word": " then",
+          "start": 12.62,
+          "end": 13.4,
+          "probability": 0.7740044593811035
+        },
+        {
+          "word": " half",
+          "start": 13.4,
+          "end": 13.76,
+          "probability": 0.9941108822822571
+        },
+        {
+          "word": " a",
+          "start": 13.76,
+          "end": 13.9,
+          "probability": 0.9876031279563904
+        },
+        {
+          "word": " symbol",
+          "start": 13.9,
+          "end": 14.14,
+          "probability": 0.9960877895355225
+        },
+        {
+          "word": " means",
+          "start": 14.14,
+          "end": 14.38,
+          "probability": 0.9974173307418823
+        },
+        {
+          "word": " five",
+          "start": 14.38,
+          "end": 14.78,
+          "probability": 0.9866241216659546
+        },
+        {
+          "word": " books",
+          "start": 14.78,
+          "end": 15.12,
+          "probability": 0.9957941770553589
+        }
+      ]
+    },
+    {
+      "start": 15.72,
+      "end": 16.86,
+      "text": " for bars",
+      "words": [
+        {
+          "word": " for",
+          "start": 15.72,
+          "end": 16.32,
+          "probability": 0.8365828394889832
+        },
+        {
+          "word": " bars",
+          "start": 16.32,
+          "end": 16.86,
+          "probability": 0.9741078019142151
+        }
+      ]
+    },
+    {
+      "start": 16.86,
+      "end": 24.78,
+      "text": " Read the scale halfway between 12 and 16 is 14 this bar shows 14 visitors another shows eight",
+      "words": [
+        {
+          "word": " Read",
+          "start": 16.86,
+          "end": 17.72,
+          "probability": 0.7340109348297119
+        },
+        {
+          "word": " the",
+          "start": 17.72,
+          "end": 17.92,
+          "probability": 0.9929077625274658
+        },
+        {
+          "word": " scale",
+          "start": 17.92,
+          "end": 18.16,
+          "probability": 0.9770281314849854
+        },
+        {
+          "word": " halfway",
+          "start": 18.16,
+          "end": 19.02,
+          "probability": 0.72392338514328
+        },
+        {
+          "word": " between",
+          "start": 19.02,
+          "end": 19.36,
+          "probability": 0.99842369556427
+        },
+        {
+          "word": " 12",
+          "start": 19.36,
+          "end": 19.8,
+          "probability": 0.6309587359428406
+        },
+        {
+          "word": " and",
+          "start": 19.8,
+          "end": 20.0,
+          "probability": 0.9718611836433411
+        },
+        {
+          "word": " 16",
+          "start": 20.0,
+          "end": 20.24,
+          "probability": 0.9828256964683533
+        },
+        {
+          "word": " is",
+          "start": 20.24,
+          "end": 20.6,
+          "probability": 0.9912264943122864
+        },
+        {
+          "word": " 14",
+          "start": 20.6,
+          "end": 20.86,
+          "probability": 0.9153964519500732
+        },
+        {
+          "word": " this",
+          "start": 20.86,
+          "end": 21.78,
+          "probability": 0.5781028270721436
+        },
+        {
+          "word": " bar",
+          "start": 21.78,
+          "end": 22.06,
+          "probability": 0.9934524297714233
+        },
+        {
+          "word": " shows",
+          "start": 22.06,
+          "end": 22.38,
+          "probability": 0.9932366013526917
+        },
+        {
+          "word": " 14",
+          "start": 22.38,
+          "end": 22.84,
+          "probability": 0.8734980821609497
+        },
+        {
+          "word": " visitors",
+          "start": 22.84,
+          "end": 23.3,
+          "probability": 0.9943536520004272
+        },
+        {
+          "word": " another",
+          "start": 23.3,
+          "end": 24.12,
+          "probability": 0.9000144600868225
+        },
+        {
+          "word": " shows",
+          "start": 24.12,
+          "end": 24.42,
+          "probability": 0.966401219367981
+        },
+        {
+          "word": " eight",
+          "start": 24.42,
+          "end": 24.78,
+          "probability": 0.6760333180427551
+        }
+      ]
+    },
+    {
+      "start": 24.78,
+      "end": 28.28,
+      "text": " subtract to find the difference six more visitors a",
+      "words": [
+        {
+          "word": " subtract",
+          "start": 24.78,
+          "end": 25.48,
+          "probability": 0.9258483052253723
+        },
+        {
+          "word": " to",
+          "start": 25.48,
+          "end": 25.88,
+          "probability": 0.9933335185050964
+        },
+        {
+          "word": " find",
+          "start": 25.88,
+          "end": 26.06,
+          "probability": 0.9960695505142212
+        },
+        {
+          "word": " the",
+          "start": 26.06,
+          "end": 26.2,
+          "probability": 0.9977750182151794
+        },
+        {
+          "word": " difference",
+          "start": 26.2,
+          "end": 26.44,
+          "probability": 0.9984498023986816
+        },
+        {
+          "word": " six",
+          "start": 26.44,
+          "end": 27.24,
+          "probability": 0.9267891645431519
+        },
+        {
+          "word": " more",
+          "start": 27.24,
+          "end": 27.52,
+          "probability": 0.9959741234779358
+        },
+        {
+          "word": " visitors",
+          "start": 27.52,
+          "end": 27.84,
+          "probability": 0.9886364340782166
+        },
+        {
+          "word": " a",
+          "start": 27.84,
+          "end": 28.28,
+          "probability": 0.8674322962760925
+        }
+      ]
+    },
+    {
+      "start": 29.019999999999996,
+      "end": 33.32,
+      "text": " Align chart tracks change over time. Read the dots against the height scale.",
+      "words": [
+        {
+          "word": " Align",
+          "start": 29.019999999999996,
+          "end": 29.58,
+          "probability": 0.6321123093366623
+        },
+        {
+          "word": " chart",
+          "start": 29.58,
+          "end": 29.8,
+          "probability": 0.9554176330566406
+        },
+        {
+          "word": " tracks",
+          "start": 29.8,
+          "end": 30.26,
+          "probability": 0.9688133597373962
+        },
+        {
+          "word": " change",
+          "start": 30.26,
+          "end": 30.44,
+          "probability": 0.9971542358398438
+        },
+        {
+          "word": " over",
+          "start": 30.44,
+          "end": 30.72,
+          "probability": 0.9866265654563904
+        },
+        {
+          "word": " time.",
+          "start": 30.72,
+          "end": 31.06,
+          "probability": 0.9993522763252258
+        },
+        {
+          "word": " Read",
+          "start": 31.96,
+          "end": 32.0,
+          "probability": 0.98696368932724
+        },
+        {
+          "word": " the",
+          "start": 32.0,
+          "end": 32.16,
+          "probability": 0.9974613189697266
+        },
+        {
+          "word": " dots",
+          "start": 32.16,
+          "end": 32.36,
+          "probability": 0.9876669645309448
+        },
+        {
+          "word": " against",
+          "start": 32.36,
+          "end": 32.62,
+          "probability": 0.9980831146240234
+        },
+        {
+          "word": " the",
+          "start": 32.62,
+          "end": 32.82,
+          "probability": 0.9950888752937317
+        },
+        {
+          "word": " height",
+          "start": 32.82,
+          "end": 32.94,
+          "probability": 0.9552062749862671
+        },
+        {
+          "word": " scale.",
+          "start": 32.94,
+          "end": 33.32,
+          "probability": 0.9895238280296326
+        }
+      ]
+    },
+    {
+      "start": 34.06,
+      "end": 38.26,
+      "text": " Growing from 4 centimeters to 9 centimeters means 5 centimeters of growth.",
+      "words": [
+        {
+          "word": " Growing",
+          "start": 34.06,
+          "end": 34.22,
+          "probability": 0.97295081615448
+        },
+        {
+          "word": " from",
+          "start": 34.22,
+          "end": 34.52,
+          "probability": 0.996496856212616
+        },
+        {
+          "word": " 4",
+          "start": 34.52,
+          "end": 34.86,
+          "probability": 0.7716035842895508
+        },
+        {
+          "word": " centimeters",
+          "start": 34.86,
+          "end": 35.1,
+          "probability": 0.5297924876213074
+        },
+        {
+          "word": " to",
+          "start": 35.1,
+          "end": 35.5,
+          "probability": 0.9974378347396851
+        },
+        {
+          "word": " 9",
+          "start": 35.5,
+          "end": 35.76,
+          "probability": 0.9848906397819519
+        },
+        {
+          "word": " centimeters",
+          "start": 35.76,
+          "end": 36.16,
+          "probability": 0.9916450381278992
+        },
+        {
+          "word": " means",
+          "start": 36.16,
+          "end": 36.9,
+          "probability": 0.9395778179168701
+        },
+        {
+          "word": " 5",
+          "start": 36.9,
+          "end": 37.42,
+          "probability": 0.920068621635437
+        },
+        {
+          "word": " centimeters",
+          "start": 37.42,
+          "end": 37.76,
+          "probability": 0.98554927110672
+        },
+        {
+          "word": " of",
+          "start": 37.76,
+          "end": 38.04,
+          "probability": 0.9960598349571228
+        },
+        {
+          "word": " growth.",
+          "start": 38.04,
+          "end": 38.26,
+          "probability": 0.9986051917076111
+        }
+      ]
+    },
+    {
+      "start": 39.26,
+      "end": 40.5,
+      "text": " Height and growth are different.",
+      "words": [
+        {
+          "word": " Height",
+          "start": 39.26,
+          "end": 39.32,
+          "probability": 0.9892067909240723
+        },
+        {
+          "word": " and",
+          "start": 39.32,
+          "end": 39.62,
+          "probability": 0.9944276809692383
+        },
+        {
+          "word": " growth",
+          "start": 39.62,
+          "end": 39.88,
+          "probability": 0.99418044090271
+        },
+        {
+          "word": " are",
+          "start": 39.88,
+          "end": 40.2,
+          "probability": 0.9987186193466187
+        },
+        {
+          "word": " different.",
+          "start": 40.2,
+          "end": 40.5,
+          "probability": 0.9991216063499451
+        }
+      ]
+    },
+    {
+      "start": 41.98,
+      "end": 43.48,
+      "text": " A pie chart shows parts of a whole.",
+      "words": [
+        {
+          "word": " A",
+          "start": 41.98,
+          "end": 42.06,
+          "probability": 0.9696921706199646
+        },
+        {
+          "word": " pie",
+          "start": 42.06,
+          "end": 42.2,
+          "probability": 0.9830885529518127
+        },
+        {
+          "word": " chart",
+          "start": 42.2,
+          "end": 42.48,
+          "probability": 0.9948307871818542
+        },
+        {
+          "word": " shows",
+          "start": 42.48,
+          "end": 42.78,
+          "probability": 0.9979152083396912
+        },
+        {
+          "word": " parts",
+          "start": 42.78,
+          "end": 43.02,
+          "probability": 0.9979234933853149
+        },
+        {
+          "word": " of",
+          "start": 43.02,
+          "end": 43.26,
+          "probability": 0.9991418123245239
+        },
+        {
+          "word": " a",
+          "start": 43.26,
+          "end": 43.32,
+          "probability": 0.993309736251831
+        },
+        {
+          "word": " whole.",
+          "start": 43.32,
+          "end": 43.48,
+          "probability": 0.6923381090164185
+        }
+      ]
+    },
+    {
+      "start": 44.58,
+      "end": 47.58,
+      "text": " 32 children split into 8 equal parts means 4 per part.",
+      "words": [
+        {
+          "word": " 32",
+          "start": 44.58,
+          "end": 44.58,
+          "probability": 0.8797392845153809
+        },
+        {
+          "word": " children",
+          "start": 44.58,
+          "end": 45.1,
+          "probability": 0.9971309304237366
+        },
+        {
+          "word": " split",
+          "start": 45.1,
+          "end": 45.38,
+          "probability": 0.9981189370155334
+        },
+        {
+          "word": " into",
+          "start": 45.38,
+          "end": 45.54,
+          "probability": 0.9943798184394836
+        },
+        {
+          "word": " 8",
+          "start": 45.54,
+          "end": 45.86,
+          "probability": 0.8027071356773376
+        },
+        {
+          "word": " equal",
+          "start": 45.86,
+          "end": 46.2,
+          "probability": 0.9927442073822021
+        },
+        {
+          "word": " parts",
+          "start": 46.2,
+          "end": 46.54,
+          "probability": 0.9988541603088379
+        },
+        {
+          "word": " means",
+          "start": 46.54,
+          "end": 46.78,
+          "probability": 0.9551423192024231
+        },
+        {
+          "word": " 4",
+          "start": 46.78,
+          "end": 47.16,
+          "probability": 0.9511752128601074
+        },
+        {
+          "word": " per",
+          "start": 47.16,
+          "end": 47.4,
+          "probability": 0.9954990744590759
+        },
+        {
+          "word": " part.",
+          "start": 47.4,
+          "end": 47.58,
+          "probability": 0.9907305836677551
+        }
+      ]
+    },
+    {
+      "start": 48.48,
+      "end": 51.24,
+      "text": " Half means 16 children, 1 quarter means 8.",
+      "words": [
+        {
+          "word": " Half",
+          "start": 48.48,
+          "end": 48.48,
+          "probability": 0.9410093426704407
+        },
+        {
+          "word": " means",
+          "start": 48.48,
+          "end": 48.76,
+          "probability": 0.9943558573722839
+        },
+        {
+          "word": " 16",
+          "start": 48.76,
+          "end": 49.24,
+          "probability": 0.9921131134033203
+        },
+        {
+          "word": " children,",
+          "start": 49.24,
+          "end": 49.7,
+          "probability": 0.9990442395210266
+        },
+        {
+          "word": " 1",
+          "start": 50.38,
+          "end": 50.46,
+          "probability": 0.5612375140190125
+        },
+        {
+          "word": " quarter",
+          "start": 50.46,
+          "end": 50.76,
+          "probability": 0.05485682561993599
+        },
+        {
+          "word": " means",
+          "start": 50.76,
+          "end": 50.98,
+          "probability": 0.9953389167785645
+        },
+        {
+          "word": " 8.",
+          "start": 50.98,
+          "end": 51.24,
+          "probability": 0.9393425583839417
+        }
+      ]
+    },
+    {
+      "start": 52.48,
+      "end": 55.86,
+      "text": " To compare orange team's events, choose event for what the bars show,",
+      "words": [
+        {
+          "word": " To",
+          "start": 52.48,
+          "end": 52.58,
+          "probability": 0.9979569911956787
+        },
+        {
+          "word": " compare",
+          "start": 52.58,
+          "end": 52.82,
+          "probability": 0.9989104270935059
+        },
+        {
+          "word": " orange",
+          "start": 52.82,
+          "end": 53.16,
+          "probability": 0.73866868019104
+        },
+        {
+          "word": " team's",
+          "start": 53.16,
+          "end": 53.58,
+          "probability": 0.7840683460235596
+        },
+        {
+          "word": " events,",
+          "start": 53.58,
+          "end": 53.78,
+          "probability": 0.989391028881073
+        },
+        {
+          "word": " choose",
+          "start": 54.28,
+          "end": 54.56,
+          "probability": 0.9827960133552551
+        },
+        {
+          "word": " event",
+          "start": 54.56,
+          "end": 54.88,
+          "probability": 0.8466025590896606
+        },
+        {
+          "word": " for",
+          "start": 54.88,
+          "end": 55.18,
+          "probability": 0.997560977935791
+        },
+        {
+          "word": " what",
+          "start": 55.18,
+          "end": 55.34,
+          "probability": 0.9956651329994202
+        },
+        {
+          "word": " the",
+          "start": 55.34,
+          "end": 55.44,
+          "probability": 0.9953534603118896
+        },
+        {
+          "word": " bars",
+          "start": 55.44,
+          "end": 55.6,
+          "probability": 0.9757806658744812
+        },
+        {
+          "word": " show,",
+          "start": 55.6,
+          "end": 55.86,
+          "probability": 0.9975758194923401
+        }
+      ]
+    },
+    {
+      "start": 55.86,
+      "end": 61.7,
+      "text": " then filter to orange. Sort most first to put the largest score on top. Switch to",
+      "words": [
+        {
+          "word": " then",
+          "start": 55.86,
+          "end": 56.66,
+          "probability": 0.11002369970083237
+        },
+        {
+          "word": " filter",
+          "start": 56.66,
+          "end": 56.94,
+          "probability": 0.8500874042510986
+        },
+        {
+          "word": " to",
+          "start": 56.94,
+          "end": 57.18,
+          "probability": 0.9937783479690552
+        },
+        {
+          "word": " orange.",
+          "start": 57.18,
+          "end": 57.42,
+          "probability": 0.9454630613327026
+        },
+        {
+          "word": " Sort",
+          "start": 58.5,
+          "end": 58.6,
+          "probability": 0.9477226734161377
+        },
+        {
+          "word": " most",
+          "start": 58.6,
+          "end": 58.86,
+          "probability": 0.992320716381073
+        },
+        {
+          "word": " first",
+          "start": 58.86,
+          "end": 59.18,
+          "probability": 0.9947103261947632
+        },
+        {
+          "word": " to",
+          "start": 59.18,
+          "end": 59.38,
+          "probability": 0.9818445444107056
+        },
+        {
+          "word": " put",
+          "start": 59.38,
+          "end": 59.5,
+          "probability": 0.9982183575630188
+        },
+        {
+          "word": " the",
+          "start": 59.5,
+          "end": 59.58,
+          "probability": 0.9984214305877686
+        },
+        {
+          "word": " largest",
+          "start": 59.58,
+          "end": 59.86,
+          "probability": 0.9888375997543335
+        },
+        {
+          "word": " score",
+          "start": 59.86,
+          "end": 60.12,
+          "probability": 0.9935777187347412
+        },
+        {
+          "word": " on",
+          "start": 60.12,
+          "end": 60.3,
+          "probability": 0.9984613656997681
+        },
+        {
+          "word": " top.",
+          "start": 60.3,
+          "end": 60.5,
+          "probability": 0.9977657794952393
+        },
+        {
+          "word": " Switch",
+          "start": 61.3,
+          "end": 61.52,
+          "probability": 0.9882156848907471
+        },
+        {
+          "word": " to",
+          "start": 61.52,
+          "end": 61.7,
+          "probability": 0.988838791847229
+        }
+      ]
+    },
+    {
+      "start": 61.7,
+      "end": 65.58,
+      "text": " table for exact numbers, the data stays the same. Which event is first?",
+      "words": [
+        {
+          "word": " table",
+          "start": 61.7,
+          "end": 61.88,
+          "probability": 0.8551056981086731
+        },
+        {
+          "word": " for",
+          "start": 61.88,
+          "end": 62.16,
+          "probability": 0.9961701035499573
+        },
+        {
+          "word": " exact",
+          "start": 62.16,
+          "end": 62.34,
+          "probability": 0.9886943697929382
+        },
+        {
+          "word": " numbers,",
+          "start": 62.34,
+          "end": 62.84,
+          "probability": 0.9983434677124023
+        },
+        {
+          "word": " the",
+          "start": 63.38,
+          "end": 63.44,
+          "probability": 0.991784930229187
+        },
+        {
+          "word": " data",
+          "start": 63.44,
+          "end": 63.58,
+          "probability": 0.9907277822494507
+        },
+        {
+          "word": " stays",
+          "start": 63.58,
+          "end": 63.8,
+          "probability": 0.9972572922706604
+        },
+        {
+          "word": " the",
+          "start": 63.8,
+          "end": 64.0,
+          "probability": 0.9984377026557922
+        },
+        {
+          "word": " same.",
+          "start": 64.0,
+          "end": 64.26,
+          "probability": 0.9997934699058533
+        },
+        {
+          "word": " Which",
+          "start": 64.96,
+          "end": 64.98,
+          "probability": 0.9827901124954224
+        },
+        {
+          "word": " event",
+          "start": 64.98,
+          "end": 65.18,
+          "probability": 0.9980688691139221
+        },
+        {
+          "word": " is",
+          "start": 65.18,
+          "end": 65.4,
+          "probability": 0.9967801570892334
+        },
+        {
+          "word": " first?",
+          "start": 65.4,
+          "end": 65.58,
+          "probability": 0.9911063313484192
+        }
+      ]
+    },
+    {
+      "start": 69.92,
+      "end": 75.18,
+      "text": " Skipping with 11 points. Check the key, scale, and question. Choose the view you",
+      "words": [
+        {
+          "word": " Skipping",
+          "start": 69.92,
+          "end": 70.34,
+          "probability": 0.8513266742229462
+        },
+        {
+          "word": " with",
+          "start": 70.34,
+          "end": 70.64,
+          "probability": 0.9716882705688477
+        },
+        {
+          "word": " 11",
+          "start": 70.64,
+          "end": 70.86,
+          "probability": 0.8095431327819824
+        },
+        {
+          "word": " points.",
+          "start": 70.86,
+          "end": 71.2,
+          "probability": 0.9896243214607239
+        },
+        {
+          "word": " Check",
+          "start": 72.64,
+          "end": 72.64,
+          "probability": 0.9922094345092773
+        },
+        {
+          "word": " the",
+          "start": 72.64,
+          "end": 72.82,
+          "probability": 0.9982312321662903
+        },
+        {
+          "word": " key,",
+          "start": 72.82,
+          "end": 72.98,
+          "probability": 0.9520029425621033
+        },
+        {
+          "word": " scale,",
+          "start": 73.14,
+          "end": 73.32,
+          "probability": 0.9875370860099792
+        },
+        {
+          "word": " and",
+          "start": 73.5,
+          "end": 73.68,
+          "probability": 0.9987708926200867
+        },
+        {
+          "word": " question.",
+          "start": 73.68,
+          "end": 73.88,
+          "probability": 0.9980474710464478
+        },
+        {
+          "word": " Choose",
+          "start": 74.66,
+          "end": 74.68,
+          "probability": 0.9914674758911133
+        },
+        {
+          "word": " the",
+          "start": 74.68,
+          "end": 74.9,
+          "probability": 0.9990511536598206
+        },
+        {
+          "word": " view",
+          "start": 74.9,
+          "end": 75.04,
+          "probability": 0.9976721405982971
+        },
+        {
+          "word": " you",
+          "start": 75.04,
+          "end": 75.18,
+          "probability": 0.9960818886756897
+        }
+      ]
+    },
+    {
+      "start": 75.18,
+      "end": 77.26,
+      "text": " need, then try the Unit 4 quizzes.",
+      "words": [
+        {
+          "word": " need,",
+          "start": 75.18,
+          "end": 75.38,
+          "probability": 0.9993023872375488
+        },
+        {
+          "word": " then",
+          "start": 75.86,
+          "end": 76.0,
+          "probability": 0.9916348457336426
+        },
+        {
+          "word": " try",
+          "start": 76.0,
+          "end": 76.18,
+          "probability": 0.9973848462104797
+        },
+        {
+          "word": " the",
+          "start": 76.18,
+          "end": 76.34,
+          "probability": 0.9861970543861389
+        },
+        {
+          "word": " Unit",
+          "start": 76.34,
+          "end": 76.52,
+          "probability": 0.43933025002479553
+        },
+        {
+          "word": " 4",
+          "start": 76.52,
+          "end": 76.8,
+          "probability": 0.9095840454101562
+        },
+        {
+          "word": " quizzes.",
+          "start": 76.8,
+          "end": 77.26,
+          "probability": 0.9124428629875183
+        }
+      ]
+    }
+  ],
+  "review": "Independent ASR check; not a listening review."
+}

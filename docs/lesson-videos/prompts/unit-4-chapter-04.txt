@@ -1,0 +1,64 @@
+MATH IT! VIDEO PROMPT
+Unit 4 · Chapter 4: The reading corner
+Unit: Data analysis
+Topic: Pictograph keys
+Duration: 105 seconds (1:45)
+Language: English only
+
+LEARNING GOAL
+Use a pictograph key of ten books per symbol and five per half symbol to read, combine, and compare quantities.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+New library clubs: Maple 20 books (2 full icons), Oak 35 (3 full and 1 half), Pine 10 (1 full). All book icons must have the same size. A half symbol represents five whole books, not half a physical book.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:12 · Hook
+Visual and animation: Draw a library chart with three club rows and a large book-symbol key.
+On-screen text, revealed progressively:
+Key: 1 book symbol = 10 books
+Narration: “This library chart uses pictures too. But its key gives each picture a different value.”
+
+SCENE 2 · 0:12–0:37 · Explain the idea
+Visual and animation: Expand a full book icon into ten small tally marks and a half icon into five. Count the two full icons beside Maple.
+On-screen text, revealed progressively:
+Full icon = 10 books
+Half icon = 5 books
+Maple = 20 books
+Narration: “One full book symbol represents ten books. Half a symbol represents five books. Two full symbols mean twenty books. Always read the key, even if the pictures look familiar.”
+
+SCENE 3 · 0:37–1:07 · Worked example
+Visual and animation: Count Oak as ten, twenty, thirty, thirty-five. Align it with Maple and highlight the extra full and half symbol.
+On-screen text, revealed progressively:
+Oak = 35 books
+35 − 20 = 15
+35 + 20 = 55
+Narration: “Oak has three full symbols and one half, so it has thirty-five books. Compared with Maple, that is fifteen more books. If we combine both clubs, thirty-five plus twenty gives fifty-five books.”
+
+SCENE 4 · 1:07–1:31 · Try, pause, and reveal
+Visual and animation: Highlight Oak and Pine, with their rows visible. Hold for four seconds, then combine their counts.
+On-screen text, revealed progressively:
+35 + 10 = 45 books
+Narration: “How many books do Oak and Pine have together? Oak has thirty-five and Pine has ten. Together they have forty-five books.”
+
+SCENE 5 · 1:31–1:45 · Recap and quiz invitation
+Visual and animation: Circle the full and half symbol values in the key.
+On-screen text, revealed progressively:
+Count in tens; add five for a half
+Narration: “Use the key to count each row. Then add or subtract as needed. Ready for your pictograph quiz?”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.

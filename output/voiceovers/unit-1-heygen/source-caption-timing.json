@@ -1,0 +1,286 @@
+{
+  "voice": "en-US-JennyNeural",
+  "duration": 120,
+  "cues": [
+    {
+      "id": 1,
+      "text": "Welcome, detective! Let us use numbers to prepare our school fair.",
+      "start": 0.5,
+      "caption_end": 5.8,
+      "end": 5.76,
+      "raw_seconds": 4.558,
+      "tempo_factor": 1.0,
+      "speech_end": 5.058
+    },
+    {
+      "id": 2,
+      "text": "Two hundreds, three tens, and six ones make two hundred thirty-six.",
+      "start": 6.8,
+      "caption_end": 11.1,
+      "end": 11.06,
+      "raw_seconds": 4.206,
+      "tempo_factor": 1.0,
+      "speech_end": 11.006
+    },
+    {
+      "id": 3,
+      "text": "It is greater than two hundred thirty.",
+      "start": 11.4,
+      "caption_end": 13.5,
+      "end": 13.46,
+      "raw_seconds": 1.795,
+      "tempo_factor": 1.0,
+      "speech_end": 13.195
+    },
+    {
+      "id": 4,
+      "text": "Compare the place values, starting with the hundreds.",
+      "start": 13.9,
+      "caption_end": 20.5,
+      "end": 20.46,
+      "raw_seconds": 2.756,
+      "tempo_factor": 1.0,
+      "speech_end": 16.656
+    },
+    {
+      "id": 5,
+      "text": "Addition joins amounts.",
+      "start": 21.6,
+      "caption_end": 22.9,
+      "end": 22.86,
+      "raw_seconds": 1.399,
+      "tempo_factor": 1.11,
+      "speech_end": 22.873
+    },
+    {
+      "id": 6,
+      "text": "Twenty-seven plus fifteen is forty-two.",
+      "start": 23.2,
+      "caption_end": 25.7,
+      "end": 25.66,
+      "raw_seconds": 2.301,
+      "tempo_factor": 1.0,
+      "speech_end": 25.501
+    },
+    {
+      "id": 7,
+      "text": "Exchange ten ones for one ten when needed.",
+      "start": 26.0,
+      "caption_end": 29.3,
+      "end": 29.26,
+      "raw_seconds": 2.481,
+      "tempo_factor": 1.0,
+      "speech_end": 28.481
+    },
+    {
+      "id": 8,
+      "text": "Subtraction takes an amount away.",
+      "start": 29.6,
+      "caption_end": 31.5,
+      "end": 31.46,
+      "raw_seconds": 1.806,
+      "tempo_factor": 1.0,
+      "speech_end": 31.406
+    },
+    {
+      "id": 9,
+      "text": "Forty-two minus fifteen returns us to twenty-seven.",
+      "start": 31.8,
+      "caption_end": 35.7,
+      "end": 35.660000000000004,
+      "raw_seconds": 2.89,
+      "tempo_factor": 1.0,
+      "speech_end": 34.69
+    },
+    {
+      "id": 10,
+      "text": "The operations help check each other.",
+      "start": 36.0,
+      "caption_end": 42.5,
+      "end": 42.46,
+      "raw_seconds": 1.835,
+      "tempo_factor": 1.0,
+      "speech_end": 37.835
+    },
+    {
+      "id": 11,
+      "text": "Three bags with five pencils each make fifteen pencils.",
+      "start": 43.5,
+      "caption_end": 46.5,
+      "end": 46.46,
+      "raw_seconds": 3.148,
+      "tempo_factor": 1.063,
+      "speech_end": 46.455
+    },
+    {
+      "id": 12,
+      "text": "That is multiplication: equal groups.",
+      "start": 46.8,
+      "caption_end": 49.3,
+      "end": 49.26,
+      "raw_seconds": 2.327,
+      "tempo_factor": 1.0,
+      "speech_end": 49.127
+    },
+    {
+      "id": 13,
+      "text": "Sharing fifteen equally among three bags gives five each.",
+      "start": 49.6,
+      "caption_end": 53.5,
+      "end": 53.46,
+      "raw_seconds": 3.32,
+      "tempo_factor": 1.0,
+      "speech_end": 52.92
+    },
+    {
+      "id": 14,
+      "text": "That is division.",
+      "start": 53.8,
+      "caption_end": 55.5,
+      "end": 55.46,
+      "raw_seconds": 0.985,
+      "tempo_factor": 1.0,
+      "speech_end": 54.785
+    },
+    {
+      "id": 15,
+      "text": "Check that every bag has the same number.",
+      "start": 55.8,
+      "caption_end": 62.5,
+      "end": 62.46,
+      "raw_seconds": 2.076,
+      "tempo_factor": 1.0,
+      "speech_end": 57.876
+    },
+    {
+      "id": 16,
+      "text": "Multiples follow equal jumps.",
+      "start": 63.6,
+      "caption_end": 65.5,
+      "end": 65.46,
+      "raw_seconds": 1.754,
+      "tempo_factor": 1.0,
+      "speech_end": 65.354
+    },
+    {
+      "id": 17,
+      "text": "Count in threes or fives.",
+      "start": 65.8,
+      "caption_end": 68.5,
+      "end": 68.46,
+      "raw_seconds": 1.565,
+      "tempo_factor": 1.0,
+      "speech_end": 67.365
+    },
+    {
+      "id": 18,
+      "text": "Fifteen appears in both patterns, so one number can fit two rules.",
+      "start": 68.8,
+      "caption_end": 75.5,
+      "end": 75.46,
+      "raw_seconds": 3.984,
+      "tempo_factor": 1.0,
+      "speech_end": 72.784
+    },
+    {
+      "id": 19,
+      "text": "Fractions describe equal parts of a whole.",
+      "start": 76.4,
+      "caption_end": 79.3,
+      "end": 79.25999999999999,
+      "raw_seconds": 2.172,
+      "tempo_factor": 1.0,
+      "speech_end": 78.572
+    },
+    {
+      "id": 20,
+      "text": "One of four parts is one quarter.",
+      "start": 79.6,
+      "caption_end": 82.9,
+      "end": 82.86,
+      "raw_seconds": 1.8,
+      "tempo_factor": 1.0,
+      "speech_end": 81.4
+    },
+    {
+      "id": 21,
+      "text": "Two quarters make one half.",
+      "start": 83.2,
+      "caption_end": 85.7,
+      "end": 85.66,
+      "raw_seconds": 1.604,
+      "tempo_factor": 1.0,
+      "speech_end": 84.804
+    },
+    {
+      "id": 22,
+      "text": "Three shaded parts make three quarters.",
+      "start": 86.0,
+      "caption_end": 89.5,
+      "end": 89.46,
+      "raw_seconds": 2.088,
+      "tempo_factor": 1.0,
+      "speech_end": 88.088
+    },
+    {
+      "id": 23,
+      "text": "Three thousand plus four thousand costs seven thousand rupiah.",
+      "start": 90.6,
+      "caption_end": 94.9,
+      "end": 94.86,
+      "raw_seconds": 3.347,
+      "tempo_factor": 1.0,
+      "speech_end": 93.947
+    },
+    {
+      "id": 24,
+      "text": "Pay ten thousand.",
+      "start": 95.2,
+      "caption_end": 97.3,
+      "end": 97.25999999999999,
+      "raw_seconds": 1.157,
+      "tempo_factor": 1.0,
+      "speech_end": 96.357
+    },
+    {
+      "id": 25,
+      "text": "How much change?",
+      "start": 97.7,
+      "caption_end": 103.1,
+      "end": 99.3,
+      "raw_seconds": 1.098,
+      "tempo_factor": 1.0,
+      "speech_end": 98.798
+    },
+    {
+      "id": 26,
+      "text": "Three thousand: subtract the cost from your payment.",
+      "start": 103.4,
+      "caption_end": 108.3,
+      "end": 108.25999999999999,
+      "raw_seconds": 2.831,
+      "tempo_factor": 1.0,
+      "speech_end": 106.231
+    },
+    {
+      "id": 27,
+      "text": "Read, choose your method, and check your answer.",
+      "start": 112.6,
+      "caption_end": 116.2,
+      "end": 116.16,
+      "raw_seconds": 2.599,
+      "tempo_factor": 1.0,
+      "speech_end": 115.199
+    },
+    {
+      "id": 28,
+      "text": "Try the Unit One quizzes!",
+      "start": 116.7,
+      "caption_end": 119.8,
+      "end": 119.75999999999999,
+      "raw_seconds": 1.548,
+      "tempo_factor": 1.0,
+      "speech_end": 118.248
+    }
+  ]
+}

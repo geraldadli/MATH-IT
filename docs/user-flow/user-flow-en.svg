@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 2130" width="1000" height="2130" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#3a4256"/></marker>
+<marker id="ahs" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#3a4256"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M500 174 L500 210" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 320 L500 356" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="510" y="335" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No</text>
+<path d="M500 418 L500 454" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 518 L500 554" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 664 L500 700" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="510" y="679" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<path d="M500 764 L500 800" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 862 L500 898" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 1008 L500 1044" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="510" y="1023" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<path d="M500 1106 L500 1142" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 1252 L500 1288" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="510" y="1267" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No</text>
+<path d="M500 1350 L500 1386" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 1450 L500 1486" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 1548 L500 1584" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M500 1694 L500 1730" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="510" y="1709" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<path d="M500 1840 L500 1876" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="510" y="1855" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No</text>
+<path d="M500 1938 L500 1974" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M625 266 L974 266 L974 832" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="637" y="252" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<path d="M625 2030 L974 2030 L974 832" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="637" y="2016" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No</text>
+<path d="M974 832 L652 832" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M375 610 L150 610 L150 487" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M150 487 L338 487" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="363" y="596" font-size="15" font-weight="600" fill="#3a4256" text-anchor="end" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No · reminder shown</text>
+<path d="M375 954 L287 954" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="363" y="940" font-size="15" font-weight="600" fill="#3a4256" text-anchor="end" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No</text>
+<rect x="65" y="927" width="220" height="54" rx="27" fill="#fde7c2" stroke="#d98a12" stroke-width="2.5"/><text x="175" y="954.0" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Close the app</text>
+<path d="M625 1198 L708 1198" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="635" y="1184" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<path d="M830 1228 L830 1320 L652 1320" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="710" y="1168" width="240" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="830" y="1187.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Drag / tap demo</text><text x="830" y="1208.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">→ “Let me try”</text>
+<path d="M644 1419 L708 1419" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah)" marker-start="url(#ahs)"/>
+<rect x="710" y="1389" width="240" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="830" y="1408.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Hint dialog (optional)</text><text x="830" y="1429.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">step by step, no penalty</text>
+<path d="M375 1640 L315 1640" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="363" y="1626" font-size="15" font-weight="600" fill="#3a4256" text-anchor="end" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">No</text>
+<path d="M188 1609 L188 1419 L356 1419" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polygon points="81,1609 331,1609 295,1671 45,1671" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="188" y="1629.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">“Look again” marks</text><text x="188" y="1650.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">groups to review</text>
+<path d="M625 1786 L678 1786" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="635" y="1772" font-size="15" font-weight="600" fill="#3a4256" text-anchor="start" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<path d="M805 1817 L805 1908 L672 1908" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<polygon points="698,1755 948,1755 912,1817 662,1817" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="805" y="1775.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">+100 XP saved,</text><text x="805" y="1796.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">next case unlocked</text>
+<path d="M375 2030 L26 2030 L26 1320" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M26 1320 L348 1320" fill="none" stroke="#3a4256" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah)"/>
+<text x="363" y="2016" font-size="15" font-weight="600" fill="#3a4256" text-anchor="end" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="5">Yes</text>
+<rect x="390" y="120" width="220" height="54" rx="27" fill="#fde7c2" stroke="#d98a12" stroke-width="2.5"/><text x="500" y="147.0" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Open Math It!</text>
+<polygon points="500,212 625,266 500,320 375,266" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="256.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Profile saved</text><text x="500" y="276.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">on this device?</text>
+<rect x="350" y="358" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="500" y="377.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Welcome screen</text><text x="500" y="398.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">(switch ID / EN anytime)</text>
+<polygon points="358,456 678,456 642,518 322,518" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="476.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Enter detective name,</text><text x="500" y="497.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">pick partner &amp; coat colour</text>
+<polygon points="500,556 625,610 500,664 375,610" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="600.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Name</text><text x="500" y="620.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">filled in?</text>
+<polygon points="358,702 678,702 642,764 322,764" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="722.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Profile saved</text><text x="500" y="743.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">on this device</text>
+<rect x="350" y="802" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="500" y="821.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Dashboard</text><text x="500" y="842.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">rank, XP bar, unit picker</text>
+<polygon points="500,900 625,954 500,1008 375,954" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="944.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Play a</text><text x="500" y="964.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">case?</text>
+<rect x="350" y="1046" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="500" y="1065.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Pick a unit,</text><text x="500" y="1086.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">open the current case</text>
+<polygon points="500,1144 625,1198 500,1252 375,1198" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="1188.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">First case</text><text x="500" y="1208.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">ever?</text>
+<rect x="350" y="1290" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="500" y="1309.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Case screen</text><text x="500" y="1330.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">read the mission</text>
+<polygon points="378,1388 658,1388 622,1450 342,1450" fill="#dff3ea" stroke="#2f8f68" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="1408.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Drag or tap clues into groups</text><text x="500" y="1429.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">(or set dashboard tools)</text>
+<rect x="350" y="1488" width="300" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="500" y="1518.0" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Press “Check”</text>
+<polygon points="500,1586 625,1640 500,1694 375,1640" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="1630.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Arrangement</text><text x="500" y="1650.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">correct?</text>
+<polygon points="500,1732 625,1786 500,1840 375,1786" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="1776.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">First time</text><text x="500" y="1796.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">solved?</text>
+<rect x="330" y="1878" width="340" height="60" rx="4" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2.5"/><text x="500" y="1897.4" font-size="17" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Solved celebration</text><text x="500" y="1918.6" font-size="15" font-weight="400" fill="#5b6275" text-anchor="middle" dominant-baseline="central">“Level up!” on a new rank</text>
+<polygon points="500,1976 625,2030 500,2084 375,2030" fill="#fbe0e0" stroke="#c4504f" stroke-width="2.5" stroke-linejoin="round"/><text x="500" y="2020.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">Next case in</text><text x="500" y="2040.0" font-size="16" font-weight="600" fill="#1f2433" text-anchor="middle" dominant-baseline="central">this unit?</text>
+<rect x="700" y="348" width="240" height="280" rx="10" fill="#f7f8fb" stroke="#d5d9e3" stroke-width="1.5"/>
+<text x="720" y="376" font-size="16" font-weight="700" fill="#1f2433">Symbols</text>
+<rect x="726" y="408" width="52" height="24" rx="12" fill="#fde7c2" stroke="#d98a12" stroke-width="2"/>
+<text x="796" y="420" font-size="15" fill="#1f2433" dominant-baseline="central">Start / end</text>
+<rect x="726" y="454" width="52" height="24" rx="3" fill="#e6ecfb" stroke="#4a63b8" stroke-width="2"/>
+<text x="796" y="466" font-size="15" fill="#1f2433" dominant-baseline="central">Screen or action</text>
+<polygon points="752,496 778,512 752,528 726,512" fill="#fbe0e0" stroke="#c4504f" stroke-width="2"/>
+<text x="796" y="512" font-size="15" fill="#1f2433" dominant-baseline="central">Decision</text>
+<polygon points="732,546 780,546 772,570 724,570" fill="#dff3ea" stroke="#2f8f68" stroke-width="2"/>
+<text x="796" y="558" font-size="15" fill="#1f2433" dominant-baseline="central">Input / output</text>
+<path d="M726 604 L774 604" stroke="#3a4256" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="796" y="604" font-size="15" fill="#1f2433" dominant-baseline="central">Flow direction</text>
+<text x="500" y="48" font-size="28" font-weight="700" fill="#1f2433" text-anchor="middle">Math It! · User Flow</text>
+<text x="500" y="80" font-size="16" fill="#5b6275" text-anchor="middle">From opening the app to solving a case</text>
+</svg>

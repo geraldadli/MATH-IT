@@ -1,0 +1,342 @@
+{
+  "fileKey": "EMGvmGFNfIj6SBBWxkPxt1",
+  "sessionId": "8ce1871c-0907-40ac-ae37-021c82e4352c",
+  "avatarSourceComponents": [
+    {
+      "id": "29:914",
+      "animal": "fox",
+      "imageNodeId": "234:15454"
+    },
+    {
+      "id": "29:1016",
+      "animal": "fox",
+      "imageNodeId": "234:15455"
+    },
+    {
+      "id": "29:1037",
+      "animal": "fox",
+      "imageNodeId": "234:15456"
+    },
+    {
+      "id": "29:1061",
+      "animal": "cat",
+      "imageNodeId": "234:15457"
+    },
+    {
+      "id": "29:1083",
+      "animal": "bear",
+      "imageNodeId": "234:15458"
+    },
+    {
+      "id": "29:1143",
+      "animal": "fox",
+      "imageNodeId": "234:15459"
+    },
+    {
+      "id": "29:1245",
+      "animal": "fox",
+      "imageNodeId": "234:15460"
+    },
+    {
+      "id": "29:1266",
+      "animal": "fox",
+      "imageNodeId": "234:15461"
+    },
+    {
+      "id": "29:1287",
+      "animal": "cat",
+      "imageNodeId": "234:15462"
+    },
+    {
+      "id": "29:1309",
+      "animal": "bear",
+      "imageNodeId": "234:15463"
+    },
+    {
+      "id": "29:1443",
+      "animal": "fox",
+      "imageNodeId": "234:15464"
+    },
+    {
+      "id": "29:2017",
+      "animal": "fox",
+      "imageNodeId": "234:15465"
+    },
+    {
+      "id": "29:2139",
+      "animal": "fox",
+      "imageNodeId": "234:15466"
+    },
+    {
+      "id": "29:2335",
+      "animal": "fox",
+      "imageNodeId": "234:15467"
+    }
+  ],
+  "pages": [
+    {
+      "page": "desktop",
+      "removedLabelSources": 26,
+      "heroLayers": [
+        {
+          "id": "130:14060",
+          "panelId": "29:2680",
+          "width": 278.9800109863281,
+          "height": 278.9800109863281
+        },
+        {
+          "id": "130:14059",
+          "panelId": "32:1265",
+          "width": 278.9800109863281,
+          "height": 278.9800109863281
+        },
+        {
+          "id": "130:14058",
+          "panelId": "32:1792",
+          "width": 278.9800109863281,
+          "height": 278.9800109863281
+        }
+      ],
+      "animatedNodeIds": [
+        "130:14060",
+        "130:14059",
+        "130:14058",
+        "29:2764",
+        "29:2803",
+        "29:2832",
+        "29:2858",
+        "32:1348",
+        "32:1384",
+        "32:1413",
+        "32:1439",
+        "32:1875",
+        "32:1911",
+        "32:1940",
+        "32:1966",
+        "32:2475",
+        "32:2840",
+        "32:3148",
+        "32:3510",
+        "32:3974",
+        "37:22246",
+        "37:22262",
+        "37:22269",
+        "37:22274"
+      ]
+    },
+    {
+      "page": "mobile",
+      "removedLabelSources": 18,
+      "heroLayers": [
+        {
+          "id": "214:22188",
+          "panelId": "35:22920",
+          "width": 172.39999389648438,
+          "height": 172.39999389648438
+        },
+        {
+          "id": "214:22190",
+          "panelId": "35:23423",
+          "width": 172.39999389648438,
+          "height": 172.39999389648438
+        },
+        {
+          "id": "214:22192",
+          "panelId": "35:23928",
+          "width": 172.39999389648438,
+          "height": 172.39999389648438
+        }
+      ],
+      "animatedNodeIds": [
+        "214:22188",
+        "214:22190",
+        "214:22192",
+        "35:23003",
+        "35:23039",
+        "35:23068",
+        "35:23094",
+        "35:23506",
+        "35:23542",
+        "35:23571",
+        "35:23597",
+        "35:24011",
+        "35:24047",
+        "35:24076",
+        "35:24102",
+        "35:24541",
+        "35:24880",
+        "35:25219",
+        "35:25504",
+        "37:28766",
+        "37:28782",
+        "37:28789",
+        "37:28794"
+      ]
+    },
+    {
+      "page": "proposal",
+      "removedLabelSources": 0,
+      "heroLayers": [
+        {
+          "id": "238:22144",
+          "panelId": "87:17097",
+          "width": 116.71890258789062,
+          "height": 116.71890258789062
+        }
+      ],
+      "animatedNodeIds": []
+    }
+  ],
+  "verification": [
+    {
+      "page": "desktop",
+      "avatarInstanceCount": 21,
+      "missingNewArtwork": [],
+      "remainingComingSoon": [],
+      "heroes": [
+        {
+          "id": "130:14060",
+          "width": 278.9800109863281,
+          "height": 278.9800109863281,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [
+            "OPACITY",
+            "TRANSLATION_Y",
+            "SCALE_XY"
+          ],
+          "timeline": [
+            {
+              "id": "29:2492",
+              "duration": 2
+            }
+          ]
+        },
+        {
+          "id": "130:14059",
+          "width": 278.9800109863281,
+          "height": 278.9800109863281,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [
+            "OPACITY",
+            "TRANSLATION_Y",
+            "SCALE_XY"
+          ],
+          "timeline": [
+            {
+              "id": "32:1078",
+              "duration": 2
+            }
+          ]
+        },
+        {
+          "id": "130:14058",
+          "width": 278.9800109863281,
+          "height": 278.9800109863281,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [
+            "OPACITY",
+            "TRANSLATION_Y",
+            "SCALE_XY"
+          ],
+          "timeline": [
+            {
+              "id": "32:1603",
+              "duration": 2
+            }
+          ]
+        }
+      ],
+      "legacyArtworkCandidates": []
+    },
+    {
+      "page": "mobile",
+      "avatarInstanceCount": 20,
+      "missingNewArtwork": [],
+      "remainingComingSoon": [],
+      "heroes": [
+        {
+          "id": "214:22188",
+          "width": 172.39999389648438,
+          "height": 172.39999389648438,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [
+            "OPACITY",
+            "TRANSLATION_Y",
+            "SCALE_XY"
+          ],
+          "timeline": [
+            {
+              "id": "35:22752",
+              "duration": 2
+            }
+          ]
+        },
+        {
+          "id": "214:22190",
+          "width": 172.39999389648438,
+          "height": 172.39999389648438,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [
+            "OPACITY",
+            "TRANSLATION_Y",
+            "SCALE_XY"
+          ],
+          "timeline": [
+            {
+              "id": "35:23258",
+              "duration": 2
+            }
+          ]
+        },
+        {
+          "id": "214:22192",
+          "width": 172.39999389648438,
+          "height": 172.39999389648438,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [
+            "OPACITY",
+            "TRANSLATION_Y",
+            "SCALE_XY"
+          ],
+          "timeline": [
+            {
+              "id": "35:23761",
+              "duration": 2
+            }
+          ]
+        }
+      ],
+      "legacyArtworkCandidates": []
+    },
+    {
+      "page": "artwork",
+      "avatarInstanceCount": 0,
+      "missingNewArtwork": [],
+      "remainingComingSoon": [],
+      "heroes": [],
+      "legacyArtworkCandidates": []
+    },
+    {
+      "page": "proposal",
+      "avatarInstanceCount": 5,
+      "missingNewArtwork": [],
+      "remainingComingSoon": [],
+      "heroes": [
+        {
+          "id": "238:22144",
+          "width": 116.71890258789062,
+          "height": 116.71890258789062,
+          "imageHash": "2a4d53d4395512aba6b4feb05e6f0d042c252f19",
+          "trackNames": [],
+          "timeline": [
+            {
+              "id": "81:15393",
+              "duration": 2
+            }
+          ]
+        }
+      ],
+      "legacyArtworkCandidates": []
+    }
+  ]
+}

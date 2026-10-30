@@ -1,0 +1,27 @@
+1
+00:00:00,500 --> 00:00:05,594
+Our toolkit measures length, mass, and time, and helps us investigate shapes.
+
+2
+00:00:07,600 --> 00:00:20,599
+One meter is one hundred centimeters. Half a meter is fifty centimeters. Before adding lengths, use the same unit. Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.
+
+3
+00:00:32,600 --> 00:00:46,657
+One kilogram is one thousand grams. Half a kilogram is five hundred grams. Change kilograms into grams before combining them. One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.
+
+4
+00:00:54,600 --> 00:01:06,588
+An hour has sixty minutes. Count forward to find elapsed time. From nine forty to ten o’clock is twenty minutes. Continue five more minutes to ten oh five. Twenty plus five makes twenty-five minutes.
+
+5
+00:01:27,468 --> 00:01:38,400
+A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule?
+
+6
+00:01:42,400 --> 00:01:42,807
+Neither.
+
+7
+00:01:45,500 --> 00:01:53,857
+Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time, and try the Unit Three quizzes!

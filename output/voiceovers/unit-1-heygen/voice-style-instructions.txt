@@ -1,0 +1,18 @@
+Voice: Female
+Character: The cheerful guide
+
+VOICE GENERATION PROMPT
+Use an adult female narrator with a bright, warm voice and a comfortable medium-high pitch. She sounds like a friendly teacher welcoming children to an activity: cheerful, curious, and encouraging. Let a slight smile come through in her voice. Give counting a gentle rhythm and make each number easy to distinguish. Use clear, lightly American-accented English at approximately 110 words per minute. Keep the energy lively but controlled; avoid squeaky delivery, baby talk, exaggerated excitement, and a singsong reading of every sentence. Give questions a small lift in pitch, then sound reassuring when explaining the answer. Keep this same female voice throughout Unit 1.
+
+SHARED VOICE DIRECTION
+Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target speaking naturally in a natural speed. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+AUDITION LINE
+Welcome, detective! Let us use numbers to prepare our school fair.
+
+PRODUCTION RECORD
+The connected HeyGen synthesis tool does not expose a voice/style-instructions field. These directions were saved separately and were not submitted as spoken text. The compatible catalog voice Melissa - Friendly was used with engine heygen_voice (response engine orca), language en, and speed 1.0. A single full-script generation returned a 73.247-second take. The edit preserves natural generated speed and pitch, places scenes within the existing two-minute drawing video, and inserts four seconds of silence before the answer. No music or drawing sounds were added. Audible delivery and accent have not been independently listened to in this environment.

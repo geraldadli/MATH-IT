@@ -1,0 +1,37 @@
+[
+  {
+    "text": " Good detectives explained their thinking.",
+    "words": [
+      {
+        "word": " Good",
+        "start": 0.0,
+        "end": 0.22,
+        "probability": 0.8879439234733582
+      },
+      {
+        "word": " detectives",
+        "start": 0.22,
+        "end": 0.58,
+        "probability": 0.9274969696998596
+      },
+      {
+        "word": " explained",
+        "start": 0.58,
+        "end": 1.14,
+        "probability": 0.4286969304084778
+      },
+      {
+        "word": " their",
+        "start": 1.14,
+        "end": 1.44,
+        "probability": 0.9951468110084534
+      },
+      {
+        "word": " thinking.",
+        "start": 1.44,
+        "end": 1.72,
+        "probability": 0.9993168115615845
+      }
+    ]
+  }
+]

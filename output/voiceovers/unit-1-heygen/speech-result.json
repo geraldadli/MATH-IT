@@ -1,0 +1,953 @@
+{
+  "audio_url": "https://resource2.heygen.ai/text_to_speech/53e5e007174b4690ad7d9ef28e071fda/1776ddbd05374fa480e92f0297bbc67e/id=4bec97c5-8a45-4185-b08e-07b59e11c28b.wav",
+  "duration": 73.24734693877551,
+  "request_id": "8d393fb98aa6411686d233c800529ee9",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Welcome,",
+      "start": 0.256,
+      "end": 0.725
+    },
+    {
+      "word": "detective!",
+      "start": 0.768,
+      "end": 1.365
+    },
+    {
+      "word": "Let",
+      "start": 1.707,
+      "end": 2.005
+    },
+    {
+      "word": "us",
+      "start": 2.048,
+      "end": 2.133
+    },
+    {
+      "word": "use",
+      "start": 2.219,
+      "end": 2.389
+    },
+    {
+      "word": "numbers",
+      "start": 2.475,
+      "end": 2.6027
+    },
+    {
+      "word": "to",
+      "start": 2.859,
+      "end": 2.944
+    },
+    {
+      "word": "prepare",
+      "start": 2.987,
+      "end": 3.328
+    },
+    {
+      "word": "our",
+      "start": 3.371,
+      "end": 3.4987
+    },
+    {
+      "word": "school",
+      "start": 3.541,
+      "end": 3.7547
+    },
+    {
+      "word": "fair.",
+      "start": 3.84,
+      "end": 4.331
+    },
+    {
+      "word": "Two",
+      "start": 4.651,
+      "end": 4.864
+    },
+    {
+      "word": "hundreds,",
+      "start": 4.907,
+      "end": 5.504
+    },
+    {
+      "word": "three",
+      "start": 5.717,
+      "end": 5.845
+    },
+    {
+      "word": "tens,",
+      "start": 5.973,
+      "end": 6.4
+    },
+    {
+      "word": "and",
+      "start": 6.571,
+      "end": 6.869
+    },
+    {
+      "word": "six",
+      "start": 6.912,
+      "end": 7.125
+    },
+    {
+      "word": "ones",
+      "start": 7.253,
+      "end": 7.424
+    },
+    {
+      "word": "make",
+      "start": 7.637,
+      "end": 7.765
+    },
+    {
+      "word": "two",
+      "start": 7.851,
+      "end": 7.979
+    },
+    {
+      "word": "hundred",
+      "start": 8.021,
+      "end": 8.149
+    },
+    {
+      "word": "thirty-six.",
+      "start": 8.32,
+      "end": 9.109
+    },
+    {
+      "word": "It",
+      "start": 9.429,
+      "end": 9.6427
+    },
+    {
+      "word": "is",
+      "start": 9.685,
+      "end": 9.7707
+    },
+    {
+      "word": "greater",
+      "start": 9.856,
+      "end": 10.069
+    },
+    {
+      "word": "than",
+      "start": 10.197,
+      "end": 10.325
+    },
+    {
+      "word": "two",
+      "start": 10.368,
+      "end": 10.496
+    },
+    {
+      "word": "hundred",
+      "start": 10.539,
+      "end": 10.6667
+    },
+    {
+      "word": "thirty.",
+      "start": 10.837,
+      "end": 11.328
+    },
+    {
+      "word": "Compare",
+      "start": 11.648,
+      "end": 11.9467
+    },
+    {
+      "word": "the",
+      "start": 12.032,
+      "end": 12.117
+    },
+    {
+      "word": "place",
+      "start": 12.16,
+      "end": 12.3307
+    },
+    {
+      "word": "values,",
+      "start": 12.459,
+      "end": 12.949
+    },
+    {
+      "word": "starting",
+      "start": 13.099,
+      "end": 13.312
+    },
+    {
+      "word": "with",
+      "start": 13.397,
+      "end": 13.483
+    },
+    {
+      "word": "the",
+      "start": 13.525,
+      "end": 13.6107
+    },
+    {
+      "word": "hundreds.",
+      "start": 13.653,
+      "end": 14.116
+    },
+    {
+      "word": "Addition",
+      "start": 14.28,
+      "end": 14.5356
+    },
+    {
+      "word": "joins",
+      "start": 14.834,
+      "end": 15.346
+    },
+    {
+      "word": "amounts.",
+      "start": 15.517,
+      "end": 16.029
+    },
+    {
+      "word": "Twenty-seven",
+      "start": 16.285,
+      "end": 16.9676
+    },
+    {
+      "word": "plus",
+      "start": 17.096,
+      "end": 17.266
+    },
+    {
+      "word": "fifteen",
+      "start": 17.352,
+      "end": 17.7356
+    },
+    {
+      "word": "is",
+      "start": 17.949,
+      "end": 18.0769
+    },
+    {
+      "word": "forty-two.",
+      "start": 18.162,
+      "end": 18.845
+    },
+    {
+      "word": "Exchange",
+      "start": 19.058,
+      "end": 19.6129
+    },
+    {
+      "word": "ten",
+      "start": 19.741,
+      "end": 19.9116
+    },
+    {
+      "word": "ones",
+      "start": 19.954,
+      "end": 20.082
+    },
+    {
+      "word": "for",
+      "start": 20.21,
+      "end": 20.2956
+    },
+    {
+      "word": "one",
+      "start": 20.338,
+      "end": 20.466
+    },
+    {
+      "word": "ten",
+      "start": 20.509,
+      "end": 20.722
+    },
+    {
+      "word": "when",
+      "start": 20.893,
+      "end": 21.1489
+    },
+    {
+      "word": "needed.",
+      "start": 21.192,
+      "end": 21.682
+    },
+    {
+      "word": "Subtraction",
+      "start": 22.002,
+      "end": 22.4289
+    },
+    {
+      "word": "takes",
+      "start": 22.77,
+      "end": 23.1969
+    },
+    {
+      "word": "an",
+      "start": 23.282,
+      "end": 23.3249
+    },
+    {
+      "word": "amount",
+      "start": 23.41,
+      "end": 23.538
+    },
+    {
+      "word": "away.",
+      "start": 23.666,
+      "end": 24.072
+    },
+    {
+      "word": "Forty-two",
+      "start": 24.349,
+      "end": 24.818
+    },
+    {
+      "word": "minus",
+      "start": 24.861,
+      "end": 25.074
+    },
+    {
+      "word": "fifteen",
+      "start": 25.16,
+      "end": 25.5436
+    },
+    {
+      "word": "returns",
+      "start": 25.757,
+      "end": 26.1409
+    },
+    {
+      "word": "us",
+      "start": 26.226,
+      "end": 26.2689
+    },
+    {
+      "word": "to",
+      "start": 26.312,
+      "end": 26.3969
+    },
+    {
+      "word": "twenty-seven.",
+      "start": 26.44,
+      "end": 27.165
+    },
+    {
+      "word": "The",
+      "start": 27.464,
+      "end": 27.5916
+    },
+    {
+      "word": "operations",
+      "start": 27.634,
+      "end": 27.9756
+    },
+    {
+      "word": "help",
+      "start": 28.232,
+      "end": 28.402
+    },
+    {
+      "word": "check",
+      "start": 28.445,
+      "end": 28.6156
+    },
+    {
+      "word": "each",
+      "start": 28.701,
+      "end": 28.786
+    },
+    {
+      "word": "other.",
+      "start": 28.829,
+      "end": 29.243
+    },
+    {
+      "word": "Three",
+      "start": 29.529,
+      "end": 29.699
+    },
+    {
+      "word": "bags",
+      "start": 29.827,
+      "end": 30.083
+    },
+    {
+      "word": "with",
+      "start": 30.169,
+      "end": 30.211
+    },
+    {
+      "word": "five",
+      "start": 30.297,
+      "end": 30.467
+    },
+    {
+      "word": "pencils",
+      "start": 30.595,
+      "end": 30.9366
+    },
+    {
+      "word": "each",
+      "start": 31.065,
+      "end": 31.2779
+    },
+    {
+      "word": "make",
+      "start": 31.406,
+      "end": 31.5339
+    },
+    {
+      "word": "fifteen",
+      "start": 31.619,
+      "end": 32.0459
+    },
+    {
+      "word": "pencils.",
+      "start": 32.131,
+      "end": 32.771
+    },
+    {
+      "word": "That",
+      "start": 33.07,
+      "end": 33.283
+    },
+    {
+      "word": "is",
+      "start": 33.326,
+      "end": 33.3686
+    },
+    {
+      "word": "multiplication:",
+      "start": 33.454,
+      "end": 34.265
+    },
+    {
+      "word": "equal",
+      "start": 34.521,
+      "end": 34.691
+    },
+    {
+      "word": "groups.",
+      "start": 34.862,
+      "end": 35.481
+    },
+    {
+      "word": "Sharing",
+      "start": 35.843,
+      "end": 36.099
+    },
+    {
+      "word": "fifteen",
+      "start": 36.185,
+      "end": 36.5686
+    },
+    {
+      "word": "equally",
+      "start": 36.611,
+      "end": 36.867
+    },
+    {
+      "word": "among",
+      "start": 37.038,
+      "end": 37.1659
+    },
+    {
+      "word": "three",
+      "start": 37.251,
+      "end": 37.4219
+    },
+    {
+      "word": "bags",
+      "start": 37.465,
+      "end": 37.763
+    },
+    {
+      "word": "gives",
+      "start": 37.849,
+      "end": 37.9339
+    },
+    {
+      "word": "five",
+      "start": 38.062,
+      "end": 38.2326
+    },
+    {
+      "word": "each.",
+      "start": 38.361,
+      "end": 38.745
+    },
+    {
+      "word": "That",
+      "start": 39.001,
+      "end": 39.171
+    },
+    {
+      "word": "is",
+      "start": 39.214,
+      "end": 39.299
+    },
+    {
+      "word": "division.",
+      "start": 39.342,
+      "end": 39.833
+    },
+    {
+      "word": "Check",
+      "start": 40.11,
+      "end": 40.323
+    },
+    {
+      "word": "that",
+      "start": 40.366,
+      "end": 40.4939
+    },
+    {
+      "word": "every",
+      "start": 40.537,
+      "end": 40.6646
+    },
+    {
+      "word": "bag",
+      "start": 40.75,
+      "end": 40.963
+    },
+    {
+      "word": "has",
+      "start": 41.049,
+      "end": 41.1339
+    },
+    {
+      "word": "the",
+      "start": 41.177,
+      "end": 41.2619
+    },
+    {
+      "word": "same",
+      "start": 41.305,
+      "end": 41.475
+    },
+    {
+      "word": "number.",
+      "start": 41.561,
+      "end": 41.945
+    },
+    {
+      "word": "Multiples",
+      "start": 42.243,
+      "end": 42.6699
+    },
+    {
+      "word": "follow",
+      "start": 42.755,
+      "end": 42.9259
+    },
+    {
+      "word": "equal",
+      "start": 43.054,
+      "end": 43.1819
+    },
+    {
+      "word": "jumps.",
+      "start": 43.353,
+      "end": 43.868
+    },
+    {
+      "word": "Count",
+      "start": 44.127,
+      "end": 44.3407
+    },
+    {
+      "word": "in",
+      "start": 44.383,
+      "end": 44.511
+    },
+    {
+      "word": "threes",
+      "start": 44.554,
+      "end": 44.81
+    },
+    {
+      "word": "or",
+      "start": 44.895,
+      "end": 45.023
+    },
+    {
+      "word": "fives.",
+      "start": 45.066,
+      "end": 45.727
+    },
+    {
+      "word": "Fifteen",
+      "start": 46.047,
+      "end": 46.5167
+    },
+    {
+      "word": "appears",
+      "start": 46.559,
+      "end": 46.815
+    },
+    {
+      "word": "in",
+      "start": 46.943,
+      "end": 47.071
+    },
+    {
+      "word": "both",
+      "start": 47.114,
+      "end": 47.2847
+    },
+    {
+      "word": "patterns,",
+      "start": 47.37,
+      "end": 47.925
+    },
+    {
+      "word": "so",
+      "start": 48.138,
+      "end": 48.3087
+    },
+    {
+      "word": "one",
+      "start": 48.351,
+      "end": 48.522
+    },
+    {
+      "word": "number",
+      "start": 48.565,
+      "end": 48.6927
+    },
+    {
+      "word": "can",
+      "start": 48.863,
+      "end": 48.991
+    },
+    {
+      "word": "fit",
+      "start": 49.034,
+      "end": 49.2047
+    },
+    {
+      "word": "two",
+      "start": 49.247,
+      "end": 49.418
+    },
+    {
+      "word": "rules.",
+      "start": 49.503,
+      "end": 50.143
+    },
+    {
+      "word": "Fractions",
+      "start": 50.613,
+      "end": 50.8687
+    },
+    {
+      "word": "describe",
+      "start": 51.167,
+      "end": 51.594
+    },
+    {
+      "word": "equal",
+      "start": 51.679,
+      "end": 51.807
+    },
+    {
+      "word": "parts",
+      "start": 51.978,
+      "end": 52.191
+    },
+    {
+      "word": "of",
+      "start": 52.277,
+      "end": 52.362
+    },
+    {
+      "word": "a",
+      "start": 52.405,
+      "end": 52.447
+    },
+    {
+      "word": "whole.",
+      "start": 52.49,
+      "end": 52.917
+    },
+    {
+      "word": "One",
+      "start": 53.215,
+      "end": 53.471
+    },
+    {
+      "word": "of",
+      "start": 53.514,
+      "end": 53.5567
+    },
+    {
+      "word": "four",
+      "start": 53.599,
+      "end": 53.77
+    },
+    {
+      "word": "parts",
+      "start": 53.855,
+      "end": 54.026
+    },
+    {
+      "word": "is",
+      "start": 54.197,
+      "end": 54.239
+    },
+    {
+      "word": "one",
+      "start": 54.325,
+      "end": 54.4527
+    },
+    {
+      "word": "quarter.",
+      "start": 54.538,
+      "end": 55.071
+    },
+    {
+      "word": "Two",
+      "start": 55.434,
+      "end": 55.647
+    },
+    {
+      "word": "quarters",
+      "start": 55.69,
+      "end": 55.989
+    },
+    {
+      "word": "make",
+      "start": 56.074,
+      "end": 56.202
+    },
+    {
+      "word": "one",
+      "start": 56.287,
+      "end": 56.415
+    },
+    {
+      "word": "half.",
+      "start": 56.458,
+      "end": 56.991
+    },
+    {
+      "word": "Three",
+      "start": 57.354,
+      "end": 57.5247
+    },
+    {
+      "word": "shaded",
+      "start": 57.653,
+      "end": 57.951
+    },
+    {
+      "word": "parts",
+      "start": 58.037,
+      "end": 58.207
+    },
+    {
+      "word": "make",
+      "start": 58.335,
+      "end": 58.506
+    },
+    {
+      "word": "three",
+      "start": 58.591,
+      "end": 58.719
+    },
+    {
+      "word": "quarters.",
+      "start": 58.805,
+      "end": 59.368
+    },
+    {
+      "word": "Three",
+      "start": 59.632,
+      "end": 59.8025
+    },
+    {
+      "word": "thousand",
+      "start": 59.931,
+      "end": 60.101
+    },
+    {
+      "word": "plus",
+      "start": 60.357,
+      "end": 60.5278
+    },
+    {
+      "word": "four",
+      "start": 60.656,
+      "end": 60.7838
+    },
+    {
+      "word": "thousand",
+      "start": 60.869,
+      "end": 61.0825
+    },
+    {
+      "word": "costs",
+      "start": 61.381,
+      "end": 61.765
+    },
+    {
+      "word": "seven",
+      "start": 61.85,
+      "end": 61.9358
+    },
+    {
+      "word": "thousand",
+      "start": 62.064,
+      "end": 62.234
+    },
+    {
+      "word": "rupiah.",
+      "start": 62.448,
+      "end": 62.981
+    },
+    {
+      "word": "Pay",
+      "start": 63.13,
+      "end": 63.301
+    },
+    {
+      "word": "ten",
+      "start": 63.344,
+      "end": 63.514
+    },
+    {
+      "word": "thousand.",
+      "start": 63.557,
+      "end": 64.09
+    },
+    {
+      "word": "How",
+      "start": 64.41,
+      "end": 64.538
+    },
+    {
+      "word": "much",
+      "start": 64.581,
+      "end": 64.709
+    },
+    {
+      "word": "change?",
+      "start": 64.794,
+      "end": 65.413
+    },
+    {
+      "word": "Three",
+      "start": 65.819,
+      "end": 66.0318
+    },
+    {
+      "word": "thousand:",
+      "start": 66.117,
+      "end": 66.629
+    },
+    {
+      "word": "subtract",
+      "start": 66.928,
+      "end": 67.3118
+    },
+    {
+      "word": "the",
+      "start": 67.397,
+      "end": 67.4825
+    },
+    {
+      "word": "cost",
+      "start": 67.525,
+      "end": 67.6958
+    },
+    {
+      "word": "from",
+      "start": 67.824,
+      "end": 67.909
+    },
+    {
+      "word": "your",
+      "start": 67.952,
+      "end": 68.037
+    },
+    {
+      "word": "payment.",
+      "start": 68.08,
+      "end": 68.613
+    },
+    {
+      "word": "Read,",
+      "start": 68.805,
+      "end": 69.296
+    },
+    {
+      "word": "choose",
+      "start": 69.531,
+      "end": 69.7438
+    },
+    {
+      "word": "your",
+      "start": 69.787,
+      "end": 69.8718
+    },
+    {
+      "word": "method,",
+      "start": 69.915,
+      "end": 70.213
+    },
+    {
+      "word": "and",
+      "start": 70.341,
+      "end": 70.469
+    },
+    {
+      "word": "check",
+      "start": 70.512,
+      "end": 70.683
+    },
+    {
+      "word": "your",
+      "start": 70.768,
+      "end": 70.853
+    },
+    {
+      "word": "answer.",
+      "start": 70.896,
+      "end": 71.344
+    },
+    {
+      "word": "Try",
+      "start": 71.621,
+      "end": 71.8345
+    },
+    {
+      "word": "the",
+      "start": 71.877,
+      "end": 71.9625
+    },
+    {
+      "word": "Unit",
+      "start": 72.005,
+      "end": 72.133
+    },
+    {
+      "word": "One",
+      "start": 72.261,
+      "end": 72.389
+    },
+    {
+      "word": "quizzes!",
+      "start": 72.432,
+      "end": 73.00675736961452
+    },
+    {
+      "word": "<end>",
+      "start": 73.24734693877551,
+      "end": 73.24734693877551
+    }
+  ],
+  "engine": "orca"
+}

@@ -1,0 +1,98 @@
+export const chapters = [
+  {
+    caseId: 20, seconds: 110,
+    goal: 'Read a pictograph key worth two people per symbol, interpret half symbols, and combine or compare category values.',
+    accuracy: 'Use a hobbies survey: Music 6 children (3 full symbols), Art 9 (4 full plus 1 half), Games 7 (3 full plus 1 half). One full person symbol represents 2 children; half a symbol represents 1 child, never half a child.',
+    scenes: [
+      ['Draw a hobbies chart with rows for Music, Art, and Games. Keep the key visible at the top.', 'Key: 1 symbol = 2 children', 'This picture chart shows favorite hobbies. Before counting, read the key.'],
+      ['Draw one person symbol expanding into two child outlines. Draw half a symbol expanding into one child outline. Count three full symbols in Music.', 'Full symbol = 2\nHalf symbol = 1\nMusic = 6', 'One full symbol stands for two children. Half a symbol stands for one child. Three full symbols mean two, four, six children. Count the value of the symbols, not just the pictures.'],
+      ['Count four full and one half symbol in Art. Align the Music and Art rows, then write a difference and combined total.', 'Art = 9\n9 − 6 = 3\n9 + 6 = 15', 'Art has four full symbols and one half. That is eight plus one, or nine children. Art has three more than Music because nine minus six is three. Together, the two rows represent fifteen children.'],
+      ['Highlight Games, showing three full symbols and one half. Hold for four seconds, then count in twos and add one.', 'Games: 2 + 2 + 2 + 1 = 7', 'Try the Games row. It has three full symbols and one half. How many children? Six plus one equals seven children.'],
+      ['Circle the key, then the row, then the question words together and more.', 'Key → Count → Answer the question', 'Read the key first. Add for together; subtract to compare. Now use those clues in your quiz!'],
+    ],
+  },
+  {
+    caseId: 21, seconds: 110,
+    goal: 'Read vertical bars using a numbered scale and unlabeled intermediate gridlines, then add or compare values.',
+    accuracy: 'Example chart: museum visitors, Monday 8, Tuesday 14, Wednesday 20. Vertical axis begins at 0; labels are 0, 4, 8, 12, 16, 20; thin intermediate gridlines represent 2 visitors. Equal bar widths, equal scale intervals, no misleading perspective.',
+    scenes: [
+      ['Draw a museum sign, three vertical bars, and labeled axes. Do not write values above the bars yet.', 'Museum visitors', 'These bars show museum visitors. The scale tells us what each bar is worth.'],
+      ['Trace the vertical scale from zero in steps of four. Point to the thin halfway line between twelve and sixteen.', '12 → 14 → 16', 'Read the scale before reading the bars. The numbered lines go up by four. A thin line halfway between them adds two. The line between twelve and sixteen means fourteen.'],
+      ['Trace from Tuesday’s bar top horizontally to fourteen. Repeat for Monday and Wednesday, revealing values only after reading the scale. Add Monday and Tuesday.', 'Tue = 14\nMon = 8\nWed = 20\n8 + 14 = 22', 'Follow Tuesday’s bar across to the scale: fourteen visitors. Monday has eight and Wednesday has twenty. For Monday and Tuesday together, add eight and fourteen. That makes twenty-two visitors.'],
+      ['Highlight Monday and Tuesday. Hold for four seconds, then bracket the difference between their heights.', '14 − 8 = 6 more visitors', 'How many more visitors came on Tuesday than Monday? Read both bars, then subtract. Fourteen minus eight equals six more visitors.'],
+      ['Draw three check marks beside the scale, bar top, and operation.', 'Read scale → Trace bar → Calculate', 'Read the scale, trace the bar, and choose the operation the question needs. Your chart quiz is next!'],
+    ],
+  },
+  {
+    caseId: 22, seconds: 110,
+    goal: 'Read a line chart at a time point, distinguish height from growth, and compare changes over equal one-day intervals.',
+    accuracy: 'Use a new seedling dataset: days 1–4 at heights 2, 4, 9, 10 cm. Horizontal day intervals are equal. Vertical labels are 0, 2, 4, 6, 8, 10 cm, with 1-cm intermediate gridlines. The biggest one-day growth is 5 cm between days 2 and 3; tallest point is day 4.',
+    scenes: [
+      ['Draw a small plant beside a line chart with four measured dots and clearly labeled axes.', 'Height changes over time', 'Our seedling grows each day. A line chart helps us follow its changing height.'],
+      ['Trace from Day 3 upward to its dot, then left to the gridline halfway between eight and ten.', 'Day 3: 9 cm', 'Find the day along the bottom, move up to its dot, then across to the height scale. On day three, the height is nine centimeters. The thin lines help us read between labels.'],
+      ['Read Day 1 at two and Day 2 at four. Subtract to show growth. Then mark one-day increases of two, five, and one along the three segments.', 'Height ≠ Growth\n4 − 2 = 2 cm\nDaily growth: 2, 5, 1 cm', 'Height tells us how tall the plant is. Growth tells us how much taller it became. Subtract the earlier height from the later height. The biggest one-day growth is five centimeters, between days two and three, even though day four is tallest.'],
+      ['Highlight Day 1 and Day 3. Hold for four seconds, then draw a vertical difference bracket between two and nine.', '9 − 2 = 7 cm of growth', 'How much did the plant grow from day one to day three? Use the two heights. Nine minus two is seven centimeters of growth.'],
+      ['Underline the equal day spacing and the subtraction order.', 'Later height − Earlier height', 'Read each dot carefully. Compare growth across equal time intervals, and subtract to find the change. Try your quiz!'],
+    ],
+  },
+  {
+    caseId: 23, seconds: 105,
+    goal: 'Use a pictograph key of ten books per symbol and five per half symbol to read, combine, and compare quantities.',
+    accuracy: 'New library clubs: Maple 20 books (2 full icons), Oak 35 (3 full and 1 half), Pine 10 (1 full). All book icons must have the same size. A half symbol represents five whole books, not half a physical book.',
+    scenes: [
+      ['Draw a library chart with three club rows and a large book-symbol key.', 'Key: 1 book symbol = 10 books', 'This library chart uses pictures too. But its key gives each picture a different value.'],
+      ['Expand a full book icon into ten small tally marks and a half icon into five. Count the two full icons beside Maple.', 'Full icon = 10 books\nHalf icon = 5 books\nMaple = 20 books', 'One full book symbol represents ten books. Half a symbol represents five books. Two full symbols mean twenty books. Always read the key, even if the pictures look familiar.'],
+      ['Count Oak as ten, twenty, thirty, thirty-five. Align it with Maple and highlight the extra full and half symbol.', 'Oak = 35 books\n35 − 20 = 15\n35 + 20 = 55', 'Oak has three full symbols and one half, so it has thirty-five books. Compared with Maple, that is fifteen more books. If we combine both clubs, thirty-five plus twenty gives fifty-five books.'],
+      ['Highlight Oak and Pine, with their rows visible. Hold for four seconds, then combine their counts.', '35 + 10 = 45 books', 'How many books do Oak and Pine have together? Oak has thirty-five and Pine has ten. Together they have forty-five books.'],
+      ['Circle the full and half symbol values in the key.', 'Count in tens; add five for a half', 'Use the key to count each row. Then add or subtract as needed. Ready for your pictograph quiz?'],
+    ],
+  },
+  {
+    caseId: 24, seconds: 115,
+    goal: 'Interpret a pie chart as a whole collection, use equal eighths to find halves and quarters, and compare or combine slices.',
+    accuracy: 'New survey of 32 children: Art 16, Music 8, Dance 4, Drama 4. Draw exactly eight equal 45-degree wedges; category sectors occupy 4, 2, 1, 1 wedges. Use direct labels as well as colors. No perspective tilt or unequal eighths.',
+    scenes: [
+      ['Draw a circle with a title saying thirty-two children and a legend for four clubs.', 'One whole circle = 32 children', 'This circle shows how thirty-two children chose their clubs. Every slice belongs to the same whole.'],
+      ['Divide the circle into exactly eight equal wedges. Label one wedge as four children; shade four adjoining wedges for Art.', '32 ÷ 8 = 4\n1/2 of 32 = 16', 'The circle has eight equal parts. Thirty-two divided by eight means four children per part. Art covers four parts, which is half the circle. Four groups of four make sixteen children.'],
+      ['Shade two wedges for Music and one each for Dance and Drama. Count the wedges and compare Art with Music.', 'Music: 1/4 = 8 children\nDance: 1/8 = 4 children\n16 − 8 = 8', 'Music covers two parts, or one quarter: eight children. Dance covers one eighth: four children. Art has eight more children than Music because sixteen minus eight is eight. The slice size shows a share of the total.'],
+      ['Highlight the Dance and Drama wedges separately, then together. Hold for four seconds before showing the sum.', 'Dance + Drama: 4 + 4 = 8', 'How many children chose Dance or Drama altogether? Each slice has four children. Four plus four makes eight children, the same amount as one quarter of the circle.'],
+      ['Outline all eight wedges, then circle the total thirty-two again.', 'Whole total → Equal parts → Slice value', 'Start with the total, count equal parts, then find each slice’s value. Now try your pie-chart quiz!'],
+    ],
+  },
+  {
+    caseId: 25, seconds: 105,
+    goal: 'Use a dashboard filter to isolate the category named in a question before comparing horizontal bars and choosing an answer.',
+    accuracy: 'Use a new three-day fruit-and-bread example: Monday fruit 8 bread 10; Tuesday fruit 4 bread 16; Wednesday fruit 6 bread 10. All totals are 18, 20, 16, so Tuesday leads overall; fruit alone peaks on Monday. Keep a fixed 0–20 axis and read the active filter label. Filtering hides other categories without deleting records.',
+    scenes: [
+      ['Draw a simple dashboard with Filter chips All, Fruit, Bread and three horizontal day bars. The question asks which day sold most fruit.', 'Which day sold the most fruit?', 'A dashboard can show many kinds of data. We need the view that matches our question.'],
+      ['Start with All selected and totals eighteen, twenty, sixteen. Circle the word fruit in the question and move the drawn hand toward the Fruit chip.', 'Filter: All\nShowing all snacks', 'All shows fruit and bread together. Tuesday has the longest total bar, but our question asks only about fruit. A filter keeps just the category we want to inspect.'],
+      ['Tap Fruit. Animate the three bar lengths changing to eight, four, and six. Update the showing line, trace the scale, and select Monday.', 'Filter: Fruit\nShowing fruit\nMonday = 8', 'Choose Fruit, then check the showing label. Now the bars mean fruit sold on each day. Monday reaches eight and has the longest bar. Changing the view changed which day answered our question.'],
+      ['Keep Fruit active and ask for the fewest instead. Hold for four seconds, then outline Tuesday’s shortest bar and read four.', 'Fewest fruit: Tuesday, 4', 'With the fruit filter still active, which day sold the fewest? Tuesday has the shortest bar, reaching four. We used the same filter but answered a different question.'],
+      ['Show three compact cues beside the dashboard; no actual app controls are required in the video.', 'Read → Filter → Choose a bar', 'Match the filter to the question, check the view, then choose your bar. Try the dashboard quiz!'],
+    ],
+  },
+  {
+    caseId: 26, seconds: 110,
+    goal: 'Filter a dashboard to a book category, sort its horizontal bars from fewest to most, and identify the first category.',
+    accuracy: 'New classes 3F, 3G, 3H: comics 6, 3, 5 and stories 10, 17, 9. Overall totals 16, 20, 14. Filter Comics before sorting Fewest first. Correct comics order is 3G (3), 3H (5), 3F (6). Sort moves bars and labels together and never changes values.',
+    scenes: [
+      ['Draw a library dashboard with three class bars, a Filter card, and a Sort card.', 'Fewest comics first', 'Our library question asks for the class with the fewest comics. Two tools can help.'],
+      ['Show totals with All selected, then tap Comics. Bars redraw to six, three, and five on a fixed zero-to-twenty scale.', 'Filter: Comics\n3F: 6 | 3G: 3 | 3H: 5', 'First, filter to Comics so the bars answer the right question. Class three F has six comics, three G has three, and three H has five. We are comparing only comics now.'],
+      ['Tap Fewest first. Move each whole bar and its class label into ascending order, retaining its length and number.', 'Sort: Fewest first\n3G → 3H → 3F', 'Sort puts the bars in order. Fewest first moves the smallest value to the top. Three G comes first, then three H, then three F. Sorting changes the order, not how many books each class borrowed.'],
+      ['Keep Comics active and ask which class would come first with Most first. Hold for four seconds, then reorder descending.', 'Sort: Most first\n3F → 3H → 3G', 'What if we choose Most first instead? Which class would be on top? Three F, with six comics. The numbers stay the same; the order reverses.'],
+      ['Restore Fewest first, circle the active Comics filter, and point to the top bar.', 'Filter → Choose order → Read the top bar', 'Check the book type and sort direction. Then select the class the question asks for. Your quiz is next!'],
+    ],
+  },
+  {
+    caseId: 27, seconds: 120,
+    goal: 'Choose what each dashboard bar represents, filter to one team, and switch between chart and table views to identify the event with most points.',
+    accuracy: 'Use a new event dataset: Orange team Relay 6, Skipping 11, Throwing 8; Purple team Relay 18, Skipping 3, Throwing 7. Team totals are 25 and 28; event totals are 24, 14, 15. For Orange, Skipping wins with 11. Changing Bars show resets the filter in the app, so set Bars show before Filter. Table and chart must contain identical values.',
+    scenes: [
+      ['Draw a sports dashboard with Bars show, Filter, Sort, and View cards. Start with bars for Orange and Purple team totals.', 'Which event was best for Orange?', 'This question asks which event gave Orange team the most points. Let us build the right view.'],
+      ['Underline event in the question. Select Event under Bars show; show All teams after the reset. Then select Orange under Filter.', 'Bars show: Event\nFilter: Orange', 'The answer must be an event, so set Bars show to Event. Changing that setting resets the filter. Next, filter to Orange. Now each bar represents one event for Orange team only.'],
+      ['Draw horizontal Relay, Skipping, Throwing bars at six, eleven, and eight on a zero-to-twelve scale. Switch View to Table, preserving the same values and row names.', 'Relay 6\nSkipping 11\nThrowing 8', 'Read the bars against the scale. Relay has six points, Skipping has eleven, and Throwing has eight. Switch to Table to see the exact same numbers in rows. Skipping is Orange team’s highest score.'],
+      ['Keep the Orange table visible and ask which event scored eight. Hold for four seconds, select Throwing, then switch back to Chart with the same data.', 'Throwing: 8 points', 'Which Orange event scored eight points? Look at the table. It is Throwing. When we return to the chart, the Throwing bar still represents eight. Changing the view does not change the data.'],
+      ['Circle Event, Orange, and the chart-table pair. Leave Sort unmodified because it is optional for this question.', 'Bars show → Filter → Read → Select', 'Choose what the bars mean, set the filter, and use the view that helps you read. Now try your final dashboard quiz!'],
+    ],
+  },
+];

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "scene-01-1",
+    "scene": 1,
+    "text": "Good detectives explain their thinking. Let us investigate five useful strategies.",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  },
+  {
+    "id": "scene-02-1",
+    "scene": 2,
+    "text": "Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  },
+  {
+    "id": "scene-03-1",
+    "scene": 3,
+    "text": "For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  },
+  {
+    "id": "scene-04-1",
+    "scene": 4,
+    "text": "A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  },
+  {
+    "id": "scene-05-1",
+    "scene": 5,
+    "text": "Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  },
+  {
+    "id": "scene-06-1",
+    "scene": 6,
+    "text": "Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed?",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 4
+  },
+  {
+    "id": "scene-06-2",
+    "scene": 6,
+    "text": "The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  },
+  {
+    "id": "scene-07-1",
+    "scene": 7,
+    "text": "Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!",
+    "voice": "en-US-AndrewNeural",
+    "settings": {
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "volume": "+0%"
+    },
+    "pause_after_seconds": 0
+  }
+]

@@ -1,0 +1,1127 @@
+{
+  "model": "faster-whisper base.en CPU int8",
+  "scope": "Final continuous WAV, all spoken material",
+  "recognized_text": "Our toolkit measures length, mass, and time, and helps us investigate shapes. 1 meter is 100 centimeters. Half a meter is 50 centimeters. Before adding lengths, use the same unit. 2 meters and 30 centimeters becomes 200 plus 30. 230 centimeters. 1 kilogram is 1000 grams. Half a kilogram is 500 grams. Change kilograms into grams before combining them. 1 kilogram plus 250 grams makes 1,250 grams. An hour has 60 minutes. Count forward to find a lapse time. From 9.40 to 10 o'clock is 20 minutes. Continue 5 more minutes to 10.05. 20 plus 5 makes 25 minutes. A square has 4 equal sides and right angles, even when turned. A right angle is a square corner. This triangle has 3 equal sides and no right angle. Does Does it fit either rule? Match your units, count time carefully, and check shape properties instead of guessing from appearance. Take your time and try the Unit 3 quizzes.",
+  "normalized_exact_match": false,
+  "differences": [
+    {
+      "type": "replace",
+      "expected": [
+        "elapsed"
+      ],
+      "recognized": [
+        "a",
+        "lapse"
+      ]
+    },
+    {
+      "type": "insert",
+      "expected": [],
+      "recognized": [
+        "does"
+      ]
+    },
+    {
+      "type": "delete",
+      "expected": [
+        "neither"
+      ],
+      "recognized": []
+    }
+  ],
+  "normalization": "Numbers and clock notation expanded; kg expanded; punctuation and case ignored.",
+  "listening_review": "Not performed.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.0,
+      "text": " Our toolkit measures length, mass, and time, and helps us investigate shapes.",
+      "words": [
+        {
+          "word": " Our",
+          "start": 0.0,
+          "end": 0.28,
+          "probability": 0.7249665856361389
+        },
+        {
+          "word": " toolkit",
+          "start": 0.28,
+          "end": 0.72,
+          "probability": 0.8272380232810974
+        },
+        {
+          "word": " measures",
+          "start": 0.72,
+          "end": 0.96,
+          "probability": 0.9874384999275208
+        },
+        {
+          "word": " length,",
+          "start": 0.96,
+          "end": 1.42,
+          "probability": 0.9632182717323303
+        },
+        {
+          "word": " mass,",
+          "start": 1.8,
+          "end": 2.14,
+          "probability": 0.9919735193252563
+        },
+        {
+          "word": " and",
+          "start": 2.68,
+          "end": 2.74,
+          "probability": 0.9947899580001831
+        },
+        {
+          "word": " time,",
+          "start": 2.74,
+          "end": 3.06,
+          "probability": 0.9982352256774902
+        },
+        {
+          "word": " and",
+          "start": 3.46,
+          "end": 3.7,
+          "probability": 0.9974992871284485
+        },
+        {
+          "word": " helps",
+          "start": 3.7,
+          "end": 3.86,
+          "probability": 0.9928105473518372
+        },
+        {
+          "word": " us",
+          "start": 3.86,
+          "end": 4.06,
+          "probability": 0.9976196885108948
+        },
+        {
+          "word": " investigate",
+          "start": 4.06,
+          "end": 4.52,
+          "probability": 0.9760221838951111
+        },
+        {
+          "word": " shapes.",
+          "start": 4.52,
+          "end": 5.0,
+          "probability": 0.9983239769935608
+        }
+      ]
+    },
+    {
+      "start": 5.98,
+      "end": 7.48,
+      "text": " 1 meter is 100 centimeters.",
+      "words": [
+        {
+          "word": " 1",
+          "start": 5.98,
+          "end": 6.14,
+          "probability": 0.5764870047569275
+        },
+        {
+          "word": " meter",
+          "start": 6.14,
+          "end": 6.36,
+          "probability": 0.6097964644432068
+        },
+        {
+          "word": " is",
+          "start": 6.36,
+          "end": 6.74,
+          "probability": 0.9967581629753113
+        },
+        {
+          "word": " 100",
+          "start": 6.74,
+          "end": 6.94,
+          "probability": 0.9915213584899902
+        },
+        {
+          "word": " centimeters.",
+          "start": 6.94,
+          "end": 7.48,
+          "probability": 0.6165719032287598
+        }
+      ]
+    },
+    {
+      "start": 8.22,
+      "end": 9.84,
+      "text": " Half a meter is 50 centimeters.",
+      "words": [
+        {
+          "word": " Half",
+          "start": 8.22,
+          "end": 8.36,
+          "probability": 0.4772289991378784
+        },
+        {
+          "word": " a",
+          "start": 8.36,
+          "end": 8.52,
+          "probability": 0.9906098246574402
+        },
+        {
+          "word": " meter",
+          "start": 8.52,
+          "end": 8.76,
+          "probability": 0.9891220927238464
+        },
+        {
+          "word": " is",
+          "start": 8.76,
+          "end": 9.08,
+          "probability": 0.9987056255340576
+        },
+        {
+          "word": " 50",
+          "start": 9.08,
+          "end": 9.36,
+          "probability": 0.994958221912384
+        },
+        {
+          "word": " centimeters.",
+          "start": 9.36,
+          "end": 9.84,
+          "probability": 0.9852762818336487
+        }
+      ]
+    },
+    {
+      "start": 10.6,
+      "end": 12.92,
+      "text": " Before adding lengths, use the same unit.",
+      "words": [
+        {
+          "word": " Before",
+          "start": 10.6,
+          "end": 10.72,
+          "probability": 0.9941986799240112
+        },
+        {
+          "word": " adding",
+          "start": 10.72,
+          "end": 11.18,
+          "probability": 0.9991772770881653
+        },
+        {
+          "word": " lengths,",
+          "start": 11.18,
+          "end": 11.44,
+          "probability": 0.9901604652404785
+        },
+        {
+          "word": " use",
+          "start": 11.98,
+          "end": 12.24,
+          "probability": 0.9957817792892456
+        },
+        {
+          "word": " the",
+          "start": 12.24,
+          "end": 12.44,
+          "probability": 0.9979596138000488
+        },
+        {
+          "word": " same",
+          "start": 12.44,
+          "end": 12.66,
+          "probability": 0.998540997505188
+        },
+        {
+          "word": " unit.",
+          "start": 12.66,
+          "end": 12.92,
+          "probability": 0.9993095397949219
+        }
+      ]
+    },
+    {
+      "start": 13.52,
+      "end": 17.06,
+      "text": " 2 meters and 30 centimeters becomes 200 plus 30.",
+      "words": [
+        {
+          "word": " 2",
+          "start": 13.52,
+          "end": 13.66,
+          "probability": 0.9284284114837646
+        },
+        {
+          "word": " meters",
+          "start": 13.66,
+          "end": 13.98,
+          "probability": 0.9489219784736633
+        },
+        {
+          "word": " and",
+          "start": 13.98,
+          "end": 14.4,
+          "probability": 0.9758604764938354
+        },
+        {
+          "word": " 30",
+          "start": 14.4,
+          "end": 14.66,
+          "probability": 0.997911274433136
+        },
+        {
+          "word": " centimeters",
+          "start": 14.66,
+          "end": 15.18,
+          "probability": 0.9860225915908813
+        },
+        {
+          "word": " becomes",
+          "start": 15.18,
+          "end": 15.7,
+          "probability": 0.9789324402809143
+        },
+        {
+          "word": " 200",
+          "start": 15.7,
+          "end": 16.14,
+          "probability": 0.9970360994338989
+        },
+        {
+          "word": " plus",
+          "start": 16.14,
+          "end": 16.72,
+          "probability": 0.6739760041236877
+        },
+        {
+          "word": " 30.",
+          "start": 16.72,
+          "end": 17.06,
+          "probability": 0.9960013031959534
+        }
+      ]
+    },
+    {
+      "start": 17.96,
+      "end": 18.52,
+      "text": " 230 centimeters.",
+      "words": [
+        {
+          "word": " 230",
+          "start": 17.96,
+          "end": 17.96,
+          "probability": 0.9730125665664673
+        },
+        {
+          "word": " centimeters.",
+          "start": 17.96,
+          "end": 18.52,
+          "probability": 0.9917288422584534
+        }
+      ]
+    },
+    {
+      "start": 19.7,
+      "end": 21.7,
+      "text": " 1 kilogram is 1000 grams.",
+      "words": [
+        {
+          "word": " 1",
+          "start": 19.7,
+          "end": 19.9,
+          "probability": 0.8749920129776001
+        },
+        {
+          "word": " kilogram",
+          "start": 19.9,
+          "end": 20.34,
+          "probability": 0.8832170367240906
+        },
+        {
+          "word": " is",
+          "start": 20.34,
+          "end": 20.76,
+          "probability": 0.9985217452049255
+        },
+        {
+          "word": " 1000",
+          "start": 20.76,
+          "end": 21.14,
+          "probability": 0.6529056429862976
+        },
+        {
+          "word": " grams.",
+          "start": 21.14,
+          "end": 21.7,
+          "probability": 0.9729962944984436
+        }
+      ]
+    },
+    {
+      "start": 22.56,
+      "end": 24.48,
+      "text": " Half a kilogram is 500 grams.",
+      "words": [
+        {
+          "word": " Half",
+          "start": 22.56,
+          "end": 22.62,
+          "probability": 0.8877379894256592
+        },
+        {
+          "word": " a",
+          "start": 22.62,
+          "end": 22.76,
+          "probability": 0.9924445748329163
+        },
+        {
+          "word": " kilogram",
+          "start": 22.76,
+          "end": 23.18,
+          "probability": 0.9976341724395752
+        },
+        {
+          "word": " is",
+          "start": 23.18,
+          "end": 23.48,
+          "probability": 0.9989462494850159
+        },
+        {
+          "word": " 500",
+          "start": 23.48,
+          "end": 23.86,
+          "probability": 0.9957232475280762
+        },
+        {
+          "word": " grams.",
+          "start": 23.86,
+          "end": 24.48,
+          "probability": 0.9965856075286865
+        }
+      ]
+    },
+    {
+      "start": 25.14,
+      "end": 28.1,
+      "text": " Change kilograms into grams before combining them.",
+      "words": [
+        {
+          "word": " Change",
+          "start": 25.14,
+          "end": 25.34,
+          "probability": 0.9935668110847473
+        },
+        {
+          "word": " kilograms",
+          "start": 25.34,
+          "end": 25.76,
+          "probability": 0.9408581256866455
+        },
+        {
+          "word": " into",
+          "start": 25.76,
+          "end": 26.4,
+          "probability": 0.9981422424316406
+        },
+        {
+          "word": " grams",
+          "start": 26.4,
+          "end": 26.92,
+          "probability": 0.9941192865371704
+        },
+        {
+          "word": " before",
+          "start": 26.92,
+          "end": 27.4,
+          "probability": 0.9927010536193848
+        },
+        {
+          "word": " combining",
+          "start": 27.4,
+          "end": 27.78,
+          "probability": 0.9914067983627319
+        },
+        {
+          "word": " them.",
+          "start": 27.78,
+          "end": 28.1,
+          "probability": 0.9993867874145508
+        }
+      ]
+    },
+    {
+      "start": 28.1,
+      "end": 37.22,
+      "text": " 1 kilogram plus 250 grams makes 1,250 grams. An hour has 60 minutes. Count forward to find",
+      "words": [
+        {
+          "word": " 1",
+          "start": 28.1,
+          "end": 28.74,
+          "probability": 0.28393489122390747
+        },
+        {
+          "word": " kilogram",
+          "start": 28.74,
+          "end": 29.16,
+          "probability": 0.6327574700117111
+        },
+        {
+          "word": " plus",
+          "start": 29.16,
+          "end": 29.56,
+          "probability": 0.8207024931907654
+        },
+        {
+          "word": " 250",
+          "start": 29.56,
+          "end": 30.06,
+          "probability": 0.9584523439407349
+        },
+        {
+          "word": " grams",
+          "start": 30.06,
+          "end": 30.98,
+          "probability": 0.9752081632614136
+        },
+        {
+          "word": " makes",
+          "start": 30.98,
+          "end": 31.52,
+          "probability": 0.956408679485321
+        },
+        {
+          "word": " 1",
+          "start": 31.52,
+          "end": 31.9,
+          "probability": 0.8738677501678467
+        },
+        {
+          "word": ",250",
+          "start": 31.9,
+          "end": 32.64,
+          "probability": 0.9871315956115723
+        },
+        {
+          "word": " grams.",
+          "start": 32.64,
+          "end": 33.54,
+          "probability": 0.9948129653930664
+        },
+        {
+          "word": " An",
+          "start": 34.4,
+          "end": 34.66,
+          "probability": 0.9695315361022949
+        },
+        {
+          "word": " hour",
+          "start": 34.66,
+          "end": 34.86,
+          "probability": 0.9987226128578186
+        },
+        {
+          "word": " has",
+          "start": 34.86,
+          "end": 35.1,
+          "probability": 0.995215654373169
+        },
+        {
+          "word": " 60",
+          "start": 35.1,
+          "end": 35.36,
+          "probability": 0.9737161993980408
+        },
+        {
+          "word": " minutes.",
+          "start": 35.36,
+          "end": 35.7,
+          "probability": 0.9953382015228271
+        },
+        {
+          "word": " Count",
+          "start": 36.28,
+          "end": 36.5,
+          "probability": 0.9735345840454102
+        },
+        {
+          "word": " forward",
+          "start": 36.5,
+          "end": 36.84,
+          "probability": 0.9856017231941223
+        },
+        {
+          "word": " to",
+          "start": 36.84,
+          "end": 37.0,
+          "probability": 0.9883963465690613
+        },
+        {
+          "word": " find",
+          "start": 37.0,
+          "end": 37.22,
+          "probability": 0.9942519664764404
+        }
+      ]
+    },
+    {
+      "start": 37.22,
+      "end": 43.36,
+      "text": " a lapse time. From 9.40 to 10 o'clock is 20 minutes. Continue 5 more minutes to 10.05.",
+      "words": [
+        {
+          "word": " a",
+          "start": 37.22,
+          "end": 37.34,
+          "probability": 0.969471275806427
+        },
+        {
+          "word": " lapse",
+          "start": 37.34,
+          "end": 37.56,
+          "probability": 0.5383595824241638
+        },
+        {
+          "word": " time.",
+          "start": 37.56,
+          "end": 37.86,
+          "probability": 0.9943885207176208
+        },
+        {
+          "word": " From",
+          "start": 38.46,
+          "end": 38.58,
+          "probability": 0.9933249354362488
+        },
+        {
+          "word": " 9",
+          "start": 38.58,
+          "end": 38.82,
+          "probability": 0.9288392066955566
+        },
+        {
+          "word": ".40",
+          "start": 38.82,
+          "end": 39.14,
+          "probability": 0.6285389810800552
+        },
+        {
+          "word": " to",
+          "start": 39.14,
+          "end": 39.26,
+          "probability": 0.9496420621871948
+        },
+        {
+          "word": " 10",
+          "start": 39.26,
+          "end": 39.46,
+          "probability": 0.9949746131896973
+        },
+        {
+          "word": " o",
+          "start": 39.46,
+          "end": 39.56,
+          "probability": 0.8627516031265259
+        },
+        {
+          "word": "'clock",
+          "start": 39.56,
+          "end": 39.82,
+          "probability": 0.9871487319469452
+        },
+        {
+          "word": " is",
+          "start": 39.82,
+          "end": 40.14,
+          "probability": 0.9774335026741028
+        },
+        {
+          "word": " 20",
+          "start": 40.14,
+          "end": 40.38,
+          "probability": 0.9928077459335327
+        },
+        {
+          "word": " minutes.",
+          "start": 40.38,
+          "end": 40.68,
+          "probability": 0.9965860843658447
+        },
+        {
+          "word": " Continue",
+          "start": 41.34,
+          "end": 41.5,
+          "probability": 0.993513822555542
+        },
+        {
+          "word": " 5",
+          "start": 41.5,
+          "end": 41.98,
+          "probability": 0.5725525617599487
+        },
+        {
+          "word": " more",
+          "start": 41.98,
+          "end": 42.2,
+          "probability": 0.9716254472732544
+        },
+        {
+          "word": " minutes",
+          "start": 42.2,
+          "end": 42.46,
+          "probability": 0.9971510767936707
+        },
+        {
+          "word": " to",
+          "start": 42.46,
+          "end": 42.9,
+          "probability": 0.9824625253677368
+        },
+        {
+          "word": " 10",
+          "start": 42.9,
+          "end": 43.06,
+          "probability": 0.9861630797386169
+        },
+        {
+          "word": ".05.",
+          "start": 43.06,
+          "end": 43.36,
+          "probability": 0.9698980450630188
+        }
+      ]
+    },
+    {
+      "start": 44.04,
+      "end": 50.9,
+      "text": " 20 plus 5 makes 25 minutes. A square has 4 equal sides and right angles, even when turned.",
+      "words": [
+        {
+          "word": " 20",
+          "start": 44.04,
+          "end": 44.2,
+          "probability": 0.9913455247879028
+        },
+        {
+          "word": " plus",
+          "start": 44.2,
+          "end": 44.48,
+          "probability": 0.917782187461853
+        },
+        {
+          "word": " 5",
+          "start": 44.48,
+          "end": 44.92,
+          "probability": 0.9614861607551575
+        },
+        {
+          "word": " makes",
+          "start": 44.92,
+          "end": 45.32,
+          "probability": 0.9847570061683655
+        },
+        {
+          "word": " 25",
+          "start": 45.32,
+          "end": 45.76,
+          "probability": 0.996209979057312
+        },
+        {
+          "word": " minutes.",
+          "start": 45.76,
+          "end": 46.28,
+          "probability": 0.9974126219749451
+        },
+        {
+          "word": " A",
+          "start": 47.32,
+          "end": 47.4,
+          "probability": 0.9845179915428162
+        },
+        {
+          "word": " square",
+          "start": 47.4,
+          "end": 47.56,
+          "probability": 0.9861397743225098
+        },
+        {
+          "word": " has",
+          "start": 47.56,
+          "end": 47.92,
+          "probability": 0.9983363747596741
+        },
+        {
+          "word": " 4",
+          "start": 47.92,
+          "end": 48.24,
+          "probability": 0.5826298594474792
+        },
+        {
+          "word": " equal",
+          "start": 48.24,
+          "end": 48.56,
+          "probability": 0.9898017048835754
+        },
+        {
+          "word": " sides",
+          "start": 48.56,
+          "end": 49.02,
+          "probability": 0.9974844455718994
+        },
+        {
+          "word": " and",
+          "start": 49.02,
+          "end": 49.26,
+          "probability": 0.9812700748443604
+        },
+        {
+          "word": " right",
+          "start": 49.26,
+          "end": 49.42,
+          "probability": 0.994288444519043
+        },
+        {
+          "word": " angles,",
+          "start": 49.42,
+          "end": 49.8,
+          "probability": 0.9965429902076721
+        },
+        {
+          "word": " even",
+          "start": 50.18,
+          "end": 50.5,
+          "probability": 0.9976168870925903
+        },
+        {
+          "word": " when",
+          "start": 50.5,
+          "end": 50.66,
+          "probability": 0.9972841739654541
+        },
+        {
+          "word": " turned.",
+          "start": 50.66,
+          "end": 50.9,
+          "probability": 0.9893103837966919
+        }
+      ]
+    },
+    {
+      "start": 51.52,
+      "end": 57.38,
+      "text": " A right angle is a square corner. This triangle has 3 equal sides and no right angle. Does",
+      "words": [
+        {
+          "word": " A",
+          "start": 51.52,
+          "end": 51.58,
+          "probability": 0.9960963129997253
+        },
+        {
+          "word": " right",
+          "start": 51.58,
+          "end": 51.74,
+          "probability": 0.9985682964324951
+        },
+        {
+          "word": " angle",
+          "start": 51.74,
+          "end": 52.12,
+          "probability": 0.9965922236442566
+        },
+        {
+          "word": " is",
+          "start": 52.12,
+          "end": 52.38,
+          "probability": 0.9974368810653687
+        },
+        {
+          "word": " a",
+          "start": 52.38,
+          "end": 52.5,
+          "probability": 0.9896743893623352
+        },
+        {
+          "word": " square",
+          "start": 52.5,
+          "end": 52.64,
+          "probability": 0.996705949306488
+        },
+        {
+          "word": " corner.",
+          "start": 52.64,
+          "end": 52.98,
+          "probability": 0.9926543235778809
+        },
+        {
+          "word": " This",
+          "start": 53.6,
+          "end": 53.74,
+          "probability": 0.9938568472862244
+        },
+        {
+          "word": " triangle",
+          "start": 53.74,
+          "end": 54.04,
+          "probability": 0.9987422823905945
+        },
+        {
+          "word": " has",
+          "start": 54.04,
+          "end": 54.44,
+          "probability": 0.9978353381156921
+        },
+        {
+          "word": " 3",
+          "start": 54.44,
+          "end": 54.74,
+          "probability": 0.8401963710784912
+        },
+        {
+          "word": " equal",
+          "start": 54.74,
+          "end": 55.04,
+          "probability": 0.9976735711097717
+        },
+        {
+          "word": " sides",
+          "start": 55.04,
+          "end": 55.48,
+          "probability": 0.998082160949707
+        },
+        {
+          "word": " and",
+          "start": 55.48,
+          "end": 55.98,
+          "probability": 0.9543259143829346
+        },
+        {
+          "word": " no",
+          "start": 55.98,
+          "end": 56.18,
+          "probability": 0.9903519749641418
+        },
+        {
+          "word": " right",
+          "start": 56.18,
+          "end": 56.42,
+          "probability": 0.9979584217071533
+        },
+        {
+          "word": " angle.",
+          "start": 56.42,
+          "end": 56.78,
+          "probability": 0.9954661130905151
+        },
+        {
+          "word": " Does",
+          "start": 57.2,
+          "end": 57.38,
+          "probability": 0.9948588609695435
+        }
+      ]
+    },
+    {
+      "start": 57.38,
+      "end": 58.12,
+      "text": " Does it fit either rule?",
+      "words": [
+        {
+          "word": " Does",
+          "start": 57.38,
+          "end": 57.38,
+          "probability": 0.634655773639679
+        },
+        {
+          "word": " it",
+          "start": 57.38,
+          "end": 57.48,
+          "probability": 0.9914553761482239
+        },
+        {
+          "word": " fit",
+          "start": 57.48,
+          "end": 57.68,
+          "probability": 0.9881781935691833
+        },
+        {
+          "word": " either",
+          "start": 57.68,
+          "end": 57.8,
+          "probability": 0.9844326972961426
+        },
+        {
+          "word": " rule?",
+          "start": 57.8,
+          "end": 58.12,
+          "probability": 0.9660781025886536
+        }
+      ]
+    },
+    {
+      "start": 63.32,
+      "end": 67.7,
+      "text": " Match your units, count time carefully, and check shape properties instead of guessing",
+      "words": [
+        {
+          "word": " Match",
+          "start": 63.32,
+          "end": 63.64,
+          "probability": 0.7914107441902161
+        },
+        {
+          "word": " your",
+          "start": 63.64,
+          "end": 63.8,
+          "probability": 0.9906569719314575
+        },
+        {
+          "word": " units,",
+          "start": 63.8,
+          "end": 64.04,
+          "probability": 0.9728376865386963
+        },
+        {
+          "word": " count",
+          "start": 64.56,
+          "end": 64.78,
+          "probability": 0.984804630279541
+        },
+        {
+          "word": " time",
+          "start": 64.78,
+          "end": 65.02,
+          "probability": 0.9904868006706238
+        },
+        {
+          "word": " carefully,",
+          "start": 65.02,
+          "end": 65.42,
+          "probability": 0.9969713687896729
+        },
+        {
+          "word": " and",
+          "start": 65.88,
+          "end": 66.02,
+          "probability": 0.9973382353782654
+        },
+        {
+          "word": " check",
+          "start": 66.02,
+          "end": 66.16,
+          "probability": 0.9961013793945312
+        },
+        {
+          "word": " shape",
+          "start": 66.16,
+          "end": 66.4,
+          "probability": 0.8748019337654114
+        },
+        {
+          "word": " properties",
+          "start": 66.4,
+          "end": 66.8,
+          "probability": 0.998248815536499
+        },
+        {
+          "word": " instead",
+          "start": 66.8,
+          "end": 67.22,
+          "probability": 0.9923163652420044
+        },
+        {
+          "word": " of",
+          "start": 67.22,
+          "end": 67.52,
+          "probability": 0.9991808533668518
+        },
+        {
+          "word": " guessing",
+          "start": 67.52,
+          "end": 67.7,
+          "probability": 0.991550087928772
+        }
+      ]
+    },
+    {
+      "start": 67.7,
+      "end": 68.3,
+      "text": " from appearance.",
+      "words": [
+        {
+          "word": " from",
+          "start": 67.7,
+          "end": 68.06,
+          "probability": 0.9952812790870667
+        },
+        {
+          "word": " appearance.",
+          "start": 68.06,
+          "end": 68.3,
+          "probability": 0.9867782592773438
+        }
+      ]
+    },
+    {
+      "start": 69.2,
+      "end": 71.56,
+      "text": " Take your time and try the Unit 3 quizzes.",
+      "words": [
+        {
+          "word": " Take",
+          "start": 69.2,
+          "end": 69.26,
+          "probability": 0.99290531873703
+        },
+        {
+          "word": " your",
+          "start": 69.26,
+          "end": 69.42,
+          "probability": 0.9937083721160889
+        },
+        {
+          "word": " time",
+          "start": 69.42,
+          "end": 69.7,
+          "probability": 0.9993780851364136
+        },
+        {
+          "word": " and",
+          "start": 69.7,
+          "end": 70.24,
+          "probability": 0.5911649465560913
+        },
+        {
+          "word": " try",
+          "start": 70.24,
+          "end": 70.42,
+          "probability": 0.9972781538963318
+        },
+        {
+          "word": " the",
+          "start": 70.42,
+          "end": 70.58,
+          "probability": 0.9821934700012207
+        },
+        {
+          "word": " Unit",
+          "start": 70.58,
+          "end": 70.76,
+          "probability": 0.5691898465156555
+        },
+        {
+          "word": " 3",
+          "start": 70.76,
+          "end": 71.12,
+          "probability": 0.9390680193901062
+        },
+        {
+          "word": " quizzes.",
+          "start": 71.12,
+          "end": 71.56,
+          "probability": 0.9174743592739105
+        }
+      ]
+    }
+  ]
+}

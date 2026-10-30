@@ -1,0 +1,211 @@
+{
+  "provider": "Microsoft Edge online neural speech",
+  "tool": "edge-tts",
+  "voice": "en-US-AndrewNeural",
+  "rate": "+0%",
+  "pitch": "+0Hz",
+  "volume": "+0%",
+  "playback_speed": 1.0,
+  "time_stretch": false,
+  "fixed_words_per_minute": null,
+  "duration_seconds": 120,
+  "continuous_duration_seconds": 81.07845833333333,
+  "thinking_pause": {
+    "start": 88.8,
+    "end": 92.8,
+    "duration_seconds": 4,
+    "verified_zero_pcm_samples": 192000
+  },
+  "continuous_thinking_pause": {
+    "start": 60.99335416666667,
+    "end": 64.99335416666668,
+    "duration_seconds": 4
+  },
+  "constant_gain_db": 0.73,
+  "integrated_loudness_lufs": -19.47,
+  "true_peak_dbtp": -1.5,
+  "audition_line_occurrences": 1,
+  "source_video": "C:\\Users\\Asus\\Downloads\\Math It Unit 2 Video.mp4",
+  "source_video_sha256": "ca26351fdc5b788479e337105972ff893ab2289e8e84c77841f76c557fe14dd9",
+  "files": {
+    "timed_wav": "Unit 2 - Thoughtful Detective - Natural - 120s.wav",
+    "timed_mp3": "Unit 2 - Thoughtful Detective - Natural - 120s.mp3",
+    "continuous_wav": "Unit 2 - Thoughtful Detective - Natural - Continuous.wav",
+    "continuous_mp3": "Unit 2 - Thoughtful Detective - Natural - Continuous.mp3"
+  },
+  "scene_windows": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 6
+    },
+    {
+      "scene": 2,
+      "start": 6,
+      "end": 26
+    },
+    {
+      "scene": 3,
+      "start": 26,
+      "end": 44
+    },
+    {
+      "scene": 4,
+      "start": 44,
+      "end": 62
+    },
+    {
+      "scene": 5,
+      "start": 62,
+      "end": 82
+    },
+    {
+      "scene": 6,
+      "start": 82,
+      "end": 106
+    },
+    {
+      "scene": 7,
+      "start": 106,
+      "end": 120
+    }
+  ],
+  "source_to_final": [
+    {
+      "id": "scene-01-1",
+      "scene": 1,
+      "text": "Good detectives explain their thinking. Let us investigate five useful strategies.",
+      "original_duration_seconds": 5.064,
+      "source_in": 0.12791666666666668,
+      "source_out": 4.7664583333333335,
+      "spoken_clip_seconds": 4.638541666666667,
+      "playback_speed": 1.0,
+      "source_sha256": "0b94f172b93045d1c28b0356c0a9ce98192d2e465ce23fd33238c2dff2dafedc",
+      "timed_start_seconds": 0.2,
+      "timed_end_seconds": 4.838541666666667,
+      "continuous_start_seconds": 0.0,
+      "continuous_end_seconds": 4.638541666666667
+    },
+    {
+      "id": "scene-02-1",
+      "scene": 2,
+      "text": "Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.",
+      "original_duration_seconds": 13.2,
+      "source_in": 0.142125,
+      "source_out": 12.901083333333334,
+      "spoken_clip_seconds": 12.758958333333334,
+      "playback_speed": 1.0,
+      "source_sha256": "90b30791a3e2ac9613246d5731e28767b2a695f52e356461b22ddc90a75bdb0e",
+      "timed_start_seconds": 6.35,
+      "timed_end_seconds": 19.108958333333334,
+      "continuous_start_seconds": 5.388541666666667,
+      "continuous_end_seconds": 18.1475
+    },
+    {
+      "id": "scene-03-1",
+      "scene": 3,
+      "text": "For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.",
+      "original_duration_seconds": 11.088,
+      "source_in": 0.13302083333333334,
+      "source_out": 10.786166666666666,
+      "spoken_clip_seconds": 10.653145833333333,
+      "playback_speed": 1.0,
+      "source_sha256": "f92af42757d2f0a7b8907cbc698897c65dc66bf7d4377906f01e5a25c7c43b39",
+      "timed_start_seconds": 26.15,
+      "timed_end_seconds": 36.80314583333333,
+      "continuous_start_seconds": 18.8975,
+      "continuous_end_seconds": 29.550645833333334
+    },
+    {
+      "id": "scene-04-1",
+      "scene": 4,
+      "text": "A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.",
+      "original_duration_seconds": 11.76,
+      "source_in": 0.12679166666666666,
+      "source_out": 11.4595625,
+      "spoken_clip_seconds": 11.332770833333333,
+      "playback_speed": 1.0,
+      "source_sha256": "bcfa2cd0ec0282a24863d5c0e255ddf7d15f835297b27ec3f1b9b15f7c1831f4",
+      "timed_start_seconds": 44.2,
+      "timed_end_seconds": 55.53277083333333,
+      "continuous_start_seconds": 30.300645833333334,
+      "continuous_end_seconds": 41.63341666666667
+    },
+    {
+      "id": "scene-05-1",
+      "scene": 5,
+      "text": "Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.",
+      "original_duration_seconds": 13.104,
+      "source_in": 0.12879166666666667,
+      "source_out": 12.805875,
+      "spoken_clip_seconds": 12.677083333333334,
+      "playback_speed": 1.0,
+      "source_sha256": "ceb340cc76952f26667e2cc04c8a96572137bf05e869737eea6dcc0c24e418f6",
+      "timed_start_seconds": 62.25,
+      "timed_end_seconds": 74.92708333333333,
+      "continuous_start_seconds": 42.38341666666667,
+      "continuous_end_seconds": 55.0605
+    },
+    {
+      "id": "scene-06-1",
+      "scene": 6,
+      "text": "Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed?",
+      "original_duration_seconds": 5.616,
+      "source_in": 0.128,
+      "source_out": 5.310854166666667,
+      "spoken_clip_seconds": 5.182854166666667,
+      "playback_speed": 1.0,
+      "source_sha256": "d27a5b3bc3dfd8ee55cc591936034d711a1a9136dab7ea7b3ec624fe9d19081d",
+      "timed_start_seconds": 83.61714583333334,
+      "timed_end_seconds": 88.8,
+      "continuous_start_seconds": 55.8105,
+      "continuous_end_seconds": 60.99335416666667
+    },
+    {
+      "id": "scene-06-2",
+      "scene": 6,
+      "text": "The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.",
+      "original_duration_seconds": 7.368,
+      "source_in": 0.136375,
+      "source_out": 7.095208333333333,
+      "spoken_clip_seconds": 6.958833333333334,
+      "playback_speed": 1.0,
+      "source_sha256": "521a002b7af9dbec3b27c062c052a8caa5602dc1df239fbc5f596afa96588d09",
+      "timed_start_seconds": 92.8,
+      "timed_end_seconds": 99.75883333333333,
+      "continuous_start_seconds": 64.99335416666666,
+      "continuous_end_seconds": 71.9521875
+    },
+    {
+      "id": "scene-07-1",
+      "scene": 7,
+      "text": "Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!",
+      "original_duration_seconds": 8.832,
+      "source_in": 0.1333125,
+      "source_out": 8.509583333333333,
+      "spoken_clip_seconds": 8.376270833333333,
+      "playback_speed": 1.0,
+      "source_sha256": "ca393c8eef85f1fd8db140b17db7b57c76268a363dc89c91508bac89b8da79b4",
+      "timed_start_seconds": 106.1,
+      "timed_end_seconds": 114.47627083333333,
+      "continuous_start_seconds": 72.7021875,
+      "continuous_end_seconds": 81.07845833333333
+    }
+  ],
+  "review": {
+    "decode": "passed",
+    "every_part_within_original_scene": "passed",
+    "four_second_silence": "passed",
+    "clipping": "passed",
+    "listening": "Not performed. Audio supplied for user listening review; expressive character and the opening verb have not been confirmed by listening.",
+    "independent_asr": {
+      "checked_parts": 8,
+      "parts_with_all_normalized_words_matching": 7,
+      "opening_verb_note": "Base.en recognized explain as explained with low confidence (0.43); service word metadata and submitted narration both say explain. This remains a listening-review item.",
+      "numbers_and_operation_words": "Matched after number normalization in all mathematical examples.",
+      "larger_model_check": "Unavailable: model download did not progress; stopped without changing the audio."
+    }
+  },
+  "submitted_text_matches_script": true,
+  "output_status": "Audio generated; decode, natural settings, scene durations, exact submitted script, single voice, and four-second PCM silence verified."
+}

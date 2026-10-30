@@ -1,0 +1,21 @@
+Math It cat detective mascot
+Method: built-in ImageGen
+Final image: math-it-cat-detective.png
+
+Initial generation prompt:
+Use case: illustration-story.
+Asset type: original mascot illustration for Math It, a children's math learning website; final high-resolution PNG with genuine transparent alpha.
+Primary request: Create a single original, friendly cat detective mascot. A centered, waist-up soft gray cat, front-facing, with visible triangular ears, cream muzzle, delicate whiskers, small dark navy eyes, a gentle smile, and softly blushed cheeks. The expression conveys cleverness, patience, and calm encouragement.
+Clothing: lavender detective cap and matching lavender coat with rounded lapels. Keep both triangular ears clearly readable.
+Style/medium: polished children's storybook illustration; delicate painted texture, soft dimensional shading, rounded shapes, subtle navy contours; matte and softly tactile.
+Composition/framing: square canvas, preferably 2048 x 2048 or highest available resolution. Single centered waist-up portrait, complete cap, ears, and shoulders within the canvas, generous transparent clear space above the ears and around both shoulders; clean isolated silhouette.
+Lighting/mood: soft upper-left lighting, warm and reassuring.
+Color palette: muted soft gray, lavender, cream, restrained blush and dark navy facial details; harmonizes with pale blue, lavender, cream, and mint website backgrounds.
+Scene/backdrop: fully transparent background, no colored backdrop, no ground plane, no cast shadow behind the mascot.
+Constraints: no text or lettering, no props or accessories beyond the cap and coat, no border, no watermark, no heavy black outlines, no photorealism, no glossy plastic finish. Preserve real alpha transparency; do not draw a checkerboard.
+
+Final refinement prompt:
+Edit this cat mascot illustration to match the original character brief more precisely. Preserve the soft gray fur, triangular ears, cream muzzle, delicate whiskers, blush, gentle smile, lavender detective cap and coat, patient encouraging personality, waist-up front-facing pose, muted palette, delicate painted storybook texture, and soft upper-left lighting.
+Refine the character's soft, simple shapes: replace the very large cartoon eyes with SMALL dark navy oval eyes, much smaller in proportion to the face, softly expressive and friendly with only tiny subtle highlights, no large white eye areas. Soften all coat collar and lapel corners into clearly rounded curved lapels. Keep the composition centered and generous transparent breathing room around the entire cap, ears, whiskers, and shoulders, with a little clear space below the waist-up portrait.
+Final asset: high-resolution PNG, use the highest native resolution available. Genuine transparent alpha background with clean neutral silhouette edges. No text, no props, no border, watermark, heavy black outlines, photorealism, glossy plastic finish, checkerboard, background scene, or shadow behind the character.
+

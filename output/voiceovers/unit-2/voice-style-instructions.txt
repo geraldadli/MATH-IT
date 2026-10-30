@@ -1,0 +1,13 @@
+UNIT 2 VOICE PROFILE — Algebra & reasoning
+Voice: Male
+Character: The thoughtful detective
+
+VOICE GENERATION PROMPT
+Use an adult male narrator with a warm, smooth voice and a comfortable medium-low pitch. He sounds like a patient detective helping a child think through a puzzle: thoughtful, curious, and quietly confident. Use clear, lightly American-accented English at a comfortable, natural conversational speed. Keep the selected voice at its normal 1.0x speed throughout Unit 2. Gently emphasize reasoning words such as first, then, compare, and check. Make questions sound inviting, and corrections sound kind and matter-of-fact. Keep the rhythm steady, allowing the existing script pauses to do their work. Avoid a booming bass, stern teacher voice, suspenseful whisper, or crime-trailer performance. Keep this same male voice throughout Unit 2.
+
+SHARED VOICE DIRECTION
+Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Prioritize a relaxed, natural speaking rhythm without a fixed words-per-minute target. Preserve the original speed and pitch when preparing the track, and use the measured narration timing to guide the edit. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.

@@ -1,0 +1,95 @@
+{
+  "fileKey": "EMGvmGFNfIj6SBBWxkPxt1",
+  "checkedDate": "2026-10-30",
+  "verdict": "PASS — all four units tested live on desktop and mobile",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 720
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "units": [
+    {
+      "unit": 1,
+      "title": "Numbers & operations",
+      "desktop": "PASS",
+      "mobile": "PASS"
+    },
+    {
+      "unit": 2,
+      "title": "Algebra & reasoning",
+      "desktop": "PASS",
+      "mobile": "PASS"
+    },
+    {
+      "unit": 3,
+      "title": "Measurement & geometry",
+      "desktop": "PASS",
+      "mobile": "PASS"
+    },
+    {
+      "unit": 4,
+      "title": "Data analysis",
+      "desktop": "PASS",
+      "mobile": "PASS"
+    }
+  ],
+  "testedForEveryFlow": [
+    "Correct unit video (120 seconds)",
+    "Fresh direct lesson entry redirects to own introduction",
+    "Start Unit disabled before completion",
+    "Normal playback reaches completion; no forward seeking used",
+    "Completion unlocks matching unit and first lesson",
+    "Review Video from completion screen, unit page, and unit card",
+    "Review retains unlocked lesson access"
+  ],
+  "additionalLiveChecks": [
+    "Desktop and mobile pause/resume and rewind",
+    "All four mobile sound toggles",
+    "All four desktop and mobile review replay and forward seek",
+    "Mobile Unit 2 position retained exactly: 36.351281 seconds",
+    "Desktop Unit 4 position retained exactly: 104.818475 seconds",
+    "Completing Unit 1 leaves Unit 2 locked",
+    "Completing Unit 4 leaves Unit 1 locked",
+    "Rapid mobile card review -> unit -> lesson works after immediate-route fix",
+    "Unit 4 mobile lesson Home returns to Unit 4",
+    "Unit 4 desktop locked Home stays in Unit 4 context"
+  ],
+  "fixes": [
+    "Added delayed media guards for late-loading players and required explicit Play before video-end completion.",
+    "Restored the unit thumbnail on introduction/completion/review entry.",
+    "Removed transitions on video route changes to prevent ignored rapid taps and overlapping moving layouts.",
+    "Corrected copied Home links to use the containing unit's completion flag, dashboard, and introduction."
+  ],
+  "finalStructuralChecks": {
+    "desktop": {
+      "screenCount": 12,
+      "contextualHomeLinks": 84,
+      "mediaGuards": 48,
+      "checkedDestinations": 145,
+      "problems": []
+    },
+    "mobile": {
+      "screenCount": 12,
+      "contextualHomeLinks": 48,
+      "mediaGuards": 48,
+      "checkedDestinations": 59,
+      "problems": []
+    }
+  },
+  "verificationScope": "All eight core flows tested live. After the navigation-only repair, rapid navigation and Home-return regression checks ran live on mobile, with desktop Unit 4 locked-context checks and structural checks across both pages.",
+  "limitation": "Native Figma prototype state is limited to the prototype session. Durable per-student progress and cross-session resume remain website behavior.",
+  "evidenceFiles": [
+    "judge-live-results.json",
+    "judge-m1-complete.png",
+    "judge-m2-complete.png",
+    "judge-m3-complete.png",
+    "judge-m4-complete.png",
+    "judge-final-mobile-review.png",
+    "judge-final-desktop-intro.png"
+  ]
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "welcome",
+    "title": "01. Welcome / detective setup",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook"
+    ]
+  },
+  {
+    "id": "casebook",
+    "title": "02. Casebook / choose a unit",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "data",
+      "demo"
+    ]
+  },
+  {
+    "id": "clues",
+    "title": "03. Case activity / clue sorting",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook",
+      "demo",
+      "clues",
+      "success",
+      "hint"
+    ]
+  },
+  {
+    "id": "demo",
+    "title": "04. First-use / how to move",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook",
+      "demo",
+      "clues",
+      "success",
+      "hint",
+      "clues",
+      "clues"
+    ]
+  },
+  {
+    "id": "hint",
+    "title": "05. Help / hint dialog",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook",
+      "demo",
+      "clues",
+      "success",
+      "hint",
+      "clues",
+      "clues"
+    ]
+  },
+  {
+    "id": "retry",
+    "title": "06. Retry / look again",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook",
+      "demo",
+      "clues",
+      "clues",
+      "clues",
+      "hint"
+    ]
+  },
+  {
+    "id": "success",
+    "title": "07. Success / case solved",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook",
+      "demo",
+      "casebook",
+      "clues",
+      "clues",
+      "hint"
+    ]
+  },
+  {
+    "id": "data",
+    "title": "08. Data activity / explore evidence",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "casebook",
+      "data",
+      "success",
+      "success"
+    ]
+  },
+  {
+    "id": "profile",
+    "title": "09. Settings / edit detective profile",
+    "width": 1200,
+    "height": 940,
+    "links": [
+      "casebook",
+      "profile",
+      "data",
+      "demo",
+      "casebook",
+      "casebook"
+    ]
+  },
+  {
+    "id": "welcome-mobile",
+    "title": "M1. Welcome / mobile",
+    "width": 450,
+    "height": 1260,
+    "links": [
+      "profile",
+      "casebook"
+    ]
+  },
+  {
+    "id": "casebook-mobile",
+    "title": "M2. Casebook / mobile",
+    "width": 450,
+    "height": 1260,
+    "links": [
+      "profile",
+      "demo"
+    ]
+  },
+  {
+    "id": "clues-mobile",
+    "title": "M3. Clues / mobile",
+    "width": 450,
+    "height": 1480,
+    "links": [
+      "profile",
+      "casebook",
+      "success",
+      "hint"
+    ]
+  },
+  {
+    "id": "data-mobile",
+    "title": "M4. Data / mobile",
+    "width": 450,
+    "height": 1380,
+    "links": [
+      "profile",
+      "success"
+    ]
+  }
+]

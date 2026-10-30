@@ -1,0 +1,28 @@
+{
+  "duration_seconds": 120,
+  "video_dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "video_frames": 3600,
+  "full_decode": "passed",
+  "voice": "en-US-AriaNeural",
+  "retained_recordings_all_at_original_speed": true,
+  "words_per_minute_target": null,
+  "thinking_pause": {
+    "start": 98.4,
+    "end": 102.4,
+    "seconds": 4.0
+  },
+  "zero_samples_in_thinking_pause": 192000,
+  "caption_transcript_matches_synthesizer_tokens": true,
+  "caption_lines_at_most_two": true,
+  "all_scenes_fit": true,
+  "audition_line_occurrences": 1,
+  "encoded_audio_integrated_lufs": -16.15,
+  "encoded_audio_true_peak_dbtp": -1.39,
+  "original_picture_area_minimum_psnr_db": 44.1,
+  "source_unchanged": true,
+  "listening_review": "not_performed: audio perception is unavailable"
+}

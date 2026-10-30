@@ -1,0 +1,758 @@
+{
+  "firstPass": [
+    {
+      "test": "d1",
+      "step": "Start Unit after normal completion",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=32-2130&starting-point-node-id=151%3A13855&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Start Unit after normal completion",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=32-2666&starting-point-node-id=151%3A14005&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Start Unit after normal completion",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=32-2974&starting-point-node-id=151%3A14155&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Start Unit after normal completion",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=32-3336&starting-point-node-id=151%3A14305&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Unit page Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15063&starting-point-node-id=151%3A13855&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Unit page Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15215&starting-point-node-id=151%3A14005&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Unit page Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15367&starting-point-node-id=151%3A14155&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Unit page Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15519&starting-point-node-id=151%3A14305&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Unit card Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15063&starting-point-node-id=151%3A13855&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Unlocked lesson entry after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=32-4303&starting-point-node-id=151%3A13855&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Unit card Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15215&starting-point-node-id=151%3A14005&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Unlocked lesson entry after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-8137&starting-point-node-id=151%3A14005&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Unit card Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15367&starting-point-node-id=151%3A14155&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Unlocked lesson entry after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-7322&starting-point-node-id=151%3A14155&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Unit card Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15519&starting-point-node-id=151%3A14305&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Unlocked lesson entry after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-11518&starting-point-node-id=151%3A14305&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Unit page Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22354&starting-point-node-id=152%3A21242&scaling=scale-down&content-scaling=fixed"
+    }
+  ],
+  "retest": [
+    {
+      "test": "d1",
+      "step": "Fresh direct lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-13855&starting-point-node-id=32%3A4303&scaling=scale-down&content-scaling=fixed",
+      "media": [
+        {
+          "duration": 120,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "d2",
+      "step": "Fresh direct lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14005&starting-point-node-id=35%3A8137&scaling=scale-down&content-scaling=fixed",
+      "media": [
+        {
+          "duration": 120,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "d3",
+      "step": "Fresh direct lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14155&starting-point-node-id=35%3A7322&scaling=scale-down&content-scaling=fixed",
+      "media": [
+        {
+          "duration": null,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "d4",
+      "step": "Fresh direct lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-11518&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed",
+      "media": []
+    },
+    {
+      "test": "m1",
+      "step": "Fresh mobile lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21242&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "media": [
+        {
+          "duration": 120,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "m2",
+      "step": "Fresh mobile lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21380&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "media": [
+        {
+          "duration": 120,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "m3",
+      "step": "Fresh mobile lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21518&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "media": [
+        {
+          "duration": 120,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "m4",
+      "step": "Fresh mobile lesson protected",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21656&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      },
+      "media": [
+        {
+          "duration": 120,
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "m1",
+      "step": "Disabled Start Unit stays locked",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21242&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Explicit Play",
+      "media": [
+        {
+          "duration": 120,
+          "muted": false,
+          "paused": false,
+          "time": 1.103752
+        }
+      ]
+    },
+    {
+      "test": "m2",
+      "step": "Disabled Start Unit stays locked",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21380&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Explicit Play",
+      "media": [
+        {
+          "duration": 120,
+          "muted": false,
+          "paused": false,
+          "time": 0.181298
+        }
+      ]
+    },
+    {
+      "test": "m3",
+      "step": "Disabled Start Unit stays locked",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21518&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Explicit Play",
+      "media": [
+        {
+          "duration": 120,
+          "muted": false,
+          "paused": false,
+          "time": 0.191897
+        }
+      ]
+    },
+    {
+      "test": "m4",
+      "step": "Disabled Start Unit stays locked",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21656&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Explicit Play",
+      "media": [
+        {
+          "duration": 120,
+          "muted": false,
+          "paused": false,
+          "time": 0.443439
+        }
+      ]
+    },
+    {
+      "test": "m1",
+      "step": "Pause, rewind 10 seconds, sound toggle, resume",
+      "paused": [
+        {
+          "paused": true,
+          "time": 12.537114
+        }
+      ],
+      "rewound": [
+        {
+          "paused": true,
+          "time": 2.537114
+        }
+      ],
+      "muted": [
+        true
+      ],
+      "resumed": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 2.537114
+        }
+      ]
+    },
+    {
+      "test": "m2",
+      "step": "Pause, rewind 10 seconds, sound toggle, resume",
+      "paused": [
+        {
+          "paused": true,
+          "time": 12.878334
+        }
+      ],
+      "rewound": [
+        {
+          "paused": true,
+          "time": 2.878334
+        }
+      ],
+      "muted": [
+        true
+      ],
+      "resumed": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 2.878334
+        }
+      ]
+    },
+    {
+      "test": "m3",
+      "step": "Pause, rewind 10 seconds, sound toggle, resume",
+      "paused": [
+        {
+          "paused": true,
+          "time": 12.895644
+        }
+      ],
+      "rewound": [
+        {
+          "paused": true,
+          "time": 2.895644
+        }
+      ],
+      "muted": [
+        true
+      ],
+      "resumed": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 2.895644
+        }
+      ]
+    },
+    {
+      "test": "m4",
+      "step": "Pause, rewind 10 seconds, sound toggle, resume",
+      "paused": [
+        {
+          "paused": true,
+          "time": 15.881244
+        }
+      ],
+      "rewound": [
+        {
+          "paused": true,
+          "time": 5.881244
+        }
+      ],
+      "muted": [
+        true
+      ],
+      "resumed": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 5.881244
+        }
+      ]
+    },
+    {
+      "test": "m2",
+      "step": "Interrupted navigation stays locked and preserves position",
+      "before": 36.351281,
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21380&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed",
+      "media": [
+        {
+          "paused": true,
+          "time": 36.351281
+        }
+      ]
+    },
+    {
+      "test": "d4",
+      "step": "Interrupted navigation retains locked state and position",
+      "before": 104.818475,
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14305&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed",
+      "media": [
+        {
+          "paused": true,
+          "time": 104.818475
+        }
+      ]
+    },
+    {
+      "test": "d1",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14455&starting-point-node-id=32%3A4303&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14607&starting-point-node-id=35%3A8137&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14759&starting-point-node-id=35%3A7322&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14911&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15063&starting-point-node-id=32%3A4303&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15063&starting-point-node-id=32%3A4303&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Unit card Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15063&starting-point-node-id=32%3A4303&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d1",
+      "step": "Lesson remains unlocked after reviews",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=32-4303&starting-point-node-id=32%3A4303&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15215&starting-point-node-id=35%3A8137&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15215&starting-point-node-id=35%3A8137&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Unit card Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15215&starting-point-node-id=35%3A8137&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d2",
+      "step": "Lesson remains unlocked after reviews",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-8137&starting-point-node-id=35%3A8137&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15367&starting-point-node-id=35%3A7322&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15367&starting-point-node-id=35%3A7322&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Unit card Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15367&starting-point-node-id=35%3A7322&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d3",
+      "step": "Lesson remains unlocked after reviews",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-7322&starting-point-node-id=35%3A7322&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15519&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15519&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Unit card Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-15519&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Lesson remains unlocked after reviews",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-11518&starting-point-node-id=35%3A11518&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21794&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "test": "m1",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22354&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Start Unit after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-24266&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21934&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "test": "m2",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22494&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Start Unit after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-24729&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22074&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "test": "m3",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22634&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Start Unit after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-25068&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Natural completion after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22214&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "test": "m4",
+      "step": "Completion screen Review Video",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22774&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Start Unit after review",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-25353&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22354&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22494&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22634&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Unit page Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22774&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Review replay and forward seek",
+      "replay": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 0.120787
+        }
+      ],
+      "sought": [
+        {
+          "paused": true,
+          "time": 10.740957
+        }
+      ]
+    },
+    {
+      "test": "m1",
+      "step": "Unit card Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22354&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Lesson remains unlocked after reviews",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22354&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Review replay and forward seek",
+      "replay": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 0.201518
+        }
+      ],
+      "sought": [
+        {
+          "paused": true,
+          "time": 10.81344
+        }
+      ]
+    },
+    {
+      "test": "m2",
+      "step": "Unit card Review Video after fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22494&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Lesson remains unlocked after reviews",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22494&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Card review after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22354&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Lesson access after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-25638&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Card review after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22494&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m2",
+      "step": "Lesson access after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=42-6798&starting-point-node-id=42%3A6798&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Card review after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22634&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Lesson access after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=42-6419&starting-point-node-id=42%3A6419&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Card review after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-22774&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Lesson access after immediate navigation fix",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-26633&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m4",
+      "step": "Corrected Home returns to Unit 4",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-25353&starting-point-node-id=35%3A26633&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m3",
+      "step": "Review replay and forward seek",
+      "replay": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 0.285424
+        }
+      ],
+      "sought": [
+        {
+          "paused": true,
+          "time": 10.569092
+        }
+      ]
+    },
+    {
+      "test": "m4",
+      "step": "Review replay and forward seek",
+      "replay": [
+        {
+          "muted": false,
+          "paused": false,
+          "time": 0.379237
+        },
+        {
+          "muted": true,
+          "paused": true,
+          "time": 0
+        }
+      ],
+      "sought": [
+        {
+          "paused": true,
+          "time": 10.682926
+        },
+        {
+          "paused": true,
+          "time": 0
+        }
+      ]
+    },
+    {
+      "test": "m1",
+      "step": "Completing Unit 1 keeps Unit 2 locked",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=152-21380&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "m1",
+      "step": "Returning to completed Unit 1 stays unlocked",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=35-24266&starting-point-node-id=35%3A25638&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Corrected locked Home keeps Unit 4 context",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14305&starting-point-node-id=151%3A14305&scaling=scale-down&content-scaling=fixed"
+    },
+    {
+      "test": "d4",
+      "step": "Desktop lesson gate remains protected after routing fixes",
+      "url": "https://www.figma.com/proto/EMGvmGFNfIj6SBBWxkPxt1/Math-It--%E2%80%94-Website---Interactive-Prototype?node-id=151-14305&starting-point-node-id=151%3A14305&scaling=scale-down&content-scaling=fixed"
+    }
+  ]
+}

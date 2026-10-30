@@ -1,0 +1,114 @@
+1
+00:00:00,500 --> 00:00:05,800
+Welcome, detective! Let us use numbers to prepare our school
+fair.
+
+2
+00:00:06,800 --> 00:00:11,358
+Two hundreds, three tens, and six ones make two hundred
+thirty-six.
+
+3
+00:00:11,578 --> 00:00:13,577
+It is greater than two hundred thirty.
+
+4
+00:00:13,797 --> 00:00:20,500
+Compare the place values, starting with the hundreds.
+
+5
+00:00:21,600 --> 00:00:23,449
+Addition joins amounts.
+
+6
+00:00:23,605 --> 00:00:26,265
+Twenty-seven plus fifteen is forty-two.
+
+7
+00:00:26,378 --> 00:00:29,102
+Exchange ten ones for one ten when needed.
+
+8
+00:00:29,322 --> 00:00:31,492
+Subtraction takes an amount away.
+
+9
+00:00:31,669 --> 00:00:34,585
+Forty-two minus fifteen returns us to twenty-seven.
+
+10
+00:00:34,784 --> 00:00:42,500
+The operations help check each other.
+
+11
+00:00:43,500 --> 00:00:46,842
+Three bags with five pencils each make fifteen pencils.
+
+12
+00:00:47,041 --> 00:00:49,552
+That is multiplication: equal groups.
+
+13
+00:00:49,814 --> 00:00:52,816
+Sharing fifteen equally among three bags gives five each.
+
+14
+00:00:52,972 --> 00:00:53,904
+That is division.
+
+15
+00:00:54,081 --> 00:01:02,500
+Check that every bag has the same number.
+
+16
+00:01:03,600 --> 00:01:05,325
+Multiples follow equal jumps.
+
+17
+00:01:05,484 --> 00:01:07,184
+Count in threes or fives.
+
+18
+00:01:07,404 --> 00:01:15,500
+Fifteen appears in both patterns, so one number can fit two
+rules.
+
+19
+00:01:16,400 --> 00:01:18,804
+Fractions describe equal parts of a whole.
+
+20
+00:01:19,002 --> 00:01:20,958
+One of four parts is one quarter.
+
+21
+00:01:21,221 --> 00:01:22,878
+Two quarters make one half.
+
+22
+00:01:23,141 --> 00:01:29,500
+Three shaded parts make three quarters.
+
+23
+00:01:30,600 --> 00:01:34,038
+Three thousand plus four thousand costs seven thousand rupiah.
+
+24
+00:01:34,098 --> 00:01:35,158
+Pay ten thousand.
+
+25
+00:01:35,378 --> 00:01:40,398
+How much change?
+
+26
+00:01:40,588 --> 00:01:48,300
+Three thousand: subtract the cost from your payment.
+
+27
+00:01:52,600 --> 00:01:55,239
+Read, choose your method, and check your answer.
+
+28
+00:01:55,416 --> 00:01:59,800
+Try the Unit One quizzes!

@@ -1,0 +1,8 @@
+{
+  "source_pause_start": 65.88,
+  "source_pause_end": 69.95,
+  "replacement_silence_seconds": 4.0,
+  "basis": "Independent ASR locates the question before the interval and the answer after it. Waveform review retains the final question consonant through approximately 65.84 seconds and the first answer fricative beginning approximately 70.03 seconds. Quiet handles remain on each side. Returned synthesis timestamps were not used for these cuts.",
+  "speed": 1.0,
+  "listening_review": "not_performed"
+}

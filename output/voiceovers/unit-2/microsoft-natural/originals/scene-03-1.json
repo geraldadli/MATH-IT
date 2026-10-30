@@ -1,0 +1,183 @@
+{
+  "id": "scene-03-1",
+  "scene": 3,
+  "text": "For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 0,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 1500000,
+      "duration": 1000000,
+      "text": "For"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 2625000,
+      "duration": 500000,
+      "text": "a"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 3250000,
+      "duration": 4625000,
+      "text": "two-step"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 8000000,
+      "duration": 3625000,
+      "text": "clue"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14875000,
+      "duration": 2000000,
+      "text": "work"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 17000000,
+      "duration": 4250000,
+      "text": "inside"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 21375000,
+      "duration": 750000,
+      "text": "the"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 22250000,
+      "duration": 4000000,
+      "text": "brackets"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 26375000,
+      "duration": 5000000,
+      "text": "first"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 36000000,
+      "duration": 2000000,
+      "text": "Five"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 38125000,
+      "duration": 2625000,
+      "text": "plus"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 40875000,
+      "duration": 2500000,
+      "text": "four"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 43500000,
+      "duration": 2250000,
+      "text": "makes"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 45875000,
+      "duration": 3125000,
+      "text": "nine"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 53125000,
+      "duration": 3625000,
+      "text": "Replace"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 56875000,
+      "duration": 1125000,
+      "text": "the"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 58125000,
+      "duration": 4500000,
+      "text": "brackets"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 62750000,
+      "duration": 1500000,
+      "text": "with"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64375000,
+      "duration": 3625000,
+      "text": "nine"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 71875000,
+      "duration": 1625000,
+      "text": "then"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 73625000,
+      "duration": 6000000,
+      "text": "multiply"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 79750000,
+      "duration": 2000000,
+      "text": "by"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 81875000,
+      "duration": 4125000,
+      "text": "three"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 90250000,
+      "duration": 500000,
+      "text": "The"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 90875000,
+      "duration": 3625000,
+      "text": "final"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 94625000,
+      "duration": 3875000,
+      "text": "answer"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 99000000,
+      "duration": 1250000,
+      "text": "is"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 100375000,
+      "duration": 6750000,
+      "text": "twenty-seven"
+    }
+  ],
+  "sha256": "f92af42757d2f0a7b8907cbc698897c65dc66bf7d4377906f01e5a25c7c43b39"
+}

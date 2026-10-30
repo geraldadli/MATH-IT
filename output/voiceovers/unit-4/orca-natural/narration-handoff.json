@@ -1,0 +1,50 @@
+{
+  "voice": "Mike",
+  "voice_id": "3ae75279043648ce8f96310333c9288f",
+  "engine_requested": "orca",
+  "engine_returned": "orca",
+  "request_id": "14cc18cee272497881bb0b7f0c719ac3",
+  "synthesis_speed": 1.0,
+  "playback_speed": 1.0,
+  "target_words_per_minute": null,
+  "source_duration_seconds": 77.5836875,
+  "final_duration_seconds": 77.5136875,
+  "thinking_pause": {
+    "start": 65.88,
+    "end": 69.88,
+    "duration_seconds": 4,
+    "zero_pcm_samples": 192000
+  },
+  "constant_gain_db": -1.55,
+  "integrated_loudness_lufs": -19.5,
+  "true_peak_dbtp": -1.5,
+  "source_to_final": [
+    {
+      "source_in": 0,
+      "source_out": 65.88,
+      "final_in": 0,
+      "final_out": 65.88,
+      "playback_speed": 1.0
+    },
+    {
+      "source_in": 69.95,
+      "source_out": 77.5836875,
+      "final_in": 69.88,
+      "final_out": 77.5136875,
+      "playback_speed": 1.0
+    }
+  ],
+  "post_pause_time_shift_seconds": -0.07000000000000028,
+  "source_sha256": "879b09bff2d337cdfd74a8b3a62c8a54ec49e2f8e0b5bf3a5ca289046abaab36",
+  "wav_sha256": "8801255cd49bccc8d88acb62a934d8f3a29631fb49ca3f41f31d1957161d767c",
+  "wav": "Unit 4 - Curious Chart Guide - Natural.wav",
+  "mp3": "Unit 4 - Curious Chart Guide - Natural.mp3",
+  "review": {
+    "listening_review": "not_performed",
+    "pause_waveform_review": "performed",
+    "decode": "passed",
+    "independent_asr": "See transcription-check.json",
+    "returned_timestamps": "Not used for editing because they did not match the decoded waveform.",
+    "style": "The connected tool has no free-form style field. Directions are retained separately."
+  }
+}

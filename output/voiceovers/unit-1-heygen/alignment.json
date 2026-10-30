@@ -1,0 +1,3100 @@
+{
+  "clock": "seconds from final sequence start",
+  "sample_rate": 48000,
+  "edits": [
+    {
+      "label": "scene-1",
+      "source_in_sample": 0,
+      "source_out_sample": 215568,
+      "sequence_start_sample": 11712,
+      "sequence_end_sample": 227280,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-2",
+      "source_in_sample": 215568,
+      "source_out_sample": 681504,
+      "sequence_start_sample": 318720,
+      "sequence_end_sample": 784656,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-3",
+      "source_in_sample": 681504,
+      "source_out_sample": 1410528,
+      "sequence_start_sample": 1032864,
+      "sequence_end_sample": 1761888,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-4",
+      "source_in_sample": 1410528,
+      "source_out_sample": 2020512,
+      "sequence_start_sample": 2081136,
+      "sequence_end_sample": 2691120,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-5",
+      "source_in_sample": 2020512,
+      "source_out_sample": 2418144,
+      "sequence_start_sample": 3045648,
+      "sequence_end_sample": 3443280,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-6",
+      "source_in_sample": 2418144,
+      "source_out_sample": 2856000,
+      "sequence_start_sample": 3655920,
+      "sequence_end_sample": 4093776,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-7-question",
+      "source_in_sample": 2856000,
+      "source_out_sample": 3144000,
+      "sequence_start_sample": 4342464,
+      "sequence_end_sample": 4630464,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-7-answer",
+      "source_in_sample": 3159312,
+      "source_out_sample": 3298032,
+      "sequence_start_sample": 4822464,
+      "sequence_end_sample": 4961184,
+      "speed": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "label": "scene-8",
+      "source_in_sample": 3298032,
+      "source_out_sample": 3515873,
+      "sequence_start_sample": 5400192,
+      "sequence_end_sample": 5618033,
+      "speed": 1.0,
+      "pitch": 1.0
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 6,
+      "speech_start": 0.5,
+      "speech_end": 4.575,
+      "retained_audio_end": 4.735,
+      "fits": true
+    },
+    {
+      "scene": 2,
+      "start": 6,
+      "end": 21,
+      "speech_start": 6.8,
+      "speech_end": 16.265,
+      "retained_audio_end": 16.347,
+      "fits": true
+    },
+    {
+      "scene": 3,
+      "start": 21,
+      "end": 43,
+      "speech_start": 21.6,
+      "speech_end": 36.563,
+      "retained_audio_end": 36.706,
+      "fits": true
+    },
+    {
+      "scene": 4,
+      "start": 43,
+      "end": 63,
+      "speech_start": 43.5,
+      "speech_end": 55.916,
+      "retained_audio_end": 56.065,
+      "fits": true
+    },
+    {
+      "scene": 5,
+      "start": 63,
+      "end": 76,
+      "speech_start": 63.6,
+      "speech_end": 71.5,
+      "retained_audio_end": 71.735,
+      "fits": true
+    },
+    {
+      "scene": 6,
+      "start": 76,
+      "end": 90,
+      "speech_start": 76.4,
+      "speech_end": 85.155,
+      "retained_audio_end": 85.287,
+      "fits": true
+    },
+    {
+      "scene": 7,
+      "start": 90,
+      "end": 112,
+      "speech_start": 90.6,
+      "speech_end": 103.262,
+      "retained_audio_end": 103.358,
+      "fits": true
+    },
+    {
+      "scene": 8,
+      "start": 112,
+      "end": 120,
+      "speech_start": 112.60000000000001,
+      "speech_end": 116.80175736961452,
+      "retained_audio_end": 117.04235416666667,
+      "fits": true
+    }
+  ],
+  "thinking_pause": {
+    "start": 96.468,
+    "end": 100.468,
+    "seconds": 4.0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "text": "Welcome, detective! Let us use numbers to prepare our school fair.",
+      "source_caption_start": 0.5,
+      "source_caption_end": 5.8,
+      "raw_start": 0.256,
+      "raw_end": 4.331,
+      "words": [
+        {
+          "word": "Welcome,",
+          "start": 0.256,
+          "end": 0.725
+        },
+        {
+          "word": "detective!",
+          "start": 0.768,
+          "end": 1.365
+        },
+        {
+          "word": "Let",
+          "start": 1.707,
+          "end": 2.005
+        },
+        {
+          "word": "us",
+          "start": 2.048,
+          "end": 2.133
+        },
+        {
+          "word": "use",
+          "start": 2.219,
+          "end": 2.389
+        },
+        {
+          "word": "numbers",
+          "start": 2.475,
+          "end": 2.6027
+        },
+        {
+          "word": "to",
+          "start": 2.859,
+          "end": 2.944
+        },
+        {
+          "word": "prepare",
+          "start": 2.987,
+          "end": 3.328
+        },
+        {
+          "word": "our",
+          "start": 3.371,
+          "end": 3.4987
+        },
+        {
+          "word": "school",
+          "start": 3.541,
+          "end": 3.7547
+        },
+        {
+          "word": "fair.",
+          "start": 3.84,
+          "end": 4.331
+        }
+      ],
+      "scene": 1,
+      "start": 0.5,
+      "end": 4.575,
+      "caption_start": 0.5,
+      "caption_end": 5.8
+    },
+    {
+      "id": 2,
+      "text": "Two hundreds, three tens, and six ones make two hundred thirty-six.",
+      "source_caption_start": 6.8,
+      "source_caption_end": 11.1,
+      "raw_start": 4.651,
+      "raw_end": 9.109,
+      "words": [
+        {
+          "word": "Two",
+          "start": 4.651,
+          "end": 4.864
+        },
+        {
+          "word": "hundreds,",
+          "start": 4.907,
+          "end": 5.504
+        },
+        {
+          "word": "three",
+          "start": 5.717,
+          "end": 5.845
+        },
+        {
+          "word": "tens,",
+          "start": 5.973,
+          "end": 6.4
+        },
+        {
+          "word": "and",
+          "start": 6.571,
+          "end": 6.869
+        },
+        {
+          "word": "six",
+          "start": 6.912,
+          "end": 7.125
+        },
+        {
+          "word": "ones",
+          "start": 7.253,
+          "end": 7.424
+        },
+        {
+          "word": "make",
+          "start": 7.637,
+          "end": 7.765
+        },
+        {
+          "word": "two",
+          "start": 7.851,
+          "end": 7.979
+        },
+        {
+          "word": "hundred",
+          "start": 8.021,
+          "end": 8.149
+        },
+        {
+          "word": "thirty-six.",
+          "start": 8.32,
+          "end": 9.109
+        }
+      ],
+      "scene": 2,
+      "start": 6.8,
+      "end": 11.258,
+      "caption_start": 6.8,
+      "caption_end": 11.357999999999999
+    },
+    {
+      "id": 3,
+      "text": "It is greater than two hundred thirty.",
+      "source_caption_start": 11.4,
+      "source_caption_end": 13.5,
+      "raw_start": 9.429,
+      "raw_end": 11.328,
+      "words": [
+        {
+          "word": "It",
+          "start": 9.429,
+          "end": 9.6427
+        },
+        {
+          "word": "is",
+          "start": 9.685,
+          "end": 9.7707
+        },
+        {
+          "word": "greater",
+          "start": 9.856,
+          "end": 10.069
+        },
+        {
+          "word": "than",
+          "start": 10.197,
+          "end": 10.325
+        },
+        {
+          "word": "two",
+          "start": 10.368,
+          "end": 10.496
+        },
+        {
+          "word": "hundred",
+          "start": 10.539,
+          "end": 10.6667
+        },
+        {
+          "word": "thirty.",
+          "start": 10.837,
+          "end": 11.328
+        }
+      ],
+      "scene": 2,
+      "start": 11.578,
+      "end": 13.477,
+      "caption_start": 11.578,
+      "caption_end": 13.577
+    },
+    {
+      "id": 4,
+      "text": "Compare the place values, starting with the hundreds.",
+      "source_caption_start": 13.9,
+      "source_caption_end": 20.5,
+      "raw_start": 11.648,
+      "raw_end": 14.116,
+      "words": [
+        {
+          "word": "Compare",
+          "start": 11.648,
+          "end": 11.9467
+        },
+        {
+          "word": "the",
+          "start": 12.032,
+          "end": 12.117
+        },
+        {
+          "word": "place",
+          "start": 12.16,
+          "end": 12.3307
+        },
+        {
+          "word": "values,",
+          "start": 12.459,
+          "end": 12.949
+        },
+        {
+          "word": "starting",
+          "start": 13.099,
+          "end": 13.312
+        },
+        {
+          "word": "with",
+          "start": 13.397,
+          "end": 13.483
+        },
+        {
+          "word": "the",
+          "start": 13.525,
+          "end": 13.6107
+        },
+        {
+          "word": "hundreds.",
+          "start": 13.653,
+          "end": 14.116
+        }
+      ],
+      "scene": 2,
+      "start": 13.797,
+      "end": 16.265,
+      "caption_start": 13.797,
+      "caption_end": 20.5
+    },
+    {
+      "id": 5,
+      "text": "Addition joins amounts.",
+      "source_caption_start": 21.6,
+      "source_caption_end": 22.9,
+      "raw_start": 14.28,
+      "raw_end": 16.029,
+      "words": [
+        {
+          "word": "Addition",
+          "start": 14.28,
+          "end": 14.5356
+        },
+        {
+          "word": "joins",
+          "start": 14.834,
+          "end": 15.346
+        },
+        {
+          "word": "amounts.",
+          "start": 15.517,
+          "end": 16.029
+        }
+      ],
+      "scene": 3,
+      "start": 21.6,
+      "end": 23.349,
+      "caption_start": 21.6,
+      "caption_end": 23.449
+    },
+    {
+      "id": 6,
+      "text": "Twenty-seven plus fifteen is forty-two.",
+      "source_caption_start": 23.2,
+      "source_caption_end": 25.7,
+      "raw_start": 16.285,
+      "raw_end": 18.845,
+      "words": [
+        {
+          "word": "Twenty-seven",
+          "start": 16.285,
+          "end": 16.9676
+        },
+        {
+          "word": "plus",
+          "start": 17.096,
+          "end": 17.266
+        },
+        {
+          "word": "fifteen",
+          "start": 17.352,
+          "end": 17.7356
+        },
+        {
+          "word": "is",
+          "start": 17.949,
+          "end": 18.0769
+        },
+        {
+          "word": "forty-two.",
+          "start": 18.162,
+          "end": 18.845
+        }
+      ],
+      "scene": 3,
+      "start": 23.605,
+      "end": 26.165,
+      "caption_start": 23.605,
+      "caption_end": 26.265
+    },
+    {
+      "id": 7,
+      "text": "Exchange ten ones for one ten when needed.",
+      "source_caption_start": 26.0,
+      "source_caption_end": 29.3,
+      "raw_start": 19.058,
+      "raw_end": 21.682,
+      "words": [
+        {
+          "word": "Exchange",
+          "start": 19.058,
+          "end": 19.6129
+        },
+        {
+          "word": "ten",
+          "start": 19.741,
+          "end": 19.9116
+        },
+        {
+          "word": "ones",
+          "start": 19.954,
+          "end": 20.082
+        },
+        {
+          "word": "for",
+          "start": 20.21,
+          "end": 20.2956
+        },
+        {
+          "word": "one",
+          "start": 20.338,
+          "end": 20.466
+        },
+        {
+          "word": "ten",
+          "start": 20.509,
+          "end": 20.722
+        },
+        {
+          "word": "when",
+          "start": 20.893,
+          "end": 21.1489
+        },
+        {
+          "word": "needed.",
+          "start": 21.192,
+          "end": 21.682
+        }
+      ],
+      "scene": 3,
+      "start": 26.378,
+      "end": 29.002,
+      "caption_start": 26.378,
+      "caption_end": 29.102
+    },
+    {
+      "id": 8,
+      "text": "Subtraction takes an amount away.",
+      "source_caption_start": 29.6,
+      "source_caption_end": 31.5,
+      "raw_start": 22.002,
+      "raw_end": 24.072,
+      "words": [
+        {
+          "word": "Subtraction",
+          "start": 22.002,
+          "end": 22.4289
+        },
+        {
+          "word": "takes",
+          "start": 22.77,
+          "end": 23.1969
+        },
+        {
+          "word": "an",
+          "start": 23.282,
+          "end": 23.3249
+        },
+        {
+          "word": "amount",
+          "start": 23.41,
+          "end": 23.538
+        },
+        {
+          "word": "away.",
+          "start": 23.666,
+          "end": 24.072
+        }
+      ],
+      "scene": 3,
+      "start": 29.322,
+      "end": 31.392,
+      "caption_start": 29.322,
+      "caption_end": 31.492
+    },
+    {
+      "id": 9,
+      "text": "Forty-two minus fifteen returns us to twenty-seven.",
+      "source_caption_start": 31.8,
+      "source_caption_end": 35.7,
+      "raw_start": 24.349,
+      "raw_end": 27.165,
+      "words": [
+        {
+          "word": "Forty-two",
+          "start": 24.349,
+          "end": 24.818
+        },
+        {
+          "word": "minus",
+          "start": 24.861,
+          "end": 25.074
+        },
+        {
+          "word": "fifteen",
+          "start": 25.16,
+          "end": 25.5436
+        },
+        {
+          "word": "returns",
+          "start": 25.757,
+          "end": 26.1409
+        },
+        {
+          "word": "us",
+          "start": 26.226,
+          "end": 26.2689
+        },
+        {
+          "word": "to",
+          "start": 26.312,
+          "end": 26.3969
+        },
+        {
+          "word": "twenty-seven.",
+          "start": 26.44,
+          "end": 27.165
+        }
+      ],
+      "scene": 3,
+      "start": 31.669,
+      "end": 34.485,
+      "caption_start": 31.669,
+      "caption_end": 34.585
+    },
+    {
+      "id": 10,
+      "text": "The operations help check each other.",
+      "source_caption_start": 36.0,
+      "source_caption_end": 42.5,
+      "raw_start": 27.464,
+      "raw_end": 29.243,
+      "words": [
+        {
+          "word": "The",
+          "start": 27.464,
+          "end": 27.5916
+        },
+        {
+          "word": "operations",
+          "start": 27.634,
+          "end": 27.9756
+        },
+        {
+          "word": "help",
+          "start": 28.232,
+          "end": 28.402
+        },
+        {
+          "word": "check",
+          "start": 28.445,
+          "end": 28.6156
+        },
+        {
+          "word": "each",
+          "start": 28.701,
+          "end": 28.786
+        },
+        {
+          "word": "other.",
+          "start": 28.829,
+          "end": 29.243
+        }
+      ],
+      "scene": 3,
+      "start": 34.784,
+      "end": 36.563,
+      "caption_start": 34.784,
+      "caption_end": 42.5
+    },
+    {
+      "id": 11,
+      "text": "Three bags with five pencils each make fifteen pencils.",
+      "source_caption_start": 43.5,
+      "source_caption_end": 46.5,
+      "raw_start": 29.529,
+      "raw_end": 32.771,
+      "words": [
+        {
+          "word": "Three",
+          "start": 29.529,
+          "end": 29.699
+        },
+        {
+          "word": "bags",
+          "start": 29.827,
+          "end": 30.083
+        },
+        {
+          "word": "with",
+          "start": 30.169,
+          "end": 30.211
+        },
+        {
+          "word": "five",
+          "start": 30.297,
+          "end": 30.467
+        },
+        {
+          "word": "pencils",
+          "start": 30.595,
+          "end": 30.9366
+        },
+        {
+          "word": "each",
+          "start": 31.065,
+          "end": 31.2779
+        },
+        {
+          "word": "make",
+          "start": 31.406,
+          "end": 31.5339
+        },
+        {
+          "word": "fifteen",
+          "start": 31.619,
+          "end": 32.0459
+        },
+        {
+          "word": "pencils.",
+          "start": 32.131,
+          "end": 32.771
+        }
+      ],
+      "scene": 4,
+      "start": 43.5,
+      "end": 46.742000000000004,
+      "caption_start": 43.5,
+      "caption_end": 46.842000000000006
+    },
+    {
+      "id": 12,
+      "text": "That is multiplication: equal groups.",
+      "source_caption_start": 46.8,
+      "source_caption_end": 49.3,
+      "raw_start": 33.07,
+      "raw_end": 35.481,
+      "words": [
+        {
+          "word": "That",
+          "start": 33.07,
+          "end": 33.283
+        },
+        {
+          "word": "is",
+          "start": 33.326,
+          "end": 33.3686
+        },
+        {
+          "word": "multiplication:",
+          "start": 33.454,
+          "end": 34.265
+        },
+        {
+          "word": "equal",
+          "start": 34.521,
+          "end": 34.691
+        },
+        {
+          "word": "groups.",
+          "start": 34.862,
+          "end": 35.481
+        }
+      ],
+      "scene": 4,
+      "start": 47.041,
+      "end": 49.452,
+      "caption_start": 47.041,
+      "caption_end": 49.552
+    },
+    {
+      "id": 13,
+      "text": "Sharing fifteen equally among three bags gives five each.",
+      "source_caption_start": 49.6,
+      "source_caption_end": 53.5,
+      "raw_start": 35.843,
+      "raw_end": 38.745,
+      "words": [
+        {
+          "word": "Sharing",
+          "start": 35.843,
+          "end": 36.099
+        },
+        {
+          "word": "fifteen",
+          "start": 36.185,
+          "end": 36.5686
+        },
+        {
+          "word": "equally",
+          "start": 36.611,
+          "end": 36.867
+        },
+        {
+          "word": "among",
+          "start": 37.038,
+          "end": 37.1659
+        },
+        {
+          "word": "three",
+          "start": 37.251,
+          "end": 37.4219
+        },
+        {
+          "word": "bags",
+          "start": 37.465,
+          "end": 37.763
+        },
+        {
+          "word": "gives",
+          "start": 37.849,
+          "end": 37.9339
+        },
+        {
+          "word": "five",
+          "start": 38.062,
+          "end": 38.2326
+        },
+        {
+          "word": "each.",
+          "start": 38.361,
+          "end": 38.745
+        }
+      ],
+      "scene": 4,
+      "start": 49.81400000000001,
+      "end": 52.715999999999994,
+      "caption_start": 49.81400000000001,
+      "caption_end": 52.815999999999995
+    },
+    {
+      "id": 14,
+      "text": "That is division.",
+      "source_caption_start": 53.8,
+      "source_caption_end": 55.5,
+      "raw_start": 39.001,
+      "raw_end": 39.833,
+      "words": [
+        {
+          "word": "That",
+          "start": 39.001,
+          "end": 39.171
+        },
+        {
+          "word": "is",
+          "start": 39.214,
+          "end": 39.299
+        },
+        {
+          "word": "division.",
+          "start": 39.342,
+          "end": 39.833
+        }
+      ],
+      "scene": 4,
+      "start": 52.971999999999994,
+      "end": 53.804,
+      "caption_start": 52.971999999999994,
+      "caption_end": 53.904
+    },
+    {
+      "id": 15,
+      "text": "Check that every bag has the same number.",
+      "source_caption_start": 55.8,
+      "source_caption_end": 62.5,
+      "raw_start": 40.11,
+      "raw_end": 41.945,
+      "words": [
+        {
+          "word": "Check",
+          "start": 40.11,
+          "end": 40.323
+        },
+        {
+          "word": "that",
+          "start": 40.366,
+          "end": 40.4939
+        },
+        {
+          "word": "every",
+          "start": 40.537,
+          "end": 40.6646
+        },
+        {
+          "word": "bag",
+          "start": 40.75,
+          "end": 40.963
+        },
+        {
+          "word": "has",
+          "start": 41.049,
+          "end": 41.1339
+        },
+        {
+          "word": "the",
+          "start": 41.177,
+          "end": 41.2619
+        },
+        {
+          "word": "same",
+          "start": 41.305,
+          "end": 41.475
+        },
+        {
+          "word": "number.",
+          "start": 41.561,
+          "end": 41.945
+        }
+      ],
+      "scene": 4,
+      "start": 54.081,
+      "end": 55.916,
+      "caption_start": 54.081,
+      "caption_end": 62.5
+    },
+    {
+      "id": 16,
+      "text": "Multiples follow equal jumps.",
+      "source_caption_start": 63.6,
+      "source_caption_end": 65.5,
+      "raw_start": 42.243,
+      "raw_end": 43.868,
+      "words": [
+        {
+          "word": "Multiples",
+          "start": 42.243,
+          "end": 42.6699
+        },
+        {
+          "word": "follow",
+          "start": 42.755,
+          "end": 42.9259
+        },
+        {
+          "word": "equal",
+          "start": 43.054,
+          "end": 43.1819
+        },
+        {
+          "word": "jumps.",
+          "start": 43.353,
+          "end": 43.868
+        }
+      ],
+      "scene": 5,
+      "start": 63.6,
+      "end": 65.225,
+      "caption_start": 63.6,
+      "caption_end": 65.32499999999999
+    },
+    {
+      "id": 17,
+      "text": "Count in threes or fives.",
+      "source_caption_start": 65.8,
+      "source_caption_end": 68.5,
+      "raw_start": 44.127,
+      "raw_end": 45.727,
+      "words": [
+        {
+          "word": "Count",
+          "start": 44.127,
+          "end": 44.3407
+        },
+        {
+          "word": "in",
+          "start": 44.383,
+          "end": 44.511
+        },
+        {
+          "word": "threes",
+          "start": 44.554,
+          "end": 44.81
+        },
+        {
+          "word": "or",
+          "start": 44.895,
+          "end": 45.023
+        },
+        {
+          "word": "fives.",
+          "start": 45.066,
+          "end": 45.727
+        }
+      ],
+      "scene": 5,
+      "start": 65.48400000000001,
+      "end": 67.084,
+      "caption_start": 65.48400000000001,
+      "caption_end": 67.184
+    },
+    {
+      "id": 18,
+      "text": "Fifteen appears in both patterns, so one number can fit two rules.",
+      "source_caption_start": 68.8,
+      "source_caption_end": 75.5,
+      "raw_start": 46.047,
+      "raw_end": 50.143,
+      "words": [
+        {
+          "word": "Fifteen",
+          "start": 46.047,
+          "end": 46.5167
+        },
+        {
+          "word": "appears",
+          "start": 46.559,
+          "end": 46.815
+        },
+        {
+          "word": "in",
+          "start": 46.943,
+          "end": 47.071
+        },
+        {
+          "word": "both",
+          "start": 47.114,
+          "end": 47.2847
+        },
+        {
+          "word": "patterns,",
+          "start": 47.37,
+          "end": 47.925
+        },
+        {
+          "word": "so",
+          "start": 48.138,
+          "end": 48.3087
+        },
+        {
+          "word": "one",
+          "start": 48.351,
+          "end": 48.522
+        },
+        {
+          "word": "number",
+          "start": 48.565,
+          "end": 48.6927
+        },
+        {
+          "word": "can",
+          "start": 48.863,
+          "end": 48.991
+        },
+        {
+          "word": "fit",
+          "start": 49.034,
+          "end": 49.2047
+        },
+        {
+          "word": "two",
+          "start": 49.247,
+          "end": 49.418
+        },
+        {
+          "word": "rules.",
+          "start": 49.503,
+          "end": 50.143
+        }
+      ],
+      "scene": 5,
+      "start": 67.404,
+      "end": 71.5,
+      "caption_start": 67.404,
+      "caption_end": 75.5
+    },
+    {
+      "id": 19,
+      "text": "Fractions describe equal parts of a whole.",
+      "source_caption_start": 76.4,
+      "source_caption_end": 79.3,
+      "raw_start": 50.613,
+      "raw_end": 52.917,
+      "words": [
+        {
+          "word": "Fractions",
+          "start": 50.613,
+          "end": 50.8687
+        },
+        {
+          "word": "describe",
+          "start": 51.167,
+          "end": 51.594
+        },
+        {
+          "word": "equal",
+          "start": 51.679,
+          "end": 51.807
+        },
+        {
+          "word": "parts",
+          "start": 51.978,
+          "end": 52.191
+        },
+        {
+          "word": "of",
+          "start": 52.277,
+          "end": 52.362
+        },
+        {
+          "word": "a",
+          "start": 52.405,
+          "end": 52.447
+        },
+        {
+          "word": "whole.",
+          "start": 52.49,
+          "end": 52.917
+        }
+      ],
+      "scene": 6,
+      "start": 76.4,
+      "end": 78.70400000000001,
+      "caption_start": 76.4,
+      "caption_end": 78.804
+    },
+    {
+      "id": 20,
+      "text": "One of four parts is one quarter.",
+      "source_caption_start": 79.6,
+      "source_caption_end": 82.9,
+      "raw_start": 53.215,
+      "raw_end": 55.071,
+      "words": [
+        {
+          "word": "One",
+          "start": 53.215,
+          "end": 53.471
+        },
+        {
+          "word": "of",
+          "start": 53.514,
+          "end": 53.5567
+        },
+        {
+          "word": "four",
+          "start": 53.599,
+          "end": 53.77
+        },
+        {
+          "word": "parts",
+          "start": 53.855,
+          "end": 54.026
+        },
+        {
+          "word": "is",
+          "start": 54.197,
+          "end": 54.239
+        },
+        {
+          "word": "one",
+          "start": 54.325,
+          "end": 54.4527
+        },
+        {
+          "word": "quarter.",
+          "start": 54.538,
+          "end": 55.071
+        }
+      ],
+      "scene": 6,
+      "start": 79.00200000000001,
+      "end": 80.858,
+      "caption_start": 79.00200000000001,
+      "caption_end": 80.958
+    },
+    {
+      "id": 21,
+      "text": "Two quarters make one half.",
+      "source_caption_start": 83.2,
+      "source_caption_end": 85.7,
+      "raw_start": 55.434,
+      "raw_end": 56.991,
+      "words": [
+        {
+          "word": "Two",
+          "start": 55.434,
+          "end": 55.647
+        },
+        {
+          "word": "quarters",
+          "start": 55.69,
+          "end": 55.989
+        },
+        {
+          "word": "make",
+          "start": 56.074,
+          "end": 56.202
+        },
+        {
+          "word": "one",
+          "start": 56.287,
+          "end": 56.415
+        },
+        {
+          "word": "half.",
+          "start": 56.458,
+          "end": 56.991
+        }
+      ],
+      "scene": 6,
+      "start": 81.221,
+      "end": 82.77799999999999,
+      "caption_start": 81.221,
+      "caption_end": 82.87799999999999
+    },
+    {
+      "id": 22,
+      "text": "Three shaded parts make three quarters.",
+      "source_caption_start": 86.0,
+      "source_caption_end": 89.5,
+      "raw_start": 57.354,
+      "raw_end": 59.368,
+      "words": [
+        {
+          "word": "Three",
+          "start": 57.354,
+          "end": 57.5247
+        },
+        {
+          "word": "shaded",
+          "start": 57.653,
+          "end": 57.951
+        },
+        {
+          "word": "parts",
+          "start": 58.037,
+          "end": 58.207
+        },
+        {
+          "word": "make",
+          "start": 58.335,
+          "end": 58.506
+        },
+        {
+          "word": "three",
+          "start": 58.591,
+          "end": 58.719
+        },
+        {
+          "word": "quarters.",
+          "start": 58.805,
+          "end": 59.368
+        }
+      ],
+      "scene": 6,
+      "start": 83.14099999999999,
+      "end": 85.155,
+      "caption_start": 83.14099999999999,
+      "caption_end": 89.5
+    },
+    {
+      "id": 23,
+      "text": "Three thousand plus four thousand costs seven thousand rupiah.",
+      "source_caption_start": 90.6,
+      "source_caption_end": 94.9,
+      "raw_start": 59.632,
+      "raw_end": 62.981,
+      "words": [
+        {
+          "word": "Three",
+          "start": 59.632,
+          "end": 59.8025
+        },
+        {
+          "word": "thousand",
+          "start": 59.931,
+          "end": 60.101
+        },
+        {
+          "word": "plus",
+          "start": 60.357,
+          "end": 60.5278
+        },
+        {
+          "word": "four",
+          "start": 60.656,
+          "end": 60.7838
+        },
+        {
+          "word": "thousand",
+          "start": 60.869,
+          "end": 61.0825
+        },
+        {
+          "word": "costs",
+          "start": 61.381,
+          "end": 61.765
+        },
+        {
+          "word": "seven",
+          "start": 61.85,
+          "end": 61.9358
+        },
+        {
+          "word": "thousand",
+          "start": 62.064,
+          "end": 62.234
+        },
+        {
+          "word": "rupiah.",
+          "start": 62.448,
+          "end": 62.981
+        }
+      ],
+      "scene": 7,
+      "start": 90.6,
+      "end": 93.949,
+      "caption_start": 90.6,
+      "caption_end": 94.038
+    },
+    {
+      "id": 24,
+      "text": "Pay ten thousand.",
+      "source_caption_start": 95.2,
+      "source_caption_end": 97.3,
+      "raw_start": 63.13,
+      "raw_end": 64.09,
+      "words": [
+        {
+          "word": "Pay",
+          "start": 63.13,
+          "end": 63.301
+        },
+        {
+          "word": "ten",
+          "start": 63.344,
+          "end": 63.514
+        },
+        {
+          "word": "thousand.",
+          "start": 63.557,
+          "end": 64.09
+        }
+      ],
+      "scene": 7,
+      "start": 94.098,
+      "end": 95.058,
+      "caption_start": 94.098,
+      "caption_end": 95.158
+    },
+    {
+      "id": 25,
+      "text": "How much change?",
+      "source_caption_start": 97.7,
+      "source_caption_end": 103.1,
+      "raw_start": 64.41,
+      "raw_end": 65.413,
+      "words": [
+        {
+          "word": "How",
+          "start": 64.41,
+          "end": 64.538
+        },
+        {
+          "word": "much",
+          "start": 64.581,
+          "end": 64.709
+        },
+        {
+          "word": "change?",
+          "start": 64.794,
+          "end": 65.413
+        }
+      ],
+      "scene": 7,
+      "start": 95.378,
+      "end": 96.381,
+      "caption_start": 95.378,
+      "caption_end": 100.39800000000001
+    },
+    {
+      "id": 26,
+      "text": "Three thousand: subtract the cost from your payment.",
+      "source_caption_start": 103.4,
+      "source_caption_end": 108.3,
+      "raw_start": 65.819,
+      "raw_end": 68.613,
+      "words": [
+        {
+          "word": "Three",
+          "start": 65.819,
+          "end": 66.0318
+        },
+        {
+          "word": "thousand:",
+          "start": 66.117,
+          "end": 66.629
+        },
+        {
+          "word": "subtract",
+          "start": 66.928,
+          "end": 67.3118
+        },
+        {
+          "word": "the",
+          "start": 67.397,
+          "end": 67.4825
+        },
+        {
+          "word": "cost",
+          "start": 67.525,
+          "end": 67.6958
+        },
+        {
+          "word": "from",
+          "start": 67.824,
+          "end": 67.909
+        },
+        {
+          "word": "your",
+          "start": 67.952,
+          "end": 68.037
+        },
+        {
+          "word": "payment.",
+          "start": 68.08,
+          "end": 68.613
+        }
+      ],
+      "scene": 7,
+      "start": 100.468,
+      "end": 103.262,
+      "caption_start": 100.58800000000001,
+      "caption_end": 108.3
+    },
+    {
+      "id": 27,
+      "text": "Read, choose your method, and check your answer.",
+      "source_caption_start": 112.6,
+      "source_caption_end": 116.2,
+      "raw_start": 68.805,
+      "raw_end": 71.344,
+      "words": [
+        {
+          "word": "Read,",
+          "start": 68.805,
+          "end": 69.296
+        },
+        {
+          "word": "choose",
+          "start": 69.531,
+          "end": 69.7438
+        },
+        {
+          "word": "your",
+          "start": 69.787,
+          "end": 69.8718
+        },
+        {
+          "word": "method,",
+          "start": 69.915,
+          "end": 70.213
+        },
+        {
+          "word": "and",
+          "start": 70.341,
+          "end": 70.469
+        },
+        {
+          "word": "check",
+          "start": 70.512,
+          "end": 70.683
+        },
+        {
+          "word": "your",
+          "start": 70.768,
+          "end": 70.853
+        },
+        {
+          "word": "answer.",
+          "start": 70.896,
+          "end": 71.344
+        }
+      ],
+      "scene": 8,
+      "start": 112.60000000000001,
+      "end": 115.139,
+      "caption_start": 112.60000000000001,
+      "caption_end": 115.23899999999999
+    },
+    {
+      "id": 28,
+      "text": "Try the Unit One quizzes!",
+      "source_caption_start": 116.7,
+      "source_caption_end": 119.8,
+      "raw_start": 71.621,
+      "raw_end": 73.00675736961452,
+      "words": [
+        {
+          "word": "Try",
+          "start": 71.621,
+          "end": 71.8345
+        },
+        {
+          "word": "the",
+          "start": 71.877,
+          "end": 71.9625
+        },
+        {
+          "word": "Unit",
+          "start": 72.005,
+          "end": 72.133
+        },
+        {
+          "word": "One",
+          "start": 72.261,
+          "end": 72.389
+        },
+        {
+          "word": "quizzes!",
+          "start": 72.432,
+          "end": 73.00675736961452
+        }
+      ],
+      "scene": 8,
+      "start": 115.416,
+      "end": 116.80175736961452,
+      "caption_start": 115.416,
+      "caption_end": 119.8
+    }
+  ],
+  "words": [
+    {
+      "word": "Welcome,",
+      "source_start": 0.256,
+      "source_end": 0.725,
+      "start": 0.5,
+      "end": 0.969
+    },
+    {
+      "word": "detective!",
+      "source_start": 0.768,
+      "source_end": 1.365,
+      "start": 1.012,
+      "end": 1.609
+    },
+    {
+      "word": "Let",
+      "source_start": 1.707,
+      "source_end": 2.005,
+      "start": 1.951,
+      "end": 2.2489999999999997
+    },
+    {
+      "word": "us",
+      "source_start": 2.048,
+      "source_end": 2.133,
+      "start": 2.292,
+      "end": 2.377
+    },
+    {
+      "word": "use",
+      "source_start": 2.219,
+      "source_end": 2.389,
+      "start": 2.463,
+      "end": 2.633
+    },
+    {
+      "word": "numbers",
+      "source_start": 2.475,
+      "source_end": 2.6027,
+      "start": 2.7190000000000003,
+      "end": 2.8467000000000002
+    },
+    {
+      "word": "to",
+      "source_start": 2.859,
+      "source_end": 2.944,
+      "start": 3.1029999999999998,
+      "end": 3.1879999999999997
+    },
+    {
+      "word": "prepare",
+      "source_start": 2.987,
+      "source_end": 3.328,
+      "start": 3.231,
+      "end": 3.572
+    },
+    {
+      "word": "our",
+      "source_start": 3.371,
+      "source_end": 3.4987,
+      "start": 3.615,
+      "end": 3.7427
+    },
+    {
+      "word": "school",
+      "source_start": 3.541,
+      "source_end": 3.7547,
+      "start": 3.785,
+      "end": 3.9987000000000004
+    },
+    {
+      "word": "fair.",
+      "source_start": 3.84,
+      "source_end": 4.331,
+      "start": 4.084,
+      "end": 4.575
+    },
+    {
+      "word": "Two",
+      "source_start": 4.651,
+      "source_end": 4.864,
+      "start": 6.8,
+      "end": 7.013
+    },
+    {
+      "word": "hundreds,",
+      "source_start": 4.907,
+      "source_end": 5.504,
+      "start": 7.056,
+      "end": 7.653
+    },
+    {
+      "word": "three",
+      "source_start": 5.717,
+      "source_end": 5.845,
+      "start": 7.866,
+      "end": 7.994
+    },
+    {
+      "word": "tens,",
+      "source_start": 5.973,
+      "source_end": 6.4,
+      "start": 8.122,
+      "end": 8.549
+    },
+    {
+      "word": "and",
+      "source_start": 6.571,
+      "source_end": 6.869,
+      "start": 8.719999999999999,
+      "end": 9.018
+    },
+    {
+      "word": "six",
+      "source_start": 6.912,
+      "source_end": 7.125,
+      "start": 9.061,
+      "end": 9.274000000000001
+    },
+    {
+      "word": "ones",
+      "source_start": 7.253,
+      "source_end": 7.424,
+      "start": 9.402000000000001,
+      "end": 9.573
+    },
+    {
+      "word": "make",
+      "source_start": 7.637,
+      "source_end": 7.765,
+      "start": 9.786,
+      "end": 9.914
+    },
+    {
+      "word": "two",
+      "source_start": 7.851,
+      "source_end": 7.979,
+      "start": 10.0,
+      "end": 10.128
+    },
+    {
+      "word": "hundred",
+      "source_start": 8.021,
+      "source_end": 8.149,
+      "start": 10.170000000000002,
+      "end": 10.297999999999998
+    },
+    {
+      "word": "thirty-six.",
+      "source_start": 8.32,
+      "source_end": 9.109,
+      "start": 10.469000000000001,
+      "end": 11.258
+    },
+    {
+      "word": "It",
+      "source_start": 9.429,
+      "source_end": 9.6427,
+      "start": 11.578,
+      "end": 11.791699999999999
+    },
+    {
+      "word": "is",
+      "source_start": 9.685,
+      "source_end": 9.7707,
+      "start": 11.834,
+      "end": 11.919699999999999
+    },
+    {
+      "word": "greater",
+      "source_start": 9.856,
+      "source_end": 10.069,
+      "start": 12.004999999999999,
+      "end": 12.218
+    },
+    {
+      "word": "than",
+      "source_start": 10.197,
+      "source_end": 10.325,
+      "start": 12.346,
+      "end": 12.474
+    },
+    {
+      "word": "two",
+      "source_start": 10.368,
+      "source_end": 10.496,
+      "start": 12.517,
+      "end": 12.645
+    },
+    {
+      "word": "hundred",
+      "source_start": 10.539,
+      "source_end": 10.6667,
+      "start": 12.687999999999999,
+      "end": 12.8157
+    },
+    {
+      "word": "thirty.",
+      "source_start": 10.837,
+      "source_end": 11.328,
+      "start": 12.986,
+      "end": 13.477
+    },
+    {
+      "word": "Compare",
+      "source_start": 11.648,
+      "source_end": 11.9467,
+      "start": 13.797,
+      "end": 14.0957
+    },
+    {
+      "word": "the",
+      "source_start": 12.032,
+      "source_end": 12.117,
+      "start": 14.181000000000001,
+      "end": 14.266000000000002
+    },
+    {
+      "word": "place",
+      "source_start": 12.16,
+      "source_end": 12.3307,
+      "start": 14.309000000000001,
+      "end": 14.479700000000001
+    },
+    {
+      "word": "values,",
+      "source_start": 12.459,
+      "source_end": 12.949,
+      "start": 14.608,
+      "end": 15.097999999999999
+    },
+    {
+      "word": "starting",
+      "source_start": 13.099,
+      "source_end": 13.312,
+      "start": 15.248000000000001,
+      "end": 15.460999999999999
+    },
+    {
+      "word": "with",
+      "source_start": 13.397,
+      "source_end": 13.483,
+      "start": 15.546,
+      "end": 15.632000000000001
+    },
+    {
+      "word": "the",
+      "source_start": 13.525,
+      "source_end": 13.6107,
+      "start": 15.674,
+      "end": 15.759699999999999
+    },
+    {
+      "word": "hundreds.",
+      "source_start": 13.653,
+      "source_end": 14.116,
+      "start": 15.802,
+      "end": 16.265
+    },
+    {
+      "word": "Addition",
+      "source_start": 14.28,
+      "source_end": 14.5356,
+      "start": 21.6,
+      "end": 21.855600000000003
+    },
+    {
+      "word": "joins",
+      "source_start": 14.834,
+      "source_end": 15.346,
+      "start": 22.154,
+      "end": 22.666
+    },
+    {
+      "word": "amounts.",
+      "source_start": 15.517,
+      "source_end": 16.029,
+      "start": 22.837,
+      "end": 23.349
+    },
+    {
+      "word": "Twenty-seven",
+      "source_start": 16.285,
+      "source_end": 16.9676,
+      "start": 23.605,
+      "end": 24.2876
+    },
+    {
+      "word": "plus",
+      "source_start": 17.096,
+      "source_end": 17.266,
+      "start": 24.416,
+      "end": 24.586
+    },
+    {
+      "word": "fifteen",
+      "source_start": 17.352,
+      "source_end": 17.7356,
+      "start": 24.672,
+      "end": 25.055600000000002
+    },
+    {
+      "word": "is",
+      "source_start": 17.949,
+      "source_end": 18.0769,
+      "start": 25.269000000000002,
+      "end": 25.3969
+    },
+    {
+      "word": "forty-two.",
+      "source_start": 18.162,
+      "source_end": 18.845,
+      "start": 25.482,
+      "end": 26.165
+    },
+    {
+      "word": "Exchange",
+      "source_start": 19.058,
+      "source_end": 19.6129,
+      "start": 26.378,
+      "end": 26.9329
+    },
+    {
+      "word": "ten",
+      "source_start": 19.741,
+      "source_end": 19.9116,
+      "start": 27.061,
+      "end": 27.2316
+    },
+    {
+      "word": "ones",
+      "source_start": 19.954,
+      "source_end": 20.082,
+      "start": 27.274,
+      "end": 27.402
+    },
+    {
+      "word": "for",
+      "source_start": 20.21,
+      "source_end": 20.2956,
+      "start": 27.53,
+      "end": 27.6156
+    },
+    {
+      "word": "one",
+      "source_start": 20.338,
+      "source_end": 20.466,
+      "start": 27.658,
+      "end": 27.786
+    },
+    {
+      "word": "ten",
+      "source_start": 20.509,
+      "source_end": 20.722,
+      "start": 27.829,
+      "end": 28.042
+    },
+    {
+      "word": "when",
+      "source_start": 20.893,
+      "source_end": 21.1489,
+      "start": 28.213,
+      "end": 28.4689
+    },
+    {
+      "word": "needed.",
+      "source_start": 21.192,
+      "source_end": 21.682,
+      "start": 28.512,
+      "end": 29.002
+    },
+    {
+      "word": "Subtraction",
+      "source_start": 22.002,
+      "source_end": 22.4289,
+      "start": 29.322,
+      "end": 29.7489
+    },
+    {
+      "word": "takes",
+      "source_start": 22.77,
+      "source_end": 23.1969,
+      "start": 30.09,
+      "end": 30.5169
+    },
+    {
+      "word": "an",
+      "source_start": 23.282,
+      "source_end": 23.3249,
+      "start": 30.602,
+      "end": 30.6449
+    },
+    {
+      "word": "amount",
+      "source_start": 23.41,
+      "source_end": 23.538,
+      "start": 30.73,
+      "end": 30.858
+    },
+    {
+      "word": "away.",
+      "source_start": 23.666,
+      "source_end": 24.072,
+      "start": 30.986,
+      "end": 31.392
+    },
+    {
+      "word": "Forty-two",
+      "source_start": 24.349,
+      "source_end": 24.818,
+      "start": 31.669,
+      "end": 32.138000000000005
+    },
+    {
+      "word": "minus",
+      "source_start": 24.861,
+      "source_end": 25.074,
+      "start": 32.181,
+      "end": 32.394000000000005
+    },
+    {
+      "word": "fifteen",
+      "source_start": 25.16,
+      "source_end": 25.5436,
+      "start": 32.480000000000004,
+      "end": 32.863600000000005
+    },
+    {
+      "word": "returns",
+      "source_start": 25.757,
+      "source_end": 26.1409,
+      "start": 33.077,
+      "end": 33.460899999999995
+    },
+    {
+      "word": "us",
+      "source_start": 26.226,
+      "source_end": 26.2689,
+      "start": 33.546,
+      "end": 33.588899999999995
+    },
+    {
+      "word": "to",
+      "source_start": 26.312,
+      "source_end": 26.3969,
+      "start": 33.632000000000005,
+      "end": 33.716899999999995
+    },
+    {
+      "word": "twenty-seven.",
+      "source_start": 26.44,
+      "source_end": 27.165,
+      "start": 33.760000000000005,
+      "end": 34.485
+    },
+    {
+      "word": "The",
+      "source_start": 27.464,
+      "source_end": 27.5916,
+      "start": 34.784,
+      "end": 34.9116
+    },
+    {
+      "word": "operations",
+      "source_start": 27.634,
+      "source_end": 27.9756,
+      "start": 34.954,
+      "end": 35.2956
+    },
+    {
+      "word": "help",
+      "source_start": 28.232,
+      "source_end": 28.402,
+      "start": 35.552,
+      "end": 35.722
+    },
+    {
+      "word": "check",
+      "source_start": 28.445,
+      "source_end": 28.6156,
+      "start": 35.765,
+      "end": 35.9356
+    },
+    {
+      "word": "each",
+      "source_start": 28.701,
+      "source_end": 28.786,
+      "start": 36.021,
+      "end": 36.106
+    },
+    {
+      "word": "other.",
+      "source_start": 28.829,
+      "source_end": 29.243,
+      "start": 36.149,
+      "end": 36.563
+    },
+    {
+      "word": "Three",
+      "source_start": 29.529,
+      "source_end": 29.699,
+      "start": 43.5,
+      "end": 43.67
+    },
+    {
+      "word": "bags",
+      "source_start": 29.827,
+      "source_end": 30.083,
+      "start": 43.798,
+      "end": 44.054
+    },
+    {
+      "word": "with",
+      "source_start": 30.169,
+      "source_end": 30.211,
+      "start": 44.14,
+      "end": 44.182
+    },
+    {
+      "word": "five",
+      "source_start": 30.297,
+      "source_end": 30.467,
+      "start": 44.268,
+      "end": 44.438
+    },
+    {
+      "word": "pencils",
+      "source_start": 30.595,
+      "source_end": 30.9366,
+      "start": 44.566,
+      "end": 44.9076
+    },
+    {
+      "word": "each",
+      "source_start": 31.065,
+      "source_end": 31.2779,
+      "start": 45.036,
+      "end": 45.2489
+    },
+    {
+      "word": "make",
+      "source_start": 31.406,
+      "source_end": 31.5339,
+      "start": 45.376999999999995,
+      "end": 45.5049
+    },
+    {
+      "word": "fifteen",
+      "source_start": 31.619,
+      "source_end": 32.0459,
+      "start": 45.59,
+      "end": 46.01690000000001
+    },
+    {
+      "word": "pencils.",
+      "source_start": 32.131,
+      "source_end": 32.771,
+      "start": 46.102000000000004,
+      "end": 46.742000000000004
+    },
+    {
+      "word": "That",
+      "source_start": 33.07,
+      "source_end": 33.283,
+      "start": 47.041,
+      "end": 47.254000000000005
+    },
+    {
+      "word": "is",
+      "source_start": 33.326,
+      "source_end": 33.3686,
+      "start": 47.297,
+      "end": 47.339600000000004
+    },
+    {
+      "word": "multiplication:",
+      "source_start": 33.454,
+      "source_end": 34.265,
+      "start": 47.425,
+      "end": 48.236000000000004
+    },
+    {
+      "word": "equal",
+      "source_start": 34.521,
+      "source_end": 34.691,
+      "start": 48.492000000000004,
+      "end": 48.662000000000006
+    },
+    {
+      "word": "groups.",
+      "source_start": 34.862,
+      "source_end": 35.481,
+      "start": 48.833,
+      "end": 49.452
+    },
+    {
+      "word": "Sharing",
+      "source_start": 35.843,
+      "source_end": 36.099,
+      "start": 49.81400000000001,
+      "end": 50.06999999999999
+    },
+    {
+      "word": "fifteen",
+      "source_start": 36.185,
+      "source_end": 36.5686,
+      "start": 50.156000000000006,
+      "end": 50.53960000000001
+    },
+    {
+      "word": "equally",
+      "source_start": 36.611,
+      "source_end": 36.867,
+      "start": 50.581999999999994,
+      "end": 50.837999999999994
+    },
+    {
+      "word": "among",
+      "source_start": 37.038,
+      "source_end": 37.1659,
+      "start": 51.009,
+      "end": 51.1369
+    },
+    {
+      "word": "three",
+      "source_start": 37.251,
+      "source_end": 37.4219,
+      "start": 51.221999999999994,
+      "end": 51.3929
+    },
+    {
+      "word": "bags",
+      "source_start": 37.465,
+      "source_end": 37.763,
+      "start": 51.43600000000001,
+      "end": 51.733999999999995
+    },
+    {
+      "word": "gives",
+      "source_start": 37.849,
+      "source_end": 37.9339,
+      "start": 51.81999999999999,
+      "end": 51.9049
+    },
+    {
+      "word": "five",
+      "source_start": 38.062,
+      "source_end": 38.2326,
+      "start": 52.033,
+      "end": 52.203599999999994
+    },
+    {
+      "word": "each.",
+      "source_start": 38.361,
+      "source_end": 38.745,
+      "start": 52.331999999999994,
+      "end": 52.715999999999994
+    },
+    {
+      "word": "That",
+      "source_start": 39.001,
+      "source_end": 39.171,
+      "start": 52.971999999999994,
+      "end": 53.141999999999996
+    },
+    {
+      "word": "is",
+      "source_start": 39.214,
+      "source_end": 39.299,
+      "start": 53.185,
+      "end": 53.269999999999996
+    },
+    {
+      "word": "division.",
+      "source_start": 39.342,
+      "source_end": 39.833,
+      "start": 53.313,
+      "end": 53.804
+    },
+    {
+      "word": "Check",
+      "source_start": 40.11,
+      "source_end": 40.323,
+      "start": 54.081,
+      "end": 54.294
+    },
+    {
+      "word": "that",
+      "source_start": 40.366,
+      "source_end": 40.4939,
+      "start": 54.337,
+      "end": 54.4649
+    },
+    {
+      "word": "every",
+      "source_start": 40.537,
+      "source_end": 40.6646,
+      "start": 54.507999999999996,
+      "end": 54.6356
+    },
+    {
+      "word": "bag",
+      "source_start": 40.75,
+      "source_end": 40.963,
+      "start": 54.721000000000004,
+      "end": 54.934
+    },
+    {
+      "word": "has",
+      "source_start": 41.049,
+      "source_end": 41.1339,
+      "start": 55.019999999999996,
+      "end": 55.1049
+    },
+    {
+      "word": "the",
+      "source_start": 41.177,
+      "source_end": 41.2619,
+      "start": 55.147999999999996,
+      "end": 55.2329
+    },
+    {
+      "word": "same",
+      "source_start": 41.305,
+      "source_end": 41.475,
+      "start": 55.275999999999996,
+      "end": 55.446
+    },
+    {
+      "word": "number.",
+      "source_start": 41.561,
+      "source_end": 41.945,
+      "start": 55.532,
+      "end": 55.916
+    },
+    {
+      "word": "Multiples",
+      "source_start": 42.243,
+      "source_end": 42.6699,
+      "start": 63.6,
+      "end": 64.0269
+    },
+    {
+      "word": "follow",
+      "source_start": 42.755,
+      "source_end": 42.9259,
+      "start": 64.112,
+      "end": 64.2829
+    },
+    {
+      "word": "equal",
+      "source_start": 43.054,
+      "source_end": 43.1819,
+      "start": 64.411,
+      "end": 64.5389
+    },
+    {
+      "word": "jumps.",
+      "source_start": 43.353,
+      "source_end": 43.868,
+      "start": 64.71000000000001,
+      "end": 65.225
+    },
+    {
+      "word": "Count",
+      "source_start": 44.127,
+      "source_end": 44.3407,
+      "start": 65.48400000000001,
+      "end": 65.6977
+    },
+    {
+      "word": "in",
+      "source_start": 44.383,
+      "source_end": 44.511,
+      "start": 65.74000000000001,
+      "end": 65.868
+    },
+    {
+      "word": "threes",
+      "source_start": 44.554,
+      "source_end": 44.81,
+      "start": 65.911,
+      "end": 66.167
+    },
+    {
+      "word": "or",
+      "source_start": 44.895,
+      "source_end": 45.023,
+      "start": 66.25200000000001,
+      "end": 66.38
+    },
+    {
+      "word": "fives.",
+      "source_start": 45.066,
+      "source_end": 45.727,
+      "start": 66.423,
+      "end": 67.084
+    },
+    {
+      "word": "Fifteen",
+      "source_start": 46.047,
+      "source_end": 46.5167,
+      "start": 67.404,
+      "end": 67.8737
+    },
+    {
+      "word": "appears",
+      "source_start": 46.559,
+      "source_end": 46.815,
+      "start": 67.916,
+      "end": 68.172
+    },
+    {
+      "word": "in",
+      "source_start": 46.943,
+      "source_end": 47.071,
+      "start": 68.3,
+      "end": 68.428
+    },
+    {
+      "word": "both",
+      "source_start": 47.114,
+      "source_end": 47.2847,
+      "start": 68.471,
+      "end": 68.6417
+    },
+    {
+      "word": "patterns,",
+      "source_start": 47.37,
+      "source_end": 47.925,
+      "start": 68.727,
+      "end": 69.282
+    },
+    {
+      "word": "so",
+      "source_start": 48.138,
+      "source_end": 48.3087,
+      "start": 69.495,
+      "end": 69.6657
+    },
+    {
+      "word": "one",
+      "source_start": 48.351,
+      "source_end": 48.522,
+      "start": 69.708,
+      "end": 69.87899999999999
+    },
+    {
+      "word": "number",
+      "source_start": 48.565,
+      "source_end": 48.6927,
+      "start": 69.922,
+      "end": 70.0497
+    },
+    {
+      "word": "can",
+      "source_start": 48.863,
+      "source_end": 48.991,
+      "start": 70.22,
+      "end": 70.348
+    },
+    {
+      "word": "fit",
+      "source_start": 49.034,
+      "source_end": 49.2047,
+      "start": 70.39099999999999,
+      "end": 70.5617
+    },
+    {
+      "word": "two",
+      "source_start": 49.247,
+      "source_end": 49.418,
+      "start": 70.604,
+      "end": 70.775
+    },
+    {
+      "word": "rules.",
+      "source_start": 49.503,
+      "source_end": 50.143,
+      "start": 70.86,
+      "end": 71.5
+    },
+    {
+      "word": "Fractions",
+      "source_start": 50.613,
+      "source_end": 50.8687,
+      "start": 76.4,
+      "end": 76.6557
+    },
+    {
+      "word": "describe",
+      "source_start": 51.167,
+      "source_end": 51.594,
+      "start": 76.95400000000001,
+      "end": 77.381
+    },
+    {
+      "word": "equal",
+      "source_start": 51.679,
+      "source_end": 51.807,
+      "start": 77.46600000000001,
+      "end": 77.594
+    },
+    {
+      "word": "parts",
+      "source_start": 51.978,
+      "source_end": 52.191,
+      "start": 77.765,
+      "end": 77.97800000000001
+    },
+    {
+      "word": "of",
+      "source_start": 52.277,
+      "source_end": 52.362,
+      "start": 78.064,
+      "end": 78.149
+    },
+    {
+      "word": "a",
+      "source_start": 52.405,
+      "source_end": 52.447,
+      "start": 78.19200000000001,
+      "end": 78.23400000000001
+    },
+    {
+      "word": "whole.",
+      "source_start": 52.49,
+      "source_end": 52.917,
+      "start": 78.277,
+      "end": 78.70400000000001
+    },
+    {
+      "word": "One",
+      "source_start": 53.215,
+      "source_end": 53.471,
+      "start": 79.00200000000001,
+      "end": 79.258
+    },
+    {
+      "word": "of",
+      "source_start": 53.514,
+      "source_end": 53.5567,
+      "start": 79.301,
+      "end": 79.3437
+    },
+    {
+      "word": "four",
+      "source_start": 53.599,
+      "source_end": 53.77,
+      "start": 79.386,
+      "end": 79.557
+    },
+    {
+      "word": "parts",
+      "source_start": 53.855,
+      "source_end": 54.026,
+      "start": 79.642,
+      "end": 79.813
+    },
+    {
+      "word": "is",
+      "source_start": 54.197,
+      "source_end": 54.239,
+      "start": 79.98400000000001,
+      "end": 80.026
+    },
+    {
+      "word": "one",
+      "source_start": 54.325,
+      "source_end": 54.4527,
+      "start": 80.112,
+      "end": 80.2397
+    },
+    {
+      "word": "quarter.",
+      "source_start": 54.538,
+      "source_end": 55.071,
+      "start": 80.32499999999999,
+      "end": 80.858
+    },
+    {
+      "word": "Two",
+      "source_start": 55.434,
+      "source_end": 55.647,
+      "start": 81.221,
+      "end": 81.434
+    },
+    {
+      "word": "quarters",
+      "source_start": 55.69,
+      "source_end": 55.989,
+      "start": 81.477,
+      "end": 81.776
+    },
+    {
+      "word": "make",
+      "source_start": 56.074,
+      "source_end": 56.202,
+      "start": 81.86099999999999,
+      "end": 81.989
+    },
+    {
+      "word": "one",
+      "source_start": 56.287,
+      "source_end": 56.415,
+      "start": 82.074,
+      "end": 82.202
+    },
+    {
+      "word": "half.",
+      "source_start": 56.458,
+      "source_end": 56.991,
+      "start": 82.245,
+      "end": 82.77799999999999
+    },
+    {
+      "word": "Three",
+      "source_start": 57.354,
+      "source_end": 57.5247,
+      "start": 83.14099999999999,
+      "end": 83.3117
+    },
+    {
+      "word": "shaded",
+      "source_start": 57.653,
+      "source_end": 57.951,
+      "start": 83.44,
+      "end": 83.738
+    },
+    {
+      "word": "parts",
+      "source_start": 58.037,
+      "source_end": 58.207,
+      "start": 83.824,
+      "end": 83.994
+    },
+    {
+      "word": "make",
+      "source_start": 58.335,
+      "source_end": 58.506,
+      "start": 84.122,
+      "end": 84.293
+    },
+    {
+      "word": "three",
+      "source_start": 58.591,
+      "source_end": 58.719,
+      "start": 84.378,
+      "end": 84.506
+    },
+    {
+      "word": "quarters.",
+      "source_start": 58.805,
+      "source_end": 59.368,
+      "start": 84.592,
+      "end": 85.155
+    },
+    {
+      "word": "Three",
+      "source_start": 59.632,
+      "source_end": 59.8025,
+      "start": 90.6,
+      "end": 90.7705
+    },
+    {
+      "word": "thousand",
+      "source_start": 59.931,
+      "source_end": 60.101,
+      "start": 90.899,
+      "end": 91.069
+    },
+    {
+      "word": "plus",
+      "source_start": 60.357,
+      "source_end": 60.5278,
+      "start": 91.325,
+      "end": 91.4958
+    },
+    {
+      "word": "four",
+      "source_start": 60.656,
+      "source_end": 60.7838,
+      "start": 91.624,
+      "end": 91.7518
+    },
+    {
+      "word": "thousand",
+      "source_start": 60.869,
+      "source_end": 61.0825,
+      "start": 91.837,
+      "end": 92.0505
+    },
+    {
+      "word": "costs",
+      "source_start": 61.381,
+      "source_end": 61.765,
+      "start": 92.349,
+      "end": 92.733
+    },
+    {
+      "word": "seven",
+      "source_start": 61.85,
+      "source_end": 61.9358,
+      "start": 92.818,
+      "end": 92.9038
+    },
+    {
+      "word": "thousand",
+      "source_start": 62.064,
+      "source_end": 62.234,
+      "start": 93.032,
+      "end": 93.202
+    },
+    {
+      "word": "rupiah.",
+      "source_start": 62.448,
+      "source_end": 62.981,
+      "start": 93.416,
+      "end": 93.949
+    },
+    {
+      "word": "Pay",
+      "source_start": 63.13,
+      "source_end": 63.301,
+      "start": 94.098,
+      "end": 94.269
+    },
+    {
+      "word": "ten",
+      "source_start": 63.344,
+      "source_end": 63.514,
+      "start": 94.312,
+      "end": 94.482
+    },
+    {
+      "word": "thousand.",
+      "source_start": 63.557,
+      "source_end": 64.09,
+      "start": 94.525,
+      "end": 95.058
+    },
+    {
+      "word": "How",
+      "source_start": 64.41,
+      "source_end": 64.538,
+      "start": 95.378,
+      "end": 95.506
+    },
+    {
+      "word": "much",
+      "source_start": 64.581,
+      "source_end": 64.709,
+      "start": 95.549,
+      "end": 95.677
+    },
+    {
+      "word": "change?",
+      "source_start": 64.794,
+      "source_end": 65.413,
+      "start": 95.762,
+      "end": 96.381
+    },
+    {
+      "word": "Three",
+      "source_start": 65.819,
+      "source_end": 66.0318,
+      "start": 100.468,
+      "end": 100.6808
+    },
+    {
+      "word": "thousand:",
+      "source_start": 66.117,
+      "source_end": 66.629,
+      "start": 100.766,
+      "end": 101.278
+    },
+    {
+      "word": "subtract",
+      "source_start": 66.928,
+      "source_end": 67.3118,
+      "start": 101.577,
+      "end": 101.9608
+    },
+    {
+      "word": "the",
+      "source_start": 67.397,
+      "source_end": 67.4825,
+      "start": 102.046,
+      "end": 102.1315
+    },
+    {
+      "word": "cost",
+      "source_start": 67.525,
+      "source_end": 67.6958,
+      "start": 102.174,
+      "end": 102.3448
+    },
+    {
+      "word": "from",
+      "source_start": 67.824,
+      "source_end": 67.909,
+      "start": 102.473,
+      "end": 102.558
+    },
+    {
+      "word": "your",
+      "source_start": 67.952,
+      "source_end": 68.037,
+      "start": 102.601,
+      "end": 102.686
+    },
+    {
+      "word": "payment.",
+      "source_start": 68.08,
+      "source_end": 68.613,
+      "start": 102.729,
+      "end": 103.262
+    },
+    {
+      "word": "Read,",
+      "source_start": 68.805,
+      "source_end": 69.296,
+      "start": 112.60000000000001,
+      "end": 113.09100000000001
+    },
+    {
+      "word": "choose",
+      "source_start": 69.531,
+      "source_end": 69.7438,
+      "start": 113.32600000000001,
+      "end": 113.5388
+    },
+    {
+      "word": "your",
+      "source_start": 69.787,
+      "source_end": 69.8718,
+      "start": 113.58200000000001,
+      "end": 113.6668
+    },
+    {
+      "word": "method,",
+      "source_start": 69.915,
+      "source_end": 70.213,
+      "start": 113.71000000000001,
+      "end": 114.008
+    },
+    {
+      "word": "and",
+      "source_start": 70.341,
+      "source_end": 70.469,
+      "start": 114.136,
+      "end": 114.264
+    },
+    {
+      "word": "check",
+      "source_start": 70.512,
+      "source_end": 70.683,
+      "start": 114.307,
+      "end": 114.47800000000001
+    },
+    {
+      "word": "your",
+      "source_start": 70.768,
+      "source_end": 70.853,
+      "start": 114.563,
+      "end": 114.648
+    },
+    {
+      "word": "answer.",
+      "source_start": 70.896,
+      "source_end": 71.344,
+      "start": 114.691,
+      "end": 115.139
+    },
+    {
+      "word": "Try",
+      "source_start": 71.621,
+      "source_end": 71.8345,
+      "start": 115.416,
+      "end": 115.62950000000001
+    },
+    {
+      "word": "the",
+      "source_start": 71.877,
+      "source_end": 71.9625,
+      "start": 115.672,
+      "end": 115.75750000000001
+    },
+    {
+      "word": "Unit",
+      "source_start": 72.005,
+      "source_end": 72.133,
+      "start": 115.8,
+      "end": 115.928
+    },
+    {
+      "word": "One",
+      "source_start": 72.261,
+      "source_end": 72.389,
+      "start": 116.056,
+      "end": 116.184
+    },
+    {
+      "word": "quizzes!",
+      "source_start": 72.432,
+      "source_end": 73.00675736961452,
+      "start": 116.227,
+      "end": 116.80175736961452
+    }
+  ],
+  "drawing_source_to_sequence": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.5
+    ],
+    [
+      5.8,
+      5.8
+    ],
+    [
+      6.0,
+      6.0
+    ],
+    [
+      6.8,
+      6.8
+    ],
+    [
+      11.1,
+      11.357999999999999
+    ],
+    [
+      11.4,
+      11.578
+    ],
+    [
+      13.5,
+      13.577
+    ],
+    [
+      13.9,
+      13.797
+    ],
+    [
+      20.5,
+      20.5
+    ],
+    [
+      21.0,
+      21.0
+    ],
+    [
+      21.6,
+      21.6
+    ],
+    [
+      22.9,
+      23.449
+    ],
+    [
+      23.2,
+      23.605
+    ],
+    [
+      25.7,
+      26.265
+    ],
+    [
+      26.0,
+      26.378
+    ],
+    [
+      29.3,
+      29.102
+    ],
+    [
+      29.6,
+      29.322
+    ],
+    [
+      31.5,
+      31.492
+    ],
+    [
+      31.8,
+      31.669
+    ],
+    [
+      35.7,
+      34.585
+    ],
+    [
+      36.0,
+      34.784
+    ],
+    [
+      42.5,
+      42.5
+    ],
+    [
+      43.0,
+      43.0
+    ],
+    [
+      43.5,
+      43.5
+    ],
+    [
+      46.5,
+      46.842000000000006
+    ],
+    [
+      46.8,
+      47.041
+    ],
+    [
+      49.3,
+      49.552
+    ],
+    [
+      49.6,
+      49.81400000000001
+    ],
+    [
+      53.5,
+      52.815999999999995
+    ],
+    [
+      53.8,
+      52.971999999999994
+    ],
+    [
+      55.5,
+      53.904
+    ],
+    [
+      55.8,
+      54.081
+    ],
+    [
+      62.5,
+      62.5
+    ],
+    [
+      63.0,
+      63.0
+    ],
+    [
+      63.6,
+      63.6
+    ],
+    [
+      65.5,
+      65.32499999999999
+    ],
+    [
+      65.8,
+      65.48400000000001
+    ],
+    [
+      68.5,
+      67.184
+    ],
+    [
+      68.8,
+      67.404
+    ],
+    [
+      75.5,
+      75.5
+    ],
+    [
+      76.0,
+      76.0
+    ],
+    [
+      76.4,
+      76.4
+    ],
+    [
+      79.3,
+      78.804
+    ],
+    [
+      79.6,
+      79.00200000000001
+    ],
+    [
+      82.9,
+      80.958
+    ],
+    [
+      83.2,
+      81.221
+    ],
+    [
+      85.7,
+      82.87799999999999
+    ],
+    [
+      86.0,
+      83.14099999999999
+    ],
+    [
+      89.5,
+      89.5
+    ],
+    [
+      90.0,
+      90.0
+    ],
+    [
+      90.6,
+      90.6
+    ],
+    [
+      94.9,
+      94.038
+    ],
+    [
+      95.2,
+      94.098
+    ],
+    [
+      97.3,
+      95.158
+    ],
+    [
+      97.7,
+      95.378
+    ],
+    [
+      103.1,
+      100.39800000000001
+    ],
+    [
+      103.2,
+      100.50800000000001
+    ],
+    [
+      103.4,
+      100.58800000000001
+    ],
+    [
+      108.3,
+      108.3
+    ],
+    [
+      112.0,
+      112.0
+    ],
+    [
+      112.6,
+      112.60000000000001
+    ],
+    [
+      116.2,
+      115.23899999999999
+    ],
+    [
+      116.7,
+      115.416
+    ],
+    [
+      119.8,
+      119.8
+    ],
+    [
+      120.0,
+      120.0
+    ]
+  ]
+}

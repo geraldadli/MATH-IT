@@ -1,0 +1,114 @@
+{
+  "source": "C:\\Users\\Asus\\Downloads\\Math It Unit 2 Video.mp4",
+  "source_sha256": "ca26351fdc5b788479e337105972ff893ab2289e8e84c77841f76c557fe14dd9",
+  "source_video": {
+    "duration_seconds": 120,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 3600,
+    "audio_streams": 0
+  },
+  "script_source": "D:\\Project-Website\\math-it\\docs\\lesson-videos\\unit-prompts\\unit-2.txt",
+  "voice": {
+    "id": "31e2fd6e7c924bc9be987ac4cfaac5e8",
+    "name": "Warm William",
+    "catalog_engine": "starfish",
+    "gender": "male",
+    "language": "en",
+    "locale": "en-US"
+  },
+  "delivery_plan": {
+    "natural_speed_multiplier": 1.0,
+    "voice_track_separate": true,
+    "loudness_target_lufs": -16,
+    "true_peak_ceiling_dbtp": -1.5,
+    "thinking_pause_seconds": 4.0,
+    "style_field_limitation": "Connected speech tool has no free-form style instructions field; style directions are retained separately and are not spoken.",
+    "speaking_rate": "natural conversational speed",
+    "fixed_words_per_minute_target": null,
+    "sentence_speed_adjustments": false,
+    "audio_time_stretch": false,
+    "timing_policy": "Measure each scene after synthesis. Use the accepted narration timing to guide the edit; preserve natural speech cadence and the exact four-second thinking pause."
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 6,
+      "allotted_seconds": 6,
+      "text": "Good detectives explain their thinking. Let us investigate five useful strategies.",
+      "spoken_words": 11
+    },
+    {
+      "id": 2,
+      "start": 6,
+      "end": 26,
+      "allotted_seconds": 20,
+      "text": "Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.",
+      "spoken_words": 33
+    },
+    {
+      "id": 3,
+      "start": 26,
+      "end": 44,
+      "allotted_seconds": 18,
+      "text": "For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.",
+      "spoken_words": 30
+    },
+    {
+      "id": 4,
+      "start": 44,
+      "end": 62,
+      "allotted_seconds": 18,
+      "text": "A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.",
+      "spoken_words": 30
+    },
+    {
+      "id": 5,
+      "start": 62,
+      "end": 82,
+      "allotted_seconds": 20,
+      "text": "Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.",
+      "spoken_words": 33
+    },
+    {
+      "id": 6,
+      "start": 82,
+      "end": 106,
+      "allotted_seconds": 24,
+      "text": "Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed? The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.",
+      "spoken_words": 32
+    },
+    {
+      "id": 7,
+      "start": 106,
+      "end": 120,
+      "allotted_seconds": 14,
+      "text": "Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!",
+      "spoken_words": 25
+    }
+  ],
+  "audition_line_occurrences": 1,
+  "generation_attempts": [
+    {
+      "status": "failed_before_audio_returned",
+      "engine_requested": "starfish",
+      "http_status": 400,
+      "error_code": "invalid_parameter",
+      "error_message": "This workspace requires Orca for public voices. Select Orca or choose another voice.",
+      "retry_requires_user_approval": true
+    },
+    {
+      "status": "blocked_no_audio_created",
+      "user_authorized_retry": true,
+      "engine_requested": "orca",
+      "http_status": 402,
+      "error_code": "insufficient_credit",
+      "allowance_remaining_seconds": 28,
+      "request_required_seconds": 84,
+      "error_message": "You have 28 seconds of free voice-generation time left. This request needs 84 seconds. Your allowance renews next month. No audio was created."
+    }
+  ],
+  "status": "Awaiting available speech quota; no new narration generated."
+}

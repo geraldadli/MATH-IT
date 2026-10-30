@@ -1,0 +1,67 @@
+{
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "frames": 3600,
+    "fps": 30.0
+  },
+  "unchanged_video_sha256": "SHA256=6611446c24f23ea4dc6de9ba8a6acd82331ff1d1722c69466db3539afa803927",
+  "wav_duration_seconds": 120.0,
+  "voice": "en-US-EricNeural",
+  "spoken_words": 193,
+  "spoken_wpm": 111.91,
+  "thinking_pause": {
+    "start": 101.6,
+    "end": 105.6,
+    "duration": 4.0
+  },
+  "pause_samples_exactly_zero": 192000,
+  "integrated_loudness_lufs": -16.25,
+  "true_peak_dbtp": -1.49,
+  "all_33_generated_phrase_tokens_match_script": true,
+  "all_scenes_fit": [
+    {
+      "scene": 1,
+      "allotted_seconds": 5,
+      "first_speech": 0.15,
+      "last_speech": 4.98
+    },
+    {
+      "scene": 2,
+      "allotted_seconds": 20,
+      "first_speech": 5.15,
+      "last_speech": 24.98
+    },
+    {
+      "scene": 3,
+      "allotted_seconds": 18,
+      "first_speech": 25.15,
+      "last_speech": 41.81365
+    },
+    {
+      "scene": 4,
+      "allotted_seconds": 18,
+      "first_speech": 43.1,
+      "last_speech": 60.42727
+    },
+    {
+      "scene": 5,
+      "allotted_seconds": 16,
+      "first_speech": 61.15,
+      "last_speech": 75.23181
+    },
+    {
+      "scene": 6,
+      "allotted_seconds": 33,
+      "first_speech": 78.1,
+      "last_speech": 107.78181
+    },
+    {
+      "scene": 7,
+      "allotted_seconds": 10,
+      "first_speech": 110.15,
+      "last_speech": 119.55273
+    }
+  ],
+  "full_video_decode": "passed"
+}

@@ -1,0 +1,219 @@
+{
+  "id": "scene-05-1",
+  "scene": 5,
+  "text": "A square has four equal sides and right angles, even when turned. A right angle is a square corner. This triangle has three equal sides and no right angle. Does it fit either rule?",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 4,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 1000000,
+      "duration": 500000,
+      "text": "A"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 1625000,
+      "duration": 3625000,
+      "text": "square"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 5375000,
+      "duration": 2375000,
+      "text": "has"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 7875000,
+      "duration": 3250000,
+      "text": "four"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 11250000,
+      "duration": 2875000,
+      "text": "equal"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14250000,
+      "duration": 5000000,
+      "text": "sides"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 19375000,
+      "duration": 1250000,
+      "text": "and"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 20750000,
+      "duration": 2250000,
+      "text": "right"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 23125000,
+      "duration": 4375000,
+      "text": "angles"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 31125000,
+      "duration": 2000000,
+      "text": "even"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 33250000,
+      "duration": 1250000,
+      "text": "when"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 34625000,
+      "duration": 4125000,
+      "text": "turned"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 42875000,
+      "duration": 500000,
+      "text": "A"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 43500000,
+      "duration": 2625000,
+      "text": "right"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 46250000,
+      "duration": 3500000,
+      "text": "angle"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 50875000,
+      "duration": 875000,
+      "text": "is"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 51875000,
+      "duration": 500000,
+      "text": "a"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52500000,
+      "duration": 3125000,
+      "text": "square"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 55750000,
+      "duration": 4000000,
+      "text": "corner"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 64000000,
+      "duration": 1750000,
+      "text": "This"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 65875000,
+      "duration": 4875000,
+      "text": "triangle"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 70875000,
+      "duration": 2250000,
+      "text": "has"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 73250000,
+      "duration": 2750000,
+      "text": "three"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 76125000,
+      "duration": 2875000,
+      "text": "equal"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 79125000,
+      "duration": 5500000,
+      "text": "sides"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 86500000,
+      "duration": 1250000,
+      "text": "and"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 87875000,
+      "duration": 2500000,
+      "text": "no"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 90500000,
+      "duration": 2250000,
+      "text": "right"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92875000,
+      "duration": 3625000,
+      "text": "angle"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 100625000,
+      "duration": 1000000,
+      "text": "Does"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101750000,
+      "duration": 750000,
+      "text": "it"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 102625000,
+      "duration": 2250000,
+      "text": "fit"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 105000000,
+      "duration": 2375000,
+      "text": "either"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 107500000,
+      "duration": 2500000,
+      "text": "rule"
+    }
+  ],
+  "sha256": "fb2bdcf0931e8a58eedae58ae83528ca962e4da57b161c7b5020237e18a06815"
+}

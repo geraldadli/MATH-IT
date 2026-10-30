@@ -1,0 +1,1829 @@
+{
+  "source": "C:\\Users\\Asus\\Downloads\\Math It Unit 3.mp4",
+  "source_sha256": "eb0ce3c0d77389d3cb01c674d78b67450f3c403a8b87e3e9ecdfbfc98868de04",
+  "voice": "en-US-AriaNeural",
+  "unit_1_voice": "en-US-JennyNeural",
+  "engine": "Existing Microsoft Edge neural speech recordings",
+  "reused_existing_recordings": true,
+  "new_synthesis_performed": false,
+  "source_voice_controls": {
+    "rate": "-20%",
+    "pitch": "-3Hz"
+  },
+  "playback_rate": 1.0,
+  "words_per_minute_target": null,
+  "sequence": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "frames": 3600,
+    "duration_seconds": 120.0,
+    "sample_rate": 48000,
+    "channels": 1
+  },
+  "thinking_pause": {
+    "start": 98.4,
+    "end": 102.4,
+    "seconds": 4.0
+  },
+  "audition_line_occurrences": 1,
+  "loudness_normalization": {
+    "input_i": "-20.37",
+    "input_tp": "-1.67",
+    "input_lra": "5.40",
+    "input_thresh": "-30.85",
+    "output_i": "-16.37",
+    "output_tp": "-1.50",
+    "output_lra": "6.00",
+    "output_thresh": "-26.82",
+    "normalization_type": "dynamic",
+    "target_offset": "0.37"
+  },
+  "caption_bar_color": [
+    239,
+    234,
+    220
+  ],
+  "caption_timing_source": "Original synthesizer word offsets, first word anchored to measured onset; phrase end measured from audio",
+  "listening_review": "not_performed: audio perception is unavailable",
+  "style_control_limitation": "Existing engine recordings have fixed voice/rate/pitch and no free-form acting control.",
+  "transcript_review": "All existing synthesizer boundary tokens match the exact approved text; no independent ASR or listening review.",
+  "render_command": "python tmp/unit3-patient-explorer/build_output.py",
+  "cues": [
+    {
+      "id": 1,
+      "text": "Our toolkit measures length, mass, and time, and helps us investigate shapes.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-01.mp3",
+      "trim_start_sample": 9683,
+      "trim_end_sample": 291443,
+      "seconds": 5.87,
+      "words": 12,
+      "wpm": 122.7,
+      "generation_rate": "-20%",
+      "scene": 1,
+      "start_sample": 24000,
+      "end_sample": 305760,
+      "speech_start": 0.5,
+      "speech_end": 6.37,
+      "source_sha256": "4af620051b86e80404efa5d4fe9d5c934a7db7bc51e70f7e8ad6f63fc1899a6e",
+      "playback_rate": 1.0,
+      "source_in": 0.20172916666666665,
+      "source_out": 6.071729166666667,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 2500000,
+          "text": "Our"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3781250,
+          "duration": 5156250,
+          "text": "toolkit"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 9093750,
+          "duration": 4843750,
+          "text": "measures"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14093750,
+          "duration": 4843750,
+          "text": "length"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 21281250,
+          "duration": 5625000,
+          "text": "mass"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 28468750,
+          "duration": 2031250,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 30656250,
+          "duration": 4687500,
+          "text": "time"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 37687500,
+          "duration": 1250000,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 39093750,
+          "duration": 3593750,
+          "text": "helps"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 42843750,
+          "duration": 1875000,
+          "text": "us"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 44875000,
+          "duration": 7812500,
+          "text": "investigate"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 52843750,
+          "duration": 6718750,
+          "text": "shapes"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "One meter is one hundred centimeters.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-02.mp3",
+      "trim_start_sample": 9869,
+      "trim_end_sample": 139836,
+      "seconds": 2.707646,
+      "words": 6,
+      "wpm": 133.0,
+      "generation_rate": "-20%",
+      "scene": 2,
+      "start_sample": 364800,
+      "end_sample": 494767,
+      "speech_start": 7.6,
+      "speech_end": 10.307645833333334,
+      "source_sha256": "32105354535bfe5a37dedaaad481192b86c456c894fc9caeff9d4c918cea352d",
+      "playback_rate": 1.0,
+      "source_in": 0.20560416666666667,
+      "source_out": 2.91325,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 3593750,
+          "text": "One"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4875000,
+          "duration": 3750000,
+          "text": "meter"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 8781250,
+          "duration": 1562500,
+          "text": "is"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10500000,
+          "duration": 2500000,
+          "text": "one"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13156250,
+          "duration": 4531250,
+          "text": "hundred"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 17843750,
+          "duration": 10156250,
+          "text": "centimeters"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Half a meter is fifty centimeters.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-03.mp3",
+      "trim_start_sample": 9447,
+      "trim_end_sample": 132462,
+      "seconds": 2.562813,
+      "words": 6,
+      "wpm": 140.5,
+      "generation_rate": "-20%",
+      "scene": 2,
+      "start_sample": 566400,
+      "end_sample": 689415,
+      "speech_start": 11.8,
+      "speech_end": 14.3628125,
+      "source_sha256": "222ce6492b92bec22ac84a36b11ca10640acd89e7e1078c0ad1481a776bd2afe",
+      "playback_rate": 1.0,
+      "source_in": 0.1968125,
+      "source_out": 2.759625,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 3593750,
+          "text": "Half"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4875000,
+          "duration": 781250,
+          "text": "a"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5812500,
+          "duration": 4062500,
+          "text": "meter"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10031250,
+          "duration": 1875000,
+          "text": "is"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12062500,
+          "duration": 4062500,
+          "text": "fifty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16281250,
+          "duration": 10156250,
+          "text": "centimeters"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Before adding lengths, use the same unit.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-04.mp3",
+      "trim_start_sample": 9510,
+      "trim_end_sample": 162419,
+      "seconds": 3.185604,
+      "words": 7,
+      "wpm": 131.8,
+      "generation_rate": "-20%",
+      "scene": 2,
+      "start_sample": 748800,
+      "end_sample": 901709,
+      "speech_start": 15.6,
+      "speech_end": 18.785604166666666,
+      "source_sha256": "92ea033603d2eafc2d3a682a2750bc6d49c7ed71a930ea00a5696dd56353d3b6",
+      "playback_rate": 1.0,
+      "source_in": 0.198125,
+      "source_out": 3.3837291666666665,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 5781250,
+          "text": "Before"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 7062500,
+          "duration": 3125000,
+          "text": "adding"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10343750,
+          "duration": 5625000,
+          "text": "lengths"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 18000000,
+          "duration": 3125000,
+          "text": "use"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 21281250,
+          "duration": 1406250,
+          "text": "the"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22843750,
+          "duration": 3437500,
+          "text": "same"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 26437500,
+          "duration": 6250000,
+          "text": "unit"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Two meters and thirty centimeters becomes two hundred plus thirty: two hundred thirty centimeters.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-05.mp3",
+      "trim_start_sample": 9557,
+      "trim_end_sample": 337897,
+      "seconds": 6.840417,
+      "words": 14,
+      "wpm": 122.8,
+      "generation_rate": "-20%",
+      "scene": 2,
+      "start_sample": 960000,
+      "end_sample": 1288340,
+      "speech_start": 20.0,
+      "speech_end": 26.840416666666666,
+      "source_sha256": "c9d66004ef97957af88f339df28bd1e0f18b59c7a031c3f6453afb02cf51ee4e",
+      "playback_rate": 1.0,
+      "source_in": 0.19910416666666667,
+      "source_out": 7.0395208333333334,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 2968750,
+          "text": "Two"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4250000,
+          "duration": 5000000,
+          "text": "meters"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 9406250,
+          "duration": 1406250,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10968750,
+          "duration": 3750000,
+          "text": "thirty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14875000,
+          "duration": 8281250,
+          "text": "centimeters"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 23312500,
+          "duration": 5468750,
+          "text": "becomes"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 28937500,
+          "duration": 2500000,
+          "text": "two"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 31593750,
+          "duration": 4218750,
+          "text": "hundred"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 35968750,
+          "duration": 3750000,
+          "text": "plus"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 39875000,
+          "duration": 5156250,
+          "text": "thirty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 48312500,
+          "duration": 2343750,
+          "text": "two"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 50812500,
+          "duration": 4218750,
+          "text": "hundred"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 55187500,
+          "duration": 3593750,
+          "text": "thirty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 58937500,
+          "duration": 10156250,
+          "text": "centimeters"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "One kilogram is one thousand grams.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-06.mp3",
+      "trim_start_sample": 9737,
+      "trim_end_sample": 149575,
+      "seconds": 2.913292,
+      "words": 6,
+      "wpm": 123.6,
+      "generation_rate": "-20%",
+      "scene": 3,
+      "start_sample": 1564800,
+      "end_sample": 1704638,
+      "speech_start": 32.6,
+      "speech_end": 35.51329166666667,
+      "source_sha256": "5a3983193d8d9cbadc1360b28e587b5ae824cfee8f230ef63f029ba8032cffed",
+      "playback_rate": 1.0,
+      "source_in": 0.20285416666666667,
+      "source_out": 3.1161458333333334,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 4062500,
+          "text": "One"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5343750,
+          "duration": 7031250,
+          "text": "kilogram"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12531250,
+          "duration": 1250000,
+          "text": "is"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13937500,
+          "duration": 3125000,
+          "text": "one"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 17218750,
+          "duration": 5156250,
+          "text": "thousand"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22531250,
+          "duration": 7500000,
+          "text": "grams"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Half a kilogram is five hundred grams.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-07.mp3",
+      "trim_start_sample": 9403,
+      "trim_end_sample": 146626,
+      "seconds": 2.858812,
+      "words": 7,
+      "wpm": 146.9,
+      "generation_rate": "-20%",
+      "scene": 3,
+      "start_sample": 1752000,
+      "end_sample": 1889223,
+      "speech_start": 36.5,
+      "speech_end": 39.3588125,
+      "source_sha256": "f86c8861d0c9ff581b98f401a33d00cfb4e8909ba27fc4d27f7c3a77438774ed",
+      "playback_rate": 1.0,
+      "source_in": 0.19589583333333332,
+      "source_out": 3.054708333333333,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 3437500,
+          "text": "Half"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4718750,
+          "duration": 937500,
+          "text": "a"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5812500,
+          "duration": 7031250,
+          "text": "kilogram"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13000000,
+          "duration": 1718750,
+          "text": "is"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14875000,
+          "duration": 3437500,
+          "text": "five"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 18468750,
+          "duration": 3437500,
+          "text": "hundred"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22062500,
+          "duration": 7343750,
+          "text": "grams"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Change kilograms into grams before combining them.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-08.mp3",
+      "trim_start_sample": 9877,
+      "trim_end_sample": 182068,
+      "seconds": 3.587312,
+      "words": 7,
+      "wpm": 117.1,
+      "generation_rate": "-20%",
+      "scene": 3,
+      "start_sample": 1948800,
+      "end_sample": 2120991,
+      "speech_start": 40.6,
+      "speech_end": 44.1873125,
+      "source_sha256": "588064499c804c1458edc3860166fbf2553d9b62999dbf40cf9fbd66a3129fda",
+      "playback_rate": 1.0,
+      "source_in": 0.20577083333333332,
+      "source_out": 3.793083333333333,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 5156250,
+          "text": "Change"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 6437500,
+          "duration": 7656250,
+          "text": "kilograms"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14250000,
+          "duration": 2343750,
+          "text": "into"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16750000,
+          "duration": 5781250,
+          "text": "grams"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22687500,
+          "duration": 4062500,
+          "text": "before"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 26906250,
+          "duration": 5625000,
+          "text": "combining"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 32687500,
+          "duration": 4062500,
+          "text": "them"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "One kilogram plus two hundred fifty grams makes one thousand two hundred fifty grams.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-09.mp3",
+      "trim_start_sample": 9634,
+      "trim_end_sample": 315419,
+      "seconds": 6.370521,
+      "words": 14,
+      "wpm": 131.9,
+      "generation_rate": "-20%",
+      "scene": 3,
+      "start_sample": 2217600,
+      "end_sample": 2523385,
+      "speech_start": 46.2,
+      "speech_end": 52.57052083333333,
+      "source_sha256": "4074e1138ffaa4dc2a9aac0901081d16655b4abc484cdd113ef54e53888bb040",
+      "playback_rate": 1.0,
+      "source_in": 0.20070833333333332,
+      "source_out": 6.571229166666667,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 4062500,
+          "text": "One"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5343750,
+          "duration": 7031250,
+          "text": "kilogram"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12531250,
+          "duration": 3750000,
+          "text": "plus"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16437500,
+          "duration": 2500000,
+          "text": "two"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 19093750,
+          "duration": 4062500,
+          "text": "hundred"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 23312500,
+          "duration": 4218750,
+          "text": "fifty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 27687500,
+          "duration": 6093750,
+          "text": "grams"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 33937500,
+          "duration": 3125000,
+          "text": "makes"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 37218750,
+          "duration": 3437500,
+          "text": "one"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 40812500,
+          "duration": 5156250,
+          "text": "thousand"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 46125000,
+          "duration": 2343750,
+          "text": "two"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 48625000,
+          "duration": 3906250,
+          "text": "hundred"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 52687500,
+          "duration": 3906250,
+          "text": "fifty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 56750000,
+          "duration": 7656250,
+          "text": "grams"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "An hour has sixty minutes.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-10.mp3",
+      "trim_start_sample": 9664,
+      "trim_end_sample": 114527,
+      "seconds": 2.184646,
+      "words": 5,
+      "wpm": 137.3,
+      "generation_rate": "-20%",
+      "scene": 4,
+      "start_sample": 2620800,
+      "end_sample": 2725663,
+      "speech_start": 54.6,
+      "speech_end": 56.784645833333336,
+      "source_sha256": "2d94a4795d1ba6a1d01d3791369e66f0a50e3186f1a4ee6da218aaae317eb4dd",
+      "playback_rate": 1.0,
+      "source_in": 0.20133333333333334,
+      "source_out": 2.3859791666666665,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 2812500,
+          "text": "An"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4093750,
+          "duration": 4062500,
+          "text": "hour"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 8312500,
+          "duration": 2500000,
+          "text": "has"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10968750,
+          "duration": 4531250,
+          "text": "sixty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 15656250,
+          "duration": 7031250,
+          "text": "minutes"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Count forward to find elapsed time.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-11.mp3",
+      "trim_start_sample": 9698,
+      "trim_end_sample": 129770,
+      "seconds": 2.5015,
+      "words": 6,
+      "wpm": 143.9,
+      "generation_rate": "-20%",
+      "scene": 4,
+      "start_sample": 2764800,
+      "end_sample": 2884872,
+      "speech_start": 57.6,
+      "speech_end": 60.1015,
+      "source_sha256": "e66b4bea4634b9bb7c7c2d53b6401843162c9a01daeb700264892cef8b746410",
+      "playback_rate": 1.0,
+      "source_in": 0.20204166666666667,
+      "source_out": 2.7035416666666667,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 3906250,
+          "text": "Count"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5187500,
+          "duration": 4687500,
+          "text": "forward"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10031250,
+          "duration": 937500,
+          "text": "to"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 11125000,
+          "duration": 3593750,
+          "text": "find"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14875000,
+          "duration": 5468750,
+          "text": "elapsed"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 20500000,
+          "duration": 5312500,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "From nine forty to ten o’clock is twenty minutes.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-12.mp3",
+      "trim_start_sample": 9601,
+      "trim_end_sample": 174991,
+      "seconds": 3.445625,
+      "words": 9,
+      "wpm": 156.7,
+      "generation_rate": "-20%",
+      "scene": 4,
+      "start_sample": 2937600,
+      "end_sample": 3102990,
+      "speech_start": 61.2,
+      "speech_end": 64.645625,
+      "source_sha256": "41a69b07f59153ad75edab068933905ccf3198b4449e357a87fa3d7c1f622265",
+      "playback_rate": 1.0,
+      "source_in": 0.20002083333333334,
+      "source_out": 3.6456458333333335,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 2968750,
+          "text": "From"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4250000,
+          "duration": 3437500,
+          "text": "nine"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 7843750,
+          "duration": 3906250,
+          "text": "forty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 11906250,
+          "duration": 1250000,
+          "text": "to"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13312500,
+          "duration": 2812500,
+          "text": "ten"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 16281250,
+          "duration": 5781250,
+          "text": "o’clock"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22218750,
+          "duration": 1718750,
+          "text": "is"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 24093750,
+          "duration": 4062500,
+          "text": "twenty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 28312500,
+          "duration": 7031250,
+          "text": "minutes"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Continue five more minutes to ten oh five.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-13.mp3",
+      "trim_start_sample": 9365,
+      "trim_end_sample": 160141,
+      "seconds": 3.141167,
+      "words": 8,
+      "wpm": 152.8,
+      "generation_rate": "-20%",
+      "scene": 4,
+      "start_sample": 3206400,
+      "end_sample": 3357176,
+      "speech_start": 66.8,
+      "speech_end": 69.94116666666666,
+      "source_sha256": "a0cfbb3b9ea9b91bac9aaa16790a220410dba8556f03334945d8de8865c5b447",
+      "playback_rate": 1.0,
+      "source_in": 0.19510416666666666,
+      "source_out": 3.3362708333333333,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 6250000,
+          "text": "Continue"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 7531250,
+          "duration": 3906250,
+          "text": "five"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 11593750,
+          "duration": 2500000,
+          "text": "more"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14250000,
+          "duration": 5000000,
+          "text": "minutes"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 19406250,
+          "duration": 1250000,
+          "text": "to"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 20812500,
+          "duration": 3281250,
+          "text": "ten"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 24250000,
+          "duration": 1093750,
+          "text": "oh"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 25500000,
+          "duration": 6562500,
+          "text": "five"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Twenty plus five makes twenty-five minutes.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-14.mp3",
+      "trim_start_sample": 10217,
+      "trim_end_sample": 163191,
+      "seconds": 3.186958,
+      "words": 6,
+      "wpm": 113.0,
+      "generation_rate": "-20%",
+      "scene": 4,
+      "start_sample": 3446400,
+      "end_sample": 3599374,
+      "speech_start": 71.8,
+      "speech_end": 74.98695833333333,
+      "source_sha256": "30d3e465be83a01f5904b1ef797b7a6ead5e9fcb920c9a199073a70b2a1b81c0",
+      "playback_rate": 1.0,
+      "source_in": 0.21285416666666668,
+      "source_out": 3.3998125,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 4531250,
+          "text": "Twenty"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5812500,
+          "duration": 3593750,
+          "text": "plus"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 9562500,
+          "duration": 4687500,
+          "text": "five"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14406250,
+          "duration": 3437500,
+          "text": "makes"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 18000000,
+          "duration": 7500000,
+          "text": "twenty-five"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 25656250,
+          "duration": 7031250,
+          "text": "minutes"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "A square has four equal sides and right angles, even when turned.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-15.mp3",
+      "trim_start_sample": 9685,
+      "trim_end_sample": 246238,
+      "seconds": 4.928187,
+      "words": 12,
+      "wpm": 146.1,
+      "generation_rate": "-20%",
+      "scene": 5,
+      "start_sample": 3772800,
+      "end_sample": 4009353,
+      "speech_start": 78.6,
+      "speech_end": 83.5281875,
+      "source_sha256": "25802b6acc4e3b8a13639b6ad47646c7e0667ffe5eceacd799288cfe92ee0811",
+      "playback_rate": 1.0,
+      "source_in": 0.20177083333333334,
+      "source_out": 5.129958333333334,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 1718750,
+          "text": "A"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3000000,
+          "duration": 4531250,
+          "text": "square"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 7687500,
+          "duration": 2812500,
+          "text": "has"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10656250,
+          "duration": 2968750,
+          "text": "four"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13781250,
+          "duration": 4375000,
+          "text": "equal"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 18312500,
+          "duration": 5156250,
+          "text": "sides"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 23625000,
+          "duration": 1718750,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 25500000,
+          "duration": 2968750,
+          "text": "right"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 28625000,
+          "duration": 5468750,
+          "text": "angles"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 38000000,
+          "duration": 2968750,
+          "text": "even"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 41125000,
+          "duration": 2343750,
+          "text": "when"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 43625000,
+          "duration": 6406250,
+          "text": "turned"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "A right angle is a square corner.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-16.mp3",
+      "trim_start_sample": 9997,
+      "trim_end_sample": 119987,
+      "seconds": 2.291458,
+      "words": 7,
+      "wpm": 183.3,
+      "generation_rate": "-20%",
+      "scene": 5,
+      "start_sample": 4118400,
+      "end_sample": 4228390,
+      "speech_start": 85.8,
+      "speech_end": 88.09145833333334,
+      "source_sha256": "dec89d90bcec4dc85b3213e046c11b95580c417428c4b17f3416b39ed3021828",
+      "playback_rate": 1.0,
+      "source_in": 0.20827083333333332,
+      "source_out": 2.4997291666666666,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 1875000,
+          "text": "A"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3156250,
+          "duration": 3437500,
+          "text": "right"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 6750000,
+          "duration": 4062500,
+          "text": "angle"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 10968750,
+          "duration": 1406250,
+          "text": "is"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12531250,
+          "duration": 781250,
+          "text": "a"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 13468750,
+          "duration": 4062500,
+          "text": "square"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 17687500,
+          "duration": 6093750,
+          "text": "corner"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "This triangle has three equal sides and no right angle.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-17.mp3",
+      "trim_start_sample": 9439,
+      "trim_end_sample": 214503,
+      "seconds": 4.272167,
+      "words": 10,
+      "wpm": 140.4,
+      "generation_rate": "-20%",
+      "scene": 5,
+      "start_sample": 4320000,
+      "end_sample": 4525064,
+      "speech_start": 90.0,
+      "speech_end": 94.27216666666666,
+      "source_sha256": "3cf2d2cb7e7e71b4472dc4f5ca96183064253e57b33c87bb7de5b4dd2d7724c7",
+      "playback_rate": 1.0,
+      "source_in": 0.19664583333333333,
+      "source_out": 4.4688125,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 3437500,
+          "text": "This"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4718750,
+          "duration": 6718750,
+          "text": "triangle"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 11593750,
+          "duration": 2968750,
+          "text": "has"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14718750,
+          "duration": 4218750,
+          "text": "three"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 19093750,
+          "duration": 3906250,
+          "text": "equal"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 23156250,
+          "duration": 5625000,
+          "text": "sides"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 28937500,
+          "duration": 3125000,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 32218750,
+          "duration": 2656250,
+          "text": "no"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 35031250,
+          "duration": 2968750,
+          "text": "right"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 38156250,
+          "duration": 5312500,
+          "text": "angle"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Does it fit either rule?",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-18.mp3",
+      "trim_start_sample": 9401,
+      "trim_end_sample": 81630,
+      "seconds": 1.504771,
+      "words": 5,
+      "wpm": 199.4,
+      "generation_rate": "-20%",
+      "scene": 5,
+      "start_sample": 4650971,
+      "end_sample": 4723200,
+      "speech_start": 96.89522916666667,
+      "speech_end": 98.4,
+      "source_sha256": "f5b12736f4c5f274027cf37e6557c48118543fe2ee0f9a8881302b63a29c419c",
+      "playback_rate": 1.0,
+      "source_in": 0.19585416666666666,
+      "source_out": 1.700625,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 2500000,
+          "text": "Does"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 3781250,
+          "duration": 1562500,
+          "text": "it"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 5500000,
+          "duration": 2500000,
+          "text": "fit"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 8156250,
+          "duration": 2968750,
+          "text": "either"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 11281250,
+          "duration": 4531250,
+          "text": "rule"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Neither.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-19.mp3",
+      "trim_start_sample": 9626,
+      "trim_end_sample": 48496,
+      "seconds": 0.809792,
+      "words": 1,
+      "wpm": 74.1,
+      "generation_rate": "-20%",
+      "scene": 5,
+      "start_sample": 4915200,
+      "end_sample": 4954070,
+      "speech_start": 102.4,
+      "speech_end": 103.20979166666666,
+      "source_sha256": "b164aa90c62b0bda2503bffc629e2a4c0bbbe9c0070b3490181c7f5788b45ad2",
+      "playback_rate": 1.0,
+      "source_in": 0.20054166666666667,
+      "source_out": 1.0103333333333333,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 7812500,
+          "text": "Neither"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Match your units, count time carefully, and check shape properties instead of guessing from appearance.",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-20.mp3",
+      "trim_start_sample": 9486,
+      "trim_end_sample": 352984,
+      "seconds": 7.156208,
+      "words": 15,
+      "wpm": 125.8,
+      "generation_rate": "-20%",
+      "scene": 6,
+      "start_sample": 5064000,
+      "end_sample": 5407498,
+      "speech_start": 105.5,
+      "speech_end": 112.65620833333334,
+      "source_sha256": "abe8902ce9d9bc730da0df99f9947eb8ee8f545d043d2b3bb22b7d10b1e65df1",
+      "playback_rate": 1.0,
+      "source_in": 0.197625,
+      "source_out": 7.353833333333333,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 4843750,
+          "text": "Match"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 6125000,
+          "duration": 1562500,
+          "text": "your"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 7843750,
+          "duration": 5937500,
+          "text": "units"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 15656250,
+          "duration": 3437500,
+          "text": "count"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 19250000,
+          "duration": 3281250,
+          "text": "time"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 22687500,
+          "duration": 7187500,
+          "text": "carefully"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 33000000,
+          "duration": 2343750,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 35500000,
+          "duration": 3437500,
+          "text": "check"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 39093750,
+          "duration": 3593750,
+          "text": "shape"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 42843750,
+          "duration": 7031250,
+          "text": "properties"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 50031250,
+          "duration": 5625000,
+          "text": "instead"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 55812500,
+          "duration": 1093750,
+          "text": "of"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 57062500,
+          "duration": 4843750,
+          "text": "guessing"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 62062500,
+          "duration": 1718750,
+          "text": "from"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 63937500,
+          "duration": 8437500,
+          "text": "appearance"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Take your time, and try the Unit Three quizzes!",
+      "source": "D:\\Project-Website\\math-it\\tmp\\unit3-voiceover\\voice-21.mp3",
+      "trim_start_sample": 9788,
+      "trim_end_sample": 170620,
+      "seconds": 3.350667,
+      "words": 9,
+      "wpm": 161.2,
+      "generation_rate": "-20%",
+      "scene": 6,
+      "start_sample": 5462400,
+      "end_sample": 5623232,
+      "speech_start": 113.8,
+      "speech_end": 117.15066666666667,
+      "source_sha256": "fe0724861ef07a52ec6b68fafa86bed683f4f5cb885b9907590a6fd6a56c44de",
+      "playback_rate": 1.0,
+      "source_in": 0.20391666666666666,
+      "source_out": 3.5545833333333334,
+      "boundary_data": [
+        {
+          "type": "WordBoundary",
+          "offset": 1125000,
+          "duration": 3437500,
+          "text": "Take"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 4718750,
+          "duration": 1250000,
+          "text": "your"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 6125000,
+          "duration": 4375000,
+          "text": "time"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 12843750,
+          "duration": 1093750,
+          "text": "and"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 14093750,
+          "duration": 3281250,
+          "text": "try"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 17531250,
+          "duration": 937500,
+          "text": "the"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 18625000,
+          "duration": 4687500,
+          "text": "Unit"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 23468750,
+          "duration": 2968750,
+          "text": "Three"
+        },
+        {
+          "type": "WordBoundary",
+          "offset": 26593750,
+          "duration": 7656250,
+          "text": "quizzes"
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "id": 1,
+      "sentence_id": 1,
+      "start": 0.5,
+      "end": 4.18125,
+      "text": "Our toolkit measures length, mass, and time,",
+      "mode": "subtitle"
+    },
+    {
+      "id": 2,
+      "sentence_id": 1,
+      "start": 4.18125,
+      "end": 6.95,
+      "text": "and helps us investigate shapes.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 3,
+      "sentence_id": 2,
+      "start": 7.6,
+      "end": 10.957645833333334,
+      "text": "One meter is one hundred centimeters.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 4,
+      "sentence_id": 3,
+      "start": 11.8,
+      "end": 15.0128125,
+      "text": "Half a meter is fifty centimeters.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 5,
+      "sentence_id": 4,
+      "start": 15.6,
+      "end": 19.435604166666664,
+      "text": "Before adding lengths, use the same unit.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 6,
+      "sentence_id": 5,
+      "start": 20.0,
+      "end": 24.74375,
+      "text": "Two meters and thirty centimeters\nbecomes two hundred plus thirty:",
+      "mode": "subtitle"
+    },
+    {
+      "id": 7,
+      "sentence_id": 5,
+      "start": 24.74375,
+      "end": 27.490416666666665,
+      "text": "two hundred thirty centimeters.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 8,
+      "sentence_id": 6,
+      "start": 32.6,
+      "end": 36.163291666666666,
+      "text": "One kilogram is one thousand grams.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 9,
+      "sentence_id": 7,
+      "start": 36.5,
+      "end": 40.0088125,
+      "text": "Half a kilogram is five hundred grams.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 10,
+      "sentence_id": 8,
+      "start": 40.6,
+      "end": 44.837312499999996,
+      "text": "Change kilograms into grams before combining them.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 11,
+      "sentence_id": 9,
+      "start": 46.2,
+      "end": 49.50625,
+      "text": "One kilogram plus two hundred fifty grams",
+      "mode": "subtitle"
+    },
+    {
+      "id": 12,
+      "sentence_id": 9,
+      "start": 49.50625,
+      "end": 53.22052083333333,
+      "text": "makes one thousand two hundred fifty grams.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 13,
+      "sentence_id": 10,
+      "start": 54.6,
+      "end": 57.434645833333335,
+      "text": "An hour has sixty minutes.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 14,
+      "sentence_id": 11,
+      "start": 57.6,
+      "end": 60.7515,
+      "text": "Count forward to find elapsed time.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 15,
+      "sentence_id": 12,
+      "start": 61.2,
+      "end": 65.295625,
+      "text": "From nine forty to ten o’clock is twenty minutes.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 16,
+      "sentence_id": 13,
+      "start": 66.8,
+      "end": 70.59116666666667,
+      "text": "Continue five more minutes to ten oh five.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 17,
+      "sentence_id": 14,
+      "start": 71.8,
+      "end": 75.63695833333334,
+      "text": "Twenty plus five makes twenty-five minutes.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 18,
+      "sentence_id": 15,
+      "start": 78.6,
+      "end": 82.3125,
+      "text": "A square has four equal sides and right angles,",
+      "mode": "subtitle"
+    },
+    {
+      "id": 19,
+      "sentence_id": 15,
+      "start": 82.3125,
+      "end": 84.1781875,
+      "text": "even when turned.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 20,
+      "sentence_id": 16,
+      "start": 85.8,
+      "end": 88.74145833333334,
+      "text": "A right angle is a square corner.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 21,
+      "sentence_id": 17,
+      "start": 90.0,
+      "end": 94.92216666666667,
+      "text": "This triangle has three equal sides and no right angle.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 22,
+      "sentence_id": 18,
+      "start": 96.89522916666667,
+      "end": 102.38000000000001,
+      "text": "Does it fit either rule?",
+      "mode": "subtitle"
+    },
+    {
+      "id": 23,
+      "sentence_id": 19,
+      "start": 102.4,
+      "end": 103.85979166666667,
+      "text": "Neither.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 24,
+      "sentence_id": 20,
+      "start": 105.5,
+      "end": 108.7125,
+      "text": "Match your units, count time carefully,",
+      "mode": "subtitle"
+    },
+    {
+      "id": 25,
+      "sentence_id": 20,
+      "start": 108.7125,
+      "end": 113.30620833333334,
+      "text": "and check shape properties instead of guessing from appearance.",
+      "mode": "subtitle"
+    },
+    {
+      "id": 26,
+      "sentence_id": 21,
+      "start": 113.8,
+      "end": 117.80066666666667,
+      "text": "Take your time, and try the Unit Three quizzes!",
+      "mode": "subtitle"
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "start": 0,
+      "end": 7,
+      "sentence_ids": [
+        1
+      ]
+    },
+    {
+      "scene": 2,
+      "start": 7,
+      "end": 32,
+      "sentence_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "scene": 3,
+      "start": 32,
+      "end": 54,
+      "sentence_ids": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "scene": 4,
+      "start": 54,
+      "end": 78,
+      "sentence_ids": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "scene": 5,
+      "start": 78,
+      "end": 105,
+      "sentence_ids": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "scene": 6,
+      "start": 105,
+      "end": 120,
+      "sentence_ids": [
+        20,
+        21
+      ]
+    }
+  ],
+  "outputs": {
+    "wav": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-3\\Math It Unit 3 - Patient Explorer.wav",
+    "mp3": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-3\\Math It Unit 3 - Patient Explorer.mp3",
+    "video": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-3\\Math It Unit 3 - Patient Explorer.mp4",
+    "subtitles": "D:\\Project-Website\\math-it\\output\\voiceovers\\unit-3\\Math It Unit 3 - Patient Explorer.srt"
+  }
+}

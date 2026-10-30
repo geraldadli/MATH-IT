@@ -1,0 +1,19 @@
+Generation mode: built-in image_gen
+Final image: math-it-bear-detective-flat.png
+Design direction: Flat editorial; clean shapes, simple eyes, minimal shading.
+
+Final generation prompt:
+Create one original 2D FLAT EDITORIAL bear detective mascot for Math It, a children's math learning website. Deliver a high-resolution square PNG with a truly TRANSPARENT background.
+
+Art direction: flat vector-style children's magazine illustration made from broad clean geometric shapes. Extremely simple, restrained, intentional. All regions use perfectly SOLID, UNIFORM color fills. Think carefully designed cut-paper shapes with crisp smooth edges, NOT a rendered character. Zero gradients, zero lighting simulation, zero painted texture, zero fur texture, zero fabric texture, zero gloss. No dimensional shading at all. Use only a few thin navy strokes for facial features and a couple of clothing seams.
+
+Character: centered front-facing waist-up warm light-brown bear. Large simple rounded head, round ears with flat muted pink inner circles, a cream oval muzzle. TWO TINY SOLID NAVY DOT EYES, no sclera and no highlights. Small simple navy nose, one thin gently curved friendly smile. Two small muted peach blush circles. Kind, calm, reassuring confidence. Friendly and appealing to young children.
+
+Clothing: muted pastel butter-yellow detective cap with a simple brim and just two curved panel lines. Matching plain pastel yellow coat with broad rounded lapels. Simplified rounded paws rest at the coat opening. Clothing is graphic flat shapes. One flat ochre shape may define each lapel; otherwise no shadows. No accessories or props.
+
+Palette: restrained dusty warm brown #B9825D, cream #F7EBD5, muted butter yellow #E5C875, ochre #CBA959, muted peach #DFA694, deep navy #29364A. Solid colors only.
+
+Composition: a comfortably contained waist-up silhouette occupying about 75% of the square canvas width and 78% of its height. At least 10% fully clear transparent margin above cap, outside ears and shoulders, and below the bottom waist edge. Entire silhouette visible. Readable at 57px and 98px. Canvas ideally 2048 by 2048 pixels.
+
+No text, letters, numbers, watermark, border, ground shadow, backdrop, outer black outline, fur strands, realistic anatomy, plush-toy appearance, large glossy eyes, airbrushing, 3D rendering, photorealism, or glossy plastic finish. Do not draw a checkerboard; use actual alpha transparency.
+

@@ -1,0 +1,19 @@
+UNIT 4 — THE CURIOUS CHART GUIDE
+Selected existing voice: HeyGen Mike (adult male)
+Voice ID: 3ae75279043648ce8f96310333c9288f
+Unit 2 reference: Warm William, a different voice ID.
+
+VOICE GENERATION PROMPT
+Use a different adult male narrator from Unit 2. Give him a lighter middle-pitched voice with a clear, crisp tone. He sounds like a friendly museum guide helping children discover patterns: curious, engaged, and gently animated. Use clear, lightly American-accented English. Lightly emphasize key, scale, filter, sort, and table so children notice the tools. Introduce a question with a small rise in pitch, and explain the result with a confident, relaxed finish. Create energy through expression rather than faster speech. Avoid a sports-commentator delivery, advertising hype, robotic rhythm, or excessive pitch changes. Keep this same male voice throughout Unit 4.
+
+SHARED VOICE DIRECTION
+Keep the accent style, recording clarity, and perceived loudness consistent across the series. Address one curious child of about eight or nine, warmly and respectfully.
+
+Target speaking naturally at a natural speed. Distinguish the characters through pitch, tone, and expression rather than large speed changes. Speak numbers, operation names, and measurement units distinctly. Do not rush the ends of sentences or add extra words. Follow the exact narration and preserve the marked four-second silent thinking pause before the answer. Keep the same selected voice in every scene within its unit.
+
+Use clean, close, natural speech with no room echo, background noise, or added vocal effects. Generate the narration as a separate voice track; music and drawing sounds belong in the video edit. These directions belong in the voice or style instructions field, not in the text to be spoken. The audition line is for comparing voice candidates; it is already part of the script and must not be added a second time. Timing is a production target: check each generated scene against its allotted time before assembling the video.
+
+PRODUCTION RECORD
+The existing HeyGen source was synthesized at speed 1.0 and is reused without new synthesis. All speech and pitch stay at 1.0x. The voice track includes drawing and reading time to match the supplied 120-second video. Its exact silent thinking interval is 101.6–105.6 seconds. No music, drawing sounds, vocal effects, or extra narration have been added.
+
+The connected create_speech interface exposes no free-form voice/style instruction field. These directions are retained as production notes and have not been included in the spoken text. Listening review is still needed to assess the requested vocal expression, register, and pronunciation. See production-check.json for measured timing, source provenance, scene checks, and review limits.

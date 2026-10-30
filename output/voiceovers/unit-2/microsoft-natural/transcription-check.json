@@ -1,0 +1,1363 @@
+{
+  "model": "faster-whisper base.en, CPU int8",
+  "scope": "Every original synthesized segment",
+  "all_normalized_words_match": false,
+  "normalization": "Numbers converted to words; capitalization and punctuation ignored.",
+  "limitation": "Independent ASR check, not a listening review.",
+  "parts": [
+    {
+      "id": "scene-01-1",
+      "expected_text": "Good detectives explain their thinking. Let us investigate five useful strategies.",
+      "recognized_text": "Good detectives explained their thinking. Let us investigate five useful strategies.",
+      "normalized_exact_match": false,
+      "differences": [
+        {
+          "type": "replace",
+          "expected": [
+            "explain"
+          ],
+          "recognized": [
+            "explained"
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.32,
+          "text": " Good detectives explained their thinking. Let us investigate five useful strategies.",
+          "words": [
+            {
+              "word": " Good",
+              "start": 0.0,
+              "end": 0.22,
+              "probability": 0.9098617434501648
+            },
+            {
+              "word": " detectives",
+              "start": 0.22,
+              "end": 0.58,
+              "probability": 0.8948177099227905
+            },
+            {
+              "word": " explained",
+              "start": 0.58,
+              "end": 1.12,
+              "probability": 0.44332027435302734
+            },
+            {
+              "word": " their",
+              "start": 1.12,
+              "end": 1.44,
+              "probability": 0.9986802935600281
+            },
+            {
+              "word": " thinking.",
+              "start": 1.44,
+              "end": 1.74,
+              "probability": 0.9994609951972961
+            },
+            {
+              "word": " Let",
+              "start": 2.28,
+              "end": 2.38,
+              "probability": 0.9703038930892944
+            },
+            {
+              "word": " us",
+              "start": 2.38,
+              "end": 2.48,
+              "probability": 0.9870909452438354
+            },
+            {
+              "word": " investigate",
+              "start": 2.48,
+              "end": 2.96,
+              "probability": 0.995189905166626
+            },
+            {
+              "word": " five",
+              "start": 2.96,
+              "end": 3.5,
+              "probability": 0.6835215091705322
+            },
+            {
+              "word": " useful",
+              "start": 3.5,
+              "end": 3.94,
+              "probability": 0.9980910420417786
+            },
+            {
+              "word": " strategies.",
+              "start": 3.94,
+              "end": 4.32,
+              "probability": 0.9957172274589539
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-02-1",
+      "expected_text": "Picture the story. Do things join, leave, repeat, or need comparing? Seventeen stickers compared with eleven means six more. We subtract to find the difference. The word more does not always mean add.",
+      "recognized_text": "Picture the story. Do things join, leave, repeat, or need comparing. 17 stickers compared with 11 means 6 more. We subtract to find the difference. The word more does not always mean add.",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.62,
+          "text": " Picture the story. Do things join, leave, repeat, or need comparing.",
+          "words": [
+            {
+              "word": " Picture",
+              "start": 0.0,
+              "end": 0.3,
+              "probability": 0.9001495242118835
+            },
+            {
+              "word": " the",
+              "start": 0.3,
+              "end": 0.44,
+              "probability": 0.9946913123130798
+            },
+            {
+              "word": " story.",
+              "start": 0.44,
+              "end": 0.76,
+              "probability": 0.9937919974327087
+            },
+            {
+              "word": " Do",
+              "start": 1.36,
+              "end": 1.38,
+              "probability": 0.9763824939727783
+            },
+            {
+              "word": " things",
+              "start": 1.38,
+              "end": 1.64,
+              "probability": 0.9945726990699768
+            },
+            {
+              "word": " join,",
+              "start": 1.64,
+              "end": 1.92,
+              "probability": 0.7879937291145325
+            },
+            {
+              "word": " leave,",
+              "start": 2.44,
+              "end": 2.72,
+              "probability": 0.979486346244812
+            },
+            {
+              "word": " repeat,",
+              "start": 3.22,
+              "end": 3.56,
+              "probability": 0.9970306158065796
+            },
+            {
+              "word": " or",
+              "start": 4.02,
+              "end": 4.2,
+              "probability": 0.9984470009803772
+            },
+            {
+              "word": " need",
+              "start": 4.2,
+              "end": 4.32,
+              "probability": 0.9979800581932068
+            },
+            {
+              "word": " comparing.",
+              "start": 4.32,
+              "end": 4.62,
+              "probability": 0.9838879704475403
+            }
+          ]
+        },
+        {
+          "start": 5.42,
+          "end": 10.28,
+          "text": " 17 stickers compared with 11 means 6 more. We subtract to find the difference.",
+          "words": [
+            {
+              "word": " 17",
+              "start": 5.42,
+              "end": 5.56,
+              "probability": 0.5593619346618652
+            },
+            {
+              "word": " stickers",
+              "start": 5.56,
+              "end": 6.08,
+              "probability": 0.9734089970588684
+            },
+            {
+              "word": " compared",
+              "start": 6.08,
+              "end": 6.42,
+              "probability": 0.956092357635498
+            },
+            {
+              "word": " with",
+              "start": 6.42,
+              "end": 6.82,
+              "probability": 0.9977841973304749
+            },
+            {
+              "word": " 11",
+              "start": 6.82,
+              "end": 7.08,
+              "probability": 0.9737662672996521
+            },
+            {
+              "word": " means",
+              "start": 7.08,
+              "end": 7.6,
+              "probability": 0.6715294122695923
+            },
+            {
+              "word": " 6",
+              "start": 7.6,
+              "end": 7.98,
+              "probability": 0.6787012815475464
+            },
+            {
+              "word": " more.",
+              "start": 7.98,
+              "end": 8.24,
+              "probability": 0.9894200563430786
+            },
+            {
+              "word": " We",
+              "start": 8.88,
+              "end": 8.94,
+              "probability": 0.9912430047988892
+            },
+            {
+              "word": " subtract",
+              "start": 8.94,
+              "end": 9.2,
+              "probability": 0.994541347026825
+            },
+            {
+              "word": " to",
+              "start": 9.2,
+              "end": 9.66,
+              "probability": 0.9939320683479309
+            },
+            {
+              "word": " find",
+              "start": 9.66,
+              "end": 9.86,
+              "probability": 0.99800044298172
+            },
+            {
+              "word": " the",
+              "start": 9.86,
+              "end": 10.0,
+              "probability": 0.9902778267860413
+            },
+            {
+              "word": " difference.",
+              "start": 10.0,
+              "end": 10.28,
+              "probability": 0.9989110231399536
+            }
+          ]
+        },
+        {
+          "start": 10.98,
+          "end": 12.7,
+          "text": " The word more does not always mean add.",
+          "words": [
+            {
+              "word": " The",
+              "start": 10.98,
+              "end": 11.06,
+              "probability": 0.9840770363807678
+            },
+            {
+              "word": " word",
+              "start": 11.06,
+              "end": 11.22,
+              "probability": 0.9971510767936707
+            },
+            {
+              "word": " more",
+              "start": 11.22,
+              "end": 11.48,
+              "probability": 0.7631490230560303
+            },
+            {
+              "word": " does",
+              "start": 11.48,
+              "end": 11.64,
+              "probability": 0.9800899028778076
+            },
+            {
+              "word": " not",
+              "start": 11.64,
+              "end": 11.86,
+              "probability": 0.9981890320777893
+            },
+            {
+              "word": " always",
+              "start": 11.86,
+              "end": 12.22,
+              "probability": 0.9987127780914307
+            },
+            {
+              "word": " mean",
+              "start": 12.22,
+              "end": 12.46,
+              "probability": 0.999473512172699
+            },
+            {
+              "word": " add.",
+              "start": 12.46,
+              "end": 12.7,
+              "probability": 0.890795111656189
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-03-1",
+      "expected_text": "For a two-step clue, work inside the brackets first. Five plus four makes nine. Replace the brackets with nine, then multiply by three. The final answer is twenty-seven.",
+      "recognized_text": "For a two-step clue, work inside the brackets first. 5 plus 4 makes 9. Replace the brackets with 9, then multiply by 3. The final answer is 27.",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.8,
+          "text": " For a two-step clue, work inside the brackets first. 5 plus 4 makes 9.",
+          "words": [
+            {
+              "word": " For",
+              "start": 0.0,
+              "end": 0.24,
+              "probability": 0.9185149669647217
+            },
+            {
+              "word": " a",
+              "start": 0.24,
+              "end": 0.34,
+              "probability": 0.9958516359329224
+            },
+            {
+              "word": " two",
+              "start": 0.34,
+              "end": 0.5,
+              "probability": 0.77168869972229
+            },
+            {
+              "word": "-step",
+              "start": 0.5,
+              "end": 0.74,
+              "probability": 0.9111461639404297
+            },
+            {
+              "word": " clue,",
+              "start": 0.74,
+              "end": 1.02,
+              "probability": 0.990849494934082
+            },
+            {
+              "word": " work",
+              "start": 1.5,
+              "end": 1.66,
+              "probability": 0.9970021843910217
+            },
+            {
+              "word": " inside",
+              "start": 1.66,
+              "end": 2.0,
+              "probability": 0.9988024234771729
+            },
+            {
+              "word": " the",
+              "start": 2.0,
+              "end": 2.24,
+              "probability": 0.9957014918327332
+            },
+            {
+              "word": " brackets",
+              "start": 2.24,
+              "end": 2.42,
+              "probability": 0.8759737014770508
+            },
+            {
+              "word": " first.",
+              "start": 2.42,
+              "end": 2.82,
+              "probability": 0.9961053729057312
+            },
+            {
+              "word": " 5",
+              "start": 3.62,
+              "end": 3.74,
+              "probability": 0.9679072499275208
+            },
+            {
+              "word": " plus",
+              "start": 3.74,
+              "end": 3.98,
+              "probability": 0.24592214822769165
+            },
+            {
+              "word": " 4",
+              "start": 3.98,
+              "end": 4.3,
+              "probability": 0.9917707443237305
+            },
+            {
+              "word": " makes",
+              "start": 4.3,
+              "end": 4.5,
+              "probability": 0.9966013431549072
+            },
+            {
+              "word": " 9.",
+              "start": 4.5,
+              "end": 4.8,
+              "probability": 0.9803037047386169
+            }
+          ]
+        },
+        {
+          "start": 5.56,
+          "end": 10.34,
+          "text": " Replace the brackets with 9, then multiply by 3. The final answer is 27.",
+          "words": [
+            {
+              "word": " Replace",
+              "start": 5.56,
+              "end": 5.56,
+              "probability": 0.9878963232040405
+            },
+            {
+              "word": " the",
+              "start": 5.56,
+              "end": 5.8,
+              "probability": 0.998416543006897
+            },
+            {
+              "word": " brackets",
+              "start": 5.8,
+              "end": 6.12,
+              "probability": 0.9981449842453003
+            },
+            {
+              "word": " with",
+              "start": 6.12,
+              "end": 6.38,
+              "probability": 0.9981940388679504
+            },
+            {
+              "word": " 9,",
+              "start": 6.38,
+              "end": 6.7,
+              "probability": 0.9840630292892456
+            },
+            {
+              "word": " then",
+              "start": 7.1,
+              "end": 7.34,
+              "probability": 0.9972562193870544
+            },
+            {
+              "word": " multiply",
+              "start": 7.34,
+              "end": 7.56,
+              "probability": 0.988874077796936
+            },
+            {
+              "word": " by",
+              "start": 7.56,
+              "end": 8.12,
+              "probability": 0.9916486740112305
+            },
+            {
+              "word": " 3.",
+              "start": 8.12,
+              "end": 8.46,
+              "probability": 0.9853267669677734
+            },
+            {
+              "word": " The",
+              "start": 9.06,
+              "end": 9.1,
+              "probability": 0.9893423318862915
+            },
+            {
+              "word": " final",
+              "start": 9.1,
+              "end": 9.34,
+              "probability": 0.9987521171569824
+            },
+            {
+              "word": " answer",
+              "start": 9.34,
+              "end": 9.74,
+              "probability": 0.9991559982299805
+            },
+            {
+              "word": " is",
+              "start": 9.74,
+              "end": 10.02,
+              "probability": 0.9974032044410706
+            },
+            {
+              "word": " 27.",
+              "start": 10.02,
+              "end": 10.34,
+              "probability": 0.9759266972541809
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-04-1",
+      "expected_text": "A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.",
+      "recognized_text": "A missing number must make the equation true. Undo adding 9 with subtraction. The missing number is 14. For 6 times something equals 30, divide. The missing number is 5.",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.78,
+          "text": " A missing number must make the equation true. Undo adding 9 with subtraction. The missing number",
+          "words": [
+            {
+              "word": " A",
+              "start": 0.0,
+              "end": 0.18,
+              "probability": 0.9112936854362488
+            },
+            {
+              "word": " missing",
+              "start": 0.18,
+              "end": 0.34,
+              "probability": 0.9889373779296875
+            },
+            {
+              "word": " number",
+              "start": 0.34,
+              "end": 0.74,
+              "probability": 0.9980015158653259
+            },
+            {
+              "word": " must",
+              "start": 0.74,
+              "end": 1.12,
+              "probability": 0.9856376051902771
+            },
+            {
+              "word": " make",
+              "start": 1.12,
+              "end": 1.42,
+              "probability": 0.9985634684562683
+            },
+            {
+              "word": " the",
+              "start": 1.42,
+              "end": 1.58,
+              "probability": 0.9963053464889526
+            },
+            {
+              "word": " equation",
+              "start": 1.58,
+              "end": 1.86,
+              "probability": 0.9964106678962708
+            },
+            {
+              "word": " true.",
+              "start": 1.86,
+              "end": 2.3,
+              "probability": 0.99222731590271
+            },
+            {
+              "word": " Undo",
+              "start": 2.9,
+              "end": 3.12,
+              "probability": 0.9860562384128571
+            },
+            {
+              "word": " adding",
+              "start": 3.12,
+              "end": 3.4,
+              "probability": 0.9870708584785461
+            },
+            {
+              "word": " 9",
+              "start": 3.4,
+              "end": 3.76,
+              "probability": 0.7299138307571411
+            },
+            {
+              "word": " with",
+              "start": 3.76,
+              "end": 4.06,
+              "probability": 0.9908315539360046
+            },
+            {
+              "word": " subtraction.",
+              "start": 4.06,
+              "end": 4.58,
+              "probability": 0.9857127964496613
+            },
+            {
+              "word": " The",
+              "start": 5.2,
+              "end": 5.2,
+              "probability": 0.9897481203079224
+            },
+            {
+              "word": " missing",
+              "start": 5.2,
+              "end": 5.36,
+              "probability": 0.9962165951728821
+            },
+            {
+              "word": " number",
+              "start": 5.36,
+              "end": 5.78,
+              "probability": 0.9976344108581543
+            }
+          ]
+        },
+        {
+          "start": 5.78,
+          "end": 11.2,
+          "text": " is 14. For 6 times something equals 30, divide. The missing number is 5.",
+          "words": [
+            {
+              "word": " is",
+              "start": 5.78,
+              "end": 6.02,
+              "probability": 0.9982274174690247
+            },
+            {
+              "word": " 14.",
+              "start": 6.02,
+              "end": 6.42,
+              "probability": 0.9899573922157288
+            },
+            {
+              "word": " For",
+              "start": 7.1,
+              "end": 7.18,
+              "probability": 0.5034704804420471
+            },
+            {
+              "word": " 6",
+              "start": 7.18,
+              "end": 7.42,
+              "probability": 0.7815694212913513
+            },
+            {
+              "word": " times",
+              "start": 7.42,
+              "end": 7.7,
+              "probability": 0.9006918668746948
+            },
+            {
+              "word": " something",
+              "start": 7.7,
+              "end": 8.08,
+              "probability": 0.9809696674346924
+            },
+            {
+              "word": " equals",
+              "start": 8.08,
+              "end": 8.44,
+              "probability": 0.874203085899353
+            },
+            {
+              "word": " 30,",
+              "start": 8.44,
+              "end": 8.98,
+              "probability": 0.9940728545188904
+            },
+            {
+              "word": " divide.",
+              "start": 9.3,
+              "end": 9.42,
+              "probability": 0.9883890151977539
+            },
+            {
+              "word": " The",
+              "start": 10.18,
+              "end": 10.2,
+              "probability": 0.9903298616409302
+            },
+            {
+              "word": " missing",
+              "start": 10.2,
+              "end": 10.34,
+              "probability": 0.9959238767623901
+            },
+            {
+              "word": " number",
+              "start": 10.34,
+              "end": 10.74,
+              "probability": 0.9952927827835083
+            },
+            {
+              "word": " is",
+              "start": 10.74,
+              "end": 10.88,
+              "probability": 0.9936128258705139
+            },
+            {
+              "word": " 5.",
+              "start": 10.88,
+              "end": 11.2,
+              "probability": 0.9738115072250366
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-05-1",
+      "expected_text": "Estimate with nearby tens. Thirty-seven rounds to forty; twenty-four rounds to twenty. Forty plus twenty makes sixty, so the total is about sixty. For whole numbers halfway between tens, round up.",
+      "recognized_text": "estimate with nearby tens, 37 rounds to 40, 24 rounds to 20, 40 plus 20 makes 60, so the total is about 60, for whole numbers halfway between tens, round up.",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 7.42,
+          "text": " estimate with nearby tens, 37 rounds to 40, 24 rounds to 20, 40 plus 20 makes 60,",
+          "words": [
+            {
+              "word": " estimate",
+              "start": 0.0,
+              "end": 0.38,
+              "probability": 0.5072784423828125
+            },
+            {
+              "word": " with",
+              "start": 0.38,
+              "end": 0.6,
+              "probability": 0.9909251928329468
+            },
+            {
+              "word": " nearby",
+              "start": 0.6,
+              "end": 0.86,
+              "probability": 0.9533637166023254
+            },
+            {
+              "word": " tens,",
+              "start": 0.86,
+              "end": 1.26,
+              "probability": 0.7834839224815369
+            },
+            {
+              "word": " 37",
+              "start": 1.92,
+              "end": 2.28,
+              "probability": 0.9584937691688538
+            },
+            {
+              "word": " rounds",
+              "start": 2.28,
+              "end": 2.88,
+              "probability": 0.9944469928741455
+            },
+            {
+              "word": " to",
+              "start": 2.88,
+              "end": 3.16,
+              "probability": 0.9931365251541138
+            },
+            {
+              "word": " 40,",
+              "start": 3.16,
+              "end": 3.48,
+              "probability": 0.9926113486289978
+            },
+            {
+              "word": " 24",
+              "start": 3.88,
+              "end": 4.24,
+              "probability": 0.9969269633293152
+            },
+            {
+              "word": " rounds",
+              "start": 4.24,
+              "end": 4.72,
+              "probability": 0.9993828535079956
+            },
+            {
+              "word": " to",
+              "start": 4.72,
+              "end": 5.04,
+              "probability": 0.997434675693512
+            },
+            {
+              "word": " 20,",
+              "start": 5.04,
+              "end": 5.34,
+              "probability": 0.9953458905220032
+            },
+            {
+              "word": " 40",
+              "start": 5.74,
+              "end": 6.1,
+              "probability": 0.9924169778823853
+            },
+            {
+              "word": " plus",
+              "start": 6.1,
+              "end": 6.38,
+              "probability": 0.8791972398757935
+            },
+            {
+              "word": " 20",
+              "start": 6.38,
+              "end": 6.7,
+              "probability": 0.9843425750732422
+            },
+            {
+              "word": " makes",
+              "start": 6.7,
+              "end": 6.96,
+              "probability": 0.9869151711463928
+            },
+            {
+              "word": " 60,",
+              "start": 6.96,
+              "end": 7.42,
+              "probability": 0.9936923980712891
+            }
+          ]
+        },
+        {
+          "start": 7.86,
+          "end": 12.66,
+          "text": " so the total is about 60, for whole numbers halfway between tens, round up.",
+          "words": [
+            {
+              "word": " so",
+              "start": 7.86,
+              "end": 7.92,
+              "probability": 0.9946793913841248
+            },
+            {
+              "word": " the",
+              "start": 7.92,
+              "end": 8.04,
+              "probability": 0.9969923496246338
+            },
+            {
+              "word": " total",
+              "start": 8.04,
+              "end": 8.28,
+              "probability": 0.9992426633834839
+            },
+            {
+              "word": " is",
+              "start": 8.28,
+              "end": 8.7,
+              "probability": 0.9981399774551392
+            },
+            {
+              "word": " about",
+              "start": 8.7,
+              "end": 8.88,
+              "probability": 0.9963811039924622
+            },
+            {
+              "word": " 60,",
+              "start": 8.88,
+              "end": 9.26,
+              "probability": 0.9942418932914734
+            },
+            {
+              "word": " for",
+              "start": 9.78,
+              "end": 10.0,
+              "probability": 0.9884821176528931
+            },
+            {
+              "word": " whole",
+              "start": 10.0,
+              "end": 10.14,
+              "probability": 0.9285183548927307
+            },
+            {
+              "word": " numbers",
+              "start": 10.14,
+              "end": 10.44,
+              "probability": 0.9850316047668457
+            },
+            {
+              "word": " halfway",
+              "start": 10.44,
+              "end": 10.78,
+              "probability": 0.9079916477203369
+            },
+            {
+              "word": " between",
+              "start": 10.78,
+              "end": 11.4,
+              "probability": 0.9981217980384827
+            },
+            {
+              "word": " tens,",
+              "start": 11.4,
+              "end": 11.76,
+              "probability": 0.9433460831642151
+            },
+            {
+              "word": " round",
+              "start": 12.2,
+              "end": 12.38,
+              "probability": 0.8834079504013062
+            },
+            {
+              "word": " up.",
+              "start": 12.38,
+              "end": 12.66,
+              "probability": 0.8820784091949463
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-06-1",
+      "expected_text": "Check this claim: twenty-seven plus eighteen equals thirty-five. What was missed?",
+      "recognized_text": "Check this claim, 27 plus 18 equals 35. What was missed?",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.02,
+          "text": " Check this claim, 27 plus 18 equals 35. What was missed?",
+          "words": [
+            {
+              "word": " Check",
+              "start": 0.0,
+              "end": 0.26,
+              "probability": 0.8461145162582397
+            },
+            {
+              "word": " this",
+              "start": 0.26,
+              "end": 0.44,
+              "probability": 0.990709662437439
+            },
+            {
+              "word": " claim,",
+              "start": 0.44,
+              "end": 0.74,
+              "probability": 0.9955196380615234
+            },
+            {
+              "word": " 27",
+              "start": 1.22,
+              "end": 1.48,
+              "probability": 0.9489505290985107
+            },
+            {
+              "word": " plus",
+              "start": 1.48,
+              "end": 2.04,
+              "probability": 0.5231610536575317
+            },
+            {
+              "word": " 18",
+              "start": 2.04,
+              "end": 2.6,
+              "probability": 0.981549084186554
+            },
+            {
+              "word": " equals",
+              "start": 2.6,
+              "end": 3.34,
+              "probability": 0.9467148184776306
+            },
+            {
+              "word": " 35.",
+              "start": 3.34,
+              "end": 3.8,
+              "probability": 0.9965927004814148
+            },
+            {
+              "word": " What",
+              "start": 4.56,
+              "end": 4.68,
+              "probability": 0.9869623780250549
+            },
+            {
+              "word": " was",
+              "start": 4.68,
+              "end": 4.78,
+              "probability": 0.9991614818572998
+            },
+            {
+              "word": " missed?",
+              "start": 4.78,
+              "end": 5.02,
+              "probability": 0.9927409291267395
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-06-2",
+      "expected_text": "The extra ten! The answer is forty-five. Also check the sign: five times four means twenty, not nine.",
+      "recognized_text": "The extra 10. The answer is 45. Also check the sign. 5 times 4 means 20, not 9.",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 6.84,
+          "text": " The extra 10. The answer is 45. Also check the sign. 5 times 4 means 20, not 9.",
+          "words": [
+            {
+              "word": " The",
+              "start": 0.0,
+              "end": 0.2,
+              "probability": 0.8369390964508057
+            },
+            {
+              "word": " extra",
+              "start": 0.2,
+              "end": 0.34,
+              "probability": 0.9450010657310486
+            },
+            {
+              "word": " 10.",
+              "start": 0.34,
+              "end": 0.74,
+              "probability": 0.8933295011520386
+            },
+            {
+              "word": " The",
+              "start": 1.32,
+              "end": 1.36,
+              "probability": 0.968377411365509
+            },
+            {
+              "word": " answer",
+              "start": 1.36,
+              "end": 1.6,
+              "probability": 0.9992079138755798
+            },
+            {
+              "word": " is",
+              "start": 1.6,
+              "end": 1.82,
+              "probability": 0.9980884194374084
+            },
+            {
+              "word": " 45.",
+              "start": 1.82,
+              "end": 2.08,
+              "probability": 0.9805019497871399
+            },
+            {
+              "word": " Also",
+              "start": 3.16,
+              "end": 3.16,
+              "probability": 0.9853386878967285
+            },
+            {
+              "word": " check",
+              "start": 3.16,
+              "end": 3.44,
+              "probability": 0.9485700130462646
+            },
+            {
+              "word": " the",
+              "start": 3.44,
+              "end": 3.6,
+              "probability": 0.9974384307861328
+            },
+            {
+              "word": " sign.",
+              "start": 3.6,
+              "end": 3.84,
+              "probability": 0.9845818877220154
+            },
+            {
+              "word": " 5",
+              "start": 4.46,
+              "end": 4.54,
+              "probability": 0.9070992469787598
+            },
+            {
+              "word": " times",
+              "start": 4.54,
+              "end": 4.84,
+              "probability": 0.5187973976135254
+            },
+            {
+              "word": " 4",
+              "start": 4.84,
+              "end": 5.22,
+              "probability": 0.9883652925491333
+            },
+            {
+              "word": " means",
+              "start": 5.22,
+              "end": 5.46,
+              "probability": 0.9925158619880676
+            },
+            {
+              "word": " 20,",
+              "start": 5.46,
+              "end": 5.84,
+              "probability": 0.9848242402076721
+            },
+            {
+              "word": " not",
+              "start": 6.52,
+              "end": 6.58,
+              "probability": 0.969475507736206
+            },
+            {
+              "word": " 9.",
+              "start": 6.58,
+              "end": 6.84,
+              "probability": 0.988059937953949
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-07-1",
+      "expected_text": "Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit Two quizzes!",
+      "recognized_text": "Understand the story, follow each step, and check your result. Put missing numbers back into their equations to test them. Try the Unit 2 quizzes. . . .",
+      "normalized_exact_match": true,
+      "differences": [],
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 3.34,
+          "text": " Understand the story, follow each step, and check your result.",
+          "words": [
+            {
+              "word": " Understand",
+              "start": 0.0,
+              "end": 0.3,
+              "probability": 0.9036387801170349
+            },
+            {
+              "word": " the",
+              "start": 0.3,
+              "end": 0.68,
+              "probability": 0.9951432943344116
+            },
+            {
+              "word": " story,",
+              "start": 0.68,
+              "end": 1.0,
+              "probability": 0.9963529109954834
+            },
+            {
+              "word": " follow",
+              "start": 1.34,
+              "end": 1.62,
+              "probability": 0.9936469197273254
+            },
+            {
+              "word": " each",
+              "start": 1.62,
+              "end": 1.86,
+              "probability": 0.9990384578704834
+            },
+            {
+              "word": " step,",
+              "start": 1.86,
+              "end": 2.24,
+              "probability": 0.9974453449249268
+            },
+            {
+              "word": " and",
+              "start": 2.54,
+              "end": 2.72,
+              "probability": 0.9971688389778137
+            },
+            {
+              "word": " check",
+              "start": 2.72,
+              "end": 2.9,
+              "probability": 0.9976588487625122
+            },
+            {
+              "word": " your",
+              "start": 2.9,
+              "end": 3.08,
+              "probability": 0.9948061108589172
+            },
+            {
+              "word": " result.",
+              "start": 3.08,
+              "end": 3.34,
+              "probability": 0.9778832197189331
+            }
+          ]
+        },
+        {
+          "start": 4.02,
+          "end": 6.62,
+          "text": " Put missing numbers back into their equations to test them.",
+          "words": [
+            {
+              "word": " Put",
+              "start": 4.02,
+              "end": 4.04,
+              "probability": 0.9923521876335144
+            },
+            {
+              "word": " missing",
+              "start": 4.04,
+              "end": 4.24,
+              "probability": 0.9918707609176636
+            },
+            {
+              "word": " numbers",
+              "start": 4.24,
+              "end": 4.66,
+              "probability": 0.9987103939056396
+            },
+            {
+              "word": " back",
+              "start": 4.66,
+              "end": 5.0,
+              "probability": 0.9980345368385315
+            },
+            {
+              "word": " into",
+              "start": 5.0,
+              "end": 5.24,
+              "probability": 0.9898046255111694
+            },
+            {
+              "word": " their",
+              "start": 5.24,
+              "end": 5.46,
+              "probability": 0.9973560571670532
+            },
+            {
+              "word": " equations",
+              "start": 5.46,
+              "end": 5.76,
+              "probability": 0.9902430176734924
+            },
+            {
+              "word": " to",
+              "start": 5.76,
+              "end": 6.18,
+              "probability": 0.9981029033660889
+            },
+            {
+              "word": " test",
+              "start": 6.18,
+              "end": 6.38,
+              "probability": 0.9995643496513367
+            },
+            {
+              "word": " them.",
+              "start": 6.38,
+              "end": 6.62,
+              "probability": 0.9989080429077148
+            }
+          ]
+        },
+        {
+          "start": 7.1,
+          "end": 8.36,
+          "text": " Try the Unit 2 quizzes.",
+          "words": [
+            {
+              "word": " Try",
+              "start": 7.1,
+              "end": 7.2,
+              "probability": 0.9869596362113953
+            },
+            {
+              "word": " the",
+              "start": 7.2,
+              "end": 7.36,
+              "probability": 0.9789110422134399
+            },
+            {
+              "word": " Unit",
+              "start": 7.36,
+              "end": 7.54,
+              "probability": 0.6037187576293945
+            },
+            {
+              "word": " 2",
+              "start": 7.54,
+              "end": 7.86,
+              "probability": 0.8781453967094421
+            },
+            {
+              "word": " quizzes.",
+              "start": 7.86,
+              "end": 8.36,
+              "probability": 0.9053677320480347
+            }
+          ]
+        },
+        {
+          "start": 8.36,
+          "end": 8.54,
+          "text": " .",
+          "words": [
+            {
+              "word": " .",
+              "start": 8.36,
+              "end": 8.54,
+              "probability": 0.017797276377677917
+            }
+          ]
+        },
+        {
+          "start": 8.54,
+          "end": 8.7,
+          "text": " .",
+          "words": [
+            {
+              "word": " .",
+              "start": 8.54,
+              "end": 8.7,
+              "probability": 0.15196077525615692
+            }
+          ]
+        },
+        {
+          "start": 8.7,
+          "end": 8.8,
+          "text": " .",
+          "words": [
+            {
+              "word": " .",
+              "start": 8.7,
+              "end": 8.8,
+              "probability": 0.83450847864151
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

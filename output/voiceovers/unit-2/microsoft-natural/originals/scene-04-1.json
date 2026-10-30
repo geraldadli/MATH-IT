@@ -1,0 +1,195 @@
+{
+  "id": "scene-04-1",
+  "scene": 4,
+  "text": "A missing number must make the equation true. Undo adding nine with subtraction: the missing number is fourteen. For six times something equals thirty, divide. The missing number is five.",
+  "voice": "en-US-AndrewNeural",
+  "settings": {
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "pause_after_seconds": 0,
+  "events": [
+    {
+      "type": "WordBoundary",
+      "offset": 875000,
+      "duration": 500000,
+      "text": "A"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 1500000,
+      "duration": 3250000,
+      "text": "missing"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 4875000,
+      "duration": 3125000,
+      "text": "number"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 9750000,
+      "duration": 2875000,
+      "text": "must"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 12750000,
+      "duration": 1875000,
+      "text": "make"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 14750000,
+      "duration": 625000,
+      "text": "the"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 15500000,
+      "duration": 5000000,
+      "text": "equation"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 20625000,
+      "duration": 3125000,
+      "text": "true"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 27875000,
+      "duration": 4000000,
+      "text": "Undo"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 32000000,
+      "duration": 3250000,
+      "text": "adding"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 35375000,
+      "duration": 3625000,
+      "text": "nine"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 39125000,
+      "duration": 1500000,
+      "text": "with"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 40750000,
+      "duration": 6375000,
+      "text": "subtraction"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 51125000,
+      "duration": 750000,
+      "text": "the"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 52000000,
+      "duration": 3375000,
+      "text": "missing"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 55500000,
+      "duration": 2875000,
+      "text": "number"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 59375000,
+      "duration": 875000,
+      "text": "is"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 60375000,
+      "duration": 5875000,
+      "text": "fourteen"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 70875000,
+      "duration": 1375000,
+      "text": "For"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 72375000,
+      "duration": 2500000,
+      "text": "six"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 75000000,
+      "duration": 3125000,
+      "text": "times"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 78250000,
+      "duration": 3875000,
+      "text": "something"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 83250000,
+      "duration": 3500000,
+      "text": "equals"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 86875000,
+      "duration": 4125000,
+      "text": "thirty"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 92250000,
+      "duration": 4875000,
+      "text": "divide"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101375000,
+      "duration": 375000,
+      "text": "The"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 101875000,
+      "duration": 3000000,
+      "text": "missing"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 105000000,
+      "duration": 2750000,
+      "text": "number"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 107875000,
+      "duration": 1000000,
+      "text": "is"
+    },
+    {
+      "type": "WordBoundary",
+      "offset": 109000000,
+      "duration": 4875000,
+      "text": "five"
+    }
+  ],
+  "sha256": "bcfa2cd0ec0282a24863d5c0e255ddf7d15f835297b27ec3f1b9b15f7c1831f4"
+}

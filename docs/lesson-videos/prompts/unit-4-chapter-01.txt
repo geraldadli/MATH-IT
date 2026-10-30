@@ -1,0 +1,64 @@
+MATH IT! VIDEO PROMPT
+Unit 4 · Chapter 1: The fruit survey
+Unit: Data analysis
+Topic: Pictographs
+Duration: 110 seconds (1:50)
+Language: English only
+
+LEARNING GOAL
+Read a pictograph key worth two people per symbol, interpret half symbols, and combine or compare category values.
+
+STYLE AND DELIVERY
+Create one complete educational video in English for Grade 3 children, approximately ages 8–9, for Math It! The child watches this lesson before attempting its quiz. Use the exact duration specified below, between one and two minutes.
+
+Use five simple whiteboard slides, 16:9 landscape, ideally 1920 × 1080. Use a warm white board, dark navy marker lines, and blue, teal, and amber accents. A simple illustrated hand draws the words, numbers, and pictures in real time, then moves out of the way. Use clean, readable handwriting for headings and clear numerals and math symbols for calculations. Keep one small friendly cat detective badge consistent across the series. Use flat 2D shapes, a fixed front-facing camera, and gentle object movements only when they explain the math. Reveal one idea at a time. Keep generous blank space and make every label readable on a phone.
+
+Use a warm, patient English narrator at about 100–110 spoken words per minute. Read only the supplied narration, naturally pronouncing numbers and units. Use the remaining scene time for drawing, tracing, and quiet viewing; do not add filler speech or speed up. In the practice scene, ask the question, hold silently for four seconds, then narrate and reveal the answer. Do not display the practice answer before this pause. The on-screen text lists each scene's final state: build it progressively as the explanation unfolds. Keep only a few short labels visible at a time; replace previous lines if needed.
+
+Provide synchronized English captions in a reserved bottom area, no more than two short lines at once. Keep the drawings above this area. Voice must be clear; music is optional, very soft, and instrumental. Use at most a quiet marker sound and a soft success chime. Avoid countdowns, loud effects, flashing, fast camera motion, dense paragraphs, and pressure to answer quickly.
+
+Preserve all supplied numbers, units, labels, equations, and object counts exactly. Make chart scales and geometric parts mathematically accurate. Keep category labels attached to their bars and symbols. Use the new teaching examples below; do not substitute the actual quiz questions or reveal its answer key. Mathematical definitions and shape properties may naturally recur in the quiz. End with an invitation to try the quiz; a video end card is not an interactive quiz button.
+
+If the production tool supports only short clips, create the five scenes separately with the same visual style and character, then assemble them in the stated order and timing. Add exact text, equations, narration, and captions during editing if the generator cannot render them reliably. The requested deliverable is the finished video; do not add introductions or conclusions beyond this script.
+
+CHAPTER ACCURACY NOTES
+Use a hobbies survey: Music 6 children (3 full symbols), Art 9 (4 full plus 1 half), Games 7 (3 full plus 1 half). One full person symbol represents 2 children; half a symbol represents 1 child, never half a child.
+
+TIMED STORYBOARD
+
+SCENE 1 · 0:00–0:11 · Hook
+Visual and animation: Draw a hobbies chart with rows for Music, Art, and Games. Keep the key visible at the top.
+On-screen text, revealed progressively:
+Key: 1 symbol = 2 children
+Narration: “This picture chart shows favorite hobbies. Before counting, read the key.”
+
+SCENE 2 · 0:11–0:39 · Explain the idea
+Visual and animation: Draw one person symbol expanding into two child outlines. Draw half a symbol expanding into one child outline. Count three full symbols in Music.
+On-screen text, revealed progressively:
+Full symbol = 2
+Half symbol = 1
+Music = 6
+Narration: “One full symbol stands for two children. Half a symbol stands for one child. Three full symbols mean two, four, six children. Count the value of the symbols, not just the pictures.”
+
+SCENE 3 · 0:39–1:12 · Worked example
+Visual and animation: Count four full and one half symbol in Art. Align the Music and Art rows, then write a difference and combined total.
+On-screen text, revealed progressively:
+Art = 9
+9 − 6 = 3
+9 + 6 = 15
+Narration: “Art has four full symbols and one half. That is eight plus one, or nine children. Art has three more than Music because nine minus six is three. Together, the two rows represent fifteen children.”
+
+SCENE 4 · 1:12–1:36 · Try, pause, and reveal
+Visual and animation: Highlight Games, showing three full symbols and one half. Hold for four seconds, then count in twos and add one.
+On-screen text, revealed progressively:
+Games: 2 + 2 + 2 + 1 = 7
+Narration: “Try the Games row. It has three full symbols and one half. How many children? Six plus one equals seven children.”
+
+SCENE 5 · 1:36–1:50 · Recap and quiz invitation
+Visual and animation: Circle the key, then the row, then the question words together and more.
+On-screen text, revealed progressively:
+Key → Count → Answer the question
+Narration: “Read the key first. Add for together; subtract to compare. Now use those clues in your quiz!”
+
+FINAL PRODUCTION CHECK
+Confirm all mathematics and object counts, readable labels, the four-second thinking pause, captions matching narration, the stated total duration, and an encouraging handoff to the quiz.
